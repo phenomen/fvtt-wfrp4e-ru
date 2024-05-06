@@ -3,7 +3,7 @@ if (
 	(this.actor.isOpposing || args.test.context.defending) &&
 	args.test.result.roll % 11 === 0 &&
 	args.test.succeeded &&
-	["Language (Magick)", "Уклонение"].includes(args.test.item?.name)
+	["Язык (магический)", "Уклонение"].includes(args.test.item?.name)
 ) {
 	args.test.context.phantasmal = true; // Flag so items aren't readded if test is edited
 	const text = `<strong>${this.effect.name}</strong>: Adding Unstable and  Ward`;

@@ -1,1 +1,1 @@
-return !["Charm Animal", "Endurance", "Outdoor Survival"].includes(args.skill?.name)
+return !["Charm Animal", "Endurance", "Выживание"].includes(args.skill?.name)

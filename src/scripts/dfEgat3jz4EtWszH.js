@@ -1,1 +1,1 @@
-return args.skill?.name === "Stealth (Urban)"
+return args.skill?.name === "Скрытность (города)"

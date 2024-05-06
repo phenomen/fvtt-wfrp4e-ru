@@ -10,7 +10,7 @@ const characteristics = {
 	wp: 0,
 	fel: 0,
 };
-const skills = ["Consume Alcohol", "Row", "Sail", "Swim"];
+const skills = ["Consume Alcohol", "Row", "Sail", "Плавание"];
 const skillAdvancements = [10, 10, 10, 10];
 const talents = [];
 const trappings = [];

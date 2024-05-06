@@ -14,10 +14,10 @@ const skills = [
 	"Хладнокровие",
 	"Уклонение",
 	"Intimidate",
-	"Intuition",
-	"Leadership",
+	"Интуиция",
+	"Лидерство",
 	"Lore (Warfare)",
-	"Perception",
+	"Наблюдательность",
 ];
 const skillAdvancements = [25, 15, 25, 25, 30, 20, 20];
 const talents = [

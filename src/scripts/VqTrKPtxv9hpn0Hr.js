@@ -1,1 +1,1 @@
-return args.skill?.name !== "Language (Magick)"
+return args.skill?.name !== "Язык (магический)"

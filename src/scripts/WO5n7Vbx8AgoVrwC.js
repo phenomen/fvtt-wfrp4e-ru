@@ -10,7 +10,7 @@ const characteristics = {
 	wp: 5,
 	fel: 5,
 };
-const skills = ["Intuition", "Lore (Local)", "Perception"];
+const skills = ["Интуиция", "Lore (Local)", "Наблюдательность"];
 const skillAdvancements = [10, 10, 10];
 const talents = [];
 const trappings = ["Mail Coat", "Mail Chausses", "Mail Coif", "Hand Weapon"];

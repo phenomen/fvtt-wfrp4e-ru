@@ -1,1 +1,1 @@
-if (["Stealth (Rural)", "Track", "Outdoor Survival", "Swim", "Perception", "Intuition"].includes(args.item?.name))
+if (["Скрытность (дикая природа)", "Выслеживание", "Выживание", "Плавание", "Наблюдательность", "Интуиция"].includes(args.item?.name))

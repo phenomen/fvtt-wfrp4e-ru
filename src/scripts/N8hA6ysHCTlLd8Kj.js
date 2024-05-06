@@ -15,10 +15,10 @@ const skills = [
 	"Хладнокровие",
 	"Уклонение",
 	"Артистизм (сказительство)",
-	"Intuition",
-	"Language (Magick)",
-	"Lore (Magic)",
-	"Perception",
+	"Интуиция",
+	"Язык (магический)",
+	"Знание (магия)",
+	"Наблюдательность",
 ];
 const skillAdvancements = [5, 15, 10, 10, 15, 10, 10, 20];
 const talents = ["Arcane Magic", "Petty Magic", "Second Sight"];

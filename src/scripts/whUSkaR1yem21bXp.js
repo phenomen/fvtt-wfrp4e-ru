@@ -10,7 +10,7 @@ const characteristics = {
 	wp: 0,
 	fel: 10,
 };
-const skills = ["Melee (Basic)", "Track"];
+const skills = ["Melee (Basic)", "Выслеживание"];
 const skillAdvancements = [8, 7];
 const talents = ["Berserk Charge", "Careful Strike", "Strike to Injure"];
 const traits = ["Flight (8)", "Fury", "Swarm", "Tracker"];

@@ -1226,7 +1226,7 @@
 		"Plate Helm": {
 			"name": "Глухой шлем",
 			"description": "<p></p>",
-			"penalty": "-20 Perception"
+			"penalty": "-20 Наблюдательность"
 		},
 		"Rot": {
 			"name": "Гниение",
@@ -2526,7 +2526,7 @@
 		"Mail Coif": {
 			"name": "Кольчужный капюшон",
 			"description": "<p></p>",
-			"penalty": "-10 Perception"
+			"penalty": "-10 Наблюдательность"
 		},
 		"War Leader": {
 			"name": "Командир",
@@ -4203,7 +4203,7 @@
 		"Plate Open Helm": {
 			"name": "Открытый шлем",
 			"description": "<p></p>",
-			"penalty": "-10 Perception"
+			"penalty": "-10 Наблюдательность"
 		},
 		"Strong Swimmer": {
 			"name": "Отличный пловец",

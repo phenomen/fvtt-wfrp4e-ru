@@ -1,1 +1,1 @@
-return !["Pick Lock", "Sleight of Hand", "Channelling (Ulgu)"].includes(args.skill?.name)
+return !["Взлом", "Ловкость рук", "Концентрация (Улгу)"].includes(args.skill?.name)
