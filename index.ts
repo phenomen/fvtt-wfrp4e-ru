@@ -28,7 +28,6 @@ function parseCommandLineArgs(): BuildOptions {
 		options: {
 			id: { type: "string" },
 			bump: { type: "string" },
-			css: { type: "boolean" },
 		},
 		strict: true,
 		allowPositionals: true,
@@ -42,6 +41,8 @@ function parseCommandLineArgs(): BuildOptions {
 }
 
 async function buildSource(id: string) {
+	await packScripts();
+
 	await Bun.build({
 		entrypoints: ["./src/index.js"],
 		format: "esm",
@@ -53,6 +54,24 @@ async function buildSource(id: string) {
 	}).catch((e) => {
 		console.error(e);
 	});
+}
+
+async function packScripts() {
+	const scripts = await readdir("./src/scripts");
+	const scriptObj = {};
+
+	for (const script of scripts) {
+		const text = await Bun.file(`./src/scripts/${script}`).text();
+		scriptObj[script.split(".")[0]] = text;
+	}
+
+	const scriptLoader = `export function loadScripts()
+	{	
+		game.wfrp4e.config.effectScripts = ${JSON.stringify(scriptObj)};	
+	}`;
+
+	console.log("-- PACKING SCRIPTS...");
+	await Bun.write("./src/scripts.js", scriptLoader);
 }
 
 async function copyDirectory(src: string, dest: string) {

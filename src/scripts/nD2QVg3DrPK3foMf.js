@@ -1,5 +1,5 @@
 args.actor
-	.setupSkill("Dodge", { fields: { difficulty: "average" } })
+	.setupSkill("Уклонение", { fields: { difficulty: "average" } })
 	.then(async (test) => {
 		await test.roll();
 		if (test.failed) {

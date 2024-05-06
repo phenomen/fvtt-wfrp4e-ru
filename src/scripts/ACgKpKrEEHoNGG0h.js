@@ -1,1 +1,1 @@
-return !args.skill?.name.includes("Channelling") && args.type !== "channelling"
+return !args.skill?.name.includes("Концентрация") && args.type !== "channelling"

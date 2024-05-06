@@ -7,7 +7,7 @@ if (!specification || specification === "Trained Skills") {
 			{
 				broken: "Broken",
 				drive: "Drive",
-				entertain: "Entertain",
+				entertain: "Артистизм",
 				fetch: "Fetch",
 				guard: "Guard",
 				home: "Home",
@@ -57,7 +57,7 @@ if (choice.length) {
 			case "drive":
 				break;
 
-			case "entertain":
+			case "Артистизм":
 				break;
 
 			case "fetch":

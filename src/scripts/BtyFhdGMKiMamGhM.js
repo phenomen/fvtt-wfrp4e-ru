@@ -1,4 +1,4 @@
-const test = await args.actor.setupSkill("Dodge", {
+const test = await args.actor.setupSkill("Уклонение", {
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
 });

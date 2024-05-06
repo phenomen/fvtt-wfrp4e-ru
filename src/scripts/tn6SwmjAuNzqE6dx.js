@@ -1,5 +1,5 @@
 let damage = 0;
-const test = await this.actor.setupSkill("Dodge", {
+const test = await this.actor.setupSkill("Уклонение", {
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
 });

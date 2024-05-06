@@ -1,4 +1,4 @@
-const skill = "Entertain (Singing)";
+const skill = "Артистизм (пение)";
 const currentCareer = this.actor.system.currentCareer;
 const existingSkill = this.actor.itemTypes.skill.find((i) => i.name === skill);
 

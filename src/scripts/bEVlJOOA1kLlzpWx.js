@@ -11,10 +11,10 @@ const characteristics = {
 	fel: 10,
 };
 const skills = [
-	"Channelling",
-	"Cool",
-	"Dodge",
-	"Entertain (Storytelling)",
+	"Концентрация",
+	"Хладнокровие",
+	"Уклонение",
+	"Артистизм (сказительство)",
 	"Intuition",
 	"Language (Magick)",
 	"Leadership",

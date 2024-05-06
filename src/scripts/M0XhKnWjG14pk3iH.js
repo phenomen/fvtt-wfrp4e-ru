@@ -1,1 +1,1 @@
-return !args.skill?.name.includes("Channelling") && args.type !== "channelling" && args.skill?.name !== game.i18n.localize("NAME.Charm") && !args.skill?.name.includes("Language (Magick)") && args.type !== "cast"
+return !args.skill?.name.includes("Концентрация") && args.type !== "channelling" && args.skill?.name !== game.i18n.localize("NAME.Charm") && !args.skill?.name.includes("Language (Magick)") && args.type !== "cast"

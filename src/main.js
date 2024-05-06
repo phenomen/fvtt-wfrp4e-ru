@@ -21,8 +21,11 @@ import {
 	translatedTalentSpec,
 } from "./data.js";
 
+import { loadScripts } from "./scripts.js";
+
 export function initTranslation() {
 	setupBabele();
+	loadScripts();
 
 	if (typeof Babele !== "undefined") {
 		libWrapper.register(

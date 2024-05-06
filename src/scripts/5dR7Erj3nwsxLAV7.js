@@ -11,8 +11,8 @@ const characteristics = {
 	fel: 15,
 };
 const skills = [
-	"Cool",
-	"Dodge",
+	"Хладнокровие",
+	"Уклонение",
 	"Intimidate",
 	"Intuition",
 	"Leadership",

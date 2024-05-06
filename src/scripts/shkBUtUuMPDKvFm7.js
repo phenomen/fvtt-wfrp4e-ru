@@ -1,4 +1,4 @@
-const test = await this.actor.setupSkill("Dodge", {
+const test = await this.actor.setupSkill("Уклонение", {
 	fields: { difficulty: "average" },
 });
 const caster = this.effect.sourceActor;
