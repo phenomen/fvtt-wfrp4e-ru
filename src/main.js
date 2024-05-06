@@ -22,11 +22,11 @@ import {
 } from "./data.js";
 
 export function initTranslation() {
-	setupBabele("wfrp4e");
+	setupBabele();
 
 	if (typeof Babele !== "undefined") {
 		libWrapper.register(
-			"ru-ru",
+			"ru-wfrp4e",
 			"Babele.prototype.loadTranslations",
 			patchBabele,
 			"OVERRIDE",
@@ -139,7 +139,7 @@ export function initTranslation() {
 async function patchBabele(wrapped, ...args) {
 	const files = await getTranslationsFiles(this);
 
-	console.log("ru-ru: Patching Babele");
+	console.log("ru-wfrp4e: Patching Babele");
 
 	if (files.length === 0) {
 		console.log(
@@ -229,27 +229,27 @@ async function getTranslationsFiles() {
 	}
 
 	const directories = [
-		"/modules/ru-wfrp4e/compendium/wfrp4e",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/altdorf",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/archives1",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/archives2",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/core",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/dotr",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/eis",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/empire-ruins",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/gm-toolkit",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/horned-rat",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/middenheim",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/owb1",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/pbtt",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/rnhd",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/salzenmund",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/starter-set",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/ua1",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/ua2",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/up-in-arms",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/wom",
-		"/modules/ru-wfrp4e/compendium/wfrp4e/zoo",
+		"/modules/ru-wfrp4e/compendium",
+		"/modules/ru-wfrp4e/compendium/altdorf",
+		"/modules/ru-wfrp4e/compendium/archives1",
+		"/modules/ru-wfrp4e/compendium/archives2",
+		"/modules/ru-wfrp4e/compendium/core",
+		"/modules/ru-wfrp4e/compendium/dotr",
+		"/modules/ru-wfrp4e/compendium/eis",
+		"/modules/ru-wfrp4e/compendium/empire-ruins",
+		"/modules/ru-wfrp4e/compendium/gm-toolkit",
+		"/modules/ru-wfrp4e/compendium/horned-rat",
+		"/modules/ru-wfrp4e/compendium/middenheim",
+		"/modules/ru-wfrp4e/compendium/owb1",
+		"/modules/ru-wfrp4e/compendium/pbtt",
+		"/modules/ru-wfrp4e/compendium/rnhd",
+		"/modules/ru-wfrp4e/compendium/salzenmund",
+		"/modules/ru-wfrp4e/compendium/starter-set",
+		"/modules/ru-wfrp4e/compendium/ua1",
+		"/modules/ru-wfrp4e/compendium/ua2",
+		"/modules/ru-wfrp4e/compendium/up-in-arms",
+		"/modules/ru-wfrp4e/compendium/wom",
+		"/modules/ru-wfrp4e/compendium/zoo",
 	];
 
 	const files = [];

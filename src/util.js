@@ -1,9 +1,9 @@
-export function setupBabele(id) {
+export function setupBabele() {
 	if (typeof Babele !== "undefined") {
 		Babele.get().register({
 			module: "ru-wfrp4e",
 			lang: "ru",
-			dir: `compendium/${id}`,
+			dir: "compendium",
 		});
 	} else {
 		new Dialog({

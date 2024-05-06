@@ -24,9 +24,7 @@
 			{
 				"id": "ru-ru",
 				"type": "module"
-			}
-		],
-		"recommends": [
+			},
 			{
 				"id": "babele",
 				"type": "module"
@@ -40,7 +38,7 @@
 	"languages": [
 		{
 			"lang": "ru",
-			"path": "systems/wfrp4e.json",
+			"path": "system/wfrp4e.json",
 			"system": "wfrp4e"
 		},
 		{
