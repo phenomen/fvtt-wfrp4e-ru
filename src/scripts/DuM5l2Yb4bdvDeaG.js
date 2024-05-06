@@ -1,1 +1,1 @@
-return args.skill?.name !== "Athletics"
+return args.skill?.name !== "Атлетика"

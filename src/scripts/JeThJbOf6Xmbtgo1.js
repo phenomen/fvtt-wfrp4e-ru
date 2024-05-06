@@ -5,7 +5,7 @@ this.script.scriptMessage(
 	),
 );
 
-const test = await this.actor.setupSkill("Athletics", {
+const test = await this.actor.setupSkill("Атлетика", {
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
 });
