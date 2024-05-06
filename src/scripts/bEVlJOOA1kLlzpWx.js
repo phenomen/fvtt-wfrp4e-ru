@@ -36,7 +36,7 @@ const talents = [
 	"Sixth Sense",
 ];
 const trappings = [
-	"Hand Weapon",
+	"Ручное оружие",
 	"Quarterstaff",
 	"Ritual Dress incorporating many ingredients and fetishes",
 ];

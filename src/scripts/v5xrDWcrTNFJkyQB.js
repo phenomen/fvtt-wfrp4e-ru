@@ -1,7 +1,7 @@
 const choice1 = [
 	{
 		type: "skill",
-		name: "Ranged (Bow)",
+		name: "Стрельба (луки)",
 		diff: {
 			system: {
 				advances: {

@@ -10,14 +10,14 @@ const characteristics = {
 	wp: 15,
 	fel: 0,
 };
-const skills = ["Хладнокровие", "Уклонение", "Intimidate", "Лидерство"];
+const skills = ["Хладнокровие", "Уклонение", "Запугивание", "Лидерство"];
 const skillAdvancements = [15, 15, 10, 5];
 const talents = ["Combat Aware", "Combat Reflexes", "Feint", "Resolute"];
 const trappings = [
 	"Mail Coat",
 	"Mail Chausses",
 	"Mail Coif",
-	"Hand Weapon",
+	"Ручное оружие",
 	"Shield",
 ];
 const items = [];

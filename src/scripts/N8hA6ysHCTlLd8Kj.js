@@ -23,7 +23,7 @@ const skills = [
 const skillAdvancements = [5, 15, 10, 10, 15, 10, 10, 20];
 const talents = ["Arcane Magic", "Petty Magic", "Second Sight"];
 const trappings = [
-	"Hand Weapon",
+	"Ручное оружие",
 	"Quarterstaff",
 	"Ritual Dress incorporating many ingredients and fetishes",
 ];

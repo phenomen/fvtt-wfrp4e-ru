@@ -13,10 +13,10 @@ const characteristics = {
 const skills = [
 	"Хладнокровие",
 	"Уклонение",
-	"Intimidate",
+	"Запугивание",
 	"Интуиция",
 	"Лидерство",
-	"Lore (Warfare)",
+	"Знание (военное дело)",
 	"Наблюдательность",
 ];
 const skillAdvancements = [25, 15, 25, 25, 30, 20, 20];
@@ -30,7 +30,7 @@ const talents = [
 	"Unshakable",
 	"War Leader",
 ];
-const trappings = ["Hand Weapon", "Shield"];
+const trappings = ["Ручное оружие", "Shield"];
 const items = [];
 
 const updateObj = this.actor.toObject();

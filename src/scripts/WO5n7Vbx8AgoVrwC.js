@@ -13,7 +13,7 @@ const characteristics = {
 const skills = ["Интуиция", "Lore (Local)", "Наблюдательность"];
 const skillAdvancements = [10, 10, 10];
 const talents = [];
-const trappings = ["Mail Coat", "Mail Chausses", "Mail Coif", "Hand Weapon"];
+const trappings = ["Mail Coat", "Mail Chausses", "Mail Coif", "Ручное оружие"];
 const items = [];
 
 const updateObj = this.actor.toObject();

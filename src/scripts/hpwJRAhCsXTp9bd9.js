@@ -1,7 +1,7 @@
 const choice1 = [
 	{
 		type: "skill",
-		name: "Melee (Basic)",
+		name: "Рукопашный бой (основное)",
 		diff: {
 			system: {
 				advances: {
@@ -14,7 +14,7 @@ const choice1 = [
 const choice2 = [
 	{
 		type: "skill",
-		name: "Melee (Polearm)",
+		name: "Рукопашный бой (древковое)",
 		diff: {
 			system: {
 				advances: {

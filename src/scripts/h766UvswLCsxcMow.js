@@ -10,7 +10,7 @@ const characteristics = {
 	wp: 10,
 	fel: 10,
 };
-const skills = ["Обаяние", "Intimidate", "Melee (Basic)"];
+const skills = ["Обаяние", "Запугивание", "Рукопашный бой (основное)"];
 const skillAdvancements = [7, 60, 7];
 const talents = ["Menacing", "Shadow"];
 const traits = ["Distracting"];

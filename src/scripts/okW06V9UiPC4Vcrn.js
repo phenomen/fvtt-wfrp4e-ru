@@ -17,7 +17,7 @@ const trappings = [
 	"Leather Jack",
 	"Leather Leggings",
 	"Leather Skullcap",
-	"Hand Weapon",
+	"Ручное оружие",
 	"Spear",
 	"Shield",
 ];
