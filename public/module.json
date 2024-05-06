@@ -6,9 +6,13 @@
 	"authors": [
 		{
 			"name": "Phenomen",
-			"discord": "phenomen#1337",
+			"discord": "phenomen",
 			"email": "alex@ruleplaying.com",
 			"url": "https://discord.gg/Z2CXFy35WF"
+		},
+		{
+			"name": "Mrak",
+			"discord": "mrak_x"
 		}
 	],
 	"version": "1.0.2",
