@@ -28,7 +28,7 @@ const choice2 = [
 const choice3 = [
 	{
 		type: "skill",
-		name: "Melee (Two-Handed)",
+		name: "Рукопашный бой (двуручное)",
 		diff: {
 			system: {
 				advances: {
@@ -40,31 +40,31 @@ const choice3 = [
 ];
 
 const choice = await Dialog.wait({
-	title: "Choice",
+	title: "Выбор",
 	content: `<p>
-        Select your choice
+        Выберите тип
         </p>
         <ol>
-        <li>Melee (Basic)</li>
-        <li>Melee (Polearm)</li>
-        <li>Melee (Two-Handed)</li>
+        <li>Рукопашный бой (основное)</li>
+        <li>Рукопашный бой (древковое)</li>
+        <li>Рукопашный бой (двуручное)</li>
         </ol> 
         `,
 	buttons: {
 		1: {
-			label: "Basic",
+			label: "основное",
 			callback: () => {
 				return choice1;
 			},
 		},
 		2: {
-			label: "Polearm",
+			label: "древковое",
 			callback: () => {
 				return choice2;
 			},
 		},
 		3: {
-			label: "Two-Handed",
+			label: "двуручное",
 			callback: () => {
 				return choice3;
 			},
