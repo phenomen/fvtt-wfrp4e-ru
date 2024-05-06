@@ -1,0 +1,90 @@
+{
+	"id": "ru-wfrp4e",
+	"name": "ru-wfrp4e",
+	"title": "❄️ WFRP4e Russian Translation | Русский перевод",
+	"description": "<p>Модуль добавляет поддержку русского языка в Warhammer Fantasy Roleplay 4e (WFRP4e) для Foundry VTT.</p>",
+	"authors": [
+		{
+			"name": "Phenomen",
+			"discord": "phenomen#1337",
+			"email": "alex@ruleplaying.com",
+			"url": "https://discord.gg/Z2CXFy35WF"
+		}
+	],
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "11",
+		"verified": "11",
+		"maximum": "12"
+	},
+	"esmodules": ["index.js"],
+	"coreTranslation": false,
+	"relationships": {
+		"requires": [
+			{
+				"id": "ru-ru",
+				"type": "module"
+			}
+		],
+		"recommends": [
+			{
+				"id": "babele",
+				"type": "module"
+			},
+			{
+				"id": "lib-wrapper",
+				"type": "module"
+			}
+		]
+	},
+	"languages": [
+		{
+			"lang": "ru",
+			"path": "systems/wfrp4e.json",
+			"system": "wfrp4e"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-core.json",
+			"module": "wfrp4e-core"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-addon.json",
+			"module": "wfrp4e-core"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-gm-toolkit.json",
+			"module": "wfrp4e-gm-toolkit"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-archives2.json",
+			"module": "wfrp4e-archives2"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-dotr.json",
+			"module": "wfrp4e-dotr"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-eis.json",
+			"module": "wfrp4e-eis"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-horned-rat.json",
+			"module": "wfrp4e-horned-rat"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-up-in-arms.json",
+			"module": "wfrp4e-up-in-arms"
+		}
+	],
+	"url": "https://github.com/phenomen/fvtt-wfrp4e-ru",
+	"manifest": "https://github.com/phenomen/fvtt-wfrp4e-ru/releases/download/latest/module.json",
+	"download": "https://github.com/phenomen/fvtt-wfrp4e-ru/releases/download/latest/ru-wfrp4e.zip"
+}
