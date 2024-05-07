@@ -4,4 +4,4 @@ item.system.specification.value = 20;
 this.actor.createEmbeddedDocuments("Item", [item], {
 	fromEffect: this.effect.id,
 });
-this.script.scriptNotification(`${item.name} added`);
+this.script.scriptNotification(`${item.name} добавлен`);

@@ -4,7 +4,7 @@
 
 if (this.item.getFlag("wfrp4e", "brittle")) {
 	ChatMessage.create({
-		content: `<strong>${this.item.name}</strong> shatters!`,
+		content: `<strong>${this.item.name}</strong> разлетается вдребезги!`,
 	});
-	this.item.update({ name: `${this.item.name} (Shattered)` });
+	this.item.update({ name: `${this.item.name} (разбитый)` });
 }

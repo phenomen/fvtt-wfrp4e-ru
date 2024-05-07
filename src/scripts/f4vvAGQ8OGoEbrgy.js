@@ -10,7 +10,7 @@ const test = await args.actor.setupCharacteristic("wp", {
 	fields: { difficulty },
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
-	context: { failure: "Gain a Stunned Condition" },
+	context: { failure: "Получите состояние ошеломления" },
 });
 await test.roll();
 if (test.failed) {

@@ -4,7 +4,7 @@ if (
 	args.opposedTest.result.winner === "attacker"
 ) {
 	this.script.scriptMessage(
-		"Everyone within 20 feet loses 1 Wound and makes a <strong>Difficult (-10) Endurance</strong> or gains @Condition[Deafened]",
+		"Каждый, находящийся в радиусе 6 ярдов, получает 1 пункт урона и совершает <strong>трудную (-10) проверку стойкости</strong>, при провале оказываясь @Condition[оглушён]",
 		{ blind: true, whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
 }

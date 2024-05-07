@@ -3,7 +3,7 @@ const test = await this.actor.setupCharacteristic("wp", {
 	appendTitle: ` - ${this.effect.name}`,
 	context: {
 		failure:
-			"<strong>Confused</strong>: Determine behaviour by @Table[bewilder] Table.",
+			"<strong>Сбит с толку</strong>: определите поведение по @Table[bewilder]{таблице}.",
 	},
 });
 await test.roll();

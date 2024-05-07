@@ -12,7 +12,7 @@ if (test.failed) {
 		"system.characteristics.t.modifier": currentModifier - toughnessLost,
 	});
 	this.script.scriptMessage(
-		`<b>${this.actor.prototypeToken.name}</b> lost ${toughnessLost} Toughness`,
+		`<b>${this.actor.prototypeToken.name}</b> теряет ${toughnessLost} выносливости`,
 	);
 	if (this.actor.system.characteristics.t.value <= 0) {
 		this.actor.addCondition("dead");

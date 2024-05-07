@@ -1,1 +1,1 @@
-return args.skill?.name === "Ride (Horse)" && game.combat?.active
+return args.skill?.name === "Верховая езда (лошади)" && game.combat?.active

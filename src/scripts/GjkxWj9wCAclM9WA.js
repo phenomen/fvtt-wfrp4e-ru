@@ -5,9 +5,9 @@ const effects = foundry.utils.deepClone(
 effects.splice(effects.length - 1);
 
 if (effects.length === 0) {
-	return this.script.scriptNotification("All Effects have been used. Reset to select them again")
+	return this.script.scriptNotification("Все эффекты были использованы. Сбросьте, чтобы снова выбрать силу.")
 }
-const choice = await ItemDialog.create(effects, 1, "Choose Power to Gain");
+const choice = await ItemDialog.create(effects, 1, "Выберите получаемую силу");
 
 if (choice[0]) {
 	choice[0].update({ disabled: true });

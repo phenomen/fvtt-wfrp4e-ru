@@ -1,6 +1,6 @@
 if (
 	this.item.name.includes("(") &&
-	this.item.system.tests.value.includes("(Social Group)")
+	this.item.system.tests.value.includes("(социальная группа)")
 ) {
 	let tests = this.item.system.tests.value;
 	const name = this.item.name;

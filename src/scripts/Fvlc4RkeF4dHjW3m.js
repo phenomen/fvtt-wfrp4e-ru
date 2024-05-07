@@ -15,7 +15,7 @@ if (
 					fromEffect: this.effect.id,
 				});
 				ChatMessage.create({
-					content: `Added Unstable to ${this.actor.prototypeToken.name}`,
+					content: `Добавлена нестабильность ${this.actor.prototypeToken.name}`,
 					speaker: { alias: caster.name },
 				});
 			});

@@ -12,33 +12,33 @@ const choice1 = [
 	},
 	{
 		type: "weapon",
-		name: "Bow",
+		name: "Лук",
 	},
 	{
 		type: "ammunition",
-		name: "Arrow",
+		name: "Стрела",
 	},
 ];
 const choice2 = [];
 
 const choice = await Dialog.wait({
-	title: "Option",
+	title: "Опции",
 	content: `<p>
-        Add Option?
+        Добавить опцию?
         </p>
         <ol>
-        <li>Ranged (Bow) +10 and a Bow with 12 Arrows</li>
+        <li>Стрельба (луки) +10 и лук с 12 стрелами</li>
         </ol> 
         `,
 	buttons: {
 		1: {
-			label: "Yes",
+			label: "Да",
 			callback: () => {
 				return choice1;
 			},
 		},
 		2: {
-			label: "No",
+			label: "Нет",
 			callback: () => {
 				choice2;
 			},
@@ -66,7 +66,7 @@ for (const c of choice) {
 			equip(item);
 			items.push(mergeObject(item, c.diff || {}));
 		} else
-			ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+			ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 await this.actor.update(updateObj);

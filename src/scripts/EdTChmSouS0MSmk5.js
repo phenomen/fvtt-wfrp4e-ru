@@ -4,7 +4,7 @@ const test = await this.actor.setupCharacteristic("wp", {
 });
 await test.roll();
 if (test.succeeded) {
-	this.script.scriptMessage("Can perform an Action or Move (choose one)");
+	this.script.scriptMessage("Можно совершить либо действие либо перемещение");
 } else {
-	this.script.scriptMessage("Cannot perform an Action or Move this round");
+	this.script.scriptMessage("Невозможно совершить действие или перемещение в этом раунде");
 }

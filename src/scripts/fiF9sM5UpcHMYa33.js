@@ -1,6 +1,6 @@
 const item = await fromUuid("Compendium.wfrp4e-core.items.vMYEkrWj0ip6ZOdv");
 const data = item.toObject();
-data.name += " (Poison, Disease, Chaos)";
+data.name += " (яды, болезни, Хаос)";
 this.actor.createEmbeddedDocuments(
 	"Item",
 	Array(this.effect.sourceTest.result.overcast.usage.other.current).fill(data),

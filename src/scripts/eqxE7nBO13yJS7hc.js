@@ -1,6 +1,6 @@
 const roll = await new Roll("1d10").roll();
 roll.toMessage({
-	flavor: "Wounds Healed",
+	flavor: "Пунктов здоровья вылечено",
 	speaker: { alias: this.actor.name },
 });
 

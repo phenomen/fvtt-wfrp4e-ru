@@ -1,3 +1,3 @@
-if (args.test.spell.name === "Warp Lightning") {
+if (args.test.spell.name === "Искажающая молния") {
 	args.test.preData.canReverse = true;
 }

@@ -2,8 +2,8 @@ const test = await args.actor.setupSkill(game.i18n.localize("NAME.Cool"), {
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
 	context: {
-		failure: "Gained a Broken Condition",
-		success: "Resisted the Broken Condition",
+		failure: "Впадает в панику",
+		success: "Не поддаётся панике",
 	},
 });
 

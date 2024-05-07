@@ -1,1 +1,1 @@
-return ["Charm Animal", "Endurance", "Выживание"].includes(args.skill?.name)
+return ["Усмирение животных", "Стойкость", "Выживание"].includes(args.skill?.name)
