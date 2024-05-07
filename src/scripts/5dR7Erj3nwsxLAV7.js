@@ -21,16 +21,16 @@ const skills = [
 ];
 const skillAdvancements = [25, 15, 25, 25, 30, 20, 20];
 const talents = [
-	"Combat Aware",
-	"Combat Reflexes",
-	"Feint",
-	"Inspiring",
-	"Luck",
-	"Resolute",
-	"Unshakable",
-	"War Leader",
+	"Бдительность",
+	"Быстрая реакция",
+	"Финт",
+	"Воодушевление",
+	"Фортуна",
+	"Целеустремлённость",
+	"Стреляный боец",
+	"Командир",
 ];
-const trappings = ["Ручное оружие", "Shield"];
+const trappings = ["Ручное оружие", "Щит"];
 const items = [];
 
 const updateObj = this.actor.toObject();
@@ -59,7 +59,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 
@@ -72,7 +72,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${trapping}`, { permanent: true });
 	}
 }
 

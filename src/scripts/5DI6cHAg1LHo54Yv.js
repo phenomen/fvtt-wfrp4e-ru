@@ -10,7 +10,7 @@ if (
 		),
 	});
 	this.script.scriptMessage(
-		`Fortune point stolen from <strong>${this.actor.name}</strong>`,
+		`Пункт удачи похищен у <strong>${this.actor.name}</strong>`,
 		{ blind: true, whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
 }

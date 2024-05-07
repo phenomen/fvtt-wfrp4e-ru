@@ -1,8 +1,8 @@
 if (this.actor.system.status.advantage.value >= 2) {
 	await this.actor.modifyAdvantage(-2);
-	this.script.scriptNotification("Advantage Subtracted");
+	this.script.scriptNotification("Преимущество вычтено");
 } else {
-	return this.script.scriptNotification("Not enough Advantage!", "error")
+	return this.script.scriptNotification("Недостаточно преимуществ!", "error")
 }
 
 const test = await this.actor.setupTrait(this.item);

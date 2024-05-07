@@ -1,19 +1,19 @@
 const etiquette = (
 	await fromUuid("Compendium.wfrp4e-core.items.Item.sYbgpSnRqSZWgwFP")
 ).toObject();
-etiquette.name += " (Followers of Tzeentch)";
+etiquette.name += " (Последователи Тзинча)";
 
 const animosity = (
 	await fromUuid("Compendium.wfrp4e-core.items.Item.0VpT5yubw4UL7j6f")
 ).toObject();
-animosity.system.specification.value = "Followers of Nurgle";
+animosity.system.specification.value = "Последователи Нургла";
 
 const roll = await new Roll("ceil(1d10 / 3)").roll();
 
 roll.toMessage(this.script.getChatData());
 
 const mutations = [];
-let msg = "<p><strong>Mutations Gained</strong></p>";
+let msg = "<p><strong>Мутации получены</strong></p>";
 for (let i = 0; i < roll.total; i++) {
 	let item;
 	let uuid;
@@ -22,13 +22,13 @@ for (let i = 0; i < roll.total; i++) {
 		result = await game.wfrp4e.tables.rollTable(
 			"mutatemental",
 			{ hideDSN: true },
-			"Tzeentch",
+			"Тзинч",
 		);
 	} else {
 		result = await game.wfrp4e.tables.rollTable(
 			"mutatephys",
 			{ hideDSN: true },
-			"Tzeentch",
+			"Тзинч",
 		);
 	}
 	uuid = `Compendium.${result.object.documentCollection}.${result.object.documentId}`;

@@ -6,7 +6,7 @@ await this.actor.addCondition("poisoned", 3);
 await this.actor.modifyWounds(this.actor.system.characteristics.t.bonus);
 
 // and acquires the Regenerate Creature Trait.
-const hasRegenerate = this.actor.has("Regenerate");
+const hasRegenerate = this.actor.has("Регенерация");
 if (hasRegenerate === undefined) {
 	fromUuid("Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR").then((trait) => {
 		const traitItem = trait.toObject();
@@ -17,13 +17,13 @@ if (hasRegenerate === undefined) {
 }
 
 this.script.scriptMessage(
-	`<p><strong>${this.actor.prototypeToken.name}</strong> has 
+	`<p><strong>${this.actor.prototypeToken.name}</strong> получает 
     <ul>
-      <li>gained 3 Poisoned Conditions that cannot be resisted at first</li>
-      <li>recovered ${this.actor.system.characteristics.t.bonus} Wounds</li>
-      <li>acquired the Regenerate Creature Trait.</li>
+      <li>три состояния отравления, которым поначалу невозможно сопротивляться</li>
+      <li>восстановление ${this.actor.system.characteristics.t.bonus} пунктов здоровья</li>
+      <li>черту регенерация.</li>
     </ul>
-    It’s up to Ranald if their regenerating can outpace their poisoning.</p>
-    <p>When all Poisoned Conditions are lost, so too is Regenerate.</p>`,
+    Лишь от Ранальда зависит, опередит ли регенерация отравление.</p>
+    <p>Когда все состояния отравления будут удалены, происходит регенерация.</p>`,
 	{ whisper: ChatMessage.getWhisperRecipients("GM"), blind: true },
 );

@@ -1,15 +1,15 @@
 const useWard = await Dialog.wait({
 	title: this.effect.name,
-	content: `<p>Use Ward provided by <strong>${this.effect.name}</strong>?`,
+	content: `<p>Использовать Оберег, полученный от <strong>${this.effect.name}</strong>?`,
 	buttons: {
 		yes: {
-			label: "Yes",
+			label: "Да",
 			callback: () => {
 				return true;
 			},
 		},
 		no: {
-			label: "No",
+			label: "Нет",
 			callback: () => {
 				return false;
 			},

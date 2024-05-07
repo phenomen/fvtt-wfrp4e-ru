@@ -1,6 +1,6 @@
 args.abort = true;
 this.script.scriptNotification(
-	`Cannot use ${
+	`Не удается использовать ${
 		game.wfrp4e.config.locations[this.effect.getFlag("wfrp4e", "location")]
 	}!`,
 	"error",

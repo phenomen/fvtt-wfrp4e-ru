@@ -1,4 +1,4 @@
-const skill = `Trade (${this.item.parenthesesText})`;
+const skill = `Ремесло (${this.item.parenthesesText})`;
 const currentCareer = this.actor.system.currentCareer;
 const existingSkill = this.actor.itemTypes.skill.find((i) => i.name === skill);
 

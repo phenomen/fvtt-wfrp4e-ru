@@ -12,13 +12,13 @@ const characteristics = {
 };
 const skills = ["Хладнокровие", "Уклонение", "Запугивание", "Лидерство"];
 const skillAdvancements = [15, 15, 10, 5];
-const talents = ["Combat Aware", "Combat Reflexes", "Feint", "Resolute"];
+const talents = ["Бдительность", "Быстрая реакция", "Финт", "Целеустремлённость"];
 const trappings = [
-	"Mail Coat",
-	"Mail Chausses",
-	"Mail Coif",
+	"Кольчуга",
+	"Кольчужные чулки",
+	"Кольчужный капюшон",
 	"Ручное оружие",
-	"Shield",
+	"Щит",
 ];
 const items = [];
 
@@ -48,7 +48,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 
@@ -61,7 +61,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${trapping}`, { permanent: true });
 	}
 }
 

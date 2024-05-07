@@ -4,16 +4,16 @@ if (!currentCareer) {
 }
 
 const talents = [
-	"Aethyric Attunement",
-	"Arcane Magic (Any)",
-	"Chaos Magic (Tzeentch)",
-	"Fast Hands",
-	"Instinctive Diction",
-	"Magical Sense",
-	"Petty Magic",
-	"Second Sight",
-	"War Wizard",
-	"Witch!",
+	"Эфирный унисон",
+	"Школа магии",
+	"Магия Хаоса (Тзинч)",
+	"Быстрые руки",
+	"Безупречная дикция",
+	"Магическое чутье",
+	"Простейшая магия",
+	"Второе зрение",
+	"Боевой маг",
+	"Ведьма!",
 ].filter((t) => !currentCareer.system.talents.includes(t));
 
 currentCareer.system.talents = currentCareer.system.talents.concat(talents);

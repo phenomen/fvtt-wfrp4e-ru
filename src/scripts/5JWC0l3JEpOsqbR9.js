@@ -12,7 +12,7 @@ const characteristics = {
 };
 const skills = ["Уклонение", "Наблюдательность"];
 const skillAdvancements = [10, 10];
-const talents = ["Flee!", "Marksman"];
+const talents = ["Поспешное бегство", "Меткость"];
 const trappings = ["Ручное оружие"];
 const items = [];
 
@@ -42,7 +42,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 
@@ -55,7 +55,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${trapping}`, { permanent: true });
 	}
 }
 

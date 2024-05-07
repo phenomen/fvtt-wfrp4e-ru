@@ -1,7 +1,7 @@
 const choice = await ItemDialog.create(
 	ItemDialog.objectToArray(game.wfrp4e.config.locations),
 	1,
-	"Choose Location",
+	"Выберите зону попадания",
 );
 
 const location = choice[0].id;
