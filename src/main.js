@@ -539,8 +539,9 @@ function translateEffect(item) {
 	}
 
 	if (translation) {
-		item.name =
-			translation.name || translatedExceptions[item.name] || item.name;
+		item.name = translation.name || item.name;
+	} else if (translatedExceptions[item.name]) {
+		item.name = translatedExceptions[item.name];
 	}
 
 	return item;
