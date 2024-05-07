@@ -5,7 +5,7 @@ fromUuid("Compendium.wfrp4e-core.items.5QcrpLQWWrsbKR79").then((item) => {
 		"metal objects",
 	);
 	data.system.description.value +=
-		"<p>This Talent also extends to any metal object because of <strong>Metallic Affinity</strong></p>";
+		"<p>Этот талант также распространяется на любые металлические предметы из-за <strong>сродства металлу</strong></p>";
 	this.actor.createEmbeddedDocuments("Item", [data], {
 		fromEffect: this.effect.id,
 	});

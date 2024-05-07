@@ -5,9 +5,9 @@ const test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {
 });
 await test.roll();
 if (test.failed) {
-	this.script.scriptNotification("Gained a <strong>Festering Wound</strong>");
+	this.script.scriptNotification("Получите <strong>нагноение</strong>");
 	const item = await fromUuid("Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb");
 	this.actor.createEmbeddedDocuments("Item", [item.toObject()]);
 } else {
-	this.script.scriptNotification("Avoided a <strong>Festering Wound</strong>");
+	this.script.scriptNotification("Предотвращено <strong>нагноение</strong>");
 }

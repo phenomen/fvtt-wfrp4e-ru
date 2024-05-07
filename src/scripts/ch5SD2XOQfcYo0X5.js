@@ -5,7 +5,7 @@ const sBonusDiff =
 	args.opposedTest.defenderTest.actor.characteristics.t.bonus -
 	args.opposedTest.attackerTest.actor.characteristics.s.bonus;
 const weapon = args.opposedTest.attackerTest.item;
-if (sBonusDiff > 0 && weapon && weapon.damage.value.includes("SB")) {
+if (sBonusDiff > 0 && weapon && weapon.damage.value.includes("РС")) {
 	args.damage += sBonusDiff;
 	args.breakdown.other.push({ label: this.effect.name, value: sBonusDiff });
 }

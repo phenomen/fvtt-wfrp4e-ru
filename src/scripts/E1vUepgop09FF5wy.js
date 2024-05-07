@@ -1,5 +1,5 @@
 if (this.actor.system.status.advantage.value === 0) {
-	return this.script.scriptNotification("Not enough Advantage!", "error")
+	return this.script.scriptNotification("Не хватает преимуществ!", "error")
 }
 
 const hatred = await fromUuid(
@@ -10,7 +10,7 @@ const frenzy = await fromUuid(
 );
 
 if (this.actor.system.status.advantage.value >= 3) {
-	this.script.scriptNotification(`Adding ${frenzy.name}`);
+	this.script.scriptNotification(`Добавление ${frenzy.name}`);
 	this.actor.setAdvantage(0);
 	this.actor.createEmbeddedDocuments("Item", [frenzy]);
 } else if (this.actor.system.status.advantage.value >= 1) {

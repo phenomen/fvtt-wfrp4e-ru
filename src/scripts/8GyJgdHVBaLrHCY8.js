@@ -1,20 +1,20 @@
 let type = this.item.getFlag("wfrp4e", "breath");
 const types = {
-	none: "None",
-	cold: "Cold",
-	corrosion: "Corrosion",
-	fire: "Fire",
-	electricity: "Electricity",
-	poison: "Poison",
-	smoke: "Smoke",
-	various: "Various",
+	none: "нет",
+	cold: "ледяное",
+	corrosion: "едкое",
+	fire: "огненное",
+	electricity: "электрическое",
+	poison: "ядовитое",
+	smoke: "дымное",
+	various: "варьируется",
 };
 if (!type) {
 	type = (
 		await ItemDialog.create(
 			ItemDialog.objectToArray(types, this.item.img),
 			1,
-			"Choose Breath",
+			"Выберите дыхание",
 		)
 	)[0]?.id;
 	this.item.updateSource({ "flags.wfrp4e.breath": type });

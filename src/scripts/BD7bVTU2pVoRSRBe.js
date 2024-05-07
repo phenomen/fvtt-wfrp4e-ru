@@ -1,9 +1,9 @@
 const symptoms = {
-	convulsions: "Convulsions",
-	coughsandsneezes: "Coughs and Sneezes",
-	fever: "Fever",
-	flux: "Flux",
-	nausea: "Nausea",
+	convulsions: "судороги",
+	coughsandsneezes: "чихание и кашель",
+	fever: "жар",
+	flux: "понос",
+	nausea: "тошнота",
 };
 
 const roll = await new Roll(
@@ -14,7 +14,7 @@ roll.toMessage(this.script.getChatData());
 const choices = await ItemDialog.create(
 	ItemDialog.objectToArray(symptoms),
 	roll.total,
-	"Choose Symptoms",
+	"Выберите симптомы",
 );
 
 if (choices.length) {

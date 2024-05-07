@@ -9,7 +9,7 @@ if (args.totalWoundLoss > 0) {
 	this.script.scriptMessage(
 		`
       <strong>${this.effect.name}</strong>:<br>
-      <strong>${args.actor.name}</strong> has been given a @Condition[Poisoned] Condition, which can be resisted with a <strong>Difficult (-10) Endurance</strong> Test.`,
+      <strong>${args.actor.name}</strong> получает состояние @Condition[отравлен]{отравления}, которому может противостоять с помощью <strong>трудной (-10) проверки стойкости</strong>.`,
 		{ whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
 }

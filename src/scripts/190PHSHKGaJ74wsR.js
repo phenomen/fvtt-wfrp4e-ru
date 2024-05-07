@@ -1,6 +1,6 @@
 if (
 	!this.item.name.includes("(") ||
-	this.item.system.tests.value.includes("Terrain")
+	this.item.system.tests.value.includes("ландшафт")
 ) {
 	let tests = this.item.system.tests.value;
 	let name = this.item.name;
@@ -8,27 +8,27 @@ if (
 	// If name already specifies, make sure tests value reflects that
 	if (name.includes("(")) {
 		const terrain = name.split("(")[1].split(")")[0];
-		tests = tests.replace("the Terrain", terrain);
+		tests = tests.replace("ландшафт", terrain);
 	} // If no sense specified, provide dialog choice
 	else {
 		const choice = await ItemDialog.create(
 			ItemDialog.objectToArray(
 				{
-					coastal: "Coastal",
-					deserts: "Deserts",
-					marshes: "Marshes",
-					rocky: "Rocky",
-					tundra: "Tundra",
-					woodlands: "Woodlands",
+					coastal: "побережья",
+					deserts: "пустыни",
+					marshes: "болота",
+					rocky: "горы",
+					tundra: "тундра",
+					woodlands: "леса",
 				},
 				this.item.img,
 			),
 			1,
-			"Choose Terrain",
+			"Выберите местность",
 		);
 		if (choice[0]) {
 			name = `${name.split("(")[0].trim()} (${choice[0].name})`;
-			tests = tests.replace("the Terrain", `${choice[0].name} Terrain`);
+			tests = tests.replace("ландшафт", `${choice[0].name} Terrain`);
 		}
 	}
 

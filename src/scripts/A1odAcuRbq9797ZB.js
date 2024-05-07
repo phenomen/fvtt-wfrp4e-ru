@@ -26,24 +26,24 @@ const choice2 = [
 ];
 
 const choice = await Dialog.wait({
-	title: "Choice",
+	title: "Выбор",
 	content: `<p>
-    Select your choice
+    Сделайте свой выбор
     </p>
     <ol>
-    <li>Melee (Basic)</li>
-    <li>Melee (Polearm)</li>
+    <li>Рукопашный бой (основное)</li>
+    <li>Рукопашный бой (древковое)</li>
     </ol> 
     `,
 	buttons: {
 		1: {
-			label: "Basic",
+			label: "основное",
 			callback: () => {
 				return choice1;
 			},
 		},
 		2: {
-			label: "Polearm",
+			label: "древковое",
 			callback: () => {
 				return choice2;
 			},
@@ -71,7 +71,7 @@ for (const c of choice) {
 			equip(item);
 			items.push(mergeObject(item, c.diff || {}));
 		} else
-			ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+			ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 await this.actor.update(updateObj);

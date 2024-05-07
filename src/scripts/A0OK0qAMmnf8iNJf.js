@@ -1,6 +1,6 @@
 if (args.test.result.SL < 0) {
 	this.script.scriptMessage(
-		`Gained ${Math.abs(args.test.result.SL)} Corruption points`,
+		`Получено ${Math.abs(args.test.result.SL)} пунктов скверны`,
 		{ whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
 	if (args.test.failed && this.actor.type === "character") {

@@ -1,8 +1,8 @@
 const column = await ValueDialog.create(
-	"Select the column to roll on to determine Beast Head",
-	"Select Column",
+	"Выберите столбец, по которому вы совершите бросок, чтобы определить голову животного",
+	"Выберите столбец",
 	"",
-	["Undivided", "Khorne", "Nurgle", "Slaanesh", "Tzeentch"],
+	["Неделимый", "Кхорн", "Нургл", "Слаанеш", "Тзинч"],
 );
 
 if (column) {

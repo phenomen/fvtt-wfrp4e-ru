@@ -6,7 +6,7 @@ if (
 	if (args.modifiers.ap.value) {
 		args.sureShot = true;
 		args.modifiers.ap.details.push(
-			`${this.effect.name} (Ignore ${this.item.Advances})`,
+			`${this.effect.name} (игнорирует ${this.item.Advances})`,
 		);
 		args.modifiers.ap.ignored += this.item.Advances;
 	}

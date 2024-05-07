@@ -4,7 +4,7 @@ careers.forEach((c) => {
 		c.id = c._id;
 	}
 });
-const choice = await ItemDialog.create(careers, 1, "Choose Double Life Career");
+const choice = await ItemDialog.create(careers, 1, "Выберите вторую карьеру");
 if (choice[0]) {
 	const career = await fromUuid(choice[0].uuid);
 	const data = career.toObject();

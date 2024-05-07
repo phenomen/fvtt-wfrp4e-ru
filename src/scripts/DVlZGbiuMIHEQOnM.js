@@ -5,10 +5,10 @@ if (this.actor.getFlag("wfrp4e", "isAttached")) {
 		this.script.scriptMessage(
 			`<strong>${
 				this.actor.name
-			}</strong> attached to <strong>${this.actor.getFlag(
+			}</strong> прикреплённый к <strong>${this.actor.getFlag(
 				"wfrp4e",
 				"isAttached",
-			)}</strong> gorges and falls off.`,
+			)}</strong> объедается и отпадает.`,
 		);
 		await this.actor.unsetFlag("wfrp4e", "isAttached");
 	}

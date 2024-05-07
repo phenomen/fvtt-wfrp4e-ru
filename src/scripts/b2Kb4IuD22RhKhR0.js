@@ -5,5 +5,5 @@ if (actor) {
 		effectUuids: this.effect.sourceItem.effects.contents[0].uuid,
 	});
 } else {
-	this.script.scriptNotification("No target!", "error");
+	this.script.scriptNotification("Нет цели!", "error");
 }

@@ -9,7 +9,7 @@ this.script.scriptMessage(
 
 const test = await this.actor.setupSkill(game.i18n.localize("NAME.Dodge"), {
 	skipTargets: true,
-	appendTitle: " - Ablaze",
+	appendTitle: " - охвачен огнём",
 });
 
 await test.roll();

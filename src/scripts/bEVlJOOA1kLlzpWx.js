@@ -24,21 +24,21 @@ const skills = [
 ];
 const skillAdvancements = [20, 25, 20, 25, 30, 25, 15, 20, 10, 30];
 const talents = [
-	"Aethyric Attunement",
-	"Arcane Magic",
-	"Instinctive Diction",
-	"Instinctive Diction",
-	"Luck",
-	"Magical Sense",
-	"Menacing",
-	"Petty Magic",
-	"Second Sight",
-	"Sixth Sense",
+	"Эфирный унисон",
+	"Школа магии",
+	"Безупречная дикция",
+	"Безупречная дикция",
+	"Фортуна",
+	"Магическое чутье",
+	"Грозный вид",
+	"Простейшая магия",
+	"Второе зрение",
+	"Шестое чувство",
 ];
 const trappings = [
 	"Ручное оружие",
-	"Quarterstaff",
-	"Ritual Dress incorporating many ingredients and fetishes",
+	"Посох",
+	"Ритуальная одежда, включающая в себя множество ингредиентов и фетишей",
 ];
 const items = [];
 
@@ -68,7 +68,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 

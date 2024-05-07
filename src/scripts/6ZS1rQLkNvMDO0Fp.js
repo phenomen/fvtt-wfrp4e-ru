@@ -6,5 +6,5 @@ if (args.test.isFumble && roll === 1 && !args.test.result.misfire) {
 			args.test.item.Damage,
 	);
 } else if (args.test.isFumble && roll !== 1) {
-	args.test.result.other.push(`Misfire Roll: ${roll}`);
+	args.test.result.other.push(`Бросок взрывной осечки: ${roll}`);
 }

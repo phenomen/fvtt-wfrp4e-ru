@@ -12,7 +12,7 @@ let filters = [
 const petty = await game.wfrp4e.apps.ItemDialog.createFromFilters(
 	filters,
 	6,
-	"Choose 6 Petty Spells",
+	"Выберите 6 простейших заклинаний",
 );
 
 filters = [
@@ -29,7 +29,7 @@ filters = [
 const arcane = await game.wfrp4e.apps.ItemDialog.createFromFilters(
 	filters,
 	9,
-	"Choose 9 Arcane Spells",
+	"Выберите 9 общих заклинаний",
 );
 
 const items = petty.concat(arcane).map((i) => i.toObject());

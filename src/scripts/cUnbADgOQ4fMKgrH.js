@@ -7,11 +7,11 @@ const data = item.toObject();
 if (this.item.name.includes("(")) {
 	group = this.item.parenthesesText;
 } else {
-	group = await ValueDialog.create("Enter Hatred Group", "Hatred Group");
+	group = await ValueDialog.create("Введите ненависть к группе", "Ненависть к группе");
 
 	this.item.updateSource({
 		name: `${this.item.name} (${group})`,
-		"system.tests.value": this.item.system.tests.value.replace("Group", group),
+		"system.tests.value": this.item.system.tests.value.replace("к группе", group),
 	});
 	this.effect.updateSource({ name: `${this.effect.name} (${group})` });
 }

@@ -3,7 +3,7 @@ if (
 ) {
 	// e.g. 'head', rLeg, 'lArm'
 	this.scriptMessage(
-		`Gains a @Condition[Blinded] condition as their <strong>${this.item.name}</strong> was hit`,
+		`Получите состояние @Condition[истекает кровью], когда <strong>${this.item.name}</strong> достигает цели`,
 	);
 	this.actor.addCondition("blinded");
 }

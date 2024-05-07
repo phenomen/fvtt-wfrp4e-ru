@@ -4,7 +4,7 @@ if (
 	args.opposedTest.result.winner === "attacker"
 ) {
 	this.script.scriptMessage(
-		`Emits a cloud of foul-smelling blackpowder. Enable the <strong>Fellowship Penalty</strong> Active Effect on @UUID[${this.actor.uuid}].`,
+		`Испускает облако дурнопахнущего чёрного порошка. Активируйте <strong>штраф харизмы</strong>, воздействующий @UUID[${this.actor.uuid}].`,
 		{ blind: true, whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
 }

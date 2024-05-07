@@ -1,6 +1,6 @@
 if (args.test.result.castOutcome === "failure") {
 	ValueDialog.create(
-		"Enter Wounds Lost to gain SL",
+		"Введите потерянные пункты здоровья, чтобы получить УУ",
 		this.effect.name,
 		"0",
 	).then(async (value) => {

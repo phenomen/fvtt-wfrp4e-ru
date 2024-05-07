@@ -1,20 +1,20 @@
 if (
 	args.opposedTest.attackerTest.item?.isMelee ||
 	(args.opposedTest.attackerTest.item &&
-		!args.opposedTest.attackerTest.item.name.includes("Ranged"))
+		!args.opposedTest.attackerTest.item.name.includes("Стрельба"))
 ) {
 	const choice = await Dialog.wait({
 		title: this.effect.name,
-		content: `<p>Apply damage with <strong>${this.effect.name}</strong> to attacker?`,
+		content: `<p>Нанести урон с помощью <strong>${this.effect.name}</strong> атакующему?`,
 		buttons: {
 			yes: {
-				label: "Yes",
+				label: "Да",
 				callback: () => {
 					return true;
 				},
 			},
 			no: {
-				label: "No",
+				label: "Нет",
 				callback: () => {
 					return false;
 				},

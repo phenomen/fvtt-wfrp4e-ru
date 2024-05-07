@@ -6,7 +6,7 @@ await test.roll();
 
 if (test.succeeded) {
 	if (args.totalWoundLoss <= Number.parseInt(test.result.SL)) {
-		args.abort = `<strong>${this.effect.name}</strong>: Attack deflected and reflected`;
+		args.abort = `<strong>${this.effect.name}</strong>: Атака отклонена и отражена`;
 	}
 	args.modifiers.other.push({
 		label: this.effect.name,

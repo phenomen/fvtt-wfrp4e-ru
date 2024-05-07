@@ -30,14 +30,14 @@ for (const f in flaws) {
 const added = await ItemDialog.create(
 	ItemDialog.objectToArray(qualities),
 	"unlimited",
-	"Choose Qualities to add",
+	"Выберите достоинства для добавления",
 );
 let removed = [];
 if (!foundry.utils.isEmpty(flaws)) {
 	removed = await ItemDialog.create(
 		ItemDialog.objectToArray(flaws),
 		"unlimited",
-		"Choose Flaws to remove",
+		"Выберите изъяны для удаления",
 	);
 }
 

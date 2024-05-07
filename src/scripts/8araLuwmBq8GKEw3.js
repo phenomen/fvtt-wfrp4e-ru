@@ -7,6 +7,6 @@ const APIgnored = args.AP.layers.reduce(
 if (APIgnored) {
 	args.modifiers.ap.ignored += APIgnored;
 	args.modifiers.ap.details.push(
-		`<strong>${this.effect.name}</strong>: Ignore AP with Weakpoints (${APIgnored})`,
+		`<strong>${this.effect.name}</strong>: игнорирует КБ от уязвимых мест (${APIgnored})`,
 	);
 }

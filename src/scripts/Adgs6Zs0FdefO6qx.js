@@ -3,5 +3,5 @@ if (args.test.options.pilot && args.test.result.reversed) {
 		1,
 		Number(args.test.data.result.SL),
 	)}`;
-	args.test.result.other.push(`<b>${this.effect.name}</b>: SL limited to 1`);
+	args.test.result.other.push(`<b>${this.effect.name}</b>: УУ ограничены: 1`);
 }

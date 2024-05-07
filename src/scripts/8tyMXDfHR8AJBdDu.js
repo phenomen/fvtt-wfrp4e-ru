@@ -5,6 +5,6 @@ const weakpointsAP = args.AP.layers
 if (weakpointsAP > 0) {
 	args.modifiers.ap.ignored += weakpointsAP;
 	args.modifiers.ap.details.push(
-		`${this.effect.name} - Ignore Weakpoints (${weakpointsAP})`,
+		`${this.effect.name} - игнорирует уязвимые места (${weakpointsAP})`,
 	);
 }

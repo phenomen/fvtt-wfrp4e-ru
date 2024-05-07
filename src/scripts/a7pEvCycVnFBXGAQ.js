@@ -1,6 +1,6 @@
 const test = await this.actor.setupCharacteristic("i", {
 	skipTargets: true,
-	appendTitle: " - Stunned",
+	appendTitle: " - ошеломление",
 	fields: { difficulty: "easy" },
 });
 await test.roll();

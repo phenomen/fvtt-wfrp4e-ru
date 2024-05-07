@@ -1,12 +1,12 @@
 const strLoss = Math.ceil(CONFIG.Dice.randomUniform() * 10);
 const tghLoss = Math.ceil(CONFIG.Dice.randomUniform() * 10);
 
-if (!this.actor.has("Undead") && !this.actor.has("Daemonic")) {
+if (!this.actor.has("Нежить") && !this.actor.has("Демон")) {
 	this.actor
 		.setupSkill(game.i18n.localize("NAME.Cool"), {
 			appendTitle: ` - ${this.effect.name}`,
 			fields: { difficulty: "average" },
-			context: { failure: `Lost ${strLoss} Strength and ${tghLoss} Toughness` },
+			context: { failure: `Потеря ${strLoss} силы и ${tghLoss} выносливости` },
 		})
 		.then(async (test) => {
 			await test.roll();
@@ -21,6 +21,6 @@ if (!this.actor.has("Undead") && !this.actor.has("Daemonic")) {
 		});
 } else {
 	this.script.scriptNotification(
-		`<strong>${this.actor.name}</strong> is immune to ${this.effect.name}`,
+		`<strong>${this.actor.name}</strong> иммунен к ${this.effect.name}`,
 	);
 }
