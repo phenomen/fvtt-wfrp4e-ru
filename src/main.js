@@ -539,55 +539,9 @@ function translateEffect(item) {
 	}
 
 	if (translation) {
-		item.name = translation.name || item.name;
+		item.name =
+			translation.name || translatedExceptions[item.name] || item.name;
 	}
 
 	return item;
 }
-
-function translateScripts() {
-	// TODO
-	/*
- const translatedScripts = Object.fromEntries(
- 	Object.entries(game.wfrp4e.config.effectScripts).map(
- 		([key, value]) => [key, translateScript(value)],
- 	),
- );
-
- game.wfrp4e.config.effectScripts = translatedScripts;
- */
-}
-
-/*
-function translateScript(script) {
-	const terms = script.match(/"[^"]+"/g);
-
-	if (terms) {
-		const translatedTerms = terms.map((term) => {
-			const item = {
-				name: term,
-			};
-
-			console.log(item.name);
-
-			let translatedTerm = translateSkill(item);
-
-			if (translatedTerm.name === term) {
-				translatedTerm = translateTrait(item);
-			}
-
-			return `${translatedTerm.name}`;
-		});
-
-		let result = script;
-
-		terms.forEach((term, index) => {
-			result = result.replace(term, translatedTerms[index]);
-		});
-
-		return result;
-	}
-
-	return script;
-}
-*/
