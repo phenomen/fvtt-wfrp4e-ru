@@ -43,7 +43,7 @@ function parseCommandLineArgs(): BuildOptions {
 async function buildSource(id: string) {
 	await packScripts();
 
-	await Bun.build({
+	const result = await Bun.build({
 		entrypoints: ["./src/index.js"],
 		format: "esm",
 		outdir: `./${id}`,
@@ -51,14 +51,16 @@ async function buildSource(id: string) {
 		minify: true,
 		splitting: false,
 		sourcemap: "none",
-	}).catch((e) => {
-		console.error(e);
 	});
+
+	if (!result.success) {
+		throw new AggregateError(result.logs, "Build failed");
+	}
 }
 
 async function packScripts() {
 	const scripts = await readdir("./src/scripts");
-	const scriptObj = {};
+	const scriptObj: { [key: string]: string } = {};
 
 	for (const script of scripts) {
 		const text = await Bun.file(`./src/scripts/${script}`).text();
