@@ -9,7 +9,7 @@ if (
 		}
 		args.test.result.outcome = "failure";
 		args.test.result.other.push(
-			`<strong>${this.effect.name}</strong>: Maximum -0 SL`,
+			`<strong>${this.effect.name}</strong>: Максимум -0 УУ`,
 		);
 	}
 }

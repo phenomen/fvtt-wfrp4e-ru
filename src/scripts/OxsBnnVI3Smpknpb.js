@@ -3,5 +3,5 @@ if (
 	!this.actor.sameSideAs(this.effect.sourceActor)
 ) {
 	this.actor.modifyAdvantage(-1);
-	this.script.scriptNotification(`${this.actor.name} loses 1 Advantage`);
+	this.script.scriptNotification(`${this.actor.name} теряет 1 преимущество`);
 }

@@ -4,7 +4,7 @@ if (this.item.system.quantity.value) {
 	const effectData = this.item.effects.contents[0].convertToApplied();
 	const minutes = Math.ceil(CONFIG.Dice.randomUniform() * 10) * 10;
 	effectData.duration.seconds = 60 * minutes;
-	this.script.scriptMessage(`<strong>Duration</strong>: ${minutes} minutes`, {
+	this.script.scriptMessage(`<strong>Длительность</strong>: ${minutes} минут`, {
 		whisper: ChatMessage.getWhisperRecipients("GM"),
 	});
 	actor.applyEffect({ effectData: [effectData] });

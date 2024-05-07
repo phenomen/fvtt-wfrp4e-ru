@@ -1,7 +1,7 @@
 args.applyAP = false;
 
 this.script.scriptNotification(
-	"This test only applies to criminals, otherwise close the dialog.",
+	"Эта проверка применима только к преступникам. В ином случае закройте окно проверки.",
 );
 this.actor
 	.setupSkill(game.i18n.localize("NAME.Endurance"), {

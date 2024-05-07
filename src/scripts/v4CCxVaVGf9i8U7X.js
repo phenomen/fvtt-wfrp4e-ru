@@ -1,10 +1,10 @@
 const cured = await Dialog.wait({
 	title: this.effect.name,
 	content:
-		"<p>Enter the number of diseases/poisons cured</p><input type='number'>",
+		"<p>Введите количество излечённых болезней/ядов</p><input type='number'>",
 	buttons: {
 		confirm: {
-			label: "Confirm",
+			label: "Подтвердить",
 			callback: (dlg) => {
 				const input = dlg.find("input");
 				value = Number.parseInt(input[0].value);

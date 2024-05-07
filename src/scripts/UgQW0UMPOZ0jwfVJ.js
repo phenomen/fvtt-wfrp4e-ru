@@ -5,5 +5,5 @@ this.actor.update({ "system.status.fortune.value": 1 + current });
 this.script.scriptMessage(
 	`<b>${
 		this.actor.prototypeToken.name
-	}</b> fortune points increased from ${current} to ${1 + current}`,
+	}</b> Пункты удачи увеличены с ${current} на ${1 + current}`,
 );

@@ -13,8 +13,8 @@ const test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
 	context: {
-		failure: "Gain a Broken Condition",
-		success: "Avoided Broken Condition",
+		failure: "Впадает в панику",
+		success: "Не подвержен панике",
 	},
 });
 await test.roll();

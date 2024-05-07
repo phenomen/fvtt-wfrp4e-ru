@@ -1,3 +1,3 @@
-if (this.actor.has("Undead") || this.actor.has("Daemonic")) {
+if (this.actor.has("Нежить") || this.actor.has("Демон")) {
 	this.script.scriptNotification(`Cannot enter ${this.effect.name}!`);
 }

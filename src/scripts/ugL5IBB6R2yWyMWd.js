@@ -1,7 +1,7 @@
 if (args.totalWoundLoss > 0) {
 	const apply = await Dialog.confirm({
 		title: this.effect.name,
-		content: `<p>Appy ${this.effect.name} Damage? Attacker must have used bare hands or a melee weapon made of metal.`,
+		content: `<p>Нанести ${this.effect.name} урон? Нападав, должно быть, использовал голые руки или металлическое оружие ближнего боя.`,
 	});
 	if (apply) {
 		let damage = 5 + this.actor.characteristics.wp.bonus;
@@ -24,7 +24,7 @@ if (args.totalWoundLoss > 0) {
 			suppressMsg: true,
 			damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL,
 		});
-		msg += ` (ignored ${metalAP} metal AP on ${game.wfrp4e.config.locations[loc]})`;
+		msg += ` (игнорирует ${metalAP} металлического КБ ${game.wfrp4e.config.locations[loc]})`;
 		this.script.scriptMessage(msg);
 	}
 }

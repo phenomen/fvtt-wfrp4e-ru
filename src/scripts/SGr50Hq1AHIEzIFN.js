@@ -7,7 +7,7 @@ const choice = await ItemDialog.create(
 		this.effect.img,
 	),
 	1,
-	"Choose Characteristic",
+	"Выберите характеристику",
 );
 
 this.effect.updateSource({ "flags.wfrp4e.characteristic": choice[0].id });

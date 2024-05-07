@@ -4,6 +4,6 @@ const location = await game.wfrp4e.tables.rollTable("hitloc", {
 
 this.item.updateSource({ name: `${this.item.name} (${location.description})` });
 this.script.scriptMessage(
-	`<strong>Location:</strong> ${location.description}`,
+	`<strong>Зона попадания:</strong> ${location.description}`,
 	{ whisper: ChatMessage.getWhisperRecipients("GM") },
 );

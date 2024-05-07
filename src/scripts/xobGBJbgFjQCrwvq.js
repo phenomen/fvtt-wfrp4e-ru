@@ -2,7 +2,7 @@ let roll;
 if (
 	this.actor.has(game.i18n.localize("NAME.Daemonic")) ||
 	this.actor.has(game.i18n.localize("NAME.Undead")) ||
-	["Goblin", "Orc", "Undead"].includes(this.actor.system.details.species.value)
+	["Гоблин", "Орк", "Нежить"].includes(this.actor.system.details.species.value)
 ) {
 	roll = await new Roll(
 		`1d10 + ${this.effect.sourceTest.result.overcast.usage.other.current}`,
@@ -17,6 +17,6 @@ await this.actor.applyBasicDamage(roll.total, {
 	suppressMsg: true,
 });
 
-if (this.actor.has("Undead") || args.actor.has("Daemonic")) {
+if (this.actor.has("Нежить") || args.actor.has("Демон")) {
 	this.actor.addCondition("ablaze");
 }

@@ -6,7 +6,7 @@ if (args.test.options.wallcrawler) {
 		}
 		args.test.result.outcome = "success";
 		args.test.result.other.push(
-			`<strong>${this.effect.name}</strong>: Minimum +0 SL`,
+			`<strong>${this.effect.name}</strong>: минимум +0 УУ`,
 		);
 	}
 }

@@ -4,7 +4,7 @@ if (args.test.characteristicKey === "wp") {
 			game.wfrp4e.config.symptomEffects.malaise,
 		]);
 		this.script.scriptMessage(
-			`Willpower Test failed, <b>${this.actor.prototypeToken.name}</b> gains @Condition[Malaise] for [[1d10]] hours`,
+			`Проверка силы воли провалена, <b>${this.actor.prototypeToken.name}</b> получает @Condition[слабость] на [[1d10]] часов`,
 			{ whisper: ChatMessage.getWhisperRecipients("GM") },
 		);
 	}

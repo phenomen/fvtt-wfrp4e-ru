@@ -5,7 +5,7 @@ const skills = this.actor.itemTypes.skill.filter((i) =>
 const skill = await ItemDialog.create(
 	skills,
 	1,
-	"Select the skill used by the weapon",
+	"Выберите навык используемый оружием",
 );
 const group = game.wfrp4e.utility.extractParenthesesText(skill[0]?.name);
 const groupKey = game.wfrp4e.utility.findKey(
@@ -31,5 +31,5 @@ Item.implementation.create(foundry.utils.expandObject(weapon), {
 	fromEffect: this.effect.id,
 });
 this.script.scriptNotification(
-	"Item created. Further customization must be done manually within the Item's sheet",
+	"Объект создан. Дальнейшая настройка должна быть выполнена вручную в листе элемента",
 );

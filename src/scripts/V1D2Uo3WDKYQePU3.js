@@ -16,5 +16,5 @@ let msg = await this.actor.applyBasicDamage(damage, {
 	suppressMsg: true,
 	damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL,
 });
-msg += ` (ignored ${metalAP} metal AP on ${game.wfrp4e.config.locations[loc]})`;
+msg += ` (игнорирует ${metalAP} КБ металлической брони ${game.wfrp4e.config.locations[loc]})`;
 this.script.scriptMessage(msg);

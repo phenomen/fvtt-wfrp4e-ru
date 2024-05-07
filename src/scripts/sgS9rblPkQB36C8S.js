@@ -16,12 +16,12 @@ const index = game.packs
 		return i;
 	});
 
-const choice = await ItemDialog.create(index, 1, "Choose a Trade Skill");
+const choice = await ItemDialog.create(index, 1, "Выберите навык ремесла");
 let text;
 if (!choice[0]) {
 	const custom = await ValueDialog.create(
-		"Enter Custom Trade Skill",
-		"Custom Trade",
+		"Введине навык ремесла",
+		"Специализация ремесла",
 	);
 	text = custom || "";
 } else {
@@ -30,8 +30,8 @@ if (!choice[0]) {
 
 await this.item.updateSource({
 	name: `${this.item.name
-		.replace("(Any)", "")
-		.replace("(any)", "")
+		.replace("(любое)", "")
+		.replace("(любое)", "")
 		.trim()} (${text})`,
 	"system.tests.value": this.item.system.tests.value.replace("any one", text),
 });

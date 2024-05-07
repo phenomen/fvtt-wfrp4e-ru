@@ -1,6 +1,6 @@
 const location = this.item.system.location.key;
 const test = await this.actor.setupCharacteristic("dex", {
-	context: { failure: `<strong>${this.effect.name}</strong>: Drop the item!` },
+	context: { failure: `<strong>${this.effect.name}</strong>: Предмет падает!` },
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
 	fields: { difficulty: "average" },

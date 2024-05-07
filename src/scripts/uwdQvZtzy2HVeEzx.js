@@ -13,7 +13,7 @@ if (args.totalWoundLoss > 0) {
 			await test.roll();
 			if (test.failed) {
 				this.script.scriptMessage(
-					`<strong>${args.actor.name}</strong> takes a @Table[critbody]{Critical Hit} to the torse`,
+					`<strong>${args.actor.name}</strong> получает @Table[critbody]{травму} туловища`,
 					{ whisper: ChatMessage.getWhisperRecipients("GM") },
 				);
 			}

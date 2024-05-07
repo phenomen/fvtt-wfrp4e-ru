@@ -1,4 +1,4 @@
-const talent = this.actor.has("Arcane Magic (Light)", "talent");
+const talent = this.actor.has("Школа магии (Свет)", "talent");
 const demon = this.actor.has(game.i18n.localize("NAME.Daemonic"));
 
 if (!talent) {

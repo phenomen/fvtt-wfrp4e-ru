@@ -12,8 +12,8 @@ const characteristics = {
 };
 const skills = ["Рукопашный бой (основное)", "Выслеживание"];
 const skillAdvancements = [8, 7];
-const talents = ["Berserk Charge", "Careful Strike", "Strike to Injure"];
-const traits = ["Flight (8)", "Fury", "Swarm", "Tracker"];
+const talents = ["Яростный натиск", "Выверенное попадание", "Безжалостный удар"];
+const traits = ["Полёт (8)", "Свирепость", "Скопище", "Следопыт"];
 const trappings = [];
 const items = [];
 const spells = [];
@@ -44,7 +44,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найдено: ${talent}`, { permanent: true });
 	}
 }
 
@@ -61,17 +61,17 @@ for (const trait of traits) {
 		traitItem = await WFRP_Utility.findItem(traitName, "trait");
 	} catch {}
 	if (!traitItem) {
-		ui.notifications.warn(`Could not find ${trait}`, { permanent: true });
+		ui.notifications.warn(`Не найдено: ${trait}`, { permanent: true });
 	}
 	traitItem = traitItem.toObject();
 
 	if (Number.isNumeric(traitVal)) {
 		traitItem.system.specification.value = traitName.includes(
-			"Weapon",
-			"Horns",
-			"Tail",
-			"Tentacles",
-			"Bite",
+			"Оружие",
+			"Рога",
+			"Удар хвостом",
+			"щупалец",
+			"Укус",
 		)
 			? traitVal - Number.parseInt(characteristicValues[3] / 10)
 			: traitVal;
@@ -92,7 +92,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не найдено: ${trapping}`, { permanent: true });
 	}
 }
 
@@ -103,7 +103,7 @@ for (const spell of spells) {
 
 		items.push(spellItem);
 	} else {
-		ui.notifications.warn(`Could not find ${spell}`, { permanent: true });
+		ui.notifications.warn(`Не найдено: ${spell}`, { permanent: true });
 	}
 }
 

@@ -11,7 +11,7 @@ this.actor
 		// they can spend a Fortune Point within the next hour to reverse the dice of any failed Test.
 		if (test.succeeded) {
 			this.script.scriptMessage(
-				`As a result of whatever potential futures they glimpse, <strong>${this.actor.prototypeToken.name}</strong> can spend a Fortune Point within the next hour to reverse the dice of any failed Test.`,
+				`В результате того, что было увидено любое возможное будущее, <strong>${this.actor.prototypeToken.name}</strong> может потратить пункт удачи в течение следующего часа, чтобы перевернуть бросок любой проваленной проверку.`,
 				{
 					whisper: ChatMessage.getWhisperRecipients("GM"),
 					blind: true,
