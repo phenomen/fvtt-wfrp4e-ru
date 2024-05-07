@@ -1,11 +1,11 @@
 this.script.scriptNotification(
-	`Healed ${this.actor.characteristics.t.bonus * 2} Wounds`,
+	`Вылечено ${this.actor.characteristics.t.bonus * 2} пунктов здоровья`,
 );
 await this.actor.modifyWounds(this.actor.characteristics.t.bonus * 2);
 
 const test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {
 	skipTargets: true,
-	appendTitle: " - Side Effects",
+	appendTitle: " - побочные эффекты",
 	fields: { difficulty: "difficult" },
 });
 await test.roll();

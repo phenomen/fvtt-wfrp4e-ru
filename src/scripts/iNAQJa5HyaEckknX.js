@@ -14,7 +14,7 @@ if (opposedResult?.winner === "attacker") {
 		const chosen =
 			spells[Math.floor(CONFIG.Dice.randomUniform() * spells.length)];
 		this.script.scriptMessage(
-			`Loses access to <strong>${chosen.name}</strong>`,
+			`Теряет доступ к <strong>${chosen.name}</strong>`,
 		);
 		chosen.update({ name: (chosen.name += " (LOST)") });
 	}

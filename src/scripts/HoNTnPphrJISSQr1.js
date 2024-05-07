@@ -1,6 +1,6 @@
 ChatMessage.create(
 	{
-		content: "<em>Speak and be known to me</em>",
+		content: "<em>Говори и мне рассказывай</em>",
 		speaker: ChatMessage.getSpeaker({
 			token: this.actor.getActiveTokens()[0]?.document,
 			actor: this.actor,

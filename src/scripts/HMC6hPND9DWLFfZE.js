@@ -14,11 +14,11 @@ const index = game.packs
 		return i;
 	});
 
-const choice = await ItemDialog.create(index, 1, "Choose a Lore");
+const choice = await ItemDialog.create(index, 1, "Выберите знание");
 let text;
 if (!choice[0]) {
 	const custom = await Dialog.wait({
-		title: "Enter Lore",
+		title: "Введите знание",
 		content: "<input type='text'>",
 		buttons: {
 			confirm: {

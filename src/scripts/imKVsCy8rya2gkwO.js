@@ -13,7 +13,7 @@ const duration =
 	10 - Number.parseInt(this.actor.system.characteristics.t.bonus);
 this.effect.updateSource({ "duration.rounds": duration });
 this.script.scriptMessage(
-	`<p><strong>${this.actor.prototypeToken.name}</strong> has lost all alcohol related penalties and gains the Fatigued Condition for ${duration} hours.</p>`,
+	`<p><strong>${this.actor.prototypeToken.name}</strong> теряет все штрафы, полученные от употребления алкоголя, и получает состояние усталости на ${duration} часов.</p>`,
 	{
 		whisper: ChatMessage.getWhisperRecipients("GM"),
 		blind: true,

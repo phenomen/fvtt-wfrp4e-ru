@@ -11,12 +11,12 @@ if (test.failed) {
 		{
 			fields: { difficulty: "easy" },
 			skipTargets: true,
-			appendTitle: " - Despair",
+			appendTitle: " - отчаяние",
 		},
 	);
 	await secondTest.roll();
 	if (secondTest.failed) {
-		this.effect.updateSource({ name: "Taste of Death" });
+		this.effect.updateSource({ name: "Вкус смерти" });
 		await this.actor.addCondition("fatigued");
 	} else {
 		return false;

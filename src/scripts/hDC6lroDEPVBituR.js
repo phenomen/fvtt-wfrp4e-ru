@@ -9,12 +9,12 @@ if (test.failed) {
 		"system.status.corruption.value":
 			Number.parseInt(this.actor.status.corruption.value) + 1,
 	});
-	this.script.scriptMessage("Gained a Corruption point", {
+	this.script.scriptMessage("Получите пункт скверны", {
 		whisper: ChatMessage.getWhisperRecipients("GM"),
 	});
 	if (test.result.roll % 11 === 0 || test.result.roll === 100) {
 		this.script.scriptMessage(
-			"<strong>Fumble</strong>: immediately gain 1 @Table[mutatemental]{Mental Mutation}, and may not take a Short-term Ambition for the next [[1d10]] weeks.",
+			"<strong>Неудача</strong>: немедленно получите 1 @Table[mutatemental]{ментальную мутацию}. Также персонаж не может выполнять краткосрочных целей в течение следующих [[1d10]] недель.",
 			{ whisper: ChatMessage.getWhisperRecipients("GM") },
 		);
 	}

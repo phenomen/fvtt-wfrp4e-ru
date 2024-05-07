@@ -10,4 +10,4 @@ args.attacker.update({
 		args.attacker.status.wounds.value + woundsGained,
 });
 
-this.script.scriptMessage(`Gains ${woundsGained} Wounds`);
+this.script.scriptMessage(`Получите ${woundsGained} пунктов урона`);

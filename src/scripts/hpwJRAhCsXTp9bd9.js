@@ -92,7 +92,7 @@ for (const c of choice) {
 			equip(item);
 			items.push(mergeObject(item, c.diff || {}));
 		} else
-			ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+			ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 await this.actor.update(updateObj);

@@ -5,8 +5,8 @@ if (args.totalWoundLoss >= 1) {
 			skipTargets: true,
 			appendTitle: ` - ${this.effect.name}`,
 			context: {
-				failure: "Gained a Poisoned Condition",
-				success: "Resisted the poison",
+				failure: "Получите состояние отравления",
+				success: "Не поддается яду",
 			},
 		},
 	);

@@ -14,7 +14,7 @@ const items = await Promise.all(
 const choice = await game.wfrp4e.apps.ItemDialog.create(
 	items,
 	1,
-	"Select Wind",
+	"Выберите Ветер",
 );
 //this.actor.createEmbeddedDocuments("Item", items);
 

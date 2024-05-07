@@ -2,7 +2,7 @@ if (
 	args.test.item?.type === "skill" &&
 	args.test.item.name.includes(game.i18n.localize("NAME.Stealth"))
 ) {
-	args.test.result.description = "Astounding Failure";
+	args.test.result.description = "Ужасающий провал";
 	args.test.result.outcome = "failure";
 	ChatMessage.create(
 		{

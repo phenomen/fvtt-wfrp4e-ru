@@ -5,7 +5,7 @@ const choices = await Promise.all([
 let items = await game.wfrp4e.apps.ItemDialog.create(
 	choices,
 	1,
-	"Choose a Skill",
+	"Выберите навык",
 );
 
 items = items.map((i) => i.toObject());

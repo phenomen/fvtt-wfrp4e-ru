@@ -2,7 +2,7 @@ if (this.actor.type !== "character") {
 	return;
 }
 
-const god = await ValueDialog.create("Enter a Deity", "Blessed");
+const god = await ValueDialog.create("Введите божество", "Благословение");
 
 if (god) {
 	const prayers = await game.wfrp4e.utility.findAll(
@@ -18,14 +18,14 @@ if (god) {
 	);
 	if (blessings.length) {
 		this.script.scriptNotification(
-			`Adding ${blessings.map((i) => i.name).join(", ")}`,
+			`Добавление ${blessings.map((i) => i.name).join(", ")}`,
 		);
 		await this.actor.createEmbeddedDocuments("Item", blessings, {
 			fromEffect: this.effect.id,
 		});
 	} else {
 		this.script.scriptNotification(
-			`Could not find any Blessings associated with ${god}.`,
+			`Не обнаружено благословений, связанных с ${god}.`,
 		);
 	}
 	this.item.updateSource({ name: this.item.name.replace("Any", god) });

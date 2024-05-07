@@ -12,8 +12,8 @@ const characteristics = {
 };
 const skills = ["Обаяние", "Запугивание", "Рукопашный бой (основное)"];
 const skillAdvancements = [7, 60, 7];
-const talents = ["Menacing", "Shadow"];
-const traits = ["Distracting"];
+const talents = ["Грозный вид", "Тень"];
+const traits = ["Дезориентация"];
 const trappings = [];
 const items = [];
 const spells = [];
@@ -44,7 +44,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 
@@ -61,17 +61,17 @@ for (const trait of traits) {
 		traitItem = await WFRP_Utility.findItem(traitName, "trait");
 	} catch {}
 	if (!traitItem) {
-		ui.notifications.warn(`Could not find ${trait}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${trait}`, { permanent: true });
 	}
 	traitItem = traitItem.toObject();
 
 	if (Number.isNumeric(traitVal)) {
 		traitItem.system.specification.value = traitName.includes(
-			"Weapon",
-			"Horns",
-			"Tail",
-			"Tentacles",
-			"Bite",
+			"Оружие",
+			"Рога",
+			"Удар хвостом",
+			"Щупалец",
+			"Укус",
 		)
 			? traitVal - Number.parseInt(characteristicValues[3] / 10)
 			: traitVal;
@@ -92,7 +92,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${trapping}`, { permanent: true });
 	}
 }
 
@@ -103,7 +103,7 @@ for (const spell of spells) {
 
 		items.push(spellItem);
 	} else {
-		ui.notifications.warn(`Could not find ${spell}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${spell}`, { permanent: true });
 	}
 }
 
