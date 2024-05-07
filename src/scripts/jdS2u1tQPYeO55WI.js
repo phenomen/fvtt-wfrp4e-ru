@@ -8,7 +8,7 @@ if (type === "cold") {
 if (type === "corrosion") {
 	const damageItems = await Dialog.confirm({
 		title: this.item.name,
-		content: "<p>Damage all Items carried?</p>",
+		content: "<p>Повредить все экипированные предметы?</p>",
 	});
 	if (damageItems) {
 		let msg = "";
@@ -21,15 +21,15 @@ if (type === "corrosion") {
 			} else {
 				await item.system.damageItem(1);
 			}
-			msg += `<p><strong>${item.name}</strong> damage by 1</p>`;
+			msg += `<p><strong>${item.name}</strong> повреждён на 1</p>`;
 		}
 		for (const item of armour) {
 			await item.system.damageItem(1);
-			msg += `<p><strong>${item.name}</strong> damage by 1</p>`;
+			msg += `<p><strong>${item.name}</strong> повреждён на 1</p>`;
 		}
 		for (const item of trappings) {
 			await item.system.damageItem(1);
-			msg += `<p><strong>${item.name}</strong> damage by 1</p>`;
+			msg += `<p><strong>${item.name}</strong> повреждён на 1</p>`;
 		}
 		if (msg) {
 			this.script.scriptMessage(msg, { speaker: { alias: args.actor.name } });

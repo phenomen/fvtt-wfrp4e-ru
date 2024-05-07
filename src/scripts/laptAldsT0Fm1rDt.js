@@ -1,12 +1,12 @@
 const blunt = await Dialog.confirm({
 	label: "test",
-	content: "<p>Apply blunt damage reduction? (-3)</p>",
+	content: "<p>Уменьшить урон тупым предметом? (-3)</p>",
 });
 
 if (blunt) {
 	args.modifiers.other.push({
 		label: this.effect.name,
-		details: "Blunt Damage Reduction",
+		details: "Дробящий урон уменьшен",
 		value: -3,
 	});
 }

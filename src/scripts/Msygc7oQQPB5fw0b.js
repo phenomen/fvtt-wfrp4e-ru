@@ -6,12 +6,12 @@ if (test.failed && (test.result.roll % 11 === 0 || test.result.roll === 100)) {
 		"system.status.corruption.value":
 			this.actor.system.status.corruption.value + points.total,
 	});
-	this.script.scriptMessage(`Gains ${points.total} Corruption`);
+	this.script.scriptMessage(`Получены пункты скверны: ${points.total} `);
 } else {
 	const points = this.effect.sourceTest.result.overcast.usage.other.current;
 	this.actor.update({
 		"system.status.corruption.value":
 			this.actor.system.status.corruption.value - points,
 	});
-	this.script.scriptMessage(`Loses ${points} Corruption`);
+	this.script.scriptMessage(`Потеряны пункты скверны: ${points}`);
 }

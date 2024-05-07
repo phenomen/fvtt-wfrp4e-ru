@@ -14,7 +14,7 @@ spells = spells
 	)
 	.sort((a, b) => (a.system.lore.value > b.system.lore.value ? 1 : -1));
 
-const choice = await ItemDialog.create(spells, 1, "Choose Spell");
+const choice = await ItemDialog.create(spells, 1, "Выберите заклинание");
 if (choice[0]) {
 	this.actor.createEmbeddedDocuments("Item", choice, {
 		fromEffect: this.effect.id,

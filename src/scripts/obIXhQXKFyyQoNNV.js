@@ -7,6 +7,6 @@ this.actor
 		await test.roll();
 		if (test.failed) {
 			this.actor.modifyWounds(-1);
-			this.script.scriptMessage("Takes 1 Damage");
+			this.script.scriptMessage("Получен 1 пункт урона");
 		}
 	});

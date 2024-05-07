@@ -6,6 +6,6 @@ const attackerSize =
 if (attackerSize > actorSize) {
 	args.actor.addCondition("prone");
 	this.script.scriptMessage(
-		`<strong>Tail Attack</strong>: ${args.actor.prototypeToken.name} is now <strong>Prone</strong>`,
+		`<strong>Удар хвостом</strong>: ${args.actor.prototypeToken.name} теперь <strong>сбит с ног</strong>`,
 	);
 }

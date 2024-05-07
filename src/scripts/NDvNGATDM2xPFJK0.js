@@ -6,7 +6,7 @@ teeth = teeth.toObject();
 tongue = tongue.toObject();
 
 const roll = await new Roll("1d10").roll();
-roll.toMessage(this.script.getChatData({ flavor: "Teeth Lost" }));
+roll.toMessage(this.script.getChatData({ flavor: "зубов потеряно" }));
 
 teeth.system.location.value = `${roll.total} ${teeth.system.location.value}`;
 brokenbone.system.location.value = "Jaw";

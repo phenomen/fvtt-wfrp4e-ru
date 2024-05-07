@@ -5,6 +5,6 @@ if (caster) {
 	this.actor.modifyWounds(bonus);
 
 	this.script.scriptMessage(
-		`<strong>${this.actor.prototypeToken.name}</strong> regains ${bonus} Wounds`,
+		`<strong>${this.actor.prototypeToken.name}</strong> регенерирует ${bonus} пунктов здоровья`,
 	);
 }

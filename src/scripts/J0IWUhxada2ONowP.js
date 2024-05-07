@@ -1,1 +1,1 @@
-return args.skill?.name === "Артистизм (пение)" || args.skill?.name === "Артистизм (пение)" || (args.skill?.name.includes("Язык") && (args.skill?.name.includes("Magick") || args.skill?.name.includes("Elthárin") || args.skill?.name.includes("Cathayan")))
+return args.skill?.name === "Артистизм (пение)" || args.skill?.name === "Артистизм (пение)" || (args.skill?.name.includes("Язык") && (args.skill?.name.includes("магический") || args.skill?.name.includes("эльтарин") || args.skill?.name.includes("катайский")))

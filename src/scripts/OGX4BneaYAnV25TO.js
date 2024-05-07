@@ -12,19 +12,19 @@ if (wounds.value > 0) {
 	if (wounds.value > wounds.max) {
 		wounds.value = wounds.max;
 	}
-	message += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;
+	message += `<b>${this.actor.name}</b> восстанавливает пункты здоровья: ${regen}.`;
 
 	if (regen === 10) {
-		message += "<br>Additionally, they regenerate a Critical Wound.";
+		message += "<br>Также персонаж регенерирует травму.";
 	}
 } else if (regen >= 8) {
-	message += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`;
+	message += `<b>${this.actor.name}</b> совершает бросок ${regen} и восстанавливает 1 пункт здоровья.`;
 	wounds.value += 1;
 	if (regen === 10) {
-		message += "<br>Additionally, they regenerate a Critical Wound.";
+		message += "<br>Также персонаж регенерирует травму.";
 	}
 } else {
-	message += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`;
+	message += `<b>${this.actor.name}</b> Бросок регенерации ${regen} - никакого эффекта.`;
 }
 
 await this.actor.update({ "system.status.wounds": wounds });

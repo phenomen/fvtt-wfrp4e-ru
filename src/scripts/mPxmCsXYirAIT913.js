@@ -1,7 +1,7 @@
 const key = await ItemDialog.create(
 	ItemDialog.objectToArray(game.wfrp4e.config.characteristics, this.effect.img),
 	1,
-	"Choose Characteristic",
+	"Выберите характеристику",
 );
 
 this.effect.updateSource({

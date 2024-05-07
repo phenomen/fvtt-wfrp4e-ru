@@ -1,4 +1,4 @@
 if (this.actor.hasCondition("ablaze")) {
-	this.script.scriptNotification("Immune to Ablaze");
+	this.script.scriptNotification("Иммунен к горению");
 	await this.actor.hasCondition("ablaze")?.delete();
 }

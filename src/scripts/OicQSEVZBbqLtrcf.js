@@ -1,11 +1,11 @@
 const choice = await ItemDialog.create(
 	this.actor.itemTypes.critical,
 	this.effect.sourceTest.result.overcast.usage.other.current || 1,
-	"Choose the Critical Wounds to heal (cannot reattach body parts)",
+	"Выберите травму для лечени (невозможно прикрепить отрубленные части тела)",
 );
 
 this.script.scriptMessage(
-	`Healed <strong>${choice.map((i) => i.name).join(", ")}</strong>`,
+	`Вылечено <strong>${choice.map((i) => i.name).join(", ")}</strong>`,
 );
 this.actor.deleteEmbeddedDocuments(
 	"Item",

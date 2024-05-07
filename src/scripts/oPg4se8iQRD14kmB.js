@@ -12,7 +12,7 @@ const filters = [
 let items = await game.wfrp4e.apps.ItemDialog.createFromFilters(
 	filters,
 	1,
-	"Choose an appropriate Polearm or Two-Handed Weapon",
+	"Выберите подходящее древковое или двуручное оружие",
 );
 items = items.map((i) => i.toObject());
 

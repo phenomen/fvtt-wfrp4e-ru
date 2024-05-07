@@ -8,7 +8,7 @@ let acutesense = await fromUuid(
 fear = fear.toObject();
 fear.system.specification.value = 1;
 acutesense = acutesense.toObject();
-acutesense.name += " (Smell)";
+acutesense.name += " (запах)";
 this.actor.createEmbeddedDocuments("Item", [darkvision, fear, acutesense], {
 	fromEffect: this.effect.id,
 });

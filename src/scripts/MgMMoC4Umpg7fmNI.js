@@ -5,9 +5,9 @@ if (args.equipped) {
 		this.item.effects.contents[1]?.convertToApplied(),
 	]);
 	this.script.scriptMessage(
-		`${this.actor.name} dons the <strong>${this.item.name}</strong>. <br>
-      They cannot cast Spells or pray for Blessings and Miracles.<br>
-      If they wear the mask for more than an hour or benefit from any of its effects, they are exposed to @Corruption[moderate]{Moderate Corruption}. 
+		`${this.actor.name} надевает <strong>${this.item.name}</strong>. <br>
+      Персонаж не может творить заклинания или молится, пытаясь совершить благословение или чудо.<br>
+      Если он носит маску более часа или получает пользу от её способностей, то он подвергается @Corruption[moderate]{сильному оскверняющему воздействию}. 
       `,
 		{ whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
@@ -18,7 +18,7 @@ else if (!args.equipped) {
 	await this.item.effects.contents[0].delete();
 	await this.item.update({ name: (this.item.name += " (Used)") });
 	this.script.scriptMessage(
-		`<strong>${this.item.name}</strong> on ${this.actor.name} has been taken off and loses its properties. However, the effects last for [[1d10+4]] days, after which they should be manually removed.`,
+		`<strong>${this.item.name}</strong> была снята ${this.actor.name} и теряет свои свойства. Однако эффекты сохраняются в течение [[1d10+4]] дней, после чего их следует удалить вручную.`,
 		{ whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
 }

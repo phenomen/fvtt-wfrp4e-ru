@@ -10,13 +10,13 @@ const characteristics = {
 	wp: 10,
 	fel: 15,
 };
-const skills = ["Концентрация", "Обаяние", "Perform (Dancing)"];
+const skills = ["Концентрация", "Обаяние", "Сценическое искусство (танец)"];
 const skillAdvancements = [0, 6, 3];
-const talents = ["Attractive", "Distract", "Mimic"];
-const traits = ["Distracting", "Flight (6)", "Spellcaster (Petty)"];
+const talents = ["Привлекательность", "Отвлекающий манёвр", "Имитатор"];
+const traits = ["Дезориентация", "Полёт (6)", "Магический дар (простейшие)"];
 const trappings = [];
 const items = [];
-const spells = ["Marsh Lights", "Sleep"];
+const spells = ["Магические светляки", "Сон"];
 
 const updateObj = this.actor.toObject();
 
@@ -44,7 +44,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 
@@ -61,17 +61,17 @@ for (const trait of traits) {
 		traitItem = await WFRP_Utility.findItem(traitName, "trait");
 	} catch {}
 	if (!traitItem) {
-		ui.notifications.warn(`Could not find ${trait}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${trait}`, { permanent: true });
 	}
 	traitItem = traitItem.toObject();
 
 	if (Number.isNumeric(traitVal)) {
 		traitItem.system.specification.value = traitName.includes(
-			"Weapon",
-			"Horns",
-			"Tail",
-			"Tentacles",
-			"Bite",
+			"Оружие",
+			"Рога",
+			"Удар хвостом",
+			"щупалец",
+			"Укус",
 		)
 			? traitVal - Number.parseInt(characteristicValues[3] / 10)
 			: traitVal;
@@ -92,7 +92,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${trapping}`, { permanent: true });
 	}
 }
 
@@ -103,7 +103,7 @@ for (const spell of spells) {
 
 		items.push(spellItem);
 	} else {
-		ui.notifications.warn(`Could not find ${spell}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${spell}`, { permanent: true });
 	}
 }
 

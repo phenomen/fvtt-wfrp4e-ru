@@ -1,8 +1,8 @@
 if (args.opposedTest.result.winner === "defender") {
 	const roll = Math.ceil(CONFIG.Dice.randomUniform() * 10);
-	let msg = `Rolled ${roll}.`;
+	let msg = `Бросок ${roll}.`;
 	if (roll >= 7) {
-		msg = `Attack hits with an SL of ${roll - 6}.`;
+		msg = `Атакующие удары наносятс с УУ ${roll - 6}.`;
 	}
 	this.script.scriptMessage(msg, {
 		blind: true,

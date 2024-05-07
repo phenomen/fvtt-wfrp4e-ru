@@ -1,1 +1,1 @@
-return args.item?.name === "Play (Lute)"
+return args.item?.name === "Музицирование (лютня)"

@@ -14,7 +14,7 @@ if (this.item.system.protects[args.opposedTest.result.hitloc.value]) {
 			await test.roll();
 			if (test.failed) {
 				this.script.scriptMessage(
-					`${this.actor.name} must break from combat and flee until they pass a <strong>Challenging (+0) Willpower</strong> Test`,
+					`${this.actor.name} должны выйти из боя и бежать, пока не пройдут <strong>сложную (+0) проверку силы воли</strong>`,
 				);
 				this.item.setFlag("wfrp4e", "failedCool", true);
 			}

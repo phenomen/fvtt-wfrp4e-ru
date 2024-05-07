@@ -21,11 +21,11 @@ const skills = [
 	"Наблюдательность",
 ];
 const skillAdvancements = [5, 15, 10, 10, 15, 10, 10, 20];
-const talents = ["Arcane Magic", "Petty Magic", "Second Sight"];
+const talents = ["Школа магии", "Простейшая магия", "Второе зрение"];
 const trappings = [
 	"Ручное оружие",
-	"Quarterstaff",
-	"Ritual Dress incorporating many ingredients and fetishes",
+	"Посох",
+	"Ритуальные одежды с множеством ингредиентов и фетишей",
 ];
 const items = [];
 
@@ -55,7 +55,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найден: ${talent}`, { permanent: true });
 	}
 }
 

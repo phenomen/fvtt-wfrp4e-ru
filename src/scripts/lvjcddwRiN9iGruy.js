@@ -18,15 +18,15 @@ if (test.failed) {
 	const currentAge = Number.parseInt(this.actor.system.details.age.value);
 
 	const inline = `<a class="inline-roll" data-tooltip="@TT"><i class="fas fa-dice-d20"></i>@ROLL</a>`;
-	const msg = `<p><b>${this.actor.prototypeToken.name}</b> ages by ${inline
+	const msg = `<p><b>${this.actor.prototypeToken.name}</b> стареет на ${inline
 		.replace("@ROLL", ageAdded)
-		.replace("@TT", "2d10")} and loses</p>
-      <p>${inline.replace("@ROLL", ws).replace("@TT", "1d10")} <b>Weapon Skill</b></p>
-      <p>${inline.replace("@ROLL", bs).replace("@TT", "1d10")} <b>Ballistic Skill</b></p>
-      <p>${inline.replace("@ROLL", s).replace("@TT", "1d10")} <b>Strength</b></p>
-      <p>${inline.replace("@ROLL", t).replace("@TT", "1d10")} <b>Toughness</b></p>
-      <p>${inline.replace("@ROLL", ag).replace("@TT", "1d10")} <b>Agility</b></p>
-      <p>${inline.replace("@ROLL", dex).replace("@TT", "1d10")} <b>Dexterity</b></p>
+		.replace("@TT", "2d10")} и теряет</p>
+      <p>${inline.replace("@ROLL", ws).replace("@TT", "1d10")} <b>Ближний бой</b></p>
+      <p>${inline.replace("@ROLL", bs).replace("@TT", "1d10")} <b>Дальний бой</b></p>
+      <p>${inline.replace("@ROLL", s).replace("@TT", "1d10")} <b>Сила</b></p>
+      <p>${inline.replace("@ROLL", t).replace("@TT", "1d10")} <b>Выносливость</b></p>
+      <p>${inline.replace("@ROLL", ag).replace("@TT", "1d10")} <b>Проворство</b></p>
+      <p>${inline.replace("@ROLL", dex).replace("@TT", "1d10")} <b>Ловкость</b></p>
  `;
 	this.script.scriptMessage(msg);
 

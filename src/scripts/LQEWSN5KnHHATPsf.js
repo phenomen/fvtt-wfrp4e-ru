@@ -1,6 +1,6 @@
 if (args.totalWoundLoss > 0) {
 	this.script.scriptMessage(
-		`<b>${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Festering Wound}`,
+		`<b>${args.actor.name}</b> должен совершить <b>лёгкую (+40) проверку стойкости</b>, в случае провала получив @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{нагноение}`,
 		{ whisper: ChatMessage.getWhisperRecipients("GM") },
 	);
 }

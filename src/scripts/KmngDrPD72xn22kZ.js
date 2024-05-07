@@ -14,7 +14,7 @@ if (this.actor.Species.toLowerCase() !== "skaven") {
 						this.actor.characteristics.t.initial - toughnessLost,
 				});
 				this.script.scriptMessage(
-					`<b>${this.actor.prototypeToken.name}</b> lost ${toughnessLost} Toughness`,
+					`<b>${this.actor.prototypeToken.name}</b> потерял ${toughnessLost} выносливости`,
 				);
 			}
 		});

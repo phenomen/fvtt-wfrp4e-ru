@@ -13,5 +13,5 @@ args.actor.addCondition("fatigued");
 args.attacker.hasCondition("fatigued")?.delete();
 
 this.script.scriptMessage(
-	`<b>${args.attacker.prototypeToken.name}</b> gains ${woundsGained} Wounds`,
+	`<b>${args.attacker.prototypeToken.name}</b> получает пункты урона: ${woundsGained}`,
 );

@@ -13,8 +13,8 @@ if (
 		fromEffect: this.effect.id,
 	});
 	this.script.scriptNotification(
-		`Removed ${broken.name}, added ${item.name} (${Math.ceil(
+		`Удален ${broken.name}, добавлена ${item.name} на (${Math.ceil(
 			CONFIG.Dice.randomUniform() * 10,
-		)} Rounds)`,
+		)} раундов)`,
 	);
 }

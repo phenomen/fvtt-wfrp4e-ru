@@ -1,24 +1,24 @@
 const specification = this.item.system.specification.value;
 let choice = [];
 
-if (!specification || specification === "Trained Skills") {
+if (!specification || specification === "умение") {
 	choice = await ItemDialog.create(
 		ItemDialog.objectToArray(
 			{
-				broken: "Broken",
-				drive: "Drive",
+				broken: "приручённый",
+				drive: "тяговой",
 				entertain: "Артистизм",
-				fetch: "Fetch",
-				guard: "Guard",
-				home: "Home",
-				magic: "Magic",
-				mount: "Mount",
-				war: "War",
+				fetch: "апорт",
+				guard: "сторожевой",
+				home: "домашний",
+				magic: "приученный к магии",
+				mount: "верховой",
+				war: "боевой",
 			},
 			this.effect.img,
 		),
 		"unlimited",
-		"Choose Training",
+		"Выберите умения",
 	);
 } else {
 	choice = specification.split(", ").map((i) => {
@@ -45,7 +45,7 @@ if (choice.length) {
 
 				if (this.actor.type === "creature") {
 					const bestial = this.actor.itemTypes.trait.find(
-						(i) => i.name === "Bestial",
+						(i) => i.name === "Зверь",
 					);
 					if (bestial) {
 						bestial.update({ "system.disabled": true });
