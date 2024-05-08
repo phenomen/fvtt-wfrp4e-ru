@@ -240,14 +240,6 @@ export const translatedSkillSpec = {
 	Writing: "писательство",
 };
 
-export const translatedSkillExceptions = {
-	"Language (Guilder)": "Язык (гильдейский арго)",
-	"Language (Magick)": "Язык (магический)",
-	"Language (Battle)": "Язык (боевой арго)",
-	"Trade (Engineering)": "Ремесло (инженер)",
-	"Ranged (Engineering)": "Стрельба (инженерное)",
-};
-
 export const translatedTalentSpec = {
 	//"Average": "Средний",
 	Acid: "едкое",
@@ -432,6 +424,7 @@ export const translatedSpecies = {
 	Manticore: "Мантикора",
 	Minotaur: "Минотавр",
 	Ogre: "Огр",
+	Orc: "Орк",
 	Pegasus: "Пегас",
 	Pigeon: "Голубь",
 	Rat: "Крыса",
@@ -631,10 +624,13 @@ export const translatedGods = {
 
 export const translatedExceptions = {
 	"Craftsman (Engineer)": "Умелец (инженер)",
+	Flying: "Полёт",
 	"Language (Battle)": "Язык (боевой арго)",
+	"Language (Guilder)": "Язык (гильдейский арго)",
 	"Language (Magick)": "Язык (магический)",
 	"Lore (Engineer)": "Знание (инженерное дело)",
 	"Ranged (Engineering)": "Стрельба (инженерное)",
 	"Savant (Engineering)": "Кладезь знаний (инженерное дело)",
 	"Trade (Engineer)": "Ремесло (инженер)",
+	"Trade (Engineering)": "Ремесло (инженер)",
 };
