@@ -12,11 +12,11 @@ const characteristics = {
 };
 const skills = ["Обаяние", "Концентрация", "Артистизм (пророчества)", "Интуиция"];
 const skillAdvancements = [0, 0, 20, 10];
-const talents = ["Detect Artefact", "Menacing", "Sixth Sense"];
-const traits = ["Dooming", "Spellcaster (Lore of Life)", "Ward"];
+const talents = ["Распознание артефакта", "Грозный вид", "Шестое чувство"];
+const traits = ["Роковое Пророчество", "Магический дар (школа жизни)", "Оберег"];
 const trappings = [];
 const items = [];
-const spells = ["Forest of Thorns"];
+const spells = ["Лес шипов"];
 
 const updateObj = this.actor.toObject();
 
@@ -44,7 +44,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не обнаружено: ${talent}`, { permanent: true });
 	}
 }
 
@@ -61,17 +61,17 @@ for (const trait of traits) {
 		traitItem = await WFRP_Utility.findItem(traitName, "trait");
 	} catch {}
 	if (!traitItem) {
-		ui.notifications.warn(`Could not find ${trait}`, { permanent: true });
+		ui.notifications.warn(`Не обнаружено: ${trait}`, { permanent: true });
 	}
 	traitItem = traitItem.toObject();
 
 	if (Number.isNumeric(traitVal)) {
 		traitItem.system.specification.value = traitName.includes(
-			"Weapon",
-			"Horns",
-			"Tail",
-			"Tentacles",
-			"Bite",
+			"Оружие",
+			"Рога",
+			"Удар хвостом",
+			"щупалец",
+			"Укус",
 		)
 			? traitVal - Number.parseInt(characteristicValues[3] / 10)
 			: traitVal;
@@ -92,7 +92,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не обнаружено: ${trapping}`, { permanent: true });
 	}
 }
 
@@ -103,7 +103,7 @@ for (const spell of spells) {
 
 		items.push(spellItem);
 	} else {
-		ui.notifications.warn(`Could not find ${spell}`, { permanent: true });
+		ui.notifications.warn(`Не обнаружено: ${spell}`, { permanent: true });
 	}
 }
 

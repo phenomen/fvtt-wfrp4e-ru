@@ -3,5 +3,5 @@ if (
 	args.totalWoundLoss > 0
 ) {
 	args.actor.addCondition("bleeding", 2);
-	this.script.scriptMessage("Gained 2 Bleeding Conditions");
+	this.script.scriptMessage("Истекает кровью 2");
 }

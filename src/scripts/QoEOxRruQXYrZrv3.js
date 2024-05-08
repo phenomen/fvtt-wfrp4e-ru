@@ -13,7 +13,7 @@ const filters = [
 let items = await game.wfrp4e.apps.ItemDialog.createFromFilters(
 	filters,
 	2,
-	"Choose 2 Skills to add +20",
+	"Выберите 2 навыка для добавления +20",
 );
 items = items.map((i) => i.toObject());
 items.forEach((i) => (i.system.advances.value = 20));

@@ -1,7 +1,7 @@
 const criticals = this.actor.itemTypes.critical;
 
 if (criticals.length) {
-	this.script.scriptNotification("Cannot suffer Critical Wounds");
+	this.script.scriptNotification("Не страдает от травм");
 	this.actor.deleteEmbeddedDocuments(
 		"Item",
 		criticals.map((i) => i.id),
@@ -10,6 +10,6 @@ if (criticals.length) {
 
 if (getProperty(args.data, "system.status.wounds.value") === 0) {
 	this.script.scriptNotification(
-		`Dormant for ${Math.ceil(CONFIG.Dice.randomUniform() * 10)} Rounds`,
+		`Бездействует в течение ${Math.ceil(CONFIG.Dice.randomUniform() * 10)} раундов`,
 	);
 }

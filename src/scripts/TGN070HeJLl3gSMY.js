@@ -1,7 +1,7 @@
 const test = await this.actor.setupCharacteristic("ag", {
 	skipTargets: true,
 	appendTitle: ` - ${this.effect.name}`,
-	context: { failure: "Goes Prone" },
+	context: { failure: "Сбит с ног" },
 });
 await test.roll();
 if (test.failed) {

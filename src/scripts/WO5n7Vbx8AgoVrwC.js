@@ -13,7 +13,7 @@ const characteristics = {
 const skills = ["Интуиция", "Знание (местность)", "Наблюдательность"];
 const skillAdvancements = [10, 10, 10];
 const talents = [];
-const trappings = ["Mail Coat", "Mail Chausses", "Mail Coif", "Ручное оружие"];
+const trappings = ["Кольчуга", "Кольчужные чулки", "Кольчужный капюшон", "Ручное оружие"];
 const items = [];
 
 const updateObj = this.actor.toObject();
@@ -42,7 +42,7 @@ for (const talent of talents) {
 	if (talentItem) {
 		items.push(talentItem.toObject());
 	} else {
-		ui.notifications.warn(`Could not find ${talent}`, { permanent: true });
+		ui.notifications.warn(`Не найдено: ${talent}`, { permanent: true });
 	}
 }
 
@@ -55,7 +55,7 @@ for (const trapping of trappings) {
 
 		items.push(trappingItem);
 	} else {
-		ui.notifications.warn(`Could not find ${trapping}`, { permanent: true });
+		ui.notifications.warn(`Не найдено: ${trapping}`, { permanent: true });
 	}
 }
 

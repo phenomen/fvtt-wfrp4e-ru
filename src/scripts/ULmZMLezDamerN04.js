@@ -6,9 +6,9 @@ let lore = (
 this.script.scriptNotification(lore);
 if (lore === "GM's Choice") {
 	return
-} else if (lore === "Arcane Magic") {
+} else if (lore === "Школа магии") {
 	lore = "Arcane";
-} else if (lore === "Petty Magic") {
+} else if (lore === "Простейшая магия") {
 	lore = "petty";
 } else {
 	lore = lore.toLowerCase();

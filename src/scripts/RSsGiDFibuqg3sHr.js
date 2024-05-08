@@ -7,7 +7,7 @@ const diseaseIndex = game.packs
 		return i;
 	});
 
-const choice = await ItemDialog.create(diseaseIndex, 1, "Choose a Disease");
+const choice = await ItemDialog.create(diseaseIndex, 1, "Выберите болезнь");
 
 if (choice[0]) {
 	await this.item.updateSource({

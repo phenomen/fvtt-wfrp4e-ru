@@ -9,14 +9,14 @@ if (args.test.options.healWounds) {
 		}
 		args.test.result.woundsHealed = wounds;
 		args.test.result.other.push(
-			`<b>${this.actor.name}</b> healed <b>${wounds}</b> wounds of the patient.`,
+			`<b>${this.actor.name}</b> вылечил <b>${wounds}</b> пунктов здоровья пациенту.`,
 		);
 	} else if (
 		this.actor.characteristics.int.bonus + Number(args.test.result.SL) <
 		0
 	) {
 		args.test.result.other.push(
-			"The patient contracts a @UUID[Compendium.wfrp4e-core.items.Item.1hQuVFZt9QnnbWzg]{Minor Infection}.",
+			"Пациент заражается @UUID[Compendium.wfrp4e-core.items.Item.1hQuVFZt9QnnbWzg]{лёгкой инфекцией}.",
 		);
 	}
 }

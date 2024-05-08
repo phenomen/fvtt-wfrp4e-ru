@@ -1,7 +1,7 @@
 // After consumption, the user gains the Magic Resistance 3 Creature Trait,
 // reducing the SL of any spell affecting it by 3.
 // This effect lasts for one hour.
-const hasMagicResistance = this.actor.has("Magic Resistance");
+const hasMagicResistance = this.actor.has("Устойчивость к магии");
 
 if (hasMagicResistance === undefined) {
 	fromUuid("Compendium.wfrp4e-core.items.yrkI7ATjqLPDTFmZ").then((trait) => {
@@ -12,7 +12,7 @@ if (hasMagicResistance === undefined) {
 		});
 	});
 	this.script.scriptMessage(
-		`<p><strong>${this.actor.prototypeToken.name}</strong> has gained the Magic Resistance Trait. This effect lasts for one hour.</p>`,
+		`<p><strong>${this.actor.prototypeToken.name}</strong> получает талант 'устойчивость к магии'. Этот эффект сохраняется в течение 1 часа.</p>`,
 		{ whisper: ChatMessage.getWhisperRecipients("GM"), blind: true },
 	);
 }
@@ -21,9 +21,9 @@ if (hasMagicResistance) {
 	// Multiple doses may be consumed at once, with each one adding an additional 1 to the Magic Resistance rating and increasing the duration by one hour.
 	let msg = `<p><strong>${
 		this.actor.prototypeToken.name
-	}</strong> has enhanced their Magic Resistance by 1 to Rating ${Number.parseInt(
+	}</strong> повысил свой уровень устойчивости к магии на 1 до ${Number.parseInt(
 		hasMagicResistance.system.specification.value,
-	)}. This effect lasts for one hour.</p>`;
+	)}. Этот эффект сохраняется в течение 1 часа.</p>`;
 
 	// Resist toxic effect
 	this.actor
@@ -35,8 +35,8 @@ if (hasMagicResistance) {
 
 			// If they fail ...
 			if (!test.succeeded) {
-				msg += `<p>However, they begin to ooze the thick, poisonous slime that coats every Dreadmaw.  They have gained 1 Poisoned Condition now and should continue to receive an additional @Condition[Poisoned] Condition at the end of each of the round.</p>
-      <p>If they are still alive at the end of 10 rounds, the effect ends and all Poisoned Conditions gained from ${this.effect.name} are removed.</p>`;
+				msg += `<p>Однако начинает сочиться густая ядовитая слизь, покрывающая Смертопасти. Они получают 1 состояние отравления и должны продолжить получать дополнительные состояния @Condition[отравлен]{отравления} в конце каждого раунда.</p>
+      <p>Если по истечении 10 раундов они всё ещё живы, эффект заканчивается, а все отравления, полученные из-за ${this.effect.name} удаляются.</p>`;
 				this.actor.addCondition("poisoned", 1);
 			}
 			this.script.scriptMessage(msg, {

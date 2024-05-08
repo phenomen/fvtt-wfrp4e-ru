@@ -17,7 +17,7 @@ if (roll <= 3) {
 	modifier = -5;
 }
 
-message = `${roll} Rolled, gain ${item.name}, ${modifier} Strength`;
+message = `${roll} результат броска, получите ${item.name}, ${modifier} силы`;
 dice.toMessage(this.script.getChatData());
 
 const changes = duplicate(this.effect.changes);

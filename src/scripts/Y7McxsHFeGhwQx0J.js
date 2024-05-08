@@ -2,7 +2,7 @@ this.actor.createEmbeddedDocuments(
 	"Item",
 	[
 		expandObject({
-			name: "Ghostly Flame",
+			name: "Призрачное пламя",
 			type: "weapon",
 			img: this.effect.img,
 			system: {

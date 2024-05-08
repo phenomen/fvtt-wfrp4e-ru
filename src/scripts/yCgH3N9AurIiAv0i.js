@@ -1,6 +1,6 @@
 if (
 	!this.item.name.includes("(") ||
-	this.item.system.tests.value.includes("(Sense)")
+	this.item.system.tests.value.includes("(восприятие)")
 ) {
 	let tests = this.item.system.tests.value;
 	let name = this.item.name;
@@ -14,16 +14,16 @@ if (
 		const choice = await ItemDialog.create(
 			ItemDialog.objectToArray(
 				{
-					taste: "Taste",
-					sight: "Sight",
-					smell: "Smell",
-					hearing: "Hearing",
-					touch: "Touch",
+					taste: "вкус",
+					sight: "зрение",
+					smell: "запах",
+					hearing: "слух",
+					touch: "осязание",
 				},
 				this.item.img,
 			),
 			1,
-			"Choose Sense",
+			"Выберите восприятие",
 		);
 		if (choice[0]) {
 			name = `${name.split("(")[0].trim()} (${choice[0].name})`;

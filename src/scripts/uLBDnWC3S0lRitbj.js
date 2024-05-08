@@ -18,7 +18,7 @@ if (opposedResult?.winner === "attacker") {
 			"system.status.corruption.value":
 				Number.parseInt(this.actor.status.corruption.value) + 1,
 		});
-		this.script.scriptMessage("Gained a Corruption point", {
+		this.script.scriptMessage("Получен пункт скверны", {
 			whisper: ChatMessage.getWhisperRecipients("GM"),
 		});
 	} else {

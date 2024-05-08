@@ -1,16 +1,16 @@
 if (
-	["Minor", "Moderate", "Major"].includes(this.item.system.specification.value)
+	["Слабое", "Сильное", "Мощное"].includes(this.item.system.specification.value)
 ) {
 	return
 }
 
 const choice = await ItemDialog.create(
 	ItemDialog.objectToArray(
-		{ minor: "Minor", moderate: "Moderate", major: "Major" },
+		{ minor: "Слабое", moderate: "Сильное", major: "Мощное" },
 		this.item.img,
 	),
 	1,
-	"Choose Corruption Severity",
+	"Выберите степень осквернения",
 );
 
 this.item.updateSource({ "system.specification.value": choice[0]?.name || "" });

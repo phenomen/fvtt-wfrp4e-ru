@@ -1,8 +1,8 @@
 const choice = await ItemDialog.create(
 	this.actor.itemTypes.disease,
 	1,
-	"Choose a disease to heal (must be naturally occuring)",
+	"Выберите болезнь для лечения (она должна быть естественного происхождения)",
 );
 
-this.script.scriptMessage(`Cured <strong>${choice[0]?.name}</strong>`);
+this.script.scriptMessage(`Вылечен <strong>${choice[0]?.name}</strong>`);
 choice[0].delete();

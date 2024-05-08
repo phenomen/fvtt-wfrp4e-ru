@@ -1,9 +1,9 @@
 const wounds = this.actor.itemTypes.disease.filter(
-	(i) => i.name === "Festering Wound" && i.system.duration.active,
+	(i) => i.name === "Нагноение" && i.system.duration.active,
 );
 let selected;
 if (wounds.length === 0) {
-	return this.script.scriptNotification("No Festering Wounds!");
+	return this.script.scriptNotification("Нет нагноения!");
 } else if (wounds.length === 1) {
 	selected = wounds[0];
 } else if (wounds.length >= 2) {
@@ -23,7 +23,7 @@ if (selected) {
 				"system.duration.value": selected.system.duration.value - SL,
 			});
 			this.script.scriptMessage(
-				`<strong>${selected.name}</strong> duration reduced by ${SL}!`,
+				`<strong>${selected.name}</strong>: продолжительность уменьшена на ${SL}!`,
 			);
 		}
 	}

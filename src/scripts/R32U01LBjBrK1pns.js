@@ -25,10 +25,10 @@ const templateItem = await game.wfrp4e.utility.findItemId(
 );
 
 const bio = `
-        <p><strong>Template</strong>: ${template.text}</p>
-        <p><strong>Phsyical Quirk</strong>: ${physicalQuirk}</p>
-        <p><strong>Work Ethic</strong>: ${workEthic}</p>
-        <p><strong>Personality Quirk</strong>: ${personalityQuirk}</p>
+        <p><strong>Шаблон</strong>: ${template.text}</p>
+        <p><strong>Физические особенности</strong>: ${physicalQuirk}</p>
+        <p><strong>Отношение к работе</strong>: ${workEthic}</p>
+        <p><strong>Особенности личности</strong>: ${personalityQuirk}</p>
         `;
 
 this.script.scriptMessage(bio, {

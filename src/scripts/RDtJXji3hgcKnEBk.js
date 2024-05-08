@@ -11,7 +11,7 @@ const ss = (
 	await fromUuid("Compendium.wfrp4e-core.items.Item.OEjUvJKi0xmBwbS2")
 ).toObject();
 
-as.name += " (Sight)";
+as.name += " (зрение)";
 
 const roll = await new Roll("1d10").roll();
 roll.toMessage(this.script.getChatData());

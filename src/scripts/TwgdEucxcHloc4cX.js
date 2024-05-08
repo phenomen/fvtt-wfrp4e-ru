@@ -1,89 +1,89 @@
 const choice1 = [
 	{
 		type: "armour",
-		name: "Mail Chausses",
+		name: "Кольчужные чулки",
 	},
 	{
 		type: "armour",
-		name: "Mail Coat",
+		name: "Кольчуга",
 	},
 	{
 		type: "armour",
-		name: "Mail Coif",
+		name: "Кольчужный капюшон",
 	},
 ];
 const choice2 = [
 	{
 		type: "armour",
-		name: "Mail Chausses",
+		name: "Кольчужные чулки",
 	},
 	{
 		type: "armour",
-		name: "Mail Coat",
+		name: "Кольчуга",
 	},
 	{
 		type: "armour",
-		name: "Mail Coif",
+		name: "Кольчужный капюшон",
 	},
 	{
 		type: "armour",
-		name: "Leather Leggings",
+		name: "Кожаные штаны",
 	},
 	{
 		type: "armour",
-		name: "Leather Skullcap",
+		name: "Кожаная шапочка",
 	},
 	{
 		type: "armour",
-		name: "Leather Jack",
+		name: "Кожаная куртка",
 	},
 ];
 const choice3 = [
 	{
 		type: "armour",
-		name: "Plate Breastplate",
+		name: "Латная кираса",
 	},
 	{
 		type: "armour",
-		name: "Plate Bracers",
+		name: "Латные наручи",
 	},
 	{
 		type: "armour",
-		name: "Plate Helm",
+		name: "Глухой шлем",
 	},
 	{
 		type: "armour",
-		name: "Plate Leggings",
+		name: "Латные поножи",
 	},
 ];
 
 const choice = await new Promise((resolve, reject) => {
 	new Dialog({
-		title: "Choice",
+		title: "Выберите",
 		content: `<p>
-        Select your choice
+        Сделайте выбор
         </p>
         <ol>
-        <li>Mail</li>
-        <li>Mail & Leather</li>
-        <li>Plate</li>
+        <li>Кольчуга</li>
+        <li>Кольчуга и кожа</li>
+        <li>Латы</li>
         </ol> 
         `,
 		buttons: {
 			1: {
-				label: "Mail",
+				label: "Кольчуга",
 				callback: () => {
 					resolve(choice1);
 				},
 			},
 			2: {
-				label: "Mail & Leather",
+				label: "Кольчуга и кожа",
 				callback: () => {
 					resolve(choice2);
 				},
 			},
 			3: {
-				label: "Plate",
+				label: "Латы",
 				callback: () => {
 					resolve(choice3);
 				},
@@ -112,7 +112,7 @@ for (const c of choice) {
 			equip(item);
 			items.push(mergeObject(item, c.diff || {}));
 		} else
-			ui.notifications.warn(`Could not find ${c.name}`, { permanent: true });
+			ui.notifications.warn(`Не найдено: ${c.name}`, { permanent: true });
 	}
 }
 await this.actor.update(updateObj);

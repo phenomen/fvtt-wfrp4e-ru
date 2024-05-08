@@ -2,7 +2,7 @@ let resistance;
 if (this.item.name.includes("(")) {
 	resistance = this.item.parenthesesText;
 } else {
-	resistance = await ValueDialog.create("Enter Resistance", "Resistance");
+	resistance = await ValueDialog.create("Введите устойчивость", "Устойчивость");
 
 	if (resistance) {
 		this.item.updateSource({ name: `${this.item.name} (${resistance})` });

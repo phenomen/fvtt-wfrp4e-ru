@@ -7,7 +7,7 @@ if (args.test.characteristicKey === "wp") {
 		this.actor.createEmbeddedDocuments("Item", [data]);
 
 		this.script.scriptMessage(
-			`Willpower Test failed, <b>${this.actor.prototypeToken.name}</b> gains @UUID[Compendium.wfrp4e-core.items.AGcJl5rHjkyIQBPP] for [[1d10]] hours`,
+			`Проверка силы воли провалена, <b>${this.actor.prototypeToken.name}</b> получите @UUID[Compendium.wfrp4e-core.items.AGcJl5rHjkyIQBPP] на [[1d10]] часов`,
 		);
 	}
 }

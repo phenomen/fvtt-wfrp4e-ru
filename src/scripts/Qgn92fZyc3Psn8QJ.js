@@ -12,6 +12,6 @@ if (
 			ones + args.test.successBonus + args.test.slBonus
 		}`;
 	args.test.result.other.push(
-		`<b>${this.effect.name}</b>: Used unit dice as SL`,
+		`<b>${this.effect.name}</b>: Использовать единицы на кубах для УУ`,
 	);
 }

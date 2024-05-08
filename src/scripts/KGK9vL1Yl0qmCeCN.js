@@ -7,7 +7,7 @@ if (!specification || specification === "умение") {
 			{
 				broken: "приручённый",
 				drive: "тяговой",
-				entertain: "Артистизм",
+				entertain: "цирковой",
 				fetch: "апорт",
 				guard: "сторожевой",
 				home: "домашний",

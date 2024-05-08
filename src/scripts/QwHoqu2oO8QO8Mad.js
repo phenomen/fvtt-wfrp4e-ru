@@ -1,3 +1,3 @@
-const content = `<b>${this.effect.name}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`;
+const content = `<b>${this.effect.name}</b>: Все цели, пораженные <b>${this.actor.prototypeToken.name}</b> получают [[/r 1d10]] урона, изменяемого РВ и КБ.`;
 
 this.script.scriptMessage(content);

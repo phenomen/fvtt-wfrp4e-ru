@@ -5,4 +5,4 @@ this.actor.update({
 		this.actor.system.status.fortune.value + points,
 });
 
-this.script.scriptMessage(`Gained ${points} Fortune Points`);
+this.script.scriptMessage(`Получены пункты удачи: ${points}`);

@@ -10,6 +10,6 @@ if (!this.actor.items.getName(game.i18n.localize("NAME.Frenzy"))) {
 }
 
 this.script.scriptMessage(
-	`<p><strong>By imbibing this potion, ${this.actor.prototypeToken.name}</strong> has becomes subject to Frenzy. This Frenzy lasts [[1d10]] Rounds, and may not be ended sooner.</p>`,
+	`<p><strong>Выпив это зелье, ${this.actor.prototypeToken.name}</strong> становится объектом ярости. Эта ярость длится [[1d10]] раундов и может нескоро закончится. Rounds, and may not be ended sooner.</p>`,
 	{ whisper: ChatMessage.getWhisperRecipients("GM"), blind: true },
 );

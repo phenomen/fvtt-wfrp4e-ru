@@ -1,5 +1,5 @@
 const ablaze = this.actor.hasCondition("ablaze");
 if (ablaze) {
-	this.script.scriptNotification("Immune to Ablaze");
+	this.script.scriptNotification("Невосприимчив к горению");
 	ablaze.delete();
 }

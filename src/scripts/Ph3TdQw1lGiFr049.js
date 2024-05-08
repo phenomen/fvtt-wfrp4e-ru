@@ -6,7 +6,7 @@ if (
 	["Язык (магический)", "Уклонение"].includes(args.test.item?.name)
 ) {
 	args.test.context.phantasmal = true; // Flag so items aren't readded if test is edited
-	const text = `<strong>${this.effect.name}</strong>: Adding Unstable and  Ward`;
+	const text = `<strong>${this.effect.name}</strong>: Добавлены нестабильность и оберег`;
 	args.test.result.other.push(text);
 	this.script.scriptNotification(text);
 
