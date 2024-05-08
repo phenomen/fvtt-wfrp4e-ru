@@ -26,8 +26,14 @@
 	"relationships": {
 		"requires": [
 			{
+				"id": "wfrp4e",
+				"type": "system",
+				"manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json"
+			},
+			{
 				"id": "ru-ru",
-				"type": "module"
+				"type": "module",
+				"manifest": "https://github.com/phenomen/foundry-vtt-ru/releases/download/latest/module.json"
 			},
 			{
 				"id": "babele",
