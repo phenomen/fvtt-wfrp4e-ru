@@ -424,6 +424,7 @@ export const translatedSpecies = {
 	Manticore: "Мантикора",
 	Minotaur: "Минотавр",
 	Ogre: "Огр",
+	Orc: "Орк",
 	Pegasus: "Пегас",
 	Pigeon: "Голубь",
 	Rat: "Крыса",
