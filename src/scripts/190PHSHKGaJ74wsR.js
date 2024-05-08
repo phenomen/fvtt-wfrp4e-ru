@@ -28,7 +28,7 @@ if (
 		);
 		if (choice[0]) {
 			name = `${name.split("(")[0].trim()} (${choice[0].name})`;
-			tests = tests.replace("ландшафт", `${choice[0].name} Terrain`);
+			tests = tests.replace("ландшафт", `${choice[0].name} ландшафт`);
 		}
 	}
 

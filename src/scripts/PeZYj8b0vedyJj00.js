@@ -5,11 +5,11 @@ if (mainEffect.name.includes("(Lore)")) {
 	const choice = await ItemDialog.create(
 		ItemDialog.objectToArray(game.wfrp4e.config.magicLores, this.item.img),
 		1,
-		"Выберите Знание",
+		"Choose Lore",
 	);
 	if (choice.length) {
 		mainEffect.update({
-			name: mainEffect.name.replace("Знание", choice[0].name),
+			name: mainEffect.name.replace("<Lore>", choice[0].name),
 		});
 		this.item.update({ name: (this.item.name += ` (${choice[0].name})`) });
 	}

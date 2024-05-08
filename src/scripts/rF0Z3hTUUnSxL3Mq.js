@@ -17,7 +17,7 @@ const weapon = (
 	await fromUuid("Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM")
 ).toObject();
 
-armour.name = "Armour (Hide)";
+armour.name = "Броня (шкура)";
 armour.system.specification.value = 2;
 bite.system.specification.value = 3;
 fear.system.specification.value = 2;
@@ -58,8 +58,8 @@ const size = (
 	await fromUuid("Compendium.wfrp4e-core.items.8slW8CJ2oVTxeQ6q")
 ).toObject(); //{Size (Large)}
 
-blessed.system.specification.value = "Ulric";
-size.system.specification.value = "Large";
+blessed.system.specification.value = "Ульрик";
+size.system.specification.value = "большой";
 
 const optional = [
 	belligerent,
@@ -78,11 +78,11 @@ const optional = [
 const chosen = await ItemDialog.create(
 	optional,
 	"unlimited",
-	"Choose Optional Traits",
+	"Выберите опциональные черты",
 );
 
 items = items.concat(chosen || []);
-this.script.scriptNotification(`Adding ${items.map((i) => i.name).join(", ")}`);
+this.script.scriptNotification(`Добавлено ${items.map((i) => i.name).join(", ")}`);
 this.actor.createEmbeddedDocuments("Item", items, {
 	fromEffect: this.effect.id,
 });

@@ -3,9 +3,9 @@ const location = `${
 }Arm`;
 
 if (location === "lArm") {
-	this.script.scriptNotification("Rolled Left");
+	this.script.scriptNotification("Выпала левая");
 } else if (location === "rArm") {
-	this.script.scriptNotification("Rolled Right");
+	this.script.scriptNotification("Выпала правая");
 }
 
 this.effect.updateSource({ "flags.wfrp4e.location": location });
@@ -28,7 +28,7 @@ if (location) {
 const roll = await new Roll("1d10").roll();
 
 roll.toMessage(
-	this.script.getChatData({ flavor: `${this.effect.name} (Duration)` }),
+	this.script.getChatData({ flavor: `${this.effect.name} (длительность)` }),
 );
 
 this.effect.updateSource({ "duration.rounds": roll.total });

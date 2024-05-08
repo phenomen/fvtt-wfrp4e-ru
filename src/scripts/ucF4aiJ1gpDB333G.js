@@ -5,9 +5,9 @@ if (
 	!args.test.result.catfall
 ) {
 	args.test.result.other.push(
-		`<b>${this.effect.name}</b>: Fall distance damage reduced by ${
+		`<b>${this.effect.name}</b>: Урон от падения уменьшен на  ${
 			Number(args.test.result.SL) + 1
-		} yards`,
+		} ярдов`,
 	);
 	args.test.result.catfall = true; // Prevent duplicate messages
 }

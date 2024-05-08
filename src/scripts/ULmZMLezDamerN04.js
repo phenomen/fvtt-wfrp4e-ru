@@ -7,7 +7,7 @@ this.script.scriptNotification(lore);
 if (lore === "GM's Choice") {
 	return
 } else if (lore === "Школа магии") {
-	lore = "Arcane";
+	lore = "arcane";
 } else if (lore === "Простейшая магия") {
 	lore = "petty";
 } else {
