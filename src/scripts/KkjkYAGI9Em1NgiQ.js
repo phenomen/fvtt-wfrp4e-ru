@@ -11,7 +11,7 @@ if (this.item.system.quantity.value) {
 			effectData: [this.item.effects.contents[0].convertToApplied()],
 		});
 	} else {
-		this.script.scriptNotification("Heal Test failed!", "error");
+		this.script.scriptNotification("Проверка лечения провалена", "error");
 	}
 } else {
 	this.script.scriptNotification("None left!", "error");

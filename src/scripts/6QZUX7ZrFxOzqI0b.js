@@ -1,4 +1,4 @@
-const regenerate = this.actor.items.getName("Regenerate");
+const regenerate = this.actor.items.getName("Регенерация");
 
 if (regenerate) {
 	const effect = regenerate.effects.contents[0];
