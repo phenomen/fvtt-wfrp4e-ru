@@ -636,4 +636,5 @@ export const translatedExceptions = {
 	"Savant (Engineering)": "Кладезь знаний (инженерное дело)",
 	"Trade (Engineer)": "Ремесло (инженер)",
 	"Trade (Engineering)": "Ремесло (инженер)",
+	Ward: "Оберег",
 };
