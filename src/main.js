@@ -457,6 +457,10 @@ function translateSpell(item) {
 			god.value = translateValue(god.value, translatedGods);
 		}
 
+		if (Array.isArray(item.effects) && item.effects?.length > 0) {
+			item.effects = translateEffects(item.effects);
+		}
+
 		foundry.utils.mergeObject(item, translation);
 	}
 
@@ -523,7 +527,7 @@ function translateEffects(effects) {
 }
 
 function translateEffect(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent"]);
+	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent", "spell"]);
 
 	let translation;
 
