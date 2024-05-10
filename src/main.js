@@ -24,16 +24,18 @@ import {
 import { loadScripts } from "./scripts.js";
 
 export function initTranslation() {
-	setupBabele();
+	setupBabele("compendium");
 	loadScripts();
 
 	if (typeof Babele !== "undefined") {
+		/*
 		libWrapper.register(
 			"ru-wfrp4e",
 			"Babele.prototype.loadTranslations",
 			patchBabele,
 			"OVERRIDE",
 		);
+		*/
 
 		Babele.get().registerConverters({
 			convertEffects: (effects) => {
