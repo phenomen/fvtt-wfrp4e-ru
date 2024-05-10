@@ -24,16 +24,18 @@ import {
 import { loadScripts } from "./scripts.js";
 
 export function initTranslation() {
-	setupBabele();
+	setupBabele("compendium");
 	loadScripts();
 
 	if (typeof Babele !== "undefined") {
+		/*
 		libWrapper.register(
 			"ru-wfrp4e",
 			"Babele.prototype.loadTranslations",
 			patchBabele,
 			"OVERRIDE",
 		);
+		*/
 
 		Babele.get().registerConverters({
 			convertEffects: (effects) => {
@@ -198,7 +200,7 @@ async function patchBabele(wrapped, ...args) {
 					`Babele | translation for ${collection} pack successfully loaded`,
 				);
 				allTranslations.push(
-					mergeObject(translation, { collection: collection }),
+					foundry.utils.mergeObject(translation, { collection: collection }),
 				);
 			}
 		}
@@ -275,7 +277,7 @@ async function getTranslationsFiles() {
 	return files;
 }
 
-function translateItem(name, type, pack, specs) {
+function translateDocument(name, type, pack, specs) {
 	let translation = game.babele.translate(
 		pack,
 		{ name: name, type: type },
@@ -311,7 +313,7 @@ function translateSkill(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateItem(
+		translation = translateDocument(
 			item.name,
 			"skill",
 			pack.metadata.id,
@@ -338,7 +340,7 @@ function translateTrait(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateItem(
+		translation = translateDocument(
 			item.name,
 			item.type,
 			pack.metadata.id,
@@ -376,7 +378,7 @@ function translateCareer(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateItem(
+		translation = translateDocument(
 			item.name,
 			"career",
 			pack.metadata.id,
@@ -424,7 +426,7 @@ function translateSpell(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateItem(
+		translation = translateDocument(
 			item.name,
 			item.type,
 			pack.metadata.id,
@@ -476,7 +478,7 @@ function translateTrapping(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateItem(
+		translation = translateDocument(
 			item.name,
 			item.type,
 			pack.metadata.id,
@@ -508,7 +510,7 @@ function translateCareerItems(list, type, specs) {
 		let translation;
 
 		for (const pack of packs) {
-			translation = translateItem(item, type, pack.metadata.id, specs);
+			translation = translateDocument(item, type, pack.metadata.id, specs);
 
 			if (translation?.system) break;
 		}
@@ -532,7 +534,7 @@ function translateEffect(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateItem(
+		translation = translateDocument(
 			item.name,
 			"effect",
 			pack.metadata.id,
