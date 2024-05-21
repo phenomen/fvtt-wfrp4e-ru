@@ -1,10 +1,7 @@
-const test = await this.actor.setupCharacteristic("i", {
-	skipTargets: true,
-	appendTitle: " - ошеломление",
-	fields: { difficulty: "easy" },
-});
+let test = await this.actor.setupCharacteristic("i", {skipTargets: true, appendTitle :  " - ошеломление", fields : {difficulty : "easy"}})
 await test.roll();
 
-if (!test.succeeded) {
+if (!test.succeeded)
+{
 	this.actor.addCondition("stunned");
 }

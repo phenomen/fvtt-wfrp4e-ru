@@ -1,6 +1,6 @@
 # Перевод WFRP4e для Foundry VTT
 
-![](https://img.shields.io/badge/версия_модуля-v1.0.17-blue)
+![](https://img.shields.io/badge/версия_модуля-v1.0.19-blue)
 ![](https://img.shields.io/badge/требуется_FVTT-v11-orange)
 ![](https://img.shields.io/badge/поддерживается_FVTT-v12-green)
 
