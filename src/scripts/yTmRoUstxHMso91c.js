@@ -1,4 +1,4 @@
-if (args.item.name === "Устойчивость к магии" && args.item.type === "trait") {
-	args.item.system.specification.value =
-		Number(args.item.system.specification.value) + 1;
+if (args.item.name == game.i18n.localize("NAME.MagicResistanceTrait") && args.item.type == "trait")
+{
+    args.item.system.specification.value = Number(args.item.system.specification.value) + 1
 }

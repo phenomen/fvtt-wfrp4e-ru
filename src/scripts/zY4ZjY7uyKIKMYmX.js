@@ -1,13 +1,8 @@
-this.script.scriptMessage(
-	await game.wfrp4e.tables.formatChatRoll("fleshy-curse"),
-);
+this.script.message(await game.wfrp4e.tables.formatChatRoll("fleshy-curse"))
 
-const test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {
-	skipTargets: true,
-	appendTitle: ` - ${this.effect.name}`,
-	fields: { difficulty: "hard" },
-});
+let test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {skipTargets: true, appendTitle :  ` - ${this.effect.name}`, fields : {difficulty : "hard"}})
 await test.roll();
-if (test.succeeded) {
-	this.effect.delete();
+if (test.succeeded)
+{
+    this.effect.delete()
 }

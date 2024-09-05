@@ -1,2 +1,2 @@
-this.script.scriptNotification("Используемый эффект");
+this.script.notification("Effect Used");
 this.effect.delete();

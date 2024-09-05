@@ -1,4 +1,5 @@
-for (const e of this.item.effects.contents) {
-	e.update({ disabled: false });
+for(let e of this.item.effects.contents)
+{
+    e.update({disabled: false})
 }
-this.script.scriptNotification("Сбросьте силы");
+this.script.notification("Reset Powers")

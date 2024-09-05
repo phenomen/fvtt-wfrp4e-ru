@@ -1,4 +1,5 @@
-if (args.options.terror || args.extendedTest?.getFlag("wfrp4e", "fear")) {
+if (args.options.terror || args.extendedTest?.getFlag("wfrp4e", "fear"))
+{
 	args.abort = true;
-	this.script.scriptNotification("Нет необходимости провдить проверки на страх или ужас");
+	this.script.notification("Does not need to make Fear or Terror tests");
 }

@@ -1,5 +1,6 @@
-if (args.options.dodge) {
+if (args.options.dodge)
+{
 	args.abort = true;
-	this.script.scriptNotification("Нельзя уклониться!");
+	this.script.notification("Cannot Dodge!")
 }
 return ["t", "int", "wp", "fel"].includes(args.characteristic)

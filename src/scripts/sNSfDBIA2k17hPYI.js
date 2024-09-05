@@ -1,5 +1,6 @@
-const ablaze = this.actor.hasCondition("ablaze");
-if (ablaze) {
+let ablaze = this.actor.hasCondition("ablaze");
+if (ablaze)
+{
 	ablaze?.delete();
-	this.script.scriptNotification("Игнорирует горение");
+	this.script.notification("Ignore Ablaze");
 }

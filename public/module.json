@@ -15,10 +15,10 @@
 			"discord": "mrak_x"
 		}
 	],
-	"version": "1.0.19",
+	"version": "8.0.1",
 	"compatibility": {
 		"minimum": "11",
-		"verified": "11",
+		"verified": "12",
 		"maximum": "12"
 	},
 	"esmodules": ["index.js"],

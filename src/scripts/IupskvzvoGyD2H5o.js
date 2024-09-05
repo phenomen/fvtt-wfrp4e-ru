@@ -1,33 +1,23 @@
-if (this.actor.type !== "character") {
-	return;
+if (this.actor.type != "character")
+{
+    return;
 }
 
-const god = await ValueDialog.create("Введите божество", "Благословение");
+let god = await ValueDialog.create("Enter a Deity", "Blessed")
 
-if (god) {
-	const prayers = await game.wfrp4e.utility.findAll(
-		"prayer",
-		"Loading Prayers",
-	);
-	const blessings = prayers.filter(
-		(p) =>
-			p.system.god.value
-				.split(",")
-				.map((i) => i.trim().toLowerCase())
-				.includes(god.toLowerCase()) && p.system.type.value === "blessing",
-	);
-	if (blessings.length) {
-		this.script.scriptNotification(
-			`Добавление ${blessings.map((i) => i.name).join(", ")}`,
-		);
-		await this.actor.createEmbeddedDocuments("Item", blessings, {
-			fromEffect: this.effect.id,
-		});
-	} else {
-		this.script.scriptNotification(
-			`Не обнаружено благословений, связанных с ${god}.`,
-		);
-	}
-	this.item.updateSource({ name: this.item.name.replace("Any", god) });
-	await this.actor.update({ "system.details.god.value": god });
+if (god)
+{
+    let prayers = await warhammer.utility.findAllItems("prayer", "Loading Prayers")
+    let blessings = prayers.filter(p => p.system.god.value.split(",").map(i => i.trim().toLowerCase()).includes(god.toLowerCase()) && p.system.type.value == "blessing")
+    if (blessings.length)
+    {
+        this.script.notification("Adding " + blessings.map(i => i.name).join(", "))
+        await this.actor.createEmbeddedDocuments("Item", blessings, {fromEffect : this.effect.id})
+    }
+    else 
+    {
+        this.script.notification(`Could not find any Blessings associated with ${god}.`)
+    }
+    this.item.updateSource({name : this.item.name.replace("Any", god)})
+    await this.actor.update({"system.details.god.value": god})
 }

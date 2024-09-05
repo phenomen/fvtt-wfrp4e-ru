@@ -1,14 +1,18 @@
-const table = game.wfrp4e.tables.findTable("mutatemental");
-if (!table) {
-	ui.notifications.error("Не удаётся найти таблицу с ключом: mutatemental");
+let table = game.wfrp4e.tables.findTable("mutatemental");
+if (!table)
+{
+	ui.notifications.error("Cannot find table with key: mutatemental")
 }
-const result = (await table.roll()).results[0];
-const uuid = `Compendium.${result.documentCollection}.${result.documentId}`;
-const item = await fromUuid(uuid);
+let result = (await table.roll()).results[0];
+let uuid = `Compendium.${result.documentCollection}.${result.documentId}`
+let item = await fromUuid(uuid);
 
-if (item) {
-	this.script.scriptNotification(`${item.name} added`);
-	this.actor.createEmbeddedDocuments("Item", [item]);
-} else {
-	ui.notifications.error(`Объект не обнаружен: ${uuid}`);
+if (item)
+{
+    this.script.notification(`${item.name} added`)
+    this.actor.createEmbeddedDocuments("Item", [item])
+}
+else 
+{
+    ui.notifications.error("Item could not be found: " + uuid)
 }

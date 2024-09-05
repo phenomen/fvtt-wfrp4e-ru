@@ -1,9 +1,10 @@
-const fatigued = this.actor.hasCondition("fatigued");
-if (fatigued) {
-	this.script.scriptNotification(
-		`Удалить ${fatigued.conditionValue} состояний усталости`,
-	);
-	fatigued.delete();
-} else {
-	this.script.scriptNotification("Нет состояний усталости");
+let fatigued = this.actor.hasCondition("fatigued")
+if (fatigued)
+{
+   this.script.notification(`Cleared ${fatigued.conditionValue} Fatigued Conditions`)
+   fatigued.delete();  
+}
+else 
+{
+	this.script.notification(`No Fatigued Conditions`)
 }

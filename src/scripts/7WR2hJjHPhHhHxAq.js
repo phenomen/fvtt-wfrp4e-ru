@@ -1,7 +1,8 @@
-const poisoned = args.actor.hasCondition("poisoned");
-if (poisoned) {
-	this.script.scriptNotification(
-		`Удалите ${poisoned.conditionValue} состояний отравления`,
-	);
-	poisoned.delete();
-} else this.script.scriptNotification("No Poisoned Conditions");
+let poisoned = args.actor.hasCondition("poisoned")
+if (poisoned)
+{
+   this.script.notification(`Removed ${poisoned.conditionValue} Poisoned Conditions`)
+   poisoned.delete();  
+}
+else
+  this.script.notification(`No Poisoned Conditions`)

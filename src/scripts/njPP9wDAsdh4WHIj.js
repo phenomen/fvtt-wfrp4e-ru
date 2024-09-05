@@ -1,9 +1,4 @@
-if (
-	args.totalWoundLoss > 0 &&
-	["trait", "weapon"].includes(args.opposedTest.attackerTest.item?.type)
-) {
-	this.script.scriptMessage(
-		`<b>Заразный: ${args.actor.name}</b> должен совершить <b>лёгкую (+40) проверку стойкости</b>, в случае провала получая @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{нагноение}`,
-		{ whisper: ChatMessage.getWhisperRecipients("GM") },
-	);
+if (args.totalWoundLoss > 0 && ["trait", "weapon"].includes(args.opposedTest.attackerTest.item?.type))
+{
+     this.script.message(`<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Festering Wound}`, {whisper: ChatMessage.getWhisperRecipients("GM")})
 }

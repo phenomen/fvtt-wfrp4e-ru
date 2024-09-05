@@ -1,9 +1,7 @@
-const test = await this.actor.setupSkill("Уклонение", {
-	skipTargets: true,
-	appendTitle: ` - ${this.effect.name}`,
-});
+let test = await this.actor.setupSkill(game.i18n.localize("NAME.Dodge"), {skipTargets: true, appendTitle :  ` - ${this.effect.name}`});
 await test.roll();
 
-if (test.failed) {
-	await this.actor.addCondition("grappling");
+if (test.failed)
+{
+   await this.actor.addCondition("grappling")
 }

@@ -1,13 +1,14 @@
-if (this.item.system.specification.value === "Size") {
-	const choice = await ItemDialog.create(
-		ItemDialog.objectToArray(game.wfrp4e.config.actorSizes, this.item.img),
-		1,
-		"Выберите размер",
-	);
-	if (choice[0]) {
-		this.item.updateSource({ "system.specification.value": choice[0].name });
-		this.effect.updateSource({
-			name: `${this.effect.name} (${choice[0].name})`,
-		});
-	}
+if (this.item.system.specification.value == "Size")
+{
+    let size = this.item.specifier;
+    if (!size)
+    {
+        let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.actorSizes, this.item.img), 1, "Choose Size");
+        if (choice[0])
+        {
+            size = choice[0]?.name;
+        }
+    }
+    this.item.updateSource({"system.specification.value" : size, name : this.item.baseName})
+    this.effect.updateSource({name : this.effect.name + ` (${size})`})
 }

@@ -1,12 +1,21 @@
-const skill = "Артистизм (пение)";
-const currentCareer = this.actor.system.currentCareer;
-const existingSkill = this.actor.itemTypes.skill.find((i) => i.name === skill);
+let skill = `${game.i18n.localize("NAME.Entertain")} (${game.i18n.localize("SPEC.Singing")})`;
+let currentCareer = this.actor.system.currentCareer;
+let existingSkill = this.actor.itemTypes.skill.find(i => i.name == skill);
 
 if (!currentCareer) return
 
-const inCurrentCareer = currentCareer.system.skills.includes(skill);
-if (existingSkill && inCurrentCareer) {
+
+let inCurrentCareer = currentCareer.system.skills.includes(skill);
+let perfectPitchAdded = this.actor.getFlag("wfrp4e", "perfectPitchAdded") || {};
+if (existingSkill && inCurrentCareer && !perfectPitchAdded[existingSkill.name])
+{
 	existingSkill.system.advances.costModifier = -5;
-} else {
-	currentCareer.system.skills.push(skill);
 }
+else 
+{
+	perfectPitchAdded[skill] = true;
+	currentCareer.system.skills.push(skill);
+	foundry.utils.setProperty(this.actor, "flags.wfrp4e.perfectPitchAdded", perfectPitchAdded)
+}
+
+

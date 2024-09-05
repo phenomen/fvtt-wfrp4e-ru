@@ -1,9 +1,3 @@
-const fatigued = args.actor.hasCondition("fatigued");
+let fatigued = args.actor.hasCondition("fatigued")
 if (fatigued)
-	setProperty(
-		fatigued,
-		"flags.wfrp4e.scriptData",
-		getProperty(fatigued, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(fatigued, "flags.wfrp4e.scriptData", foundry.utils.getProperty(fatigued, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))

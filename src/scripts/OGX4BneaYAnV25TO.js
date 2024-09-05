@@ -1,33 +1,40 @@
-const chatData = { whisper: ChatMessage.getWhisperRecipients("GM") };
-let message = "";
+let chatData = { whisper: ChatMessage.getWhisperRecipients("GM") }
+let message = ""
 
-const wounds = duplicate(this.actor.status.wounds);
-const regenRoll = await new Roll("1d10").roll();
-const regen = regenRoll.total;
+let wounds = foundry.utils.duplicate(this.actor.status.wounds)
+let regenRoll = await new Roll("1d10").roll();
+let regen = regenRoll.total;
 
-if (wounds.value >= wounds.max) return
+if (wounds.value >= wounds.max)
+    return
 
-if (wounds.value > 0) {
-	wounds.value += regen;
-	if (wounds.value > wounds.max) {
-		wounds.value = wounds.max;
-	}
-	message += `<b>${this.actor.name}</b> восстанавливает пункты здоровья: ${regen}.`;
+if (wounds.value > 0) 
+{
+    wounds.value += regen
+    if (wounds.value > wounds.max)
+    {
+        wounds.value = wounds.max
+    }
+    message += `<b>${this.actor.name}</b> regains ${regen} Wounds.`
 
-	if (regen === 10) {
-		message += "<br>Также персонаж регенерирует травму.";
-	}
-} else if (regen >= 8) {
-	message += `<b>${this.actor.name}</b> совершает бросок ${regen} и восстанавливает 1 пункт здоровья.`;
-	wounds.value += 1;
-	if (regen === 10) {
-		message += "<br>Также персонаж регенерирует травму.";
-	}
-} else {
-	message += `<b>${this.actor.name}</b> Бросок регенерации ${regen} - никакого эффекта.`;
+    if (regen == 10)
+    {
+        message += `<br>Additionally, they regenerate a Critical Wound.`
+    }
+}
+else if (regen >= 8) 
+{
+    message += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`
+    wounds.value += 1
+    if (regen == 10)
+    {
+        message += `<br>Additionally, they regenerate a Critical Wound.`
+    }
+}
+else 
+{
+    message += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`
 }
 
-await this.actor.update({ "system.status.wounds": wounds });
-this.script.scriptMessage(message, {
-	whisper: ChatMessage.getWhisperRecipients("GM"),
-});
+await this.actor.update({ "system.status.wounds": wounds })
+this.script.message(message, { whisper: ChatMessage.getWhisperRecipients("GM") })

@@ -1,10 +1,9 @@
-const caster = this.effect.sourceActor;
+let caster = this.effect.sourceActor
 
-if (caster) {
-	const bonus = caster.system.characteristics.wp.bonus;
-	this.actor.modifyWounds(bonus);
+if (caster)
+{
+    let bonus = caster.system.characteristics.wp.bonus
+    this.actor.modifyWounds(bonus)
 
-	this.script.scriptMessage(
-		`<strong>${this.actor.prototypeToken.name}</strong> регенерирует ${bonus} пунктов здоровья`,
-	);
+    this.script.message(`<strong>${this.actor.prototypeToken.name}</strong> regains ${bonus} Wounds`)
 }

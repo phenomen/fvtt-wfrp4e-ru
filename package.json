@@ -5,15 +5,15 @@
 		"compile": "bun index.ts --id ru-wfrp4e",
 		"release": "bun format && bun index.ts --id ru-wfrp4e --bump patch",
 		"format:check": "bun biome check .",
-		"format": "bun biome check --apply ."
+		"format": "bun biome check --write ."
 	},
 	"type": "module",
 	"peerDependencies": {
-		"typescript": "^5.4.3"
+		"typescript": "^5.4.5"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.7.3",
-		"@types/bun": "^1.1.2"
+		"@biomejs/biome": "^1.8.3",
+		"@types/bun": "^1.1.8"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

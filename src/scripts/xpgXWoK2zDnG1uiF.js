@@ -1,79 +1,31 @@
-const stunned = args.actor.hasCondition("stunned");
+let stunned = args.actor.hasCondition("stunned")
 if (stunned)
-	setProperty(
-		stunned,
-		"flags.wfrp4e.scriptData",
-		getProperty(stunned, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+   foundry.utils.setProperty(stunned, "flags.wfrp4e.scriptData", foundry.utils.getProperty(stunned, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))
 
-const poisoned = args.actor.hasCondition("poisoned");
+let poisoned= args.actor.hasCondition("poisoned")
 if (poisoned)
-	setProperty(
-		poisoned,
-		"flags.wfrp4e.scriptData",
-		getProperty(poisoned, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(poisoned, "flags.wfrp4e.scriptData", foundry.utils.getProperty(poisoned, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))
 
-const deafened = args.actor.hasCondition("deafened");
+let deafened = args.actor.hasCondition("deafened")
 if (deafened)
-	setProperty(
-		deafened,
-		"flags.wfrp4e.scriptData",
-		getProperty(deafened, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(deafened, "flags.wfrp4e.scriptData", foundry.utils.getProperty(deafened, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))
 
-const entangled = args.actor.hasCondition("entangled");
+let entangled = args.actor.hasCondition("entangled")
 if (entangled)
-	setProperty(
-		entangled,
-		"flags.wfrp4e.scriptData",
-		getProperty(entangled, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(entangled, "flags.wfrp4e.scriptData", foundry.utils.getProperty(entangled, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))
 
-const fatigued = args.actor.hasCondition("fatigued");
+let fatigued = args.actor.hasCondition("fatigued")
 if (fatigued)
-	setProperty(
-		fatigued,
-		"flags.wfrp4e.scriptData",
-		getProperty(fatigued, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(fatigued, "flags.wfrp4e.scriptData", foundry.utils.getProperty(fatigued, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))
 
-const blinded = args.actor.hasCondition("blinded");
+let blinded = args.actor.hasCondition("blinded")
 if (blinded)
-	setProperty(
-		blinded,
-		"flags.wfrp4e.scriptData",
-		getProperty(blinded, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(blinded, "flags.wfrp4e.scriptData", foundry.utils.getProperty(blinded, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))
 
-const broken = args.actor.hasCondition("broken");
+let broken = args.actor.hasCondition("broken")
 if (broken)
-	setProperty(
-		broken,
-		"flags.wfrp4e.scriptData",
-		getProperty(broken, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(broken, "flags.wfrp4e.scriptData", foundry.utils.getProperty(broken, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))
 
-const prone = args.actor.hasCondition("prone");
+let prone= args.actor.hasCondition("prone")
 if (prone)
-	setProperty(
-		prone,
-		"flags.wfrp4e.scriptData",
-		getProperty(prone, "flags.wfrp4e.scriptData").filter(
-			(s) => s.trigger !== "dialog",
-		),
-	);
+    foundry.utils.setProperty(prone, "flags.wfrp4e.scriptData", foundry.utils.getProperty(prone, "flags.wfrp4e.scriptData").filter(s => s.trigger != "dialog"))

@@ -1,9 +1,10 @@
-const bleeding = this.actor.hasCondition("bleeding");
-if (bleeding) {
-	this.script.scriptNotification(
-		`Удалите ${bleeding.conditionValue} состояний кровотечения`,
-	);
-	bleeding.delete();
-} else {
-	this.script.scriptNotification("Не истекает кровью");
+let bleeding = this.actor.hasCondition("bleeding")
+if (bleeding)
+{
+   this.script.notification(`Cleared ${bleeding.conditionValue} Bleeding Conditions`)
+   bleeding.delete();  
+}
+else 
+{
+   this.script.notification(`No Bleeding Conditions`)
 }
