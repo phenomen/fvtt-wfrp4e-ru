@@ -1,0 +1,1 @@
+return ![game.i18n.localize("NAME.CharmAnimal"), game.i18n.localize("NAME.Endurance"), game.i18n.localize("NAME.OutdoorSurvival")].includes(args.skill?.name)

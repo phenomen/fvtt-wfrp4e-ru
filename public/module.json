@@ -15,7 +15,7 @@
 			"discord": "mrak_x"
 		}
 	],
-	"version": "8.0.1",
+	"version": "8.2.0",
 	"compatibility": {
 		"minimum": "11",
 		"verified": "12",
@@ -75,6 +75,11 @@
 		},
 		{
 			"lang": "ru",
+			"path": "modules/wfrp4e-archives3.json",
+			"module": "wfrp4e-archives3"
+		},
+		{
+			"lang": "ru",
 			"path": "modules/wfrp4e-dotr.json",
 			"module": "wfrp4e-dotr"
 		},
@@ -92,6 +97,11 @@
 			"lang": "ru",
 			"path": "modules/wfrp4e-up-in-arms.json",
 			"module": "wfrp4e-up-in-arms"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-wom.json",
+			"module": "wfrp4e-wom"
 		}
 	],
 	"url": "https://github.com/phenomen/fvtt-wfrp4e-ru",

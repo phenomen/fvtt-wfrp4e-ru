@@ -1,1 +1,1 @@
-args.actor.addCondition("ablaze", 2);
+args.actor.addCondition("ablaze", 2)

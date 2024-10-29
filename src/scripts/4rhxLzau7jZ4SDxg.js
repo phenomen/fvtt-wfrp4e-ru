@@ -1,2 +1,2 @@
-await args.actor.addCondition("grappling");
-await args.actor.addCondition("entangled");
+await args.actor.addCondition("grappling")
+await args.actor.addCondition("entangled")

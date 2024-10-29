@@ -1,4 +1,1 @@
-args.actor.addCondition(
-	"entangled",
-	this.effect.sourceTest.result.overcast.usage.other.current,
-);
+args.actor.addCondition("entangled", this.effect.sourceTest.result.overcast.usage.other.current)

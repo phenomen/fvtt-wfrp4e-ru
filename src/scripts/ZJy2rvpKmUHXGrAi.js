@@ -1,1 +1,1 @@
-args.actor.details.move.run *= 1.5;
+args.actor.details.move.run *= 1.5

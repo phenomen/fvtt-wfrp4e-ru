@@ -1,1 +1,1 @@
-args.actor.details.move.run += 4;
+args.actor.details.move.run += 4

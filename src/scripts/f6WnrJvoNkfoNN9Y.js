@@ -1,1 +1,1 @@
-return args.item?.attackType !== 'melee'
+return args.item?.attackType != 'melee'

@@ -1,1 +1,1 @@
-args.prefillModifiers.modifier -= 10;
+args.prefillModifiers.modifier -= 10

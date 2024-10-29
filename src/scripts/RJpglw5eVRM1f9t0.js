@@ -1,1 +1,1 @@
-args.wounds *= 5;
+args.wounds *= 5

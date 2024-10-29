@@ -1,1 +1,1 @@
-args.multiplier.tb += 1;
+args.multiplier.tb += 1

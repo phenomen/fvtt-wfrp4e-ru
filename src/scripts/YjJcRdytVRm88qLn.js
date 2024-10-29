@@ -1,1 +1,1 @@
-args.options.additionalDamage = 1;
+args.options.additionalDamage = 1

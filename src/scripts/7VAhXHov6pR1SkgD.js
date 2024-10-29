@@ -1,1 +1,1 @@
-return args.item?.name === game.i18n.localize("NAME.Endurance");
+return args.item?.name == game.i18n.localize("NAME.Endurance");

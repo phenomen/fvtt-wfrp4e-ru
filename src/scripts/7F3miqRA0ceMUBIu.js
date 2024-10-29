@@ -1,1 +1,1 @@
-return args.characteristic !== "int" || args.skill
+return args.characteristic != "int" || args.skill

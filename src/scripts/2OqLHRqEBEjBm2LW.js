@@ -1,1 +1,1 @@
-args.fields.slBonus += this.actor.system.characteristics.wp.bonus;
+args.fields.slBonus += this.actor.system.characteristics.wp.bonus

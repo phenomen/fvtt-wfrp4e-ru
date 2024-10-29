@@ -1,1 +1,1 @@
-this.actor.details.move.run *= 2;
+this.actor.details.move.run *= 2

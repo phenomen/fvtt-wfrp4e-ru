@@ -1,2 +1,2 @@
 if (args.opposedTest.attackerTest.result.critical)
-	args.actor.addCondition("ablaze");
+   args.actor.addCondition("ablaze")

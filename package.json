@@ -2,8 +2,7 @@
 	"name": "@phenomen/fvtt-wfrp4e-ru",
 	"private": "true",
 	"scripts": {
-		"compile": "bun index.ts --id ru-wfrp4e",
-		"release": "bun format && bun index.ts --id ru-wfrp4e --bump patch",
+		"build": "bun index.ts",
 		"format:check": "bun biome check .",
 		"format": "bun biome check --write ."
 	},
@@ -12,8 +11,8 @@
 		"typescript": "^5.4.5"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.8.3",
-		"@types/bun": "^1.1.8"
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "^1.1.12"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }

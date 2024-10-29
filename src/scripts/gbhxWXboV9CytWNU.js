@@ -1,1 +1,1 @@
-await this.actor.addCondition("blinded", 2);
+await this.actor.addCondition("blinded", 2)

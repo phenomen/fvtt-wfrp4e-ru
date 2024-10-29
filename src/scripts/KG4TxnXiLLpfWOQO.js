@@ -1,1 +1,1 @@
-args.fields.difficulty = "average";
+args.fields.difficulty = "average"

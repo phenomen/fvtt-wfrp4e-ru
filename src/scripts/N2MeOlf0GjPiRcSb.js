@@ -1,4 +1,2 @@
-const test = await this.actor.setupCharacteristic("dex", {
-	context: { failure: "Роняет предмет" },
-});
+let test = await this.actor.setupCharacteristic("dex", {context : {failure : "Drops the item"}})
 await test.roll();

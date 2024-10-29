@@ -1,4 +1,1 @@
-this.actor.removeCondition(
-	"broken",
-	Number.parseInt(this.effect.sourceTest.result.SL) + 1,
-);
+this.actor.removeCondition("broken", parseInt(this.effect.sourceTest.result.SL)+1)

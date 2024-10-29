@@ -1,1 +1,1 @@
-return args.skill?.name !== game.i18n.localize("NAME.Navigation");
+return args.skill?.name != game.i18n.localize("NAME.Navigation");

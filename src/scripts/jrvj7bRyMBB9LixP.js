@@ -1,1 +1,1 @@
-this.actor.addCondition("fatigued", 3);
+this.actor.addCondition("fatigued", 3)

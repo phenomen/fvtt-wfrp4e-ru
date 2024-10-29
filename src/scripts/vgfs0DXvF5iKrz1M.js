@@ -1,1 +1,1 @@
-return args.characteristic !== "ag" || this.item.getFlag("wfrp4e", "passed")
+return args.characteristic != "ag" || this.item.getFlag("wfrp4e", "passed")

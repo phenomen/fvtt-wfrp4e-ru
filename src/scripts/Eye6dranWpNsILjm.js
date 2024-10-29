@@ -1,3 +1,4 @@
-if (this.actor.system.status.wounds.value <= 1) {
-	this.effect.delete();
+if (this.actor.system.status.wounds.value <= 1)
+{
+    this.effect.delete();
 }

@@ -1,1 +1,1 @@
-this.effect.updateSource({ "flags.wfrp4e.ward": 9 });
+this.effect.updateSource({"flags.wfrp4e.ward" :  9})

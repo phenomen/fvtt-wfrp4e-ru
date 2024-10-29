@@ -1,1 +1,1 @@
-args.actor.addCondition("bleeding");
+args.actor.addCondition("bleeding")

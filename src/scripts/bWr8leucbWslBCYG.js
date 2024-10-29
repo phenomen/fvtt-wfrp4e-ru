@@ -1,1 +1,1 @@
-return args.characteristic !== "s"
+return args.characteristic != "s"

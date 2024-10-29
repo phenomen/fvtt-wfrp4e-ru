@@ -1,4 +1,4 @@
-let lore = await ValueDialog.create("Choose Lore", "Lore", "", {"fire" : "Fire", "death" : "Death", "metal" : "Metal", "shadow" : "Shadow"});
+let lore = await ValueDialog.create({text : "Choose Lore", title:  "Lore"}, "", {"fire" : "Fire", "death" : "Death", "metal" : "Metal", "shadow" : "Shadow"});
 
 let filters = [
     {
@@ -11,7 +11,7 @@ let filters = [
     }
 ]
 
-let petty = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 6, "Choose 3 Petty Spells")
+let petty = await ItemDialog.createFromFilters(filters, 6, "Choose 3 Petty Spells")
 
 
 filters = [
@@ -25,7 +25,7 @@ filters = [
     }
 ]
 
-let arcane = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 12, "Choose 12 Arcane Spells")
+let arcane = await ItemDialog.createFromFilters(filters, 12, "Choose 12 Arcane Spells")
 
 let items = petty.map(i => i.toObject()).concat(arcane.map(i => {
     let spell = i.toObject();

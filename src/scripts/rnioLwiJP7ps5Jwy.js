@@ -1,3 +1,4 @@
-if (args.item.type === "skill" && args.item.name === "Рукопашный бой (основное)") {
-	args.item.system.modifier.value += 30;
+if (args.item.type  == "skill" && args.item.name == "Melee (Basic)")
+{
+     args.item.system.modifier.value += 30;
 }

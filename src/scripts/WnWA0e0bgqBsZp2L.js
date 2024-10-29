@@ -1,3 +1,1 @@
-this.item.update({
-	"system.twohanded.value": !this.item.system.twohanded.value,
-});
+this.item.update({"system.twohanded.value" : !this.item.system.twohanded.value})

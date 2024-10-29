@@ -1,1 +1,1 @@
-return args.weapon?.system?.attackType !== "melee"
+return args.weapon?.system?.attackType != "melee"

@@ -1,3 +1,4 @@
-if (!this.actor.hasCondition("ablaze")) {
-	this.effect.delete();
+if (!this.actor.hasCondition("ablaze"))
+{
+    this.effect.delete();
 }

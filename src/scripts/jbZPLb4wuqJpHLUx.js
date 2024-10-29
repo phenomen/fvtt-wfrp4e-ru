@@ -1,1 +1,1 @@
-this.item.system.flaws.value.push({ name: "dangerous" });
+this.item.system.flaws.value.push({name : "dangerous"})

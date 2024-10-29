@@ -1,4 +1,5 @@
-const lore = this.effect.name.split(" ")[2].toLowerCase();
-if (args.item.type === "spell" && args.item.system.lore.value === lore) {
-	args.item.system.cn.value -= 1;
+let lore = this.effect.name.split(" ")[2].toLowerCase();
+if (args.item.type == "spell" && args.item.system.lore.value == lore)
+{
+    args.item.system.cn.value -= 1
 }

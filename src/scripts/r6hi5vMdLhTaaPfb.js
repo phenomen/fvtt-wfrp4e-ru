@@ -1,2 +1,1 @@
-args.actor.details.move.value +=
-	this.effect.sourceTest.result.overcast.usage.other.current;
+args.actor.details.move.value += this.effect.sourceTest.result.overcast.usage.other.current

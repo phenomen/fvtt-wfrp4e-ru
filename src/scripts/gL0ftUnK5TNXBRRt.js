@@ -1,1 +1,1 @@
-return this.effect.sourceActor.uuid === args.actor.uuid
+return this.effect.sourceActor.uuid == args.actor.uuid

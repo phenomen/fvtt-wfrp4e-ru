@@ -1,1 +1,1 @@
-return args.type !== "weapon" && !this.actor.statuses.has("infighting")
+return args.type != "weapon" && !this.actor.statuses.has("infighting")

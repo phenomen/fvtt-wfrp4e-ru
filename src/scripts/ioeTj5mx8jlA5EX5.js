@@ -1,1 +1,1 @@
-args.actor.addCondition("stunned");
+args.actor.addCondition("stunned")

@@ -1,1 +1,1 @@
-this.actor.removeCondition("bleeding");
+this.actor.removeCondition("bleeding")

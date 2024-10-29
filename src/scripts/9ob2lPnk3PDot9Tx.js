@@ -1,1 +1,1 @@
-this.actor.addCondition("blinded", this.effect.sourceTest.result.SL);
+this.actor.addCondition("blinded", this.effect.sourceTest.result.SL)

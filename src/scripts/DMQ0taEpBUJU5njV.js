@@ -1,1 +1,1 @@
-args.actor.status.fortune.value = 0;
+args.actor.status.fortune.value = 0

@@ -1,7 +1,13 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
 	"files": {
-		"ignore": ["node_modules", "bun.lockb", "ru-wfrp4e", "src/scripts"],
+		"ignore": [
+			"node_modules",
+			"bun.lockb",
+			"ru-wfrp4e",
+			"src/scripts",
+			"backup"
+		],
 		"maxSize": 2097152
 	},
 	"vcs": {

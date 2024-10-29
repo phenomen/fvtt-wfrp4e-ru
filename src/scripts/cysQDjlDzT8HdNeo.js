@@ -1,1 +1,1 @@
-args.prefillModifiers.slBonus += 1;
+ args.prefillModifiers.slBonus += 1

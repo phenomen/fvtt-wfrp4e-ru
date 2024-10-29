@@ -1,1 +1,1 @@
-return args.characteristic !== "ag"  && args.item?.id !== this.item?.id
+return args.characteristic != "ag"  && args.item?.id != this.item?.id

@@ -1,1 +1,1 @@
-args.fields.slBonus -= Number(this.item.specification.value) || 0;
+args.fields.slBonus -= (Number(this.item.specification.value) || 0)

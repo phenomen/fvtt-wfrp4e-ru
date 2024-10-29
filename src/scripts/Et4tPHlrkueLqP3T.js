@@ -1,1 +1,1 @@
-if (args.item.type === "skill") args.item.system.modifier.value -= 10;
+if (args.item.type == "skill") args.item.system.modifier.value -= 10

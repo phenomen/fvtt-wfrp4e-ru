@@ -1,1 +1,1 @@
-this.actor.hasCondition("bleeding")?.delete();
+this.actor.hasCondition("bleeding")?.delete()

@@ -1,1 +1,1 @@
-this.actor.addCondition("dead");
+this.actor.addCondition("dead")

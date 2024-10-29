@@ -1,1 +1,1 @@
-return args.characteristic === "ag"
+return args.characteristic == "ag"

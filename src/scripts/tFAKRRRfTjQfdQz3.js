@@ -1,3 +1,1 @@
-this.actor
-	.getActiveTokens()
-	.forEach((t) => t.document.update({ "texture.tint": "" }));
+this.actor.getActiveTokens().forEach(t => t.document.update({"texture.tint" : ""}));

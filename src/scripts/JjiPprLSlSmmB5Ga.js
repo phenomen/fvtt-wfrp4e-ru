@@ -1,1 +1,1 @@
-args.item.system.damage.value += " + 1";
+args.item.system.damage.value += " + 1"

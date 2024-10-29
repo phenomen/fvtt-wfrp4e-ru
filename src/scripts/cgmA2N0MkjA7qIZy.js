@@ -1,1 +1,1 @@
-return args.type !== "cast" || args.item?.system.lore?.value !== "shadow"
+return args.type != "cast" || args.item?.system.lore?.value != "shadow"

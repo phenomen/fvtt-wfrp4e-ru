@@ -1,1 +1,1 @@
-args.actor.details.move.value /= 2;
+args.actor.details.move.value /= 2

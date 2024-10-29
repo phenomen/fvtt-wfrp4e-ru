@@ -1,1 +1,1 @@
-this.actor.system.status.encumbrance.max += 2;
+this.actor.system.status.encumbrance.max += 2

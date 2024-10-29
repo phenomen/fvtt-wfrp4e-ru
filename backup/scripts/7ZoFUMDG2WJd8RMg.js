@@ -1,0 +1,1 @@
+this.script.message(`Claimed <strong>${this.effect.name}</strong> Bonus`);

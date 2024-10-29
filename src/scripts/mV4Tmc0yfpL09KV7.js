@@ -1,1 +1,1 @@
-args.actor.addCondition("entangled");
+args.actor.addCondition("entangled")

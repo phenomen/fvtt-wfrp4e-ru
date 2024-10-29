@@ -1,4 +1,1 @@
-this.actor.addCondition(
-	"ablaze",
-	Number.parseInt(this.effect.sourceTest.result.SL),
-);
+this.actor.addCondition("ablaze", parseInt(this.effect.sourceTest.result.SL))

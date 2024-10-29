@@ -1,1 +1,1 @@
-args.actor.flags.rangedDamageIncrease += 1;
+args.actor.flags.rangedDamageIncrease += 1

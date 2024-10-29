@@ -1,1 +1,1 @@
-this.effect.manualScripts[0].execute({ actor: this.actor });
+this.effect.manualScripts[0].execute({actor : this.actor});

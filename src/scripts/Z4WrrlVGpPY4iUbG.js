@@ -1,1 +1,1 @@
-await this.actor.addCondition("ablaze");
+await this.actor.addCondition("ablaze")

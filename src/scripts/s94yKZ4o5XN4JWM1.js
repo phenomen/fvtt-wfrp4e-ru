@@ -2,5 +2,5 @@
 // also inflicts one Bleeding Condition.
 
 if (args.totalWoundLoss > 0) {
-	args.actor.addCondition("bleeding");
+  args.actor.addCondition("bleeding")
 }

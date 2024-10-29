@@ -1,1 +1,1 @@
-args.update({ texture: { tint: "#FFBF00" } });
+args.update({texture : {tint : "#FFBF00"}});

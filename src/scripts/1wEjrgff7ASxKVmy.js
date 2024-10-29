@@ -1,1 +1,2 @@
-if (args.effect.conditionId === "bleeding") args.data.damage -= 1;
+if (args.effect.conditionId == "bleeding")
+    args.data.damage -= 1

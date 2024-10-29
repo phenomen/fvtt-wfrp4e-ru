@@ -1,1 +1,1 @@
-return args.skill?.name === "Ремесло (аптекарь)"
+return args.skill?.name == "Trade (Apothecary)"

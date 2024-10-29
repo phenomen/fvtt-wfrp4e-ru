@@ -1,1 +1,1 @@
-args.actor.modifyWounds(1);
+args.actor.modifyWounds(1)

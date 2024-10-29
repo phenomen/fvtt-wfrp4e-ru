@@ -1,1 +1,1 @@
-return args.spell?.system.lore.value === "fire"
+return args.spell?.system.lore.value == "fire"

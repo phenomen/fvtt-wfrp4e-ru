@@ -1,1 +1,1 @@
-return args.type !== "cast"
+return args.type != "cast"

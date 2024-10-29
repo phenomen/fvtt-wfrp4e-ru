@@ -1,0 +1,1 @@
+args.prefillModifiers.modifier -= 10 * thish.effect.system.condition.value

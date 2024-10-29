@@ -1,5 +1,6 @@
-const type = this.item.getFlag("wfrp4e", "breath");
+let type = this.item.getFlag("wfrp4e", "breath");
 
-if (["fire", "electricity", "poison"].includes(type)) {
-	args.applyAP = false;
+if (["fire", "electricity", "poison"].includes(type))
+{
+    args.applyAP = false;
 }

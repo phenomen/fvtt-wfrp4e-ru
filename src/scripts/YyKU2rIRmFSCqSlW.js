@@ -1,7 +1,6 @@
-const newEffect = this.effect.sourceItem.effects?.contents[1];
+let newEffect = this.effect.sourceItem.effects?.contents[1]
 
-if (newEffect) {
-	this.actor.createEmbeddedDocuments("ActiveEffect", [
-		newEffect.convertToApplied(),
-	]);
+if (newEffect)
+{
+    this.actor.createEmbeddedDocuments("ActiveEffect", [newEffect.convertToApplied()]);
 }

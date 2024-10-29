@@ -1,1 +1,1 @@
-this.actor.modifyWounds(1);
+this.actor.modifyWounds(1)

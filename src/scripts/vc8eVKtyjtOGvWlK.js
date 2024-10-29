@@ -1,3 +1,4 @@
-if (!this.actor.hasCondition("entangled")) {
-	this.effect.delete();
+if (!this.actor.hasCondition("entangled"))
+{
+    this.effect.delete();
 }

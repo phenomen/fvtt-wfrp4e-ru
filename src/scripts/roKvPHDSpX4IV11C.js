@@ -1,1 +1,1 @@
-return !args.skill?.name.includes(game.i18n.localize("NAME.Perform")) && args.characteristic !== "ag"
+return !args.skill?.name.includes(game.i18n.localize("NAME.Perform")) && args.characteristic != "ag"

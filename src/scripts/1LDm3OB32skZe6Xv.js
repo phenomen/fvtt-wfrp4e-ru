@@ -1,1 +1,1 @@
-return args.characteristic !== "wp"
+return args.characteristic != "wp"

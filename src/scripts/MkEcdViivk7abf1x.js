@@ -1,1 +1,1 @@
-args.actor.flags.meleeDamageIncrease += 1;
+args.actor.flags.meleeDamageIncrease += 1

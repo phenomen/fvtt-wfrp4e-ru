@@ -1,1 +1,1 @@
-args.actor.flags.ambi += 1;
+args.actor.flags.ambi+= 1

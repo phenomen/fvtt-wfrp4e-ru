@@ -1,1 +1,1 @@
-this.actor.addCondition("blinded");
+this.actor.addCondition("blinded")
