@@ -145,6 +145,17 @@ export function patchConfigReady() {
 }
 
 export function patchConfigSetup() {
+	/* EIS */
+	if (game.modules.get("wfrp4e-eis")?.active) {
+		const config = {
+			difficultyLabels: {
+				futile: "Тщетная (-40)",
+				impossible: "Отчаянная (-50)",
+			},
+		};
+		mergeObject(game.wfrp4e.config, config);
+	}
+
 	/* RNHD */
 	if (game.modules.get("wfrp4e-rnhd")?.active) {
 		const config = {
@@ -809,7 +820,6 @@ export function patchConfigSetup() {
 	}
 
 	/* SALZENMUND */
-
 	if (game.modules.get("wfrp4e-salzenmund")?.active) {
 		const config = {
 			trade: {
