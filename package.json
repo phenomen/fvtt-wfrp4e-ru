@@ -12,7 +12,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@types/bun": "^1.1.13"
+		"@types/bun": "^1.1.14"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }
