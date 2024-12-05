@@ -129,4 +129,4 @@ dist
 # compiled
 ru-wfrp4e
 ru-wfrp4e.zip
-src/scripts.js
+scripts/build

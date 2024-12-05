@@ -1,2 +1,4 @@
-node_modules/
-src/scripts/
+node_modules/*
+scripts/*
+public/*
+src/scripts.js
