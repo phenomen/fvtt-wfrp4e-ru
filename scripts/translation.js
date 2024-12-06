@@ -8,5 +8,6 @@ export const translation = {
 	"Healed ${wounds} Wounds": "Исцелено ${wounds} ранений",
 	'"GM\'s Choice"': '"На выбор ведущего"',
 	'"Endurance"': '"Стойкость"',
-	'"Misfire Roll: "': '"Misfire Roll: "'
+	'"Misfire Roll: "': '"Взрывная осечка: "',
+	"(Rolled 1)": "(Rolled 1)"
 };
