@@ -43,7 +43,7 @@ async function translateScripts() {
 		const text = await Bun.file(`./scripts/source/${script}`).text();
 		const translatedText = text.replace(
 			new RegExp(Object.keys(translation).join("|"), "g"),
-			(match) => translation[match as keyof typeof translation]
+			(match) => translation[match as keyof typeof translation],
 		);
 
 		await Bun.write(`./scripts/translated/${script}`, translatedText);
