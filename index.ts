@@ -35,6 +35,7 @@ async function buildSource(id: string) {
 }
 
 async function packScripts() {
+	// Reference: https://github.com/moo-man/WFRP4e-FoundryVTT/blob/master/scriptPacker.js
 	const scripts = await readdir("./scripts/source");
 	const scriptObj: { [key: string]: string } = {};
 
@@ -43,17 +44,16 @@ async function packScripts() {
 		scriptObj[script.split(".")[0]] = text;
 	}
 
-	const scriptLoader = `export function loadScripts()
-	{	
-		game.wfrp4e.config.effectScripts = ${JSON.stringify(scriptObj)};	
-	}`;
-
-	await Bun.write("./scripts/packed.js", scriptLoader);
+	await Bun.write(
+		"./scripts/packed.js",
+		`export function loadScripts() { game.wfrp4e.config.effectScripts = ${JSON.stringify(scriptObj)}; }`,
+	);
 }
 
 async function translateScripts() {
 	let text = await Bun.file(`./scripts/packed.js`).text();
 
+	// A workaround for strings in game.i18n.localize() function that should not be replaced
 	const localizePattern = /game\.i18n\.localize\([^)]+\)/g;
 	const localizeMatches = text.match(localizePattern) || [];
 	const placeholder = "___LOCALIZE_PLACEHOLDER___";
@@ -72,6 +72,7 @@ async function translateScripts() {
 	);
 	text = text.replace(pattern, (match) => translation[match as keyof typeof translation]);
 
+	// Restore the original strings in game.i18n.localize()
 	placeholderMap.forEach((value, key) => {
 		text = text.replace(key, value);
 	});
