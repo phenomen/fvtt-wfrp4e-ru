@@ -3,11 +3,11 @@ import { id } from "./public/module.json";
 import { translation } from "./scripts/translation.js";
 
 async function main() {
-	console.log("-- TRANSLATING SCRIPTS...");
-	await translateScripts();
-
 	console.log("-- PACKING SCRIPTS...");
 	await packScripts();
+
+	console.log("-- TRANSLATING SCRIPTS...");
+	await translateScripts();
 
 	console.log("-- BUILDING SOURCE...");
 	await buildSource(id);
@@ -34,28 +34,12 @@ async function buildSource(id: string) {
 	}
 }
 
-async function translateScripts() {
-	await rm("./scripts/translated", { recursive: true, force: true });
-	await mkdir("./scripts/translated");
-
-	const scripts = await readdir("./scripts/source");
-	for (const script of scripts) {
-		const text = await Bun.file(`./scripts/source/${script}`).text();
-		const translatedText = text.replace(
-			new RegExp(Object.keys(translation).join("|"), "g"),
-			(match) => translation[match as keyof typeof translation],
-		);
-
-		await Bun.write(`./scripts/translated/${script}`, translatedText);
-	}
-}
-
 async function packScripts() {
-	const scripts = await readdir("./scripts/translated");
+	const scripts = await readdir("./scripts/source");
 	const scriptObj: { [key: string]: string } = {};
 
 	for (const script of scripts) {
-		const text = await Bun.file(`./scripts/translated/${script}`).text();
+		const text = await Bun.file(`./scripts/source/${script}`).text();
 		scriptObj[script.split(".")[0]] = text;
 	}
 
@@ -64,7 +48,35 @@ async function packScripts() {
 		game.wfrp4e.config.effectScripts = ${JSON.stringify(scriptObj)};	
 	}`;
 
-	await Bun.write("./src/scripts.js", scriptLoader);
+	await Bun.write("./scripts/packed.js", scriptLoader);
+}
+
+async function translateScripts() {
+	let text = await Bun.file(`./scripts/packed.js`).text();
+
+	const localizePattern = /game\.i18n\.localize\([^)]+\)/g;
+	const localizeMatches = text.match(localizePattern) || [];
+	const placeholder = "___LOCALIZE_PLACEHOLDER___";
+	let placeholderMap = new Map();
+
+	localizeMatches.forEach((match, index) => {
+		const key = `${placeholder}${index}`;
+		placeholderMap.set(key, match);
+		text = text.replace(match, key);
+	});
+
+	const keys = Object.keys(translation).sort((a, b) => b.length - a.length);
+	const pattern = new RegExp(
+		keys.map((key) => key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"),
+		"g",
+	);
+	text = text.replace(pattern, (match) => translation[match as keyof typeof translation]);
+
+	placeholderMap.forEach((value, key) => {
+		text = text.replace(key, value);
+	});
+
+	await Bun.write("./src/scripts.js", text);
 }
 
 async function copyDirectory(src: string, dest: string) {

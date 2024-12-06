@@ -1,5 +1,3 @@
-scripts/backup
-scripts/source
-scripts/translated
+scripts/
+ru-wfrp4e/
 src/scripts.js
-ru-wfrp4e
