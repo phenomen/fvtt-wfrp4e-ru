@@ -117,12 +117,7 @@
 			"name": "Артиллерист",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.KID8Xu7W7Jvygl9K]{Артиллерист}</p>",
 			"careerGroup": "Артиллерист",
-			"trappings": [
-				"Оружие (любое)",
-				" подзорная труба",
-				" инструменты",
-				" форменная одежда"
-			]
+			"trappings": ["Оружие (любое)", " подзорная труба", " инструменты", " форменная одежда"]
 		},
 		"Boat Hook": {
 			"name": "Багор",
@@ -263,12 +258,7 @@
 			"name": "Кадет доппельзольднеров",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.B2GyhjJbcXpXPQQ5]{Доппельзольднер}</p>",
 			"careerGroup": "Доппельзольднер",
-			"trappings": [
-				"Кинжал",
-				" латная кираса",
-				" форменная одежда",
-				" двуручный меч"
-			]
+			"trappings": ["Кинжал", " латная кираса", " форменная одежда", " двуручный меч"]
 		},
 		"Greatsword Sergeant": {
 			"name": "Сержант доппельзольднеров",
@@ -338,13 +328,7 @@
 			"name": "Застрельщик",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.tczPk698eLFpVOsm]{Лучник}</p>",
 			"careerGroup": "Лучник",
-			"trappings": [
-				"Колчан и 10 стрел",
-				" лук",
-				" кинжал",
-				" вьюк",
-				" форменная одежда"
-			]
+			"trappings": ["Колчан и 10 стрел", " лук", " кинжал", " вьюк", " форменная одежда"]
 		},
 		"Grapple": {
 			"name": "Крюк и трос",
@@ -384,12 +368,7 @@
 			"name": "Капитан",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.1i3Y6jOqCTmlbVeo]{Лёгкий всадник}</p>",
 			"careerGroup": "Лёгкий всадник",
-			"trappings": [
-				"Пара пистолетом с боеприпасами",
-				" боевой конь",
-				" броская одежда",
-				" кираса"
-			]
+			"trappings": ["Пара пистолетом с боеприпасами", " боевой конь", " броская одежда", " кираса"]
 		},
 		"Halberdier Captain": {
 			"name": "Капитан алебардистов",
@@ -537,12 +516,7 @@
 			"name": "Командир копья",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.1i3Y6jOqCTmlbVeo]{Лёгкий всадник}</p>",
 			"careerGroup": "Лёгкий всадник",
-			"trappings": [
-				"Кавалерийское копьё",
-				" кольчужные шоссы",
-				" оруженосец",
-				" прислуга"
-			]
+			"trappings": ["Кавалерийское копьё", " кольчужные шоссы", " оруженосец", " прислуга"]
 		},
 		"Spear": {
 			"name": "Копье",
@@ -710,11 +684,7 @@
 			"name": "Мастер осад",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mcdsHRtcQToDaN82]{Специалист по осадам}</p>",
 			"careerGroup": "Специалист по осадам",
-			"trappings": [
-				"Отличная одежда",
-				" боевой конь",
-				" шатёр с личными слугами"
-			]
+			"trappings": ["Отличная одежда", " боевой конь", " шатёр с личными слугами"]
 		},
 		"Sharp Stick": {
 			"name": "Заострённая палка",
@@ -933,11 +903,7 @@
 			"name": "Рыцарь",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
 			"careerGroup": "Рыцарь Белого волка",
-			"trappings": [
-				"Плащ из волчьих шкур",
-				"Дестриэ c седлом и сбруей",
-				"Латный доспех"
-			]
+			"trappings": ["Плащ из волчьих шкур", "Дестриэ c седлом и сбруей", "Латный доспех"]
 		},
 		"Knight of the Inner Circle": {
 			"name": "Рыцарь внутреннего круга",

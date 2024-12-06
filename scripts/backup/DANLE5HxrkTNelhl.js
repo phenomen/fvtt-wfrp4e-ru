@@ -1,1 +1,0 @@
-args.wounds += 4;

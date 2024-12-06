@@ -1,7 +1,11 @@
-import { cp, mkdir, readdir } from "node:fs/promises";
+import { cp, rm, mkdir, readdir } from "node:fs/promises";
 import { id } from "./public/module.json";
+import { translation } from "./scripts/translation.js";
 
 async function main() {
+	console.log("-- TRANSLATING SCRIPTS...");
+	await translateScripts();
+
 	console.log("-- PACKING SCRIPTS...");
 	await packScripts();
 
@@ -30,12 +34,28 @@ async function buildSource(id: string) {
 	}
 }
 
-async function packScripts() {
+async function translateScripts() {
+	await rm("./scripts/translated", { recursive: true, force: true });
+	await mkdir("./scripts/translated");
+
 	const scripts = await readdir("./scripts/source");
+	for (const script of scripts) {
+		const text = await Bun.file(`./scripts/source/${script}`).text();
+		const translatedText = text.replace(
+			new RegExp(Object.keys(translation).join("|"), "g"),
+			(match) => translation[match as keyof typeof translation]
+		);
+
+		await Bun.write(`./scripts/translated/${script}`, translatedText);
+	}
+}
+
+async function packScripts() {
+	const scripts = await readdir("./scripts/translated");
 	const scriptObj: { [key: string]: string } = {};
 
 	for (const script of scripts) {
-		const text = await Bun.file(`./scripts/source/${script}`).text();
+		const text = await Bun.file(`./scripts/translated/${script}`).text();
 		scriptObj[script.split(".")[0]] = text;
 	}
 

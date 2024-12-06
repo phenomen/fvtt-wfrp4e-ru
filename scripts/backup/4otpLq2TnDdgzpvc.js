@@ -1,1 +1,0 @@
-args.actor.system.details.man -= 3;

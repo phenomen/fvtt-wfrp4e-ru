@@ -1,1 +1,0 @@
-return args.skill?.name == `${game.i18n.localize("NAME.Ranged")} (${game.i18n.localize("SPEC.Blackpowder")})`

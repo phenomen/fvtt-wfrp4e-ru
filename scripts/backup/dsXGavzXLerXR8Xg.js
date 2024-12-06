@@ -1,1 +1,0 @@
-return !args.skill?.name.includes(game.i18n.localize("NAME.Sail")) && !args.skill?.name.includes(game.i18n.localize("NAME.Row"))

@@ -1,1 +1,0 @@
-args.prefillModifiers.difficulty = "hard";

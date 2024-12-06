@@ -3,16 +3,14 @@
 	"private": "true",
 	"scripts": {
 		"build": "bun index.ts",
-		"format:check": "bun biome check .",
-		"format": "bun biome check --write ."
+		"format": "prettier --write ."
 	},
 	"type": "module",
 	"peerDependencies": {
 		"typescript": "^5.4.5"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@types/bun": "^1.1.14"
-	},
-	"trustedDependencies": ["@biomejs/biome"]
+		"@types/bun": "^1.1.14",
+		"prettier": "^3.4.2"
+	}
 }

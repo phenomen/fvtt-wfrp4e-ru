@@ -1,1 +1,0 @@
-return args.fields.charging

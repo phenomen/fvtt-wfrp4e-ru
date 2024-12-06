@@ -1,1 +1,0 @@
-return [`${game.i18n.localize("NAME.Stealth")} (${game.i18n.localize("SPEC.Rural")})`, game.i18n.localize("NAME.Track"), game.i18n.localize("NAME.OutdoorSurvival"), game.i18n.localize("NAME.Swim"), game.i18n.localize("NAME.Perception"), game.i18n.localize("NAME.Intuition")].includes(args.item?.name);

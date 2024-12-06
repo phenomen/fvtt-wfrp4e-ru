@@ -1,1 +1,0 @@
-args.options.cardsharp = true;

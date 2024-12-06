@@ -1,1 +1,0 @@
-this.actor.removeCondition("bleeding");

@@ -1,1 +1,0 @@
-return args.skill?.name !== game.i18n.localize("NAME.Row") && args.skill?.name !== game.i18n.localize("NAME.Swim") && !args.skill?.name.includes(game.i18n.localize("NAME.Sail"));

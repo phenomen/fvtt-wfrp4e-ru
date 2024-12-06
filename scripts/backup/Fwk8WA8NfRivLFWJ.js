@@ -1,1 +1,0 @@
-return args.skill?.name === "Entertain (Singing)";

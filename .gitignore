@@ -129,5 +129,5 @@ dist
 # compiled
 ru-wfrp4e
 ru-wfrp4e.zip
-scripts/build
+scripts/translated
 src/scripts.js

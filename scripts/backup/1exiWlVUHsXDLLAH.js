@@ -1,1 +1,0 @@
-this.script.notification(`Cannot enter ${this.effect.name}!`);

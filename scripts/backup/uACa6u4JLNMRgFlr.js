@@ -1,2 +1,0 @@
-const talents = await Promise.all([game.i18n.localize("NAME.FuriousAssault"), game.i18n.localize("NAME.SeaLegsTalent")].map(game.wfrp4e.utility.findTalent))
-this.actor.createEmbeddedDocuments("Item", talents, {fromEffect : this.effect.id})

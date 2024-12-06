@@ -1,9 +1,4 @@
-import {
-	parseParentheses,
-	setupBabele,
-	translateList,
-	translateValue,
-} from "./util.js";
+import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
 import {
 	translatedCareerClass,
@@ -133,11 +128,7 @@ export function initTranslation() {
 }
 
 function translateDocument(name, type, pack, specs) {
-	let translation = game.babele.translate(
-		pack,
-		{ name: name, type: type },
-		true,
-	);
+	let translation = game.babele.translate(pack, { name: name, type: type }, true);
 
 	if (translation?.name) {
 		return translation;
@@ -145,11 +136,7 @@ function translateDocument(name, type, pack, specs) {
 
 	const words = parseParentheses(name);
 
-	translation = game.babele.translate(
-		pack,
-		{ name: words.main, type: type },
-		true,
-	);
+	translation = game.babele.translate(pack, { name: words.main, type: type }, true);
 
 	if (translation?.name) {
 		translation.name =
@@ -168,12 +155,7 @@ function translateSkill(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(
-			item.name,
-			"skill",
-			pack.metadata.id,
-			translatedSkillSpec,
-		);
+		translation = translateDocument(item.name, "skill", pack.metadata.id, translatedSkillSpec);
 
 		if (translation?.system) break;
 	}
@@ -195,12 +177,7 @@ function translateTrait(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(
-			item.name,
-			item.type,
-			pack.metadata.id,
-			translatedTalentSpec,
-		);
+		translation = translateDocument(item.name, item.type, pack.metadata.id, translatedTalentSpec);
 
 		if (translation?.system) break;
 	}
@@ -209,8 +186,7 @@ function translateTrait(item) {
 		const specification = item.system?.specification;
 		if (specification?.value && typeof specification.value === "string") {
 			specification.value =
-				translateValue(specification.value, translatedTalentSpec) ||
-				specification.value;
+				translateValue(specification.value, translatedTalentSpec) || specification.value;
 		}
 
 		if (Array.isArray(item.effects) && item.effects?.length > 0) {
@@ -233,12 +209,7 @@ function translateCareer(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(
-			item.name,
-			"career",
-			pack.metadata.id,
-			undefined,
-		);
+		translation = translateDocument(item.name, "career", pack.metadata.id, undefined);
 
 		if (translation?.system) break;
 	}
@@ -247,26 +218,15 @@ function translateCareer(item) {
 		const { class: careerClass, skills, talents } = item.system || {};
 
 		if (careerClass?.value) {
-			careerClass.value = translateValue(
-				careerClass.value,
-				translatedCareerClass,
-			);
+			careerClass.value = translateValue(careerClass.value, translatedCareerClass);
 		}
 
 		if (skills) {
-			item.system.skills = translateCareerItems(
-				skills,
-				"skill",
-				translatedSkillSpec,
-			);
+			item.system.skills = translateCareerItems(skills, "skill", translatedSkillSpec);
 		}
 
 		if (talents) {
-			item.system.talents = translateCareerItems(
-				talents,
-				"talent",
-				translatedTalentSpec,
-			);
+			item.system.talents = translateCareerItems(talents, "talent", translatedTalentSpec);
 		}
 
 		foundry.utils.mergeObject(item, translation);
@@ -281,12 +241,7 @@ function translateSpell(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(
-			item.name,
-			item.type,
-			pack.metadata.id,
-			undefined,
-		);
+		translation = translateDocument(item.name, item.type, pack.metadata.id, undefined);
 
 		if (translation?.system) break;
 	}
@@ -333,12 +288,7 @@ function translateTrapping(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(
-			item.name,
-			item.type,
-			pack.metadata.id,
-			undefined,
-		);
+		translation = translateDocument(item.name, item.type, pack.metadata.id, undefined);
 
 		if (translation?.system) break;
 	}
@@ -389,12 +339,7 @@ function translateEffect(item) {
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(
-			item.name,
-			"effect",
-			pack.metadata.id,
-			translatedTalentSpec,
-		);
+		translation = translateDocument(item.name, "effect", pack.metadata.id, translatedTalentSpec);
 
 		if (translation?.name) break;
 	}
