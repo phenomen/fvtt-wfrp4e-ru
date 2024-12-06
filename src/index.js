@@ -1,14 +1,14 @@
-import { patchConfigReady, patchConfigSetup } from "./config.js";
-import { initTranslation } from "./main.js";
+import { patchConfigReady, patchConfigSetup } from './config.js';
+import { initTranslation } from './main.js';
 
-Hooks.on("init", () => {
+Hooks.on('init', () => {
 	initTranslation();
 });
 
-Hooks.once("ready", () => {
+Hooks.once('ready', () => {
 	patchConfigReady();
 });
 
-Hooks.once("setup", () => {
+Hooks.once('setup', () => {
 	patchConfigSetup();
 });

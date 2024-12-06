@@ -1,4 +1,4 @@
-import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
+import { parseParentheses, setupBabele, translateList, translateValue } from './util.js';
 
 import {
 	translatedCareerClass,
@@ -14,15 +14,15 @@ import {
 	translatedSpellRange,
 	translatedSpellTarget,
 	translatedTalentSpec,
-} from "./data.js";
+} from './data.js';
 
-import { loadScripts } from "./scripts.js";
+import { loadScripts } from './scripts.js';
 
 export function initTranslation() {
-	setupBabele("compendium");
+	setupBabele('compendium');
 	loadScripts();
 
-	if (typeof Babele !== "undefined") {
+	if (typeof Babele !== 'undefined') {
 		Babele.get().registerConverters({
 			convertEffects: (effects) => {
 				if (!effects) return;
@@ -71,12 +71,12 @@ export function initTranslation() {
 
 			convertCareerSkills: (list) => {
 				if (!list) return;
-				return translateCareerItems(list, "skill", translatedSkillSpec);
+				return translateCareerItems(list, 'skill', translatedSkillSpec);
 			},
 
 			convertCareerTalents: (list) => {
 				if (!list) return;
-				return translateCareerItems(list, "talent", translatedTalentSpec);
+				return translateCareerItems(list, 'talent', translatedTalentSpec);
 			},
 
 			convertActorGender: (gender) => {
@@ -102,21 +102,21 @@ export function initTranslation() {
 					if (!name) return item;
 
 					switch (type) {
-						case "skill":
+						case 'skill':
 							return translateSkill(item);
-						case "trait":
-						case "talent":
+						case 'trait':
+						case 'talent':
 							return translateTrait(item);
-						case "spell":
-						case "prayer":
+						case 'spell':
+						case 'prayer':
 							return translateSpell(item);
-						case "career":
+						case 'career':
 							return translateCareer(item);
-						case "trapping":
-						case "weapon":
-						case "armour":
-						case "container":
-						case "money":
+						case 'trapping':
+						case 'weapon':
+						case 'armour':
+						case 'container':
+						case 'money':
 							return translateTrapping(item);
 						default:
 							return item;
@@ -150,12 +150,12 @@ function translateDocument(name, type, pack, specs) {
 }
 
 function translateSkill(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag("skill");
+	const packs = game.wfrp4e.tags.getPacksWithTag('skill');
 
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(item.name, "skill", pack.metadata.id, translatedSkillSpec);
+		translation = translateDocument(item.name, 'skill', pack.metadata.id, translatedSkillSpec);
 
 		if (translation?.system) break;
 	}
@@ -172,7 +172,7 @@ function translateSkill(item) {
 }
 
 function translateTrait(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent"]);
+	const packs = game.wfrp4e.tags.getPacksWithTag(['trait', 'talent']);
 
 	let translation;
 
@@ -184,7 +184,7 @@ function translateTrait(item) {
 
 	if (translation) {
 		const specification = item.system?.specification;
-		if (specification?.value && typeof specification.value === "string") {
+		if (specification?.value && typeof specification.value === 'string') {
 			specification.value =
 				translateValue(specification.value, translatedTalentSpec) || specification.value;
 		}
@@ -204,12 +204,12 @@ function translateTrait(item) {
 }
 
 function translateCareer(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag("career");
+	const packs = game.wfrp4e.tags.getPacksWithTag('career');
 
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(item.name, "career", pack.metadata.id, undefined);
+		translation = translateDocument(item.name, 'career', pack.metadata.id, undefined);
 
 		if (translation?.system) break;
 	}
@@ -222,11 +222,11 @@ function translateCareer(item) {
 		}
 
 		if (skills) {
-			item.system.skills = translateCareerItems(skills, "skill", translatedSkillSpec);
+			item.system.skills = translateCareerItems(skills, 'skill', translatedSkillSpec);
 		}
 
 		if (talents) {
-			item.system.talents = translateCareerItems(talents, "talent", translatedTalentSpec);
+			item.system.talents = translateCareerItems(talents, 'talent', translatedTalentSpec);
 		}
 
 		foundry.utils.mergeObject(item, translation);
@@ -236,7 +236,7 @@ function translateCareer(item) {
 }
 
 function translateSpell(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag(["spell", "prayer"]);
+	const packs = game.wfrp4e.tags.getPacksWithTag(['spell', 'prayer']);
 
 	let translation;
 
@@ -281,8 +281,8 @@ function translateSpell(item) {
 
 function translateTrapping(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag(
-		["trapping"],
-		["weapon", "armour", "container", "money"],
+		['trapping'],
+		['weapon', 'armour', 'container', 'money'],
 	);
 
 	let translation;
@@ -334,12 +334,12 @@ function translateEffects(effects) {
 }
 
 function translateEffect(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent", "spell"]);
+	const packs = game.wfrp4e.tags.getPacksWithTag(['trait', 'talent', 'spell']);
 
 	let translation;
 
 	for (const pack of packs) {
-		translation = translateDocument(item.name, "effect", pack.metadata.id, translatedTalentSpec);
+		translation = translateDocument(item.name, 'effect', pack.metadata.id, translatedTalentSpec);
 
 		if (translation?.name) break;
 	}

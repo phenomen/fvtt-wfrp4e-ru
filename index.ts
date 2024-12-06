@@ -1,51 +1,51 @@
-import { cp, rm, mkdir, readdir } from "node:fs/promises";
-import { id } from "./public/module.json";
-import { translation } from "./scripts/translation.js";
+import { cp, rm, mkdir, readdir } from 'node:fs/promises';
+import { id } from './public/module.json';
+import { translation } from './scripts/translation.js';
 
 async function main() {
-	console.log("-- PACKING SCRIPTS...");
+	console.log('-- PACKING SCRIPTS...');
 	await packScripts();
 
-	console.log("-- TRANSLATING SCRIPTS...");
+	console.log('-- TRANSLATING SCRIPTS...');
 	await translateScripts();
 
-	console.log("-- BUILDING SOURCE...");
+	console.log('-- BUILDING SOURCE...');
 	await buildSource(id);
 
-	console.log("-- COPYING STATIC FILES...");
-	await copyDirectory("./public", `./${id}`);
+	console.log('-- COPYING STATIC FILES...');
+	await copyDirectory('./public', `./${id}`);
 
-	console.log("-- DONE!");
+	console.log('-- DONE!');
 }
 
 async function buildSource(id: string) {
 	const result = await Bun.build({
-		entrypoints: ["./src/index.js"],
-		format: "esm",
+		entrypoints: ['./src/index.js'],
+		format: 'esm',
 		outdir: `./${id}`,
 		publicPath: `/modules/${id}/`,
 		minify: true,
 		splitting: false,
-		sourcemap: "none",
+		sourcemap: 'none',
 	});
 
 	if (!result.success) {
-		throw new AggregateError(result.logs, "Build failed");
+		throw new AggregateError(result.logs, 'Build failed');
 	}
 }
 
 async function packScripts() {
 	// Reference: https://github.com/moo-man/WFRP4e-FoundryVTT/blob/master/scriptPacker.js
-	const scripts = await readdir("./scripts/source");
+	const scripts = await readdir('./scripts/source');
 	const scriptObj: { [key: string]: string } = {};
 
 	for (const script of scripts) {
 		const text = await Bun.file(`./scripts/source/${script}`).text();
-		scriptObj[script.split(".")[0]] = text;
+		scriptObj[script.split('.')[0]] = text;
 	}
 
 	await Bun.write(
-		"./scripts/packed.js",
+		'./scripts/packed.js',
 		`export function loadScripts() { game.wfrp4e.config.effectScripts = ${JSON.stringify(scriptObj)}; }`,
 	);
 }
@@ -56,7 +56,7 @@ async function translateScripts() {
 	// A workaround for strings in game.i18n.localize() function that should not be replaced
 	const localizePattern = /game\.i18n\.localize\([^)]+\)/g;
 	const localizeMatches = text.match(localizePattern) || [];
-	const placeholder = "___LOCALIZE_PLACEHOLDER___";
+	const placeholder = '___LOCALIZE_PLACEHOLDER___';
 	let placeholderMap = new Map();
 
 	localizeMatches.forEach((match, index) => {
@@ -67,8 +67,8 @@ async function translateScripts() {
 
 	const keys = Object.keys(translation).sort((a, b) => b.length - a.length);
 	const pattern = new RegExp(
-		keys.map((key) => key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"),
-		"g",
+		keys.map((key) => key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'),
+		'g',
 	);
 	text = text.replace(pattern, (match) => translation[match as keyof typeof translation]);
 
@@ -77,7 +77,7 @@ async function translateScripts() {
 		text = text.replace(key, value);
 	});
 
-	await Bun.write("./src/scripts.js", text);
+	await Bun.write('./src/scripts.js', text);
 }
 
 async function copyDirectory(src: string, dest: string) {
