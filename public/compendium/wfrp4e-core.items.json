@@ -3975,7 +3975,7 @@
 		},
 		"Blanket": {
 			"name": "Одеяло",
-			"description": "<p>Endurance Tests rolled to resist Cold Exposure gain a bonus of +20 when resting.</p>"
+			"description": "<p>Пока персонаж находится под одеялом, на проверки стойкости, связанные с сопротивлением холоду, налагается модификатор +20.</p>"
 		},
 		"Crossbow Pistol": {
 			"name": "Одноручный арбалет",
