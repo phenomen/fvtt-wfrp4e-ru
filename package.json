@@ -10,7 +10,7 @@
 		"typescript": "^5.4.5"
 	},
 	"devDependencies": {
-		"@types/bun": "^1.1.14",
+		"@types/bun": "^1.2.2",
 		"prettier": "^3.4.2"
 	}
 }

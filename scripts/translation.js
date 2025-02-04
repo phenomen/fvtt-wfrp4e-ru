@@ -10,8 +10,9 @@ export const translation = {
 	'"Misfire Roll: "': '"Взрывная осечка: "',
 	'(Rolled 1)': '(Rolled 1)',
 	'"Automatically passes any "': '"Automatically passes any "',
-	'"Target has Aethyric Attunement or Second Sight"': '"Цель обладает эфирным унисоном или вторым зрением"',
-	'"Mutation table not found, please ensure a table with the `mutatephys` key is imported in the world."': '"Таблица мутаций не обнаружена, убедитесь что таблица с ключом 'mutatephys' импортирована в мир."',
+	'"Target has Aethyric Attunement or Second Sight"':
+		'"Цель обладает эфирным унисоном или вторым зрением"',
+	'"Mutation table not found, please ensure a table with the `mutatephys` key is imported in the world."':
+		'"Таблица мутаций не обнаружена, убедитесь что таблица с ключом `mutatephys` импортирована в мир."',
 	'"Item could not be found: "': '"Предмет не обнаружен: "',
-	
 };
