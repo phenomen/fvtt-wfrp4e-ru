@@ -141,7 +141,7 @@ export function patchConfigReady() {
 		},
 	};
 
-	mergeObject(game.wfrp4e.config, config);
+	foundry.utils.mergeObject(game.wfrp4e.config, config);
 }
 
 export function patchConfigSetup() {
@@ -153,7 +153,7 @@ export function patchConfigSetup() {
 				impossible: 'Отчаянная (-50)',
 			},
 		};
-		mergeObject(game.wfrp4e.config, config);
+		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
 
 	/* RNHD */
@@ -185,7 +185,7 @@ export function patchConfigSetup() {
 			},
 		};
 
-		mergeObject(game.wfrp4e.config, config);
+		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
 
 	/* ARCHIVES I */
@@ -518,7 +518,7 @@ export function patchConfigSetup() {
 			},
 		});
 
-		mergeObject(game.wfrp4e.config, config);
+		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
 
 	/* ARCHIVES II */
@@ -556,7 +556,7 @@ export function patchConfigSetup() {
 			},
 		};
 
-		mergeObject(game.wfrp4e.config, config);
+		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
 
 	/* MIDDENHEIM */
@@ -638,10 +638,11 @@ export function patchConfigSetup() {
 			},
 		};
 
-		mergeObject(game.wfrp4e.config, config);
+		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
 
 	/* UP IN ARMS */
+	/*
 	if (game.modules.get('wfrp4e-up-in-arms')?.active) {
 		const config = {
 			hitLocationTables: {
@@ -788,9 +789,9 @@ export function patchConfigSetup() {
 			},
 		});
 
-		mergeObject(game.wfrp4e.config, config);
+		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
-
+    */
 	/* WINDS OF MAGIC */
 	if (game.modules.get('wfrp4e-wom')?.active) {
 		game.wfrp4e.utility.mergeCareerReplacements({
@@ -920,6 +921,6 @@ export function patchConfigSetup() {
 			},
 		};
 
-		mergeObject(game.wfrp4e.config, config);
+		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
 }
