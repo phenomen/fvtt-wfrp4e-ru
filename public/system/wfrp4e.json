@@ -29,7 +29,7 @@
 	"TYPES.Item.vehicleMod": "Модификация транспорта",
 	"TYPES.Item.vehicleTest": "Vehicle Crew Test",
 	"TYPES.Item.vehicleRole": "Vehicle Role",
-	"TYPES.Item.template": "Template",
+	"TYPES.Item.template": "Шаблон",
 
 	"Targets": "Цели",
 	"Trapping": "Имущество",
@@ -56,11 +56,11 @@
 	"SETTINGS.AdvantageMaxHint": "Ограничение преимуществ определённым значением (2, 4, и т.п.).",
 	"SETTINGS.CapAdvIB": "Ограничение преимуществ рейтингом инициативы",
 	"SETTINGS.CapAdvIBHint": "Ограничить количество Преимуществ рейтингом инициативы персонажа. Перезаписывает настройку ограничения преимуществ.",
-	"SETTINGS.SLMethod": "SL Calculation Method",
-	"SETTINGS.SLMethodHint": "Configure how SL is calculated in Tests",
-	"SETTINGS.SLDefault": "Default",
-	"SETTINGS.SLFast": "Fast SL",
-	"SETTINGS.SLDOS": "Degrees of Success",
+	"SETTINGS.SLMethod": "Метод расчёта УУ",
+	"SETTINGS.SLMethodHint": "Настройка метода расчёта УУ в проверках",
+	"SETTINGS.SLDefault": "Стандартная",
+	"SETTINGS.SLFast": "Быстрые УУ",
+	"SETTINGS.SLDOS": "Степени успехи",
 	"SETTINGS.FastSL": "Быстрые УУ",
 	"SETTINGS.FastSLHint": "Определять УУ по опциональному правилу быстрых УУ, описанному на стр. 152.",
 	"SETTINGS.TestsAbove100": "Проверки выше 100 пунктов",
@@ -103,8 +103,8 @@
 	"SETTINGS.UIACritsModHint": "Изменить величину модификатора травм (используя правила 'Up in Arms')",
 	"SETTINGS.UIAShields": "Достоинство 'Щит' Up In Arms",
 	"SETTINGS.UIAShieldsHint": "Изменить достоинство 'Щит' в соответствии с Up in Arms",
-	"SETTINGS.UIABleeding": "Up In Arms Bleeding Condition",
-	"SETTINGS.UIABleedingHint": "Change Bleeding condition as specified in Up In Arms page 80",
+	"SETTINGS.UIABleeding": "Состояние 'Истекает кровью' по Up in Arms",
+	"SETTINGS.UIABleedingHint": "Изменить состояние 'Истекает кровью' в соответствии с 80 страницей Up in Arms",
 	"SETTINGS.WeaponLength": "Длина оружия",
 	"SETTINGS.WeaponLengthHint": "Использовать длину оружия для добавления модификаторов, как описано на стр. 297.",
 	"SETTINGS.SoundEffects": "Путь к звуковым эффектам",
@@ -208,7 +208,7 @@
 	"SHEET.Post": "Отправить в чат",
 	"SHEET.NestedWarning": "Нельзя добавлять контейнеры со вложенностью более четырёх.",
 	"SHEET.LocationWarning": "Удалить контейнер перед изменением его положения.",
-	"SHEET.SkillMissingWarning": "The Skill used for Income was not found on this Actor",
+	"SHEET.SkillMissingWarning": "Навык, используемый для заработка, не найден у этого актёра",
 	"SHEET.NonCurrentCareer": "Это не ваша текущая карьера.",
 	"SHEET.AddSkillTitle": "Добавить карьерный навык",
 	"SHEET.AddSkillPrompt": "Вы хотите добавить этот навык?",
@@ -220,9 +220,9 @@
 	"SHEET.CareerSkillPrompt": "Вы изменили специализацию навыка в своей текущей карьере. Вы хотите применить это изменение ко всей карьере?",
 	"SHEET.CareerSkillNotif": "Изменение {oldName} на {newName} у {career}",
 	"SHEET.LoadingSkills": "Loading Skills",
-	"SHEET.SkillSpecialization": "Skill Specialisation",
-	"SHEET.SkillSpecializationText": "Select specialisation, if no selection is made, enter one manually.",
-	"SHEET.SkillSpecializationEnter": "Enter Skill Specialisation",
+	"SHEET.SkillSpecialization": "Специализация навыка",
+	"SHEET.SkillSpecializationText": "Выберите специализацию. Если выбор невозможен, введите её вручную.",
+	"SHEET.SkillSpecializationEnter": "Введите специализацию навыка",
 	"SHEET.SortItems": "Сортировать предметы",
 	"SHEET.ArmourDamaged": "Броня повреждена на 1 пункт",
 	"SHEET.ArmourRepaired": "Броня отремонтирована на 1 пункт",
@@ -233,11 +233,11 @@
 	"SHEET.TemporaryEffectHint": "Источником этого эффекта является актёр. Чтобы взаимодействовать с ним, используйте лист актёра.",
 	"SHEET.ExperienceLog": "Журнал опыта",
 	"Sheet.RollIncome": "Заработок",
-	"SHEET.ItemSheetEditableDisabled": "Editing this Item has been disabled while under the effects of {effects}. Disable or delete these effects on the owning Actor.",
+	"SHEET.ItemSheetEditableDisabled": "Редактирование этого объекта отключено при действии эффекта '{effects}'. Отключите или удалите этот эффект у владеющего актёра.",
 	"SHEET.AlterName": "Alter Name",
-	"SHEET.SpecialisationAbbrev": "Spec.",
-	"SHEET.TemplateSpecialisationTooltip": "How many specialisations to pick (e.g. \"Melee\" and \"2\" corresponds to \"Melee (any two)\")",
-	"SHEET.TemplateGroupTooltip": "Providing a group number will give the option to choose between any other Item with the same group number.",
+	"SHEET.SpecialisationAbbrev": "Спец.",
+	"SHEET.TemplateSpecialisationTooltip": "Количество выбираемых специализаций (например 'Рукопашный бой' и '2' соответствует 'Рукопашный бой (любые два)'",
+	"SHEET.TemplateGroupTooltip": "Указав номер группы, вы сможете выбрать любой другой объект с таким-же номером группы.",
 
 	"LOG.MemorizedSpell": "Запомнено {name}",
 	"LOG.GainPrayer": "Получено  {name}",
@@ -256,7 +256,7 @@
 	"SHEET.DeleteItem": "Удалить предмет",
 	"SHEET.RemoveItem": "Убрать предмет",
 	"SHEET.Encumbrance": "Вес",
-	"SHEET.EncCount": "Encumbrance Counter",
+	"SHEET.EncCount": "Счётчик веса",
 	"SHEET.MaxEnc": "Максимально перегружен",
 	"SHEET.VeryEnc": "Сильно перегружен",
 	"SHEET.Encumbered": "Перегружен",
@@ -295,8 +295,8 @@
 	"SHEET.CannotDeleteItemEffect": "Этот эффект связан с предметом актёра. Удалите предмет или эффект у предмета.",
 	"SHEET.CannotDeleteCrewEffect": "Этот эффект связан с транспортом, на котором находится актёр. Удалите актёра с транспорта.",
 	"SHEET.Attacker": "Атакующий",
-	"SHEET.LocationAP": "Location AP",
-	"SHEET.AppliedTemplates": "Applied Templates",
+	"SHEET.LocationAP": "Зона КБ",
+	"SHEET.AppliedTemplates": "Применяемый шаблон",
 
 	"ACTOR.BasicSkillsTitle": "Добавить основные навыки",
 	"ACTOR.BasicSkillsPrompt": "Добавить основные навыки?",
@@ -347,11 +347,11 @@
 	"ITEM.OptimalRange": "Оптимальная дистанция",
 	"ITEM.Ritual": "Ритуал",
 	"ITEM.RandomVortex": "Случайное завихрение",
-	"ITEM.Standard": "Standard",
-	"ITEM.TestSkill": "Test Skill",
-	"ITEM.Roles": "Roles",
+	"ITEM.Standard": "Обычный",
+	"ITEM.TestSkill": "Навык проверки",
+	"ITEM.Roles": "Роль",
 	"ITEM.VitalRoles": "Vital Roles",
-	"ITEM.LearningXP": "Learning XP",
+	"ITEM.LearningXP": "Опыт для изучения",
 	"as weapon": "как у оружия",
 	"half weapon": "половина от оружия",
 	"third weapon": "треть от оружия",
@@ -772,8 +772,8 @@
 	"DIALOG.ActorSelection": "Выберите актёра",
 	"DIALOG.ShowTable": "Видимость таблицы",
 	"DIALOG.ShowTableHint": "Показывать таблицу игрокам в боковом меню и меню /table",
-	"DIALOG.LinkCareer": "Link Career",
-	"DIALOG.LinkCareerContent": "Link {new} with {old}? This will add the skills from {old} into {new}, preserving any specialisation choices made in the previous career.",
+	"DIALOG.LinkCareer": "Связывание карьер",
+	"DIALOG.LinkCareerContent": "Связать {new} с {old}? Это включит навыки из {old} в {new}, сохранив все специализации, выбранные в предыдущей карьере. ",
 	"Show": "Показать",
 	"Hide": "Скрыть",
 	"ExpChange": "Изменения опыта",
@@ -900,10 +900,10 @@
 	"CHAT.TestModifiers.IgnoreDefenderMountLarger": "Игнорировать штраф за длину оружия при атаке всадника (Up in Arms)",
 	"CHAT.SpreadPointBlank": "Ближняя дистанция: урон увеличен на {damage}",
 	"CHAT.SpreadExtreme": "Предельная дистанция: урон уменьшен на {damage}",
-	"CHAT.CrewTest": "Crew Test",
-	"CHAT.NoCrewWithRole": "No crew with role!",
-	"CHAT.RoleNotFound": "Role <strong>{role}</strong> not found!",
-	"CHAT.TotalSL": "Total SL",
+	"CHAT.CrewTest": "Проверка команды",
+	"CHAT.NoCrewWithRole": "Нет назначенного члена команды.",
+	"CHAT.RoleNotFound": "Роль <strong>{role}</strong> не обнаружена!",
+	"CHAT.TotalSL": "Общий УУ",
 	"CHAT.Vital": "Vital",
 	"CHAT.CrewTestVital": "Crew Test (Vital)",
 	"CHAT.AttackerTooSmallDamage": "Атакующий слишком мал, чтобы нанести урон этому транспортному средству.",
@@ -1941,74 +1941,74 @@
 			"ammunition": {
 				"FIELDS": {
 					"ammunitionType.value": {
-						"label": "Ammunition Type",
-						"hint": "Designates what types of Weapons can use this Ammunition"
+						"label": "Тип боеприпасов",
+						"hint": "Определяет, какие типы оружия могут использовать эти боеприпасы."
 					},
 					"range.value": {
-						"label": "Range",
+						"label": "Дальнобойность",
 						"hint": "Modifies the Range of the Weapon using this Ammunition. e.g. Add: +2, Subtract: -2, Multiply: *2, Divide: /2"
 					},
 					"damage.value": {
-						"label": "Damage",
+						"label": "Урон",
 						"hint": "Modifies the Damage of the Weapon using this Ammunition. See Range examples above."
 					},
 					"damage.dice": {
-						"label": "Dice",
-						"hint": "Add a dice roll to Damage"
+						"label": "Кость",
+						"hint": "Добавить бросок кости к урону"
 					},
 					"special.value": {
-						"label": "Special"
+						"label": "Особое"
 					}
 				}
 			},
 			"armour": {
 				"FIELDS": {
 					"armorType.value": {
-						"label": "Armour Type"
+						"label": "Тип брони"
 					},
 					"AP": {
 						"head": {
-							"label": "Head"
+							"label": "Голова"
 						},
 						"lArm": {
-							"label": "Left Arm"
+							"label": "Левая рука"
 						},
 						"rArm": {
-							"label": "Right Arm"
+							"label": "Правая рука"
 						},
 						"lLeg": {
-							"label": "Left Leg"
+							"label": "Левая нога"
 						},
 						"rLeg": {
-							"label": "Right Leg"
+							"label": "Правая нога"
 						},
 						"body": {
-							"label": "Body"
+							"label": "Торс"
 						}
 					},
 					"special.value": {
-						"label": "Special",
-						"hint": "Miscellaneous text that will show in the chat card."
+						"label": "Особое",
+						"hint": "Другой текст, который будет отображаться в карточке чата"
 					}
 				}
 			},
 			"career": {
 				"FIELDS": {
 					"class.value": {
-						"label": "Class"
+						"label": "Класс"
 					},
 					"careergroup.value": {
-						"label": "Career Group"
+						"label": "Карьерная лестница"
 					},
 					"level.value": {
-						"label": "Career Level"
+						"label": "Ступень карьеры"
 					},
 					"status": {
 						"tier": {
-							"label": "Tier"
+							"label": "Сословие"
 						},
 						"standing": {
-							"label": "Standing "
+							"label": "Положение"
 						}
 					}
 				}
@@ -2051,118 +2051,118 @@
 			"disease": {
 				"FIELDS": {
 					"contraction.value": {
-						"label": "Contraction"
+						"label": "Заражение"
 					},
 					"incubation.value": {
-						"label": "Incubation"
+						"label": "Инкубация"
 					},
 					"duration.value": {
-						"label": "Duration"
+						"label": "Продолжительность"
 					},
 					"symptoms.value": {
-						"label": "Symptoms"
+						"label": "Симптомы"
 					},
 					"permanent.value": {
-						"label": "Permanent"
+						"label": "Последствия"
 					}
 				}
 			},
 			"extendedTest": {
 				"FIELDS": {
 					"SL.target": {
-						"label": "Target SL"
+						"label": "Требуемый УУ"
 					},
 					"test.value": {
-						"label": "Test"
+						"label": "Проверки"
 					},
 					"difficulty.value": {
-						"label": "Default Difficulty"
+						"label": "Сложность по умолчанию."
 					},
 					"negativePossible.value": {
-						"label": "Negative SL Possible",
-						"hint": "Allow the progress of this Test to go below 0"
+						"label": "Возможны негативные УУ",
+						"hint": "Позволить показателю этой проверки опуститься ниже 0."
 					},
 					"failingDecreases.value": {
-						"label": "Failing Decreases Progress",
-						"hint": "Reduce Progress on failed Tests"
+						"label": "Снижение суммарного успеха",
+						"hint": "Уменьшить суммарный успех при провале проверки"
 					},
 					"completion.value": {
-						"label": "On Completion",
-						"hint": "Once complete, perform this action"
+						"label": "По завершению",
+						"hint": "После завершения выполнить это действие"
 					},
 					"hide.test": {
-						"label": "Hide Test",
-						"hint": "Hide this Test from Players"
+						"label": "Скрытая проверка",
+						"hint": "Скрыть эту проверку от игроков"
 					},
 					"hide.progress": {
-						"label": "Hide Progress",
-						"hint": "Hide Test progress from Players"
+						"label": "Скрывать суммарный успех",
+						"hint": "Скрыть суммарный успех от игроков"
 					}
 				}
 			},
 			"money": {
 				"FIELDS": {
 					"coinValue.value": {
-						"label": "Coin Value",
-						"hint": "Value of this coin type (in brass pennies)."
+						"label": "Ценность монеты",
+						"hint": "Ценность этой монеты (в медных пенни)"
 					}
 				}
 			},
 			"skill": {
 				"FIELDS": {
 					"advanced.value": {
-						"label": "Skill Type"
+						"label": "Тип навыка"
 					},
 					"grouped.value": {
-						"label": "Specialization"
+						"label": "Специализация"
 					},
 					"characteristic.value": {
-						"label": "Characteristic"
+						"label": "Характеристика"
 					},
 					"modifier.value": {
-						"label": "Modifier"
+						"label": "Модификатор"
 					},
 					"advances.force": {
-						"label": "Force Advancement Indicator",
-						"hint": "Show the Advancement Indicator regardless of career, which will allow you to automate spending experience."
+						"label": "Доб. кнопку развития",
+						"hint": "Показывать кнопку развития независимо от карьеры, позволив автоматизировать трату опыта."
 					},
 					"advances.costModifier": {
-						"label": "XP Cost Modifier"
+						"label": "Модификатор стоимости развития"
 					}
 				}
 			},
 			"talent": {
 				"FIELDS": {
 					"tests.value": {
-						"label": "Tests"
+						"label": "Проверки"
 					},
 					"max.value": {
-						"label": "Max"
+						"label": "Макс."
 					},
 					"advances.force": {
-						"label": "Force Advancement Indicator",
-						"hint": "Show the Advancement Indicator regardless of career, which will allow you to automate spending experience."
+						"label": "Доб. кнопку развития",
+						"hint": "Показывать кнопку развития независимо от карьеры, позволив автоматизировать трату опыта."
 					}
 				}
 			},
 			"mutation": {
 				"FIELDS": {
 					"mutationType.value": {
-						"label": "Mutation Type"
+						"label": "Тип мутации"
 					}
 				}
 			},
 			"critical": {
 				"FIELDS": {
 					"wounds.value": {
-						"label": "Wounds"
+						"label": "Раны"
 					},
 					"prompt": {
-						"label": "Prompt Location",
-						"hint": "Prompt for a location when added to an Actor."
+						"label": "Определить зону попадания",
+						"hint": "Выбрать зону попадания при добавлении актёру"
 					},
 					"location.value": {
-						"label": "Location"
+						"label": "Зона попадания"
 					}
 				}
 			},
@@ -2170,45 +2170,45 @@
 				"FIELDS": {
 					"duration": {
 						"value": {
-							"label": "Duration"
+							"label": "Продолжительность"
 						},
 						"permanent": {
-							"label": "Permanent"
+							"label": "Последствия"
 						}
 					},
 					"prompt": {
-						"label": "Prompt Location",
-						"hint": "Prompt for a left or right location when added to an Actor."
+						"label": "Определить зону попадания",
+						"hint": "Выбрать левую или правую при добавлении актёру"
 					},
 					"location.value": {
-						"label": "Location"
+						"label": "Зона попадания"
 					}
 				}
 			},
 			"prayer": {
 				"FIELDS": {
 					"type.value": {
-						"label": "Type"
+						"label": "Тип"
 					},
 					"god.value": {
-						"label": "God"
+						"label": "Бог"
 					},
 					"range.value": {
-						"label": "Range"
+						"label": "Дальность"
 					},
 					"duration.value": {
-						"label": "Duration"
+						"label": "Длительность"
 					},
 					"target": {
 						"value": {
-							"label": "Target"
+							"label": "Цель"
 						},
 						"aoe": {
-							"label": "Area of Effect"
+							"label": "Область воздействия"
 						},
 						"extendableAoE": {
-							"label": "Extendable AoE",
-							"hint": "Can the AoE be enlarged with extra SL?"
+							"label": "Увеличение области воздействия",
+							"hint": "Можно увеличить область воздействия при дополнительных УУ?"
 						}
 					},
 					"damage": {
@@ -2217,16 +2217,16 @@
 						},
 						"dice": {
 							"label": "Dice",
-							"hint": "Add a dice roll to Damage"
+							"hint": "Добавить бросок кости к урону"
 						},
 						"addSL": {
-							"label": "Add SL",
-							"hint": "Add SL to Damage value"
+							"label": "Добавить УУ",
+							"hint": "Добавить УУ к значению урона"
 						}
 					},
 					"overcast": {
 						"enabled": {
-							"label": "Extra Overcast Options"
+							"label": "Доп. варианты избытка магии"
 						}
 					}
 				}
@@ -2234,60 +2234,60 @@
 			"spell": {
 				"FIELDS": {
 					"cn.value": {
-						"label": "Casting Number"
+						"label": "Порог сотворения"
 					},
 					"lore.value": {
-						"label": "Lore"
+						"label": "Школа магии"
 					},
 					"skill.value": {
-						"label": "Casting Skill"
+						"label": "Навык сотворения"
 					},
 					"wind.value": {
-						"label": "Channelling Skill"
+						"label": "Навык концентрации"
 					},
 					"ritual.value": {
-						"label": "Ritual"
+						"label": "Ритуал"
 					},
 					"ritual.xp": {
-						"label": "Learning XP"
+						"label": "Опыт для изучения"
 					},
 					"range.vortex": {
-						"label": "Random Vortex"
+						"label": "Случайное завихрение"
 					},
 					"range.value": {
-						"label": "Range"
+						"label": "Дальность"
 					},
 					"duration.value": {
-						"label": "Duration"
+						"label": "Длительность"
 					},
 					"duration.extendable": {
-						"label": "Extendable Duration",
-						"hint": "When the spell should end, you may make a Willpower Test to extend the Duration for +1 round."
+						"label": "Поддержание длительности",
+						"hint": "по истечении длительности заклинания персонаж может пройти проверку силы воли, чтобы продлить её ещё на 1 раунд."
 					},
 					"magicMissile.value": {
-						"label": "Magic Missile"
+						"label": "Магический снаряд"
 					},
 
 					"target": {
 						"value": {
-							"label": "Target"
+							"label": "Цель"
 						},
 						"aoe": {
-							"label": "Area of Effect"
+							"label": "Область воздействия"
 						}
 					},
 					"damage": {
 						"value": {
-							"label": "Formula"
+							"label": "Формула"
 						},
 						"dice": {
-							"label": "Dice",
-							"hint": "Add a dice roll to Damage"
+							"label": "Кость",
+							"hint": "Добавить бросок кости к урону"
 						}
 					},
 					"overcast": {
 						"enabled": {
-							"label": "Extra Overcast Options"
+							"label": "Доп. варианты избытка магии"
 						}
 					}
 				}
@@ -2295,60 +2295,60 @@
 			"trait": {
 				"FIELDS": {
 					"category": {
-						"label": "Category"
+						"label": "Категория"
 					},
 					"rollable": {
 						"value": {
-							"label": "Rollable"
+							"label": "Бросок"
 						},
 						"damage": {
-							"label": "Does Damage"
+							"label": "Наносит урон"
 						},
 						"skill": {
-							"label": "Skill"
+							"label": "Навык"
 						},
 						"rollCharacteristic": {
-							"label": "Roll Characteristic"
+							"label": "Пробросить характеристики"
 						},
 						"bonusCharacteristic": {
 							"label": "Рейтинг характеристики"
 						},
 						"dice": {
-							"label": "Dice Roll"
+							"label": "Бросок кости"
 						},
 						"defaultDifficulty": {
-							"label": "Difficulty"
+							"label": "Сложность"
 						},
 						"SL": {
-							"label": "Add SL"
+							"label": "Добавить УУ"
 						},
 						"attackType": {
-							"label": "Attack Type"
+							"label": "Тип атаки"
 						}
 					},
 					"specification.value": {
-						"label": "Specification"
+						"label": "Специализация"
 					}
 				}
 			},
 			"trapping": {
 				"FIELDS": {
 					"trappingType.value": {
-						"label": "Trapping Type"
+						"label": "Тип имущества"
 					}
 				}
 			},
 			"vehicleMod": {
 				"FIELDS": {
 					"modType.value": {
-						"label": "Modification Type"
+						"label": "Тип модификации"
 					}
 				}
 			},
 			"vehicleRole": {
 				"FIELDS": {
 					"test": {
-						"label": "Test Skill"
+						"label": "Навык проверки"
 					}
 				}
 			},
@@ -2356,7 +2356,7 @@
 				"FIELDS": {
 					"roles": {
 						"value": {
-							"label": "Roles"
+							"label": "Роли"
 						},
 						"vital": {
 							"label": "Vital Roles"
@@ -2370,51 +2370,51 @@
 			"weapon": {
 				"FIELDS": {
 					"weaponGroup.value": {
-						"label": "Weapon Group"
+						"label": "Тип оружия"
 					},
 					"skill.value": {
-						"label": "Skill"
+						"label": "Навык"
 					},
 					"modeOverride.value": {
-						"label": "Attack Type"
+						"label": "Тип атаки"
 					},
 					"damage": {
 						"value": {
-							"label": "Formula"
+							"label": "Формула"
 						},
 						"dice": {
-							"label": "Dice",
-							"hint": "Add a dice roll to Damage"
+							"label": "Кость",
+							"hint": "Добавить бросок кости к урону"
 						}
 					},
 					"reach": {
 						"value": {
-							"label": "Reach"
+							"label": "Длина"
 						}
 					},
 					"range": {
 						"value": {
-							"label": "Range"
+							"label": "Дальнобойность"
 						}
 					},
 					"ammunitionGroup": {
 						"value": {
-							"label": "Ammunition Group"
+							"label": "Тип боеприпасов"
 						}
 					},
 					"consumesAmmo": {
 						"value": {
-							"label": "Consumes Ammo"
+							"label": "Требует боеприпасы"
 						}
 					},
 					"twohanded": {
 						"value": {
-							"label": "Two-handed"
+							"label": "Двуручное"
 						}
 					},
 					"special": {
 						"value": {
-							"label": "Special"
+							"label": "Особое"
 						}
 					}
 				}
@@ -2425,11 +2425,11 @@
 			"Locational": {
 				"FIELDS": {
 					"prompt": {
-						"label": "Prompt Location",
-						"hint": "Prompt for a location when added to an Actor."
+						"label": "Определить зону попадания",
+						"hint": "Выбрать зону попадания при добавлении актёру"
 					},
 					"location.value": {
-						"label": "Location"
+						"label": "Зона попадания"
 					}
 				}
 			}
