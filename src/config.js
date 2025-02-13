@@ -642,12 +642,7 @@ export function patchConfigSetup() {
 	}
 
 	/* UP IN ARMS */
-<<<<<<< Updated upstream
-	/*
-	if (game.modules.get('wfrp4e-up-in-arms')?.active) {
-=======
 	if (game.modules.get("wfrp4e-up-in-arms")?.active) {
->>>>>>> Stashed changes
 		const config = {
 			hitLocationTables: {
 				quadruped: "Четвероногие",
@@ -795,7 +790,7 @@ export function patchConfigSetup() {
 
 		foundry.utils.mergeObject(game.wfrp4e.config, config);
 	}
-    */
+
 	/* WINDS OF MAGIC */
 	if (game.modules.get("wfrp4e-wom")?.active) {
 		game.wfrp4e.utility.mergeCareerReplacements({
