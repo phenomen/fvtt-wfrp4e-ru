@@ -15,11 +15,11 @@
 			"discord": "mrak_x"
 		}
 	],
-	"version": "8.4.1.1",
+	"version": "8.4.1.2",
 	"compatibility": {
-		"minimum": "11",
+		"minimum": "12",
 		"verified": "12",
-		"maximum": "12"
+		"maximum": "13"
 	},
 	"esmodules": ["index.js"],
 	"coreTranslation": false,
@@ -65,11 +65,6 @@
 		},
 		{
 			"lang": "ru",
-			"path": "modules/wfrp4e-gm-toolkit.json",
-			"module": "wfrp4e-gm-toolkit"
-		},
-		{
-			"lang": "ru",
 			"path": "modules/wfrp4e-archives2.json",
 			"module": "wfrp4e-archives2"
 		},
@@ -102,6 +97,16 @@
 			"lang": "ru",
 			"path": "modules/wfrp4e-wom.json",
 			"module": "wfrp4e-wom"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/wfrp4e-gm-toolkit.json",
+			"module": "wfrp4e-gm-toolkit"
+		},
+		{
+			"lang": "ru",
+			"path": "modules/forien-armoury.json",
+			"module": "forien-armoury"
 		}
 	],
 	"url": "https://github.com/phenomen/fvtt-wfrp4e-ru",

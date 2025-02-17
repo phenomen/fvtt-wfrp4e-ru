@@ -1,0 +1,649 @@
+{
+	"Forien": {
+		"Armoury": {
+			"Macros": {
+				"MustControlActor": "Must control the character you want to use this macro for.",
+				"AvailableSkills": "Выберите навык для проверки с ограничением",
+				"SelectSpell": "Выберите заклинание для создания ингредиента",
+				"Generate": "Generate",
+				"Cancel": "Cancel",
+				"Roll": "Бросок",
+				"IngredientFor": "Ингредиент для",
+				"AvailableSpells": "Доступные заклинания",
+				"NotAGM": "You must be a GM to use this macro!",
+				"GenerateScrollLoading": "Loading Spells to generate a Magic Scroll…",
+
+				"Cant": {
+					"UseWomChannelling": "To use Cants, WoM Channelling rules must be enabled in Settings!",
+					"NotEnoughSL": "{actor} does not have enough channelled SL for Lore of {lore} to use {macro} Cant! Has {SL} out of {requiredSL} needed.",
+					"SLCost": "SL cost",
+					"LoreOf": "Lore of {lore} Cant",
+					"ChannelledSlChanged": "Channelled SL changed from {old} to {new}"
+				},
+
+				"Lockpick": {
+					"DialogTitle": "Create Extended Lock Pick Test",
+					"SLNaN": "SL must be a number!",
+					"DifficultyEmpty": "Difficulty must not be empty!"
+				},
+
+				"CheckStatus": {
+					"NoActorsFound": "No actors found in provided Folders",
+
+					"MessageHeader": "Character status summary",
+					"Name": "Name",
+					"Career": "Career",
+					"Points": "Points",
+					"FortunePointsShort": "Fort",
+					"FatePointsShort": "Fate",
+					"ResolvePointsShort": "Rslv",
+					"ResiliencePointsShort": "Resi",
+					"Experience": "Experience",
+					"ExperienceLeft": "Left",
+					"ExperienceTotal": "Total"
+				},
+
+				"AwardXP": {
+					"DialogTitle": "Grant XP to Party",
+					"Amount": "Amount",
+					"Reason": "Reason",
+					"Award": "Award",
+
+					"XPNaN": "XP must be a number!",
+					"ReasonEmpty": "Reason must not be empty!"
+				}
+			},
+
+			"Actors": {
+				"InputMoneyFormula": "Input roll formula for random money (in bronze pennies)",
+				"ShouldRollTokenTitle": "Randomize {name}?",
+				"ShouldRollTokenContent": "Randomize Characteristics, Skills and Talents for {name} based on their {species} species?"
+			},
+
+			"CombatFatigue": {
+				"CombatFatigueTest": "— боевая усталость",
+				"CombatFatigueTestFailure": "Fatigued! Next Test will be taken after TB Turns.",
+				"CombatFatigueTestSuccess": "Staved off Fatigue! Next Test will be taken after TB + SL Turns.",
+				"CombatFatigueToolTip": "Combat Fatigue - Rounds to Endurance Test",
+				"CombatPassOutToollTip": "Combat Fatigue - Rounds to Pass Out"
+			},
+
+			"CastingFatigue": {
+				"MagicalEnduranceTest": "— усталость заклинателя",
+				"TestFailure": "{character} получил <b>1 состояние усталости</b>",
+				"TestSuccess": "{character} успешно сопротивляется усталости",
+				"MagicalEndurance": "Магическое истощение сил",
+				"Regen": "Регенерация",
+				"PerHourShort": "/ hr"
+			},
+
+			"ItemRepair": {
+				"MustControlActor": "Must control the character you want to repair items for.",
+				"Repaired": "{name} has been repaired. Removed {repaired} damage from the item.",
+				"Free": "Free",
+
+				"NoActorSelected": "You must select an actor for the Item Repair feature!",
+				"NoItemsToRepair": "You have no damaged items that you can repair.",
+
+				"ArmourPlural": "Броня",
+				"Weapons": "Оружие",
+				"Trappings": "Имущество",
+
+				"WeaponIsMangled": "Weapon is mangled beyond recognition. It's treated now as an <em>Improvised Weapon</em> and can't normally be repaired.",
+				"ItemIsMangled": "This item is mangled beyond recognition and can't normally be repaired.",
+
+				"ArmourReceivedDamageTotal": "{name} has received <strong>{damage} points of damage</strong> across all of its locations.",
+				"ItemReceivedDamageOutOfMax": "{name} has received <strong>{damage} points of damage</strong> out of maximum <strong>{maxDamage}</strong> it can sustain.",
+				"RepairingWillCostPerDamageAndTotal": "Repairing this item will cost {perDamage} per damage for a total of <strong>{total}</strong>.",
+				"DamageReceived": "Damage received",
+
+				"Repair1Damage": "Repair 1 damage",
+				"RepairAllDamage": "Repair all damage",
+
+				"Button": {
+					"PayAndRepair": "Pay & Repair",
+					"Repair": "Repair",
+					"RepairAll": "Repair All",
+					"DamageSingular": "Damage",
+					"AllDamage": "All Damage"
+				}
+			},
+
+			"Runes": {
+				"effectNameIncludes": {
+					"RuneOf": "rune of",
+					"Temporary": "temporary"
+				},
+
+				"RemovedEffectTemporaryRuneDisabled": "Removed \"{effectName}\" effect from Actor \"{actorName}\" and Item \"{itemName}\". It was Temporary Rune that got disabled.",
+				"Weapon": "Weapon",
+				"Item": "Item",
+				"Received1Damage": "received 1 Damage",
+				"AndGotUnequipped": "and got unequipped because of it",
+				"ItsNowImprovisedWeapon": "it's now considered an Improvised Weapon",
+				"ItemGotDamaged": "Item got Damaged",
+
+				"ArmourCouldNotBeDamagedMore": "Armour couldn't be damaged more",
+				"ArmourReceived1DamageOnLocation": "Armour received 1 Damage on {locationName}",
+
+				"ItemDamagedInName": "damaged",
+
+				"EffectOf": "Effect of",
+
+				"MustSelectATarget": "You must select a target for {rune}.",
+				"TargetNotInRange": "Selected target is not in range for {rune}. Must be within {range} yards.",
+
+				"RuneOfCleaving": {
+					"name": "Rune of Cleaving",
+					"effect": "+1 Damage"
+				},
+				"RuneOfFate": {
+					"name": "Rune of Fate",
+					"effect": "negated all incoming Damage, because you would drop down to 0 Wounds."
+				},
+				"RuneOfFire": {
+					"name": "Rune of Fire",
+					"effect": "+1 @Condition[Ablaze]{Ablaze} Condition."
+				},
+				"RuneOfFury": {
+					"name": "Rune of Fury",
+					"effect": "you may spend an Advantage or your remaining Move to make an extra attack."
+				},
+				"RuneOfGrudges": {
+					"name": "Rune of Grudges",
+					"effect": "On the <em>first Round of Combat</em>, nominate an enemy as the Target of this Rune. For the remainder of the Combat, <strong>you can reroll all failed attacks against the Target</strong>.",
+					"description": "Character wielding weapon Engraved with this Rune can, on the <em>first Round of Combat</em>, nominate an enemy as the Target of this Rune. For the remainder of the Combat, <strong>you can reroll all failed attacks against the Target</strong>."
+				},
+				"RuneOfTheFurnace": {
+					"name": "Rune of the Furnace",
+					"effect": "negated Ablaze Condition."
+				},
+				"RuneOfLuck": {
+					"name": "Rune of Luck",
+					"effect": "While this Item is equipped, gain 1 level of {luck} Talent."
+				},
+				"RuneOfLuckTemporary": {
+					"name": "Rune of Luck (Temporary)",
+					"effect": "You can activate this Rune as an alternative or equivalent to using a Fortune point.",
+					"effectActivated": "Rune has been activated, you gain one of the effects of a Fortune point.",
+					"checkPrompt": "Check {journal} for details."
+				},
+				"RuneOfIron": {
+					"name": "Rune of Iron",
+					"effect": "Reduces all incoming Damage by 1, even if it ignores AP."
+				},
+				"RuneOfMight": {
+					"name": "Rune of Might",
+					"effect": "SB doubled against enemies with TB equal to or higher than 5."
+				},
+				"RuneOfResistance": {
+					"name": "Rune of Resistance",
+					"effect": "Should you receive damage from an attack or effect that ignores AP and TB, you can perform a Toughness Test with -5 modifier for each Wound you are about to suffer. If you succeed, you suffer no Wounds."
+				},
+				"RuneOfSpeed": {
+					"name": "Rune of Speed",
+					"effect": "Character wielding weapon Engraved with this Rune adds a +1d10 to their Initiative Score during the Combat."
+				},
+				"RuneOfSpellbreaking": {
+					"name": "Rune of Spellbreaking",
+					"effect": "Use to immediately end any persistent spell within 12 yards. Additionally, if you are a Runesmith, you can instead attempt to Dispel any incoming spell and gain +20 modifier to that attempt. Activating this rune takes an Action."
+				},
+				"RuneOfSpelleating": {
+					"name": "Rune of Spelleating",
+					"effect": "Use to immediately end any persistent spell within 12 yards. Additionally, if you are a Runesmith, you can instead attempt to Dispel any incoming spell and gain +20 modifier to that attempt. If you succeed, the opposing caster can’t use that spell again within the next 24 hours. Activating this rune takes an Action."
+				},
+
+				"MasterRuneOfBreaking": {
+					"name": "Master Rune of Breaking",
+					"effect": "you may perform an Opposed Strength Test against your opponent. If you win, your opponent’s weapon breaks."
+				},
+				"MasterRuneOfDismay": {
+					"name": "Master Rune of Dismay",
+					"effect": "All enemies within 24 yards of the user must make a Willpower Test or suffer a @Condition[Stunned]{Stunned} Condition. Activation takes an Action, can only be used once per Encounter."
+				},
+				"MasterRuneOfSpite": {
+					"name": "Master Rune of Spite",
+					"effect": "Reduces all incoming Damage by 2, even if it ignores AP."
+				},
+				"MasterRuneOfSteel": {
+					"name": "Master Rune of Steel",
+					"effect": "Non-magical weapons gain Undamaging flaw when striking wearer of this Armour."
+				}
+			},
+
+			"Runebound": {
+				"LoreName": "Runebound",
+
+				"Tutor": {
+					"Name": "Tutor",
+					"Effect": "increased AP when struck by a bigger enemy by the amount proportional to difference in size ({num})."
+				}
+			},
+
+			"Arrows": {
+				"applySlashing.Enable": "Enable rules for Slashing Quality",
+				"applySlashing.EnableHint": "If enabled, successful hits with Slashing weapon on part protected by no more than 1 AP will automatically add Bleeding Condition",
+
+				"SlashingApplied": "{hitLocation} Hit Location is protected by no more than 1 AP, applying Bleed condition. <br>{bleedAmtOld} -&gt; {bleedAmt}",
+				"ChatArrowsRecovered": "{name} found and recovered <strong>{qty}</strong> {ammoName}s that can be reused.",
+
+				"recovered": "{type} recovered",
+				"recoveredFuture": "{type} will be recovered after combat",
+				"Arrow": "Arrow",
+				"Bolt": "Bolt",
+				"Bullet": "Bullet",
+
+				"Properties": {
+					"Blinding": {
+						"Label": "Blinding",
+						"Description": "A Blinding X weapon inflicts X @Condition[Blinded] Conditions to enemy hit.",
+						"Message": "Blinding weapon was used! <strong>{rating} Blinded Conditions received.</strong>"
+					},
+					"Incendiary": {
+						"Label": "Incendiary",
+						"Description": "An Incendiary X weapon inflicts one @Condition[Ablaze] Condition on hit, as long as unit die on the Weapon Test rolled less than or equal X.",
+						"Message": "Incendiary weapon was used and unit die ({die}) rolled less than or equal {rating}! <strong>Ablaze Condition received.</strong>"
+					},
+					"Slashing": {
+						"Label": "Slashing",
+						"Description": "A weapon with Slashing X inflicts one @Condition[Bleeding] Condition on a successful hits on locations protected by no more than X Armour Points.",
+						"Message": "{location} is protected by only {ap} Armour Points, not enough to protect against Slashing {rating}. <strong>Bleeding Condition received.</strong>"
+					},
+					"Poisonous": {
+						"Label": "Poisonous",
+						"Description": "A weapon with Poisonous X inflicts one @Condition[Poisoned] Condition whenever attacker scores at least X SL on Weapon Test.",
+						"Message": "Attacker's Weapon Test scored {sl} SL, which is greater than or equal to Poisonous rating ({rating}). <strong>Poisoned Condition received.</strong>"
+					},
+					"Recoverable": {
+						"Label": "Recoverable",
+						"Description": "Projectile can be recovered even if it's ammunition group normally cannot. <br/><em>(requires feature enabled in settings)</em>"
+					},
+					"Unrecoverable": {
+						"Label": "Unrecoverable",
+						"Description": "Projectile always perishes and can never be recovered."
+					},
+					"Sturdy": {
+						"Label": "Sturdy",
+						"Description": "Projectile is sturdy and easier to recover.<br/><b>Percentage rules</b>: rolls double, picks lower<br/><b>Success/Fail rules</b>: negates success/failure condition<br/><b>Other rules:</b> if not recovered, roll for Percentage.<br/><em>(requires feature enabled in settings)</em>"
+					},
+					"Frail": {
+						"Label": "Frail",
+						"Description": "Projectile is very frail and easily breaks making it harder to recover.<br/><b>Percentage rules</b>: rolls double, picks higher<br/><b>Other rules:</b> if not recovered, roll for Percentage<br/><em>(requires feature enabled in settings)</em>"
+					},
+					"HardToFind": {
+						"Label": "Hard To Find",
+						"Description": "Projectile is very hard to find even in favorable conditions. If it was to be recovered, roll again for Percentage with –10 modifier."
+					}
+				}
+			},
+
+			"Grimoires": {
+				"Grimoires": "Grimoires",
+				"Grimoire": "Grimoire",
+				"Spells": "Spells",
+				"DropHere": "Drop Spells here to add them to the Grimoire",
+				"RemoveSpells": "Remove all Spells from Grimoire",
+				"GenerateDescription": "Generate Grimoire's description",
+				"WrittenIn": "written in {language}",
+				"ReadWriteTalent": "Read/Write",
+				"ArcaneMagicTalent": "Arcane Magic ({lore})",
+				"GrimoireSummary": "This Grimoire {written} contains {list}.",
+				"LoreSummary": "{num} spells from <strong>{lore}</strong>",
+				"And": "and"
+			},
+
+			"Skills": {
+				"Runecraft": "Runecraft"
+			},
+
+			"CheckCareer": {
+				"CurrentCareer": "Your current career is <strong>{currentCareer}</strong>.",
+				"CurrentCareerLevel": "It is <strong>Level {careerLevel}</strong> career, so required amount of advances is <strong>{requiredAdvances}</strong>.",
+				"CheckBelow": "Check below if you have bought enough advances to complete your career!",
+				"Characteristics": "Characteristics",
+				"YouHaveCharacteristics": "You have <strong>{done} out of {total}</strong> required characteristics.",
+				"YouHaveEnoughAdvances": "You have <em>enough</em> advances to complete your career!",
+				"Skills": "Skills",
+				"YouHaveSkills": "You have <strong>{done} out of 8</strong> required skills.",
+				"Potential": {
+					"PreLink": "You also have",
+					"InLink": "{count} other",
+					"InLinkTypeSkills": "skill(s)",
+					"InLinkTypeTalents": "talent(s)",
+					"PostLink": "that could potentially be a part of your career."
+				},
+				"Talents": "Talents",
+				"YouHaveTalents": "You have bought <strong>{done}</strong> career talents.",
+				"ConclusionCannot": "You can't complete your career yet.",
+				"ConclusionCan": "Congratulations! You can complete your current career!",
+				"ConclusionPotential": "You have „potential“ skills and/or talents, talk to your GM. They might count towards your career!",
+				"HasSpareExp": "You have {exp} spare experience you may spend!"
+			},
+
+			"Effects": {
+				"SelectTalent": "Select Talent to add",
+				"AddTalent": "Add Talent",
+				"NotEnoughAdvances": "You do not have enough advances to run the \"{effect}\" effect! You have {advances}, but the effect requires {required}.",
+				"NotEnoughAdvantage": "You do not have enough Advantage to spend on {name} action. You have {have} and need {need}.",
+
+				"Steelstorm": {
+					"Assault": {
+						"Name": "Steelstorm Assault",
+						"Description": "{character} spends 2 Advantage to perform a Bonus Action with any Initiative value"
+					},
+					"AllIn": {
+						"Name": "Going All In",
+						"Description": "{character} goes <b>All In</b>, gaining +20 modifier to all attacks until the start of their next turn. However, during this time, all attacks aimed at this character will be <b>Unopposed</b>.",
+						"Mastery": "Because of Mastery, non-Damaging weapons become Damaging, while Damaging weapons become Impact instead",
+						"Notice": "Attacks against {target} are unopposed."
+					}
+				},
+
+				"Ironshield": {
+					"Bracing": {
+						"Name": "Bracing",
+						"Description": "{character} is <b>Bracing</b> against incoming attacks, gaining +20 modifier to all defensive Weapon Tests. <br/>While Bracing, character can only move using their Walk speed and they are unable to perform any Actions (Free Actions are up to GM). <br/>Bracing ends the moment character initiates an Attack.",
+						"Reminder": "{character} is <b>Bracing</b> against incoming attacks and can only Move using Walk speed and cannot perform Actions."
+					},
+					"Riposte": {
+						"Name": "Ironshield Riposte",
+						"Description": "{character} may spend 2 Advantage. If they do, they can immediately attack their attacker as a Free Action. This attack does not end Brace.",
+						"Mastery": "Additionally, thanks to Mastery, Ironshield Riposte can receive one of the following effects: Cause 1 @Condition[Bleeding], perform a \"Strike to Stun\" with your shield, or give –10 modifier to defend against the riposte."
+					}
+				},
+
+				"Evadecraft": {
+					"Disengage": {
+						"Name": "Shrewd Disengage",
+						"Description": "{character} may, once per Encounter, safely Disengage without spending Advantage."
+					},
+					"LuckyEvadecraft": {
+						"Name": "Lucky Evadecraft",
+						"Description": "Attacker scored a critical hit! {character} may spend a Fortune Point to force the Attacker to reroll their attack."
+					},
+					"ShrewdTrickery": {
+						"Name": "Shrewd Trickery",
+						"Description": "{character} can perform <b>Trick</b> ability with +10 modifier. Winning by 4 SL or more will award 2 Advantage instead of 1."
+					},
+					"Mastery": {
+						"NoTarget": "You need to target a token in order to Learn Moves!",
+						"AlreadyLearned": "You already learned moves from this opponent!",
+						"LearnedMoves": "Learned Moves",
+						"LearnedMovesDescription": "{character} spent their entire Action, studying their opponent's movement. Until the end of this Encounter, gain +10 modifier to all Weapon and Dodge Tests to attack or defend against this opponent."
+					}
+				}
+			},
+
+			"WorldTimeObserver": {
+				"NotAFunction": "Passed `callable` argument is not a Function",
+				"NotAnInteger": "Passed `{arg}` argument is not an Integer, or is of invalid value",
+				"NotAnObject": "Passed `args` argument is not an Object",
+				"LoopError": "Somehow, impossible happened. ID generating loop hit an upper limit of attempts. Check console (F12) for details.",
+				"CallbackError": "There was an Error when executing a Callback. Check the console (F12) for details."
+			},
+
+			"Scrolls": {
+				"MagicScroll": "Magic Scroll",
+				"MagicScrolls": "Magic Scrolls",
+				"Scroll": "Scroll",
+				"Scrolls": "Scrolls",
+				"LoreOf": "Lore of {lore}",
+				"ScrollOf": "Scroll of {spell}",
+				"CastFromScroll": "Cast {spell} from scroll",
+				"ScrollTest": "Scroll Reading Test",
+				"DropHere": "Drop Spell here to attach it",
+
+				"NewScrollDefaultName": "Empty Magic Scroll",
+
+				"MacroCantFind": "Could not find a Spell of „{lore}” Lore and maximum CN of {maxCN}.",
+
+				"ChangeScrollNameTitle": "Update Scroll's name?",
+				"ChangeScrollNameContent": "Update Scroll's name to „{name}”?",
+				"ChangeScrollDescription": "This will also replace Scroll's Description!",
+
+				"ActorCanNotUse": "{actor} can't use the „{scroll}”. Either there are no scrolls left, or Actor does not know „Language ({language})”.",
+				"ItemNotFound": "Something went wrong. Dropped Item was not found!",
+				"MustHaveSource": "Spell must have a source in, or originate from, World or Compendium in order to create a Scroll!",
+				"NotASpell": "Only Spells can be inscribed on a Scroll!",
+				"MustHaveLore": "Only Spells with Lore can be inscribed on a Scroll!"
+			},
+
+			"Symptoms": {
+				"Vertigo": {
+					"Name": "Vertigo",
+					"Description": "You have trouble staying balanced and feel the sensation of spinning around. All <b>Weapon Tests</b>, as well as Tests based on either <b>Agility</b>, <b>Dexterity</b>, or <b>Intelligence</b> suffer a penalty of <b>-2 SL</b> while you are dizzy.",
+					"Treatment": "There is no treatment available for Vertigo, this symptom ends when the cause of it ends."
+				},
+				"Scarring": {
+					"Name": "Scarring",
+					"Description": "You have been horribly scarred by your ordeal and your appearance unsettles or disgusts others. As a result you suffer a <b>-10</b> penalty to all <b>Fellowship Tests</b>.",
+					"Treatment": "Scarring is usually permanent barring special magic."
+				},
+				"Rashes": {
+					"Name": "Rashes",
+					"Description": "You have numerous red, itchy rashes. As a result your appearance is slightly marred and you lose some of your deftness as you scratch and squirm. Receive a <b>-5</b> modifier to your <b>Dexterity</b> and <b>Fellowship</b> Characteristics.",
+					"Treatment": "Depending on the disease some herbs and alchemical mixes can alleviate rashes. Of course there are also many fake remedies available for sale that do nothing and a purchased treatment has a 10% chance of being snake-oil. Treatments cost from 10 brass pennies and upwards depending on the status of the purchaser and the reputation of the seller. Anyone with <b>Trade (Apothecary)</b> or <b>Trade (Alchemist)</b> with access to appropriate ingredients (costing 5 pennies) can create enough salve that when applied daily can alleviate the symptoms for a week."
+				},
+				"Taint": {
+					"Name": "Taint",
+					"Description": "This disease is tainted by the powers of Chaos and affects the very soul of the suffering victim. Unless the victim passes a <b>Challenging (+0) Endurance Test</b>, they suffer 1 point of @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.115GzWrmkD4viyy5]{Corruption}.",
+					"Treatment": "There is no treatment for the Taint.",
+					"Failure": "{character} gains 1 point of Corruption"
+				},
+				"Purblind": {
+					"Name": "Purblind",
+					"Description": "Your eyes have been afflicted causing them to swell and weep pus, blood or other fluids. You are blinded to a degree based on how severe it is. You suffer a <b>-10</b> penalty to all sight-based attributes and skill checks including attacks. This penalty rises to <b>-20</b> for Moderate, and <b>-30</b> for Severe levels of affliction.",
+					"Treatment": "This symptom lasts until the source of it has been dealt with. Cold cloths with a mix of medicinal herbs can be applied over the eyes to help relieve some of the pressure, but that will not help with the loss of sight."
+				},
+				"Wasting": {
+					"Name": "Wasting",
+					"Description": "This disease has attacked and atrophied your muscles and ligaments. As the disease progresses you are gradually wasting away and suffer from a <b>-10</b> penalty to your <b>Strength</b>, <b>Agility</b>, <b>Toughness</b> and <b>Dexterity</b>, as well as all <b>Weapon Tests</b>. This penalty grows to <b>-20</b> for Moderate and  <b>-30</b> for Severe. Any victim whose <b>Toughness</b> is reduced to 0 eventually dies from the disease as it runs its course.",
+					"Treatment": "Wasting can only be cured by addressing the underlying disease. A subject who is being cared for and well fed above their normal intake (Requiring a status expenditure of <b>2 Standing levels</b> higher than your career) can make a weekly <b>Difficult (-10) Endurance Test</b> to temporarily reduce the effect by <b>10</b> for a week."
+				},
+				"Dementia": {
+					"Name": "Dementia",
+					"Description": "The disease has influenced your cognitive faculties. Your ability to think clearly, reason, or remember is adversely affected and you suffer a <b>-20</b> penalty to your <b>Intelligence</b> and <b>-15</b> to your <b>Initiative</b>.",
+					"Treatment": "There is no known treatment for Dementia, and it lasts for the duration of the disease affecting your thinking capacity."
+				}
+			},
+
+			"Settings": {
+				"MenuName": "Access Armoury's Settings",
+				"MenuLabel": "Настройки",
+				"MenuHint": "Open dedicated window which will show all settings divided in intuitive tabs",
+
+				"Tabs": {
+					"Main": "Разное",
+					"Actor": "Actors",
+					"ArrowReclamation": "Arrow Reclamation",
+					"CombatFatigue": "Боевая усталость",
+					"CastingFatigue": "Усталость заклинателя",
+					"Scrolls": "Scrolls",
+					"Grimoires": "Grimoires",
+					"Integrations": "Integrations"
+				},
+
+				"Actor": {
+					"Enable": "Randomize Tokens upon creation?",
+					"EnableHint": "When enabled, module will randomize Token's Characteristics, as well as species Skills and Talents. <br/><b>Only works with unlinked Tokens.</b>",
+					"Mode": "Roll Mode",
+					"ModeHint": "Choose whether the randomization should happen always, or if GM should be asked for each Token",
+					"RollMoney": "Randomize Token money",
+					"RollMoneyHint": "When enabled, module will randomize Token's starting money. Useful when using modules like <a href=\"https://foundryvtt.com/packages/item-piles\" target=\"_blank\"><b>Item Piles</b></a>.",
+					"DefaultMoney": "Default Money Formula",
+					"DefaultMoneyHint": "Default Roll Formula used to generate random amount of money (in Brass Pennies).",
+					"MoneyMode": "Money Mode",
+					"MoneyModeHint": "Choose whether money should be always rolled using default value, or if GM should be asked first.",
+					"Always": "Always automate",
+					"AskNPC": "Ask only for NPC",
+					"Ask": "Ask every time"
+				},
+
+				"Runes": {
+					"Enable": "Item damage from Runes",
+					"EnableHint": "If enabled, Items will get damaged when a Temporary Rune engraved on them is disabled/used."
+				},
+
+				"Diseases": {
+					"AutoProgress": "Automated Disease Progression",
+					"AutoProgressHint": "If checked, module will progress Actors' diseases automatically (Requires a time tracking module. <a href=\"https://foundryvtt.com/packages/foundryvtt-simple-calendar\" target=\"_blank\"><b>Simple Calendar</b></a> is recommended).",
+					"AutoProgressNoWorldTime": "WorldTime hasn't been set. Please activate and configure a time tracking module (for example, Simple Calendar) before enabling Automated Disease Progression."
+				},
+
+				"Injuries": {
+					"AutoProgress": "Automated Injury Progression",
+					"AutoProgressHint": "If checked, module will progress Actors' injuries automatically (Requires a time tracking module. <a href=\"https://foundryvtt.com/packages/foundryvtt-simple-calendar\" target=\"_blank\"><b>Simple Calendar</b></a> is recommended).",
+					"AutoProgressNoWorldTime": "WorldTime hasn't been set. Please activate and configure a time tracking module (for example, Simple Calendar) before enabling Automated Injury Progression."
+				},
+
+				"ArrowReclamation": {
+					"Enable": "Enable ammo reclamation",
+					"EnableHint": "Enable ammo reclamation upon range weapon test roll. When used during an encounter some projectiles will be returned after encounter ends.",
+
+					"EnableArrows": "Allow to recover Arrows",
+					"EnableArrowsHint": "Check to recover Bow ammunition",
+					"EnableBolts": "Allow to recover Bolts",
+					"EnableBoltsHint": "Check to recover Crossbow ammunition",
+					"EnableBullets": "Allow to recover Bullets",
+					"EnableBulletsHint": "Check to recover Sling ammunition",
+
+					"Rule": "Arrow reclamation rule",
+					"RuleHint": "Select rules by which decide if arrow can be reused. Word `critical` means both criticals and fumbles on the <b>main</b> Ranged Test roll.",
+
+					"DefaultRule": "Ranged Attack rolled even",
+					"SuccessRule": "Ranged Attack rolled even and was successful",
+					"NoCritRule": "Ranged Attack rolled even, but not critical",
+					"SuccessNoCritRule": "Ranged Attack rolled even, was successful, but not critical",
+					"FailureRule": "Ranged Attack rolled even and failed",
+					"FailureNoCritRule": "Ranged Attack rolled even, has failed, but not critical",
+					"PercentageRule": "Separate roll using Percentage",
+					"PercentageNoCritRule": "Separate roll using Percentage, without criticals",
+
+					"Percentage": "Target percentage",
+					"PercentageHint": "Set target percentage for rolling with certain Rules. Roll will succeed if d100 rolls less or equal to Target"
+				},
+
+				"CombatFatigue": {
+					"Enable": "Enable Combat Fatigue",
+					"EnableHint": "When enabled, combatants will have to pass Endurance Test after TB rounds, or gain Fatigue",
+					"EnableNPC": "NPC Combat Fatigue",
+					"EnableNPCHint": "Should NPCs follow the rules of Combat Fatigue (if enabled)?",
+					"EnableCorePassOut": "Enable Core Pass Out",
+					"EnableCorePassOutHint": "Enable this to automate characters losing consciousness according to CRB rules on page 172. Disable if you are playing on Up in Arms ruleset."
+				},
+
+				"CastingFatigue": {
+					"FortifiedMindTalent": "Fortified Mind",
+					"Enable": "Enable Casting Fatigue",
+					"EnableHint": "Should Casting Fatigue feature be enabled?",
+					"CostOfChanneling": "Cost of Channeling",
+					"CostOfChannelingHint": "How much ME is spent when attempting Channeling?",
+					"NegativeMEPerStep": "Difficulty Step",
+					"NegativeMEPerStepHint": "For every negative X, the difficulty of Endurance Test will increase. So a value of 5 will mean that Test becomes difficult on -5, hard on -10 etc.",
+					"UseBaseCN": "Use base CN?",
+					"UseBaseCNHint": "If checked, ME spent will be equal to spell's base CN. Otherwise, \"effective CN\" will be used (reduced by Channeling SL)",
+					"MaxME": "Maximum ME formula",
+					"MaxMEHint": "How should maximum amount of Magical Endurance be calculated for a character?",
+					"TBtimesWPB": "Toughness Bonus × Willpower Bonus",
+					"TBplusWPB": "Toughness Bonus + Willpower Bonus",
+					"TBplus2WPB": "Toughness Bonus + 2 × Willpower Bonus",
+					"AutoRegen": "Automate Regeneration?",
+					"AutoRegenHint": "If checked, module will regenerate Actors' ME automatically (Requires a time tracking module. <a href=\"https://foundryvtt.com/packages/foundryvtt-simple-calendar\" target=\"_blank\"><b>Simple Calendar</b></a> is recommended).",
+					"AutoRegenNoWorldTime": "WorldTime hasn't been set. Please activate and configure a time tracking module (for example, Simple Calendar) before enabling Automated Regeneration."
+				},
+
+				"Scrolls": {
+					"AllowOvercasting": "Allow Overcasting",
+					"AllowOvercastingHint": "Should spells cast from Scrolls be able to be overcast?",
+					"AllowOvercastingMagick": "Only with Language (Magick)",
+					"Always": "Always",
+					"Never": "Never",
+
+					"DifficultyMagick": "Magick Difficulty",
+					"DifficultyMagickHint": "What should be default difficulty for Scrolls written in Language (Magick)?",
+
+					"Difficulty": "Non-Magick Difficulty",
+					"DifficultyHint": "What should be default difficulty for Scrolls written in Language other than Magick?",
+
+					"OwnCategory": "Own Inventory Group",
+					"OwnCategoryHint": "Should scrolls appear in inventory as their own, separate group? If false, they will be attached to Books and Documents. <em>(client-side setting)</em>",
+
+					"MagicalEndurance": "Magical Endurance cost",
+					"MagicalEnduranceHint": "How much ME should using Scrolls cost? Requires Casting Fatigue feature enabled. Set to 0 to disable.",
+
+					"UpdateName": "Update Scroll's Name",
+					"UpdateNameHint": "Should Scroll's name be automatically updated whenever a new Spell is attached to the Scroll?",
+					"Ask": "Ask",
+
+					"ReplaceDescription": "Replace Scroll's Description?",
+					"ReplaceDescriptionHint": "Should Scroll's description also be updated along with the Name?",
+
+					"DefaultEncumbrance": "Default Encumbrance",
+					"DefaultEncumbranceHint": "Select what default Encumbrance for Magic Scroll items should be. Remember that Encumbrance is representing both weight and volume.",
+
+					"DefaultAvailability": "Default Availability",
+					"DefaultAvailabilityHint": "Select what default Availability for Magic Scroll items should be."
+				},
+
+				"Grimoires": {
+					"RequireEquipped": "Require Equipped",
+					"RequireEquippedHint": "Should spells from Grimoires be only transferred to Actor and available for Casting, when Grimoire is equipped? If false, spells are transferred when Grimoire is being added to Actor.",
+
+					"TransferWithoutLore": "Transfer Without Lore",
+					"TransferWithoutLoreHint": "Should spells from Grimoires be transferred even if Actor does not know respective „Arcane Magic (Lore)” Talent?",
+
+					"RequireReadWrite": "Require Read/Write",
+					"RequireReadWriteHint": "Hides spells from Grimoires and prevent their transfer if character doesn't know how to Read.",
+
+					"HideSpellsWithoutLanguage": "Hide Spells without Language",
+					"HideSpellsWithoutLanguageHint": "Hides spells from Grimoires and prevent their transfer if character doesn't know language in which the Grimoire is written.",
+
+					"OwnCategory": "Own Inventory Group",
+					"OwnCategoryHint": "Should Grimoires appear in inventory as their own, separate group? If false, they will be attached to Books and Documents. <em>(client-side setting)</em>",
+
+					"DefaultEncumbrance": "Default Encumbrance",
+					"DefaultEncumbranceHint": "Select what default Encumbrance for Grimoire items should be. Remember that Encumbrance is representing both weight and volume.",
+
+					"DefaultAvailability": "Default Availability",
+					"DefaultAvailabilityHint": "Select what default Availability for Grimoire items should be."
+				},
+
+				"ATL": {
+					"ResetPresets": "Reset ATL Presets",
+					"ResetPresetsHint": "When checked, this module will set ATL presets to be more in line with WFRP rules and to work with Light items from Forien's Armoury Compendium"
+				},
+
+				"ItemPiles": {
+					"SetCurrencies": "Set Item Pile Currencies",
+					"SetCurrenciesHint": "When checked, this module will set Item Pile's currencies to use all of custom coins provided with Forien's Armoury. However, it is not suggested to use all 10 coins together as default.",
+					"RolltablesImport": "Re-Import RollTables",
+					"RolltablesImportHint": "When checked, system will reimport all Merchant RollTables for Item Piles integration. WARNING: this will purge all contents of \"Merchant Rolltables\" folder!"
+				},
+
+				"Properties": {
+					"Enabled": "Add custom Properties",
+					"EnabledHint": "Should the Armoury add additional properties, like Incendiary, Blinding, Poisonous etc.?"
+				},
+
+				"Promo": {
+					"Promo1": "Hello! I'm Forien, an author of this module. Please accept my thanks for installing and using my Armoury, it means a lot to me. I hope you are enjoying all the features and content this module provides and that it enhances your game!",
+					"Promo2": "If you have any suggestions or request, feel free to contact me on Discord, or drop an \"Issue\" on GitHub. You can find links below.",
+					"Promo3": "If you enjoy this module and would like to support its development, please consider becoming a Patreon supporter, or tipping via Ko-Fi.",
+					"ModuleOn": "Module on",
+					"FVTTWebsite": "Foundry VTT website",
+					"ProjectOn": "Project on",
+					"Github": "GitHub",
+					"CheckOtherModules": "Check my other modules on",
+					"MyFVTTProfile": "my Foundry VTT profile"
+				}
+			}
+		},
+
+		"Settings": {
+			"Debug": {
+				"Enable": "Debug",
+				"EnableHint": "Enable console debug outputs (client side)"
+			}
+		}
+	}
+}
