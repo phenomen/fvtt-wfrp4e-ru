@@ -1,0 +1,33 @@
+{
+	"label": "Актёры (К оружию!)",
+	"entries": {
+		"Demigryph Mount": {
+			"name": "Скакун-демигриф",
+			"description": "<p></p>"
+		},
+		"Doktor": {
+			"name": "Доктор",
+			"description": "<p></p>"
+		},
+		"Lawyer": {
+			"name": "Адвокат",
+			"description": "<p></p>"
+		},
+		"Local Scout": {
+			"name": "Местный проводник",
+			"description": "<p></p>"
+		},
+		"Porter": {
+			"name": "Портье",
+			"description": "<p></p>"
+		},
+		"Scribe": {
+			"name": "Писец",
+			"description": "<p></p>"
+		},
+		"Seasoned Mercenary": {
+			"name": "Опытный наёмник",
+			"description": "<p></p>"
+		}
+	}
+}
