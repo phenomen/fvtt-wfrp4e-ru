@@ -23,7 +23,7 @@ export function initTranslation() {
 	loadScripts();
 
 	if (typeof Babele !== "undefined") {
-		Babele.get().registerConverters({
+		game.babele.registerConverters({
 			convertEffects: (effects) => {
 				if (!effects) return;
 				return translateEffects(effects);
@@ -37,11 +37,6 @@ export function initTranslation() {
 			convertHitLocation: (hitLocation) => {
 				if (!hitLocation) return;
 				return translateValue(hitLocation, translatedHitLocation);
-			},
-
-			convertCareerClass: (careerClass) => {
-				if (!careerClass) return;
-				return translateValue(careerClass, translatedCareerClass);
 			},
 
 			convertSpellRange: (range) => {
@@ -69,14 +64,33 @@ export function initTranslation() {
 				return translateList(gods, translatedGods);
 			},
 
+			convertCareerClass: (careerClass) => {
+				if (!careerClass) return;
+				return translateValue(careerClass, translatedCareerClass);
+			},
+
 			convertCareerSkills: (list) => {
 				if (!list) return;
-				return translateCareerItems(list, "skill", translatedSkillSpec);
+				if (Array.isArray(list)) {
+					return translateCareerItems(list, "skill", translatedSkillSpec);
+				} else if (list.list) {
+					console.log("SKILLS: ", list);		
+					return translateTemplateItems(list, "skill", translatedSkillSpec);
+				} else {
+					return list;
+				}
 			},
 
 			convertCareerTalents: (list) => {
 				if (!list) return;
-				return translateCareerItems(list, "talent", translatedTalentSpec);
+				if (Array.isArray(list)) {
+					return translateCareerItems(list, "talent", translatedTalentSpec);
+				} else if (list.list) {
+					console.log("TALENTS: ", list);				
+					return translateTemplateItems(list, "talent", translatedTalentSpec);
+				} else {
+					return list;
+				}
 			},
 
 			convertActorGender: (gender) => {
@@ -322,6 +336,35 @@ function translateCareerItems(list, type, specs) {
 
 		return translation?.name || item;
 	});
+}
+
+function translateTemplateItems(list, type, specs) {
+	if (!list.list) return;
+
+	const packs = game.wfrp4e.tags.getPacksWithTag(type);
+
+	return {
+		list: list.list.map((element) => {
+			if (!element.name) return element;
+
+			if (translatedExceptions[element.name]) {
+				element.name = translatedExceptions[element.name];
+				return element;
+			}
+
+			let translation;
+			for (const pack of packs) {
+				translation = translateDocument(element.name, type, pack.metadata.id, specs);
+				if (translation?.name) break;
+			}
+
+			if (translation?.name) {
+				element.name = translation.name;
+			}
+
+			return element;
+		})
+	};
 }
 
 function translateEffects(effects) {
