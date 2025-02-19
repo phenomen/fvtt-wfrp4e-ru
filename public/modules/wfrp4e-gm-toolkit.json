@@ -90,7 +90,7 @@
 	"GMTOOLKIT.ResetFortune.NoPlayerCharacters": "Нет игровых персонажей, которым можно было-бы восстановить удачу",
 
 	"GMTOOLKIT.AddXP.Success": "<p><strong>{recipient}.</strong> Всего опыта: {XPTotal} -> {newXPTotal} | Текущий опыт: {XPCurrent} -> {newXPCurrent}.</p>",
-	"GMTOOLKIT.AddXP.Flavor": "Experience Points Awarded for {reason}",
+	"GMTOOLKIT.AddXP.Flavor": "Очки опыта начислены за {reason}",
 
 	"GMTOOLKIT.Advantage.Increased": "Преимущество увеличено с {startingAdvantage} до {newAdvantage} для {actorName}.",
 	"GMTOOLKIT.Advantage.Max": "{actorName} уже имеет {startingAdvantage} при максимуме {maxAdvantage} Преимуществ. Изменения не внесены. ",
@@ -142,8 +142,8 @@
 	"GMTOOLKIT.Settings.AddXP.Reason.name": "Базовая причина опыта",
 	"GMTOOLKIT.Settings.AddXP.Reason.hint": "Базовая причина присвоения опыта, записанная в Журнал опыта на вкладке Заметки листа персонажа. Используйте %date% или %session% для автоматического добавления даты игры или номера сессии.",
 	"GMTOOLKIT.Dialog.AddXP.Title": "Добавить очки опыта",
-	"GMTOOLKIT.Dialog.AddXP.Recipients.Full": "Full experience will be awarded to: <br>{recipients}",
-	"GMTOOLKIT.Dialog.AddXP.Recipients.Half": "Half experience will be awarded to: <br>{recipients}",
+	"GMTOOLKIT.Dialog.AddXP.Recipients.Full": "Полный опыт будет присуждён: <br>{recipients}",
+	"GMTOOLKIT.Dialog.AddXP.Recipients.Half": "Половина опыта будет присуждена:<br>{recipients}",
 	"GMTOOLKIT.Dialog.AddXP.Prompt": "Сколько?",
 	"GMTOOLKIT.Dialog.AddXP.Reason": "Причина",
 	"GMTOOLKIT.Dialog.AddXP.InvalidXP": "Изменения не внесены. Добавьте допустимое количество опыта. Дроби будут округлены до ближайшего целого числа. Отрицательные числа будут удалены.",
@@ -170,7 +170,7 @@
 	"GMTOOLKIT.Settings.MakeSecretGroupTests.FallbackAdvanced.name": "Проверка характеристики",
 	"GMTOOLKIT.Settings.MakeSecretGroupTests.FallbackAdvanced.hint": "Проверьте соответствующую характеристику, если у персонажа нет нужного профессионального навыка. Проверки общих навыков всегда через характеристику.",
 	"GMTOOLKIT.Settings.GroupTest.FallbackAdjustDifficulty.name": "Усложнение при проверке через характеристику",
-	"GMTOOLKIT.Settings.GroupTest.FallbackAdjustDifficulty.hint": "When actor doesn't have Advanced skill for group test, increase the test difficulty by this number of steps (eg, 2 makes an Average (+20) test Difficult (-10). Default system difficulty is applied when bypassing the roll dialog. If 0, no fallback adjustment is made.",
+	"GMTOOLKIT.Settings.GroupTest.FallbackAdjustDifficulty.hint": "Если актёр не имеет профессионального навыка для групповой проверки, увеличить сложность проверки на количество шагов ( например 2 делает заурядную (+20) проверку Трудной (-10). Базовая сложность применяется при обходе окна броска. Если значение равно 0, проверка не изменяется.",
 	"GMTOOLKIT.Message.MakeSecretGroupTest.NoPermission": "Только ведущий может проводить скрытую партийную проверку. ",
 	"GMTOOLKIT.Message.MakeSecretGroupTest.NoGroup": "Нет актёров для прохождения проверки. Выберите условия.",
 	"GMTOOLKIT.Message.MakeSecretGroupTest.AbortAdvancedSkillTest": "{character} не имеет навыка {skill}. Прерывание проверки профессионального навыка.",
@@ -264,10 +264,10 @@
 	"GMTOOLKIT.Macro.ToggleSceneVisibilityandLight": "Переключение Зрения и света сцены",
 	"GMTOOLKIT.Macro.SetTokenVisionandLight": "Установить токену зрение и свет",
 	"GMTOOLKIT.Macro.PullEveryonetoScene": "Перенести всех на сцену",
-	"GMTOOLKIT.Macro.ChangeScenetoYards": "Change Scene To Yards",
+	"GMTOOLKIT.Macro.ChangeScenetoYards": "Изменить сцену на ярды",
 	"GMTOOLKIT.Macro.Simplyd100": "Просто к100",
 	"GMTOOLKIT.Macro.GMToolbox": "Инструменты ведущего",
-	"GMTOOLKIT.Macro.GMToolkitSettings": "GM Toolkit Settings",
+	"GMTOOLKIT.Macro.GMToolkitSettings": "Настройки инструментария ведущего",
 	"GMTOOLKIT.Macro.ToggleCompendiumPackVisibility": "Переключить видимость Библиотеки",
 	"GMTOOLKIT.Macro.CheckConditions": "Проверка состояний",
 	"GMTOOLKIT.Macro.LaunchDamageConsole": "Запуск консоли урона",
@@ -287,7 +287,7 @@
 
 	"GMTOOLKIT.Damage.Dialog.Title": "Консоль урона",
 	"GMTOOLKIT.Damage.Message.Abort": "Консоль урона закрыта. Урон не нанесён.",
-	"GMTOOLKIT.Damage.Message.CannotApplyDamage": "Cannot apply damage to {character}.",
+	"GMTOOLKIT.Damage.Message.CannotApplyDamage": "Невозможно нанести урон {character}.",
 	"GMTOOLKIT.Damage.Message.At0Wounds": "При 0 пунктов здоровья",
 	"GMTOOLKIT.Damage.Dialog.SetDamageCriteria": "Настройте условия урона",
 	"GMTOOLKIT.Damage.Dialog.DamageFormula.Label": "Урон",
@@ -314,13 +314,13 @@
 	"ROLL.Failure": "Провал. 'Нет'",
 	"ROLL.MarginalFailure": "Условный провал. 'Нет, но...'",
 
-	"GMTOOLKIT.Message.Welcome.VersionIsActive": "GM Toolkit {version} is active.",
+	"GMTOOLKIT.Message.Welcome.VersionIsActive": "Инструментарий ведущего {version} активен.",
 	"GMTOOLKIT.Message.Welcome.ReleaseNotes": "Release Notes",
 	"GMTOOLKIT.Message.Welcome.ContentUpdateWarning": "Updating macros or tables will delete existing GM Toolkit content. Any customizations will be lost if not saved under a different name.",
 	"GMTOOLKIT.Message.Welcome.UpdateMacros": "Update Macros",
 	"GMTOOLKIT.Message.Welcome.UpdateTables": "Update Tables",
 
-	"GMTOOLKIT.Dialog.QuickSettings.Title": "GM Toolkit Settings",
+	"GMTOOLKIT.Dialog.QuickSettings.Title": "Настройки инструментария ведущего",
 
 	"GMTOOLKIT.ChatFlavour.Title": "Edit Message Flavour",
 	"GMTOOLKIT.ChatFlavour.Placeholder": "Briefly describe the message context"

@@ -2,70 +2,70 @@
 	"Forien": {
 		"Armoury": {
 			"Macros": {
-				"MustControlActor": "Must control the character you want to use this macro for.",
+				"MustControlActor": "Необходимо контролировать персонажа для использования этого макроса.",
 				"AvailableSkills": "Выберите навык для проверки с ограничением",
 				"SelectSpell": "Выберите заклинание для создания ингредиента",
-				"Generate": "Generate",
-				"Cancel": "Cancel",
+				"Generate": "Генерация",
+				"Cancel": "Отмена",
 				"Roll": "Бросок",
 				"IngredientFor": "Ингредиент для",
 				"AvailableSpells": "Доступные заклинания",
-				"NotAGM": "You must be a GM to use this macro!",
-				"GenerateScrollLoading": "Loading Spells to generate a Magic Scroll…",
+				"NotAGM": "Вы должны быть ведущим для использования этого макроса!",
+				"GenerateScrollLoading": "Загрузка заклинаний для генерации магического свитка",
 
 				"Cant": {
-					"UseWomChannelling": "To use Cants, WoM Channelling rules must be enabled in Settings!",
-					"NotEnoughSL": "{actor} does not have enough channelled SL for Lore of {lore} to use {macro} Cant! Has {SL} out of {requiredSL} needed.",
-					"SLCost": "SL cost",
+					"UseWomChannelling": "Для использования напевов концентрация по правилам WoM должна быть включена в настройках.",
+					"NotEnoughSL": "У {actor} недостаточно накопленных УУ, чтобы школа {lore} использовала макрос напевов {macro}. Накоплено {SL} из {requiredSL}.",
+					"SLCost": "Цена УУ",
 					"LoreOf": "Lore of {lore} Cant",
 					"ChannelledSlChanged": "Channelled SL changed from {old} to {new}"
 				},
 
 				"Lockpick": {
-					"DialogTitle": "Create Extended Lock Pick Test",
-					"SLNaN": "SL must be a number!",
-					"DifficultyEmpty": "Difficulty must not be empty!"
+					"DialogTitle": "Создать продолжительную проверку взлома",
+					"SLNaN": "УУ должно быть числом.",
+					"DifficultyEmpty": "Сложность не может быть пустой."
 				},
 
 				"CheckStatus": {
-					"NoActorsFound": "No actors found in provided Folders",
+					"NoActorsFound": "Актёр не найден в предоставленных папках.",
 
-					"MessageHeader": "Character status summary",
-					"Name": "Name",
-					"Career": "Career",
-					"Points": "Points",
-					"FortunePointsShort": "Fort",
-					"FatePointsShort": "Fate",
-					"ResolvePointsShort": "Rslv",
-					"ResiliencePointsShort": "Resi",
-					"Experience": "Experience",
-					"ExperienceLeft": "Left",
-					"ExperienceTotal": "Total"
+					"MessageHeader": "Сводка статусов персонажа",
+					"Name": "Имя",
+					"Career": "Карьера",
+					"Points": "Пункты",
+					"FortunePointsShort": "Удача",
+					"FatePointsShort": "Судьба",
+					"ResolvePointsShort": "Решимость",
+					"ResiliencePointsShort": "Упорство",
+					"Experience": "Опыт",
+					"ExperienceLeft": "Потраченный",
+					"ExperienceTotal": "Всего"
 				},
 
 				"AwardXP": {
-					"DialogTitle": "Grant XP to Party",
-					"Amount": "Amount",
-					"Reason": "Reason",
-					"Award": "Award",
+					"DialogTitle": "Дать опыт группе",
+					"Amount": "Количество",
+					"Reason": "Причина",
+					"Award": "Награда",
 
-					"XPNaN": "XP must be a number!",
-					"ReasonEmpty": "Reason must not be empty!"
+					"XPNaN": "Опыт должен быть числом!",
+					"ReasonEmpty": "Причина не может быть пустой!"
 				}
 			},
 
 			"Actors": {
-				"InputMoneyFormula": "Input roll formula for random money (in bronze pennies)",
-				"ShouldRollTokenTitle": "Randomize {name}?",
-				"ShouldRollTokenContent": "Randomize Characteristics, Skills and Talents for {name} based on their {species} species?"
+				"InputMoneyFormula": "Введите формулу броска для случайных денег (в медных пенни)",
+				"ShouldRollTokenTitle": "Сгенерировать случайно {name}?",
+				"ShouldRollTokenContent": "Случайно сгенерировать характеристики, навыки и таланты {name}, основываясь на его народе {species}?"
 			},
 
 			"CombatFatigue": {
 				"CombatFatigueTest": "— боевая усталость",
-				"CombatFatigueTestFailure": "Fatigued! Next Test will be taken after TB Turns.",
-				"CombatFatigueTestSuccess": "Staved off Fatigue! Next Test will be taken after TB + SL Turns.",
-				"CombatFatigueToolTip": "Combat Fatigue - Rounds to Endurance Test",
-				"CombatPassOutToollTip": "Combat Fatigue - Rounds to Pass Out"
+				"CombatFatigueTestFailure": "Наваливается усталость. Следующая проверка будет совершена через РВ раундов.",
+				"CombatFatigueTestSuccess": "Усталость отступает! Следующая проверка будет совершена через РВ+УУ раундов.",
+				"CombatFatigueToolTip": "Боевая усталость - раундов до проверки стойкости",
+				"CombatPassOutToollTip": "Боевая усталость - раундов до потери сознания"
 			},
 
 			"CastingFatigue": {
@@ -78,12 +78,12 @@
 			},
 
 			"ItemRepair": {
-				"MustControlActor": "Must control the character you want to repair items for.",
-				"Repaired": "{name} has been repaired. Removed {repaired} damage from the item.",
-				"Free": "Free",
+				"MustControlActor": "Необходимо контролировать персонажа, чьи предметы вы хотите отремонтировать.",
+				"Repaired": "Вы починили {name}. Уберите {repaired} урона у предмета.",
+				"Free": "Бесплатно",
 
-				"NoActorSelected": "You must select an actor for the Item Repair feature!",
-				"NoItemsToRepair": "You have no damaged items that you can repair.",
+				"NoActorSelected": "Вы должны выбрать актёра для починки предметов.",
+				"NoItemsToRepair": "У вас нет повреждённых предметов, которые вы могли-бы починить.",
 
 				"ArmourPlural": "Броня",
 				"Weapons": "Оружие",
@@ -102,43 +102,43 @@
 
 				"Button": {
 					"PayAndRepair": "Pay & Repair",
-					"Repair": "Repair",
-					"RepairAll": "Repair All",
-					"DamageSingular": "Damage",
-					"AllDamage": "All Damage"
+					"Repair": "Починить",
+					"RepairAll": "Починить всё",
+					"DamageSingular": "Урон",
+					"AllDamage": "Весь урон"
 				}
 			},
 
 			"Runes": {
 				"effectNameIncludes": {
-					"RuneOf": "rune of",
-					"Temporary": "temporary"
+					"RuneOf": "руна",
+					"Temporary": "временное"
 				},
 
 				"RemovedEffectTemporaryRuneDisabled": "Removed \"{effectName}\" effect from Actor \"{actorName}\" and Item \"{itemName}\". It was Temporary Rune that got disabled.",
-				"Weapon": "Weapon",
-				"Item": "Item",
-				"Received1Damage": "received 1 Damage",
+				"Weapon": "Оружие",
+				"Item": "Предмет",
+				"Received1Damage": "получен 1 пункт урона",
 				"AndGotUnequipped": "and got unequipped because of it",
 				"ItsNowImprovisedWeapon": "it's now considered an Improvised Weapon",
 				"ItemGotDamaged": "Item got Damaged",
 
-				"ArmourCouldNotBeDamagedMore": "Armour couldn't be damaged more",
-				"ArmourReceived1DamageOnLocation": "Armour received 1 Damage on {locationName}",
+				"ArmourCouldNotBeDamagedMore": "Броня больше не может быть повреждена",
+				"ArmourReceived1DamageOnLocation": "Броня получила 1 пункт урона в зоне {locationName}",
 
-				"ItemDamagedInName": "damaged",
+				"ItemDamagedInName": "повреждён",
 
-				"EffectOf": "Effect of",
+				"EffectOf": "Эффект",
 
 				"MustSelectATarget": "You must select a target for {rune}.",
 				"TargetNotInRange": "Selected target is not in range for {rune}. Must be within {range} yards.",
 
 				"RuneOfCleaving": {
 					"name": "Rune of Cleaving",
-					"effect": "+1 Damage"
+					"effect": "+1 урон"
 				},
 				"RuneOfFate": {
-					"name": "Rune of Fate",
+					"name": "Руна судьбы",
 					"effect": "negated all incoming Damage, because you would drop down to 0 Wounds."
 				},
 				"RuneOfFire": {
@@ -147,7 +147,7 @@
 				},
 				"RuneOfFury": {
 					"name": "Rune of Fury",
-					"effect": "you may spend an Advantage or your remaining Move to make an extra attack."
+					"effect": "вы можете потратить преимущество или оставшееся движение для совершения дополнительной атаки."
 				},
 				"RuneOfGrudges": {
 					"name": "Rune of Grudges",
@@ -229,13 +229,13 @@
 
 				"recovered": "{type} recovered",
 				"recoveredFuture": "{type} will be recovered after combat",
-				"Arrow": "Arrow",
-				"Bolt": "Bolt",
-				"Bullet": "Bullet",
+				"Arrow": "Стрела",
+				"Bolt": "Болт",
+				"Bullet": "Пуля",
 
 				"Properties": {
 					"Blinding": {
-						"Label": "Blinding",
+						"Label": "Ослепляющее",
 						"Description": "A Blinding X weapon inflicts X @Condition[Blinded] Conditions to enemy hit.",
 						"Message": "Blinding weapon was used! <strong>{rating} Blinded Conditions received.</strong>"
 					},
@@ -278,15 +278,15 @@
 			},
 
 			"Grimoires": {
-				"Grimoires": "Grimoires",
-				"Grimoire": "Grimoire",
-				"Spells": "Spells",
-				"DropHere": "Drop Spells here to add them to the Grimoire",
-				"RemoveSpells": "Remove all Spells from Grimoire",
-				"GenerateDescription": "Generate Grimoire's description",
-				"WrittenIn": "written in {language}",
-				"ReadWriteTalent": "Read/Write",
-				"ArcaneMagicTalent": "Arcane Magic ({lore})",
+				"Grimoires": "Гримуары",
+				"Grimoire": "Гримуар",
+				"Spells": "Заклинания",
+				"DropHere": "Перетащите заклинания сюда для добавления в гримуар",
+				"RemoveSpells": "Убрать все заклинания из гримуара  ",
+				"GenerateDescription": "Сгенерировать описание гримуара",
+				"WrittenIn": "написано на {language}",
+				"ReadWriteTalent": "Грамотность",
+				"ArcaneMagicTalent": "Школа магии ({lore})",
 				"GrimoireSummary": "This Grimoire {written} contains {list}.",
 				"LoreSummary": "{num} spells from <strong>{lore}</strong>",
 				"And": "and"
@@ -297,33 +297,33 @@
 			},
 
 			"CheckCareer": {
-				"CurrentCareer": "Your current career is <strong>{currentCareer}</strong>.",
-				"CurrentCareerLevel": "It is <strong>Level {careerLevel}</strong> career, so required amount of advances is <strong>{requiredAdvances}</strong>.",
-				"CheckBelow": "Check below if you have bought enough advances to complete your career!",
-				"Characteristics": "Characteristics",
-				"YouHaveCharacteristics": "You have <strong>{done} out of {total}</strong> required characteristics.",
-				"YouHaveEnoughAdvances": "You have <em>enough</em> advances to complete your career!",
-				"Skills": "Skills",
-				"YouHaveSkills": "You have <strong>{done} out of 8</strong> required skills.",
+				"CurrentCareer": "Ваша текущая карьера <strong>{currentCareer}</strong>",
+				"CurrentCareerLevel": "Это <strong>ступень {careerLevel}</strong> карьеры, поэтому требуемое число шагов развития - <strong>{requiredAdvances}</strong>.",
+				"CheckBelow": "Проверьте ниже, достаточно ли у вас шагов развития, чтобы завершить карьеру.",
+				"Characteristics": "Характеристики",
+				"YouHaveCharacteristics": "У вас <strong>{done} из {total}</strong> требуемых характеристик.",
+				"YouHaveEnoughAdvances": "У вас <em>достаточно</em>шагов развития для завершения карьеры! ",
+				"Skills": "Навыки",
+				"YouHaveSkills": "У вас <strong>{done} из 8</strong> требуемых навыков.",
 				"Potential": {
-					"PreLink": "You also have",
-					"InLink": "{count} other",
-					"InLinkTypeSkills": "skill(s)",
-					"InLinkTypeTalents": "talent(s)",
-					"PostLink": "that could potentially be a part of your career."
+					"PreLink": "У вас также есть",
+					"InLink": "{count} других",
+					"InLinkTypeSkills": "навык(ов)",
+					"InLinkTypeTalents": "талант(ов)",
+					"PostLink": "которые могут быть частью вашей карьеры."
 				},
-				"Talents": "Talents",
-				"YouHaveTalents": "You have bought <strong>{done}</strong> career talents.",
-				"ConclusionCannot": "You can't complete your career yet.",
-				"ConclusionCan": "Congratulations! You can complete your current career!",
-				"ConclusionPotential": "You have „potential“ skills and/or talents, talk to your GM. They might count towards your career!",
-				"HasSpareExp": "You have {exp} spare experience you may spend!"
+				"Talents": "Таланты",
+				"YouHaveTalents": "У вас есть <strong>{done}</strong> карьерных талантов.",
+				"ConclusionCannot": "Вы не можете завершить сейчас карьеру.",
+				"ConclusionCan": "Поздравляем! Вы можете завершить вашу текущую карьеру!",
+				"ConclusionPotential": "Если у вас есть 'потенциальные' навыки и/или таланты, скажите своему ведущему. Они могут повлиять на вашу карьеру!",
+				"HasSpareExp": "У вас есть {exp} опыта, который вы можете потратить."
 			},
 
 			"Effects": {
-				"SelectTalent": "Select Talent to add",
-				"AddTalent": "Add Talent",
-				"NotEnoughAdvances": "You do not have enough advances to run the \"{effect}\" effect! You have {advances}, but the effect requires {required}.",
+				"SelectTalent": "Выберите талант для добавления",
+				"AddTalent": "Добавить талант",
+				"NotEnoughAdvances": "У вас недостаточно шагов развития для запуска эффекта \"{effect}\"! У вас {advances} шагов развития, а эффект требует {required}.",
 				"NotEnoughAdvantage": "You do not have enough Advantage to spend on {name} action. You have {have} and need {need}.",
 
 				"Steelstorm": {
@@ -383,17 +383,17 @@
 			},
 
 			"Scrolls": {
-				"MagicScroll": "Magic Scroll",
-				"MagicScrolls": "Magic Scrolls",
-				"Scroll": "Scroll",
-				"Scrolls": "Scrolls",
-				"LoreOf": "Lore of {lore}",
-				"ScrollOf": "Scroll of {spell}",
-				"CastFromScroll": "Cast {spell} from scroll",
-				"ScrollTest": "Scroll Reading Test",
-				"DropHere": "Drop Spell here to attach it",
+				"MagicScroll": "Магический свиток",
+				"MagicScrolls": "Магические свитки",
+				"Scroll": "Свиток",
+				"Scrolls": "Свитки",
+				"LoreOf": "Школа {lore}",
+				"ScrollOf": "Свиток {spell}",
+				"CastFromScroll": "Сотворить {spell} из свитка",
+				"ScrollTest": "Проверка чтения свитка",
+				"DropHere": "Перетащите заклинание сюда, чтобы прикрепить его ",
 
-				"NewScrollDefaultName": "Empty Magic Scroll",
+				"NewScrollDefaultName": "Пустой магический свиток",
 
 				"MacroCantFind": "Could not find a Spell of „{lore}” Lore and maximum CN of {maxCN}.",
 
@@ -448,35 +448,35 @@
 			},
 
 			"Settings": {
-				"MenuName": "Access Armoury's Settings",
+				"MenuName": "Доступ к настройка арсенала",
 				"MenuLabel": "Настройки",
-				"MenuHint": "Open dedicated window which will show all settings divided in intuitive tabs",
+				"MenuHint": "Откройте специальное окно, в котором будут показаны все настройки, разделённые на интуитивно понятные вкладки.",
 
 				"Tabs": {
 					"Main": "Разное",
-					"Actor": "Actors",
-					"ArrowReclamation": "Arrow Reclamation",
+					"Actor": "Актёры",
+					"ArrowReclamation": "Собирание стрел",
 					"CombatFatigue": "Боевая усталость",
 					"CastingFatigue": "Усталость заклинателя",
-					"Scrolls": "Scrolls",
-					"Grimoires": "Grimoires",
-					"Integrations": "Integrations"
+					"Scrolls": "Свитки",
+					"Grimoires": "Гримуары",
+					"Integrations": "Интеграции"
 				},
 
 				"Actor": {
-					"Enable": "Randomize Tokens upon creation?",
-					"EnableHint": "When enabled, module will randomize Token's Characteristics, as well as species Skills and Talents. <br/><b>Only works with unlinked Tokens.</b>",
-					"Mode": "Roll Mode",
-					"ModeHint": "Choose whether the randomization should happen always, or if GM should be asked for each Token",
-					"RollMoney": "Randomize Token money",
-					"RollMoneyHint": "When enabled, module will randomize Token's starting money. Useful when using modules like <a href=\"https://foundryvtt.com/packages/item-piles\" target=\"_blank\"><b>Item Piles</b></a>.",
-					"DefaultMoney": "Default Money Formula",
-					"DefaultMoneyHint": "Default Roll Formula used to generate random amount of money (in Brass Pennies).",
-					"MoneyMode": "Money Mode",
-					"MoneyModeHint": "Choose whether money should be always rolled using default value, or if GM should be asked first.",
-					"Always": "Always automate",
-					"AskNPC": "Ask only for NPC",
-					"Ask": "Ask every time"
+					"Enable": "Случайно генерировать персонажей при вытягивании?",
+					"EnableHint": "При активации модуль будет случайно генерировать характеристики, когда ведущий вытягивает на карту токены, а также навыки и таланты, основываясь на народе.<br/><b>Работает только для не привязанных токенов.</b>",
+					"Mode": "Режим генерации",
+					"ModeHint": "Выберите, всегда ли генерировать персонажей-токенов или следует спрашивать ведущего о каждом.",
+					"RollMoney": "Случайно генерировать деньги токенов",
+					"RollMoneyHint": "При активации модуль будет случайно генерировать деньги токенов. Полезно при использовании модулей, подобных <a href=\"https://foundryvtt.com/packages/item-piles\" target=\"_blank\"><b>Item Piles</b></a>.",
+					"DefaultMoney": "Базовая формула денег",
+					"DefaultMoneyHint": "Формула броска используется для генерации случайного количества денег (в медных пенни).",
+					"MoneyMode": "Режим денег",
+					"MoneyModeHint": "Выберите, следует ли всегда генерировать деньги с использованием формулы денег, или следует спрашивать ведущего о каждом случае.",
+					"Always": "Всегда автоматически",
+					"AskNPC": "Спрашивать только для персонажей ведущего",
+					"Ask": "Спрашивать каждый раз"
 				},
 
 				"Runes": {
@@ -485,15 +485,15 @@
 				},
 
 				"Diseases": {
-					"AutoProgress": "Automated Disease Progression",
-					"AutoProgressHint": "If checked, module will progress Actors' diseases automatically (Requires a time tracking module. <a href=\"https://foundryvtt.com/packages/foundryvtt-simple-calendar\" target=\"_blank\"><b>Simple Calendar</b></a> is recommended).",
-					"AutoProgressNoWorldTime": "WorldTime hasn't been set. Please activate and configure a time tracking module (for example, Simple Calendar) before enabling Automated Disease Progression."
+					"AutoProgress": "Автоматическое течение болезни",
+					"AutoProgressHint": "При активации модуль автоматически отслеживает течение болезней актёров (требуется модуль отслеживания времени. Рекомендуется <a href=\"https://foundryvtt.com/packages/foundryvtt-simple-calendar\" target=\"_blank\"><b>Simple Calendar</b></a>).",
+					"AutoProgressNoWorldTime": "Мировое время не установлено. Пожалуйста, активируйте и настройте модуль отслеживания времени (например Simple Calendar), прежде чем включать автоматическое течение болезни."
 				},
 
 				"Injuries": {
-					"AutoProgress": "Automated Injury Progression",
-					"AutoProgressHint": "If checked, module will progress Actors' injuries automatically (Requires a time tracking module. <a href=\"https://foundryvtt.com/packages/foundryvtt-simple-calendar\" target=\"_blank\"><b>Simple Calendar</b></a> is recommended).",
-					"AutoProgressNoWorldTime": "WorldTime hasn't been set. Please activate and configure a time tracking module (for example, Simple Calendar) before enabling Automated Injury Progression."
+					"AutoProgress": "Автоматическое заживление травм",
+					"AutoProgressHint": "При активации модуль автоматически следит за заживлением ран (требуется модуль отслеживания времени. Рекомендуется <a href=\"https://foundryvtt.com/packages/foundryvtt-simple-calendar\" target=\"_blank\"><b>Simple Calendar</b></a>).",
+					"AutoProgressNoWorldTime": "Мировое время не установлено. Пожалуйста, активируйте и настройте модуль отслеживания времени (например Simple Calendar), прежде чем включать автоматическое заживление ран."
 				},
 
 				"ArrowReclamation": {
@@ -524,12 +524,12 @@
 				},
 
 				"CombatFatigue": {
-					"Enable": "Enable Combat Fatigue",
-					"EnableHint": "When enabled, combatants will have to pass Endurance Test after TB rounds, or gain Fatigue",
-					"EnableNPC": "NPC Combat Fatigue",
-					"EnableNPCHint": "Should NPCs follow the rules of Combat Fatigue (if enabled)?",
-					"EnableCorePassOut": "Enable Core Pass Out",
-					"EnableCorePassOutHint": "Enable this to automate characters losing consciousness according to CRB rules on page 172. Disable if you are playing on Up in Arms ruleset."
+					"Enable": "Включить боевую усталость",
+					"EnableHint": "При активации модуль будет совершать проверки стойкости после РВ раундов, чтобы не подвергнуться усталости.",
+					"EnableNPC": "Боевая усталость персонажей ведущего",
+					"EnableNPCHint": "Действуют ли правила боевой усталости на персонажей ведущего?",
+					"EnableCorePassOut": "Включить потерю сознания согласно книге правил",
+					"EnableCorePassOutHint": "Включите это для автоматической потери сознания согласно книге правил. Отключите, если используете правила Up in Arms."
 				},
 
 				"CastingFatigue": {
