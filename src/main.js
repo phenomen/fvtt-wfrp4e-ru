@@ -73,24 +73,24 @@ export function initTranslation() {
 				if (!list) return;
 				if (Array.isArray(list)) {
 					return translateCareerItems(list, "skill", translatedSkillSpec);
-				} else if (list.list) {
-					console.log("SKILLS: ", list);		
-					return translateTemplateItems(list, "skill", translatedSkillSpec);
-				} else {
-					return list;
 				}
+				if (list.list) {
+					console.log("SKILLS: ", list);
+					return translateTemplateItems(list, "skill", translatedSkillSpec);
+				}
+				return list;
 			},
 
 			convertCareerTalents: (list) => {
 				if (!list) return;
 				if (Array.isArray(list)) {
 					return translateCareerItems(list, "talent", translatedTalentSpec);
-				} else if (list.list) {
-					console.log("TALENTS: ", list);				
-					return translateTemplateItems(list, "talent", translatedTalentSpec);
-				} else {
-					return list;
 				}
+				if (list.list) {
+					console.log("TALENTS: ", list);
+					return translateTemplateItems(list, "talent", translatedTalentSpec);
+				}
+				return list;
 			},
 
 			convertActorGender: (gender) => {
@@ -363,7 +363,7 @@ function translateTemplateItems(list, type, specs) {
 			}
 
 			return element;
-		})
+		}),
 	};
 }
 
