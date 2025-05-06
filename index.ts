@@ -6,8 +6,10 @@ async function main() {
 	console.log("-- PACKING SCRIPTS...");
 	await packScripts();
 
+	/*
 	console.log("-- TRANSLATING SCRIPTS...");
 	await translateScripts();
+	*/
 
 	console.log("-- BUILDING SOURCE...");
 	await buildSource(id);

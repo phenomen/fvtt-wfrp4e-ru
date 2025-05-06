@@ -7,10 +7,10 @@
 		"format": "biome check --write ."
 	},
 	"peerDependencies": {
-		"typescript": "^5.7.3"
+		"typescript": "^5.8.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "nightly",
-		"@types/bun": "^1.2.5"
+		"@biomejs/biome": "beta",
+		"@types/bun": "^1.2.12"
 	}
 }

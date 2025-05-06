@@ -127,7 +127,7 @@ dist
 .pnp.*
 
 # compiled
-ru-wfrp4e
+ru-wfrp4e/
 ru-wfrp4e.zip
-scripts/translated
+scripts/
 src/scripts.js

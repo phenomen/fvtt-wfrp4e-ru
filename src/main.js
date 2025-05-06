@@ -1,5 +1,3 @@
-import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
-
 import {
 	translatedCareerClass,
 	translatedDuration,
@@ -15,8 +13,8 @@ import {
 	translatedSpellTarget,
 	translatedTalentSpec,
 } from "./data.js";
-
 import { loadScripts } from "./scripts.js";
+import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
 export function initTranslation() {
 	setupBabele("compendium");

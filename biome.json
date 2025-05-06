@@ -4,7 +4,7 @@
 	"files": {
 		"maxSize": 3145728,
 		"ignoreUnknown": false,
-		"ignore": ["ru-wfrp4e/", "scripts/", "src/scripts.js"]
+		"includes": ["**", "!**/ru-wfrp4e", "!**/scripts", "!**/src/scripts.js"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -16,8 +16,35 @@
 		"attributePosition": "multiline",
 		"bracketSpacing": true
 	},
-	"organizeImports": { "enabled": true },
-	"linter": { "enabled": true, "rules": { "recommended": true } },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"style": {
+				"useLiteralEnumMembers": "error",
+				"noCommaOperator": "error",
+				"useNodejsImportProtocol": "error",
+				"useAsConstAssertion": "error",
+				"useNumericLiterals": "error",
+				"useEnumInitializers": "error",
+				"useSelfClosingElements": "error",
+				"useConst": "error",
+				"useSingleVarDeclarator": "error",
+				"noUnusedTemplateLiteral": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"useExponentiationOperator": "error",
+				"useTemplate": "error",
+				"noParameterAssign": "error",
+				"noNonNullAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"noArguments": "error",
+				"useImportType": "error",
+				"useExportType": "error",
+				"noUselessElse": "error",
+				"useShorthandFunctionType": "error"
+			}
+		}
+	},
 	"javascript": {
 		"formatter": {
 			"jsxQuoteStyle": "double",
@@ -25,9 +52,7 @@
 			"trailingCommas": "all",
 			"semicolons": "always",
 			"arrowParentheses": "always",
-			"quoteStyle": "double",
-			"attributePosition": "multiline",
-			"bracketSpacing": true
+			"quoteStyle": "double"
 		}
 	}
 }

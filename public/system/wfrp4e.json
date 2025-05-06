@@ -13,7 +13,7 @@
 	"TYPES.Item.container": "Ёмкость",
 	"TYPES.Item.critical": "Травма",
 	"TYPES.Item.disease": "Болезнь",
-	"TYPES.Item.injury": "Травмы",
+	"TYPES.Item.injury": "Ранение",
 	"TYPES.Item.money": "Деньги",
 	"TYPES.Item.mutation": "Мутация",
 	"TYPES.Item.prayer": "Молитва",
@@ -27,9 +27,41 @@
 	"TYPES.Item.extendedTest": "Продолжительная проверка",
 	"TYPES.Item.cargo": "Груз",
 	"TYPES.Item.vehicleMod": "Модификация транспорта",
-	"TYPES.Item.vehicleTest": "Vehicle Crew Test",
-	"TYPES.Item.vehicleRole": "Vehicle Role",
+	"TYPES.Item.vehicleTest": "Проверка экипажа",
+	"TYPES.Item.vehicleRole": "Роль транспорта",
 	"TYPES.Item.template": "Шаблон",
+
+	"SHEETS.Item.ammunition": "Бланк боеприпасов",
+	"SHEETS.Item.armour": "Бланк брони",
+	"SHEETS.Item.career": "Бланк карьеры",
+	"SHEETS.Item.container": "Бланк ёмкости",
+	"SHEETS.Item.critical": "Бланк травмы",
+	"SHEETS.Item.disease": "Бланк болезни",
+	"SHEETS.Item.injury": "Бланк ранения",
+	"SHEETS.Item.money": "Бланк денег",
+	"SHEETS.Item.mutation": "Бланк мутации",
+	"SHEETS.Item.prayer": "Бланк молитвы",
+	"SHEETS.Item.psychology": "Бланк психологии",
+	"SHEETS.Item.talent": "Бланк таланта",
+	"SHEETS.Item.trapping": "Бланк снаряжения",
+	"SHEETS.Item.skill": "Бланк навыка",
+	"SHEETS.Item.spell": "Бланк заклинания",
+	"SHEETS.Item.trait": "Бланк черты",
+	"SHEETS.Item.weapon": "Бланк оружия",
+	"SHEETS.Item.extendedTest": "Бланк продолжительной проверки",
+	"SHEETS.Item.cargo": "Бланк груза",
+	"SHEETS.Item.vehicleMod": "Бланк модификации транспорта",
+	"SHEETS.Item.vehicleTest": "Бланк проверки экипажа",
+	"SHEETS.Item.vehicleRole": "Бланк роли транспорта",
+	"SHEETS.Item.template": "Бланк шаблона",
+
+	"SHEETS.Actor.character": "Бланк персонажа игрока",
+	"SHEETS.Actor.npc": "Бланк персонажа ведущего",
+	"SHEETS.Actor.creature": "Бланк существа",
+	"SHEETS.Actor.vehicle": "Бланк транспорта",
+
+	"TOKEN.MOVEMENT.Status.immobile": "Неподвижный",
+	"TOKEN.MOVEMENT.Status.restricted": "Ограниченный",
 
 	"Targets": "Цели",
 	"Trapping": "Имущество",
@@ -46,6 +78,8 @@
 	"WFRP4e Homebrew": "WFRP4e Домашние правила",
 	"Homebrew Settings": "Домашние правила",
 	"Settings for common homebrew/house rules": "Настройки неофициальных модификаций правил",
+	"SETTINGS.DisableTheme": "Отключение темы",
+	"SETTINGS.DisableThemeHint": "Отключить оформление в стиле Warhammerи и использовать стиль Foundry по умолчанию.",
 	"SETTINGS.InitRule": "Правила инициативы",
 	"SETTINGS.InitHint": "Выберите используемый метод для определения очередности в бою.",
 	"SETTINGS.InitDefault": "По умолчанию (от высокой до низкой инициативы, по Проворству в случае ничьи)",
@@ -143,7 +177,7 @@
 	"SETTINGS.Moo": "Домашние правила от Moo Man",
 	"SETTINGS.MooHint": "Assorted mechanics change that I believe have potential to improve the game. Note that the ones listed here are not an exhaustive list of the house rules I use, but only those that can be applied in code.<br><br>For the entire list, please see the <a href='https://github.com/moo-man/WFRP4e-FoundryVTT/wiki/Homebrew-Rules'>Wiki Page.</a><br>Note that these rules are generally all meant to be used together.<br>Feedback is always appreciated. Please use the <a href='https://github.com/moo-man/WFRP4e-FoundryVTT/discussions/categories/moo-s-house-rules'>Github Discussion Board</a> for discussion of the mechanics.",
 	"SETTINGS.MooAdvantage": "Преимущества",
-	"SETTINGS.MooAdvantageHint": "Вместо +10 за преимущество, вы получаете +1 УУ за Преимущество <b>при успешной проверке</b>",
+	"SETTINGS.MooAdvantageHint": "Instead of +10 per Advantage, you gain +1 SL per Advantage <strong>on successful tests</strong>",
 	"SETTINGS.MooDifficulty": "Варианты сложности",
 	"SETTINGS.MooDifficultyHint": "Сделать ступени сложности симметричными",
 	"SETTINGS.MooCritsFumbles": "MooCritsFumbles",
@@ -286,7 +320,7 @@
 	"SHEET.NewExtendedTest": "Новая продолжительная проверка",
 	"SHEET.NewTrapping": "Новое имущество",
 	"SHEET.NewCritical": "Новая травма",
-	"SHEET.NewInjury": "Новая рана",
+	"SHEET.NewInjury": "Новое ранение",
 	"SHEET.DoesDamage": "Наносит урон",
 	"SHEET.DamageValue": "Значение урона",
 	"SHEET.Dismount": "Спешиться",
@@ -589,7 +623,7 @@
 
 	"BREAKDOWN.Base": "Базовый",
 	"BREAKDOWN.AttackerBase": "Базовый урон",
-	"BREAKDOWN.Dice": "Кубик",
+	"BREAKDOWN.Dice": "Кость",
 	"BREAKDOWN.OpposedSL": "Встречные УУ",
 	"BREAKDOWN.Multiplier": "Модификатор",
 	"BREAKDOWN.Ignored": "Игнорирует",
@@ -600,7 +634,7 @@
 	"BREAKDOWN.Weakpoints": "Уязвимые места - игнорирует {ignored} ({item})",
 	"BREAKDOWN.Partial": "Неполная - игнорирует {ignored} ({item}) ",
 	"BREAKDOWN.Undamaging": "<strong>Щадящее</strong>: {originalAP} КБ * 2 = {modifiedAP}",
-	"BREAKDOWN.Moo": "Moo House Rules",
+	"BREAKDOWN.Moo": "Домашние правила Moo Man",
 	"BREAKDOWN.PenetratingMoo": "Бронебойное - игнорирует {ignored}",
 	"BREAKDOWN.ShieldMoo": "Failed Defense - Ignore Shield AP ({ignored})",
 
@@ -787,8 +821,7 @@
 	"DIALOG.QuickcastingTooltip": "Если вы жертвуете своим <b>движением</b> и всем <b>свободным действием</b>, вы можете использовать свой ход , чтобы быстро концентрировать и <b>сотворить за действие</b>. Поскольку вы торопитесь, увеличьте серьезность любой магической отдачи на ступень ( от Слабой до Сильной, от Сильной до Катастрофической).",
 	"DIALOG.EnterQuantity": "Введите количество",
 	"DIALOG.PostQuantity": "Отправить количество",
-	"DIALOG.ItemQuantity": "Число предметов",
-	"DIALOG.QuantityHint": "Количество предметов - это количество объектов в каждом сообщении чата.<br>Общее количество, которое будет уменьшено, будет равно количеству сообщений количества товара. <br> Выбор бесконечности не приведёт к уменьшению количества. ",
+	"DIALOG.PostQuantityContent": "How many times can this Item be retrieved? Leave blank for unrestricted.",
 	"Post": "Отправить",
 	"DIALOG.MemorizeSpell": "Запомнить заклинание",
 	"DIALOG.MemorizeSpellContent": "Запоминание заклинания будет стоить {xp} опыта.",
@@ -798,7 +831,7 @@
 	"DIALOG.GainPrayerContent": "Получение чуда будет стоить {xp} опыта.",
 	"DIALOG.ErrorMustSelectItem": "Необходимо выбрать хотя-бы 1 предмет",
 	"DIALOG.ItemDialog": "Окно предмета",
-	"DIALOG.ChooseActor": "Выберите актёра для совершения проверки",
+	"DIALOG.ChoosePassenger": "Choose Passenger",
 
 	"CHAT.Quickcasting": "Быстрое сотворение",
 	"CHAT.CareerChoose": "Выбрать вашу карьеру",
@@ -878,7 +911,8 @@
 	"CHAT.PostMoreThanHave": "Нельзя отправить больше, чем у вас есть.",
 	"CHAT.PostQuantityReduced": "Количество уменьшено на {num}",
 	"CHAT.NoMoreLeft": "Экземпляров не осталось.",
-	"CHAT.ExpReceived": "Получено <b>{amount}</b> опыта за <b>{reason}</b>",
+	"CHAT.ExpReceived": "Received <b>{amount}</b> experience for <b>{reason}</b>.",
+	"CHAT.ExpReceivedNoReason": "Received <b>{amount}</b> experience.",
 	"CHAT.DiseasesRules": "<br>Обратитесь к болезням чтобы найти правила Заражения",
 	"CHAT.CorruptionTest": "<br><b>Нажмите на скверну чтобы совершить проверку</b>",
 	"CHAT.CorruptionFail": "<b>{name}</b> получает {number} скверны.",
@@ -1043,7 +1077,7 @@
 	"MARKET.Town": "Городок",
 	"MARKET.City": "Город",
 	"MARKET.AvailabilityTest": "Проверка доступности",
-	"MARKET.AvailWrongCommand": "Неверные параметры. Ожидаемые параметры: <br> Размер поселения [Посёлок,Городишко,Город]<br>Редкость [Распространенный,Редкий,Раритетный,Экзотический]<br> (опц.) Модификатор броска",
+	"MARKET.AvailWrongCommand": "Неверные параметры. Ожидаемые параметры: Редкость [Распространенный,Редкий,Раритетный,Экзотический]<br><br>Размер поселения [Посёлок,Городишко,Город]<br><br> (опц.) Модификатор броска",
 	"MARKET.AvailCommandExample": "Пример: /avail Village Rare 10",
 	"MARKET.SettlementSize": "Тип поселения:",
 	"MARKET.Rarity": "Редкость:",
@@ -1060,12 +1094,12 @@
 	"MARKET.PayCommand": "Отчёт оплаты",
 	"MARKET.PayRequest": "Запрос оплаты",
 	"MARKET.CreditCommand": "Отчёт зачисления",
-	"MARKET.CreditRequest": "Запрос зачисления",
+	"MARKET.CreditRequest": "Награда",
 	"MARKET.d": "п",
 	"MARKET.CreditCommandNotAllowed": "Только ведущий может использовать эту команду",
 	"MARKET.PaidBy": "Оплачено:",
-	"MARKET.PaidFor": "<b>Purchased product:</b> {product}",
-	"MARKET.For": "for",
+	"MARKET.PaidFor": "<b>Куплено:</b> {product}",
+	"MARKET.For": "за",
 	"MARKET.ReceivedBy": "Получено:",
 	"MARKET.MoneyTransactionWrongCommand": "Неверный синтаксис. Пишите в формате следующих примеров:",
 	"MARKET.PayCommandExample": "/pay 3gc2bp<br>/pay 450bp<br>/pay 2ss12bp4gc<br>/pay 1gc John<br>/pay 12ss Kastor Lieberung",
@@ -1409,6 +1443,8 @@
 	"NAME.SeaLegsTalent": "Мореплаватель",
 	"NAME.Ogre": "Огр",
 	"NAME.Lingering": "Осложнения",
+	"NAME.Amphibious": "Амфибия",
+	"NAME.Flight": "Полёт",
 
 	"SPEC.Any": "любое",
 	"SPEC.Basic": "Основное",
@@ -1442,6 +1478,15 @@
 	"SPEC.Hearing": "слух",
 	"SPEC.Smell": "обоняние",
 
+	"SHEET.CharacterSheet": "Бланк персонажа игрока",
+	"SHEET.NPCSheet": "Бланк персонажа ведущего",
+	"SHEET.CreatureSheet": "Бланк существа",
+	"SHEET.VehicleSheet": "Бланк транспорта",
+	"SHEET.CharacterSheetNoTheme": "Бланк персонажа игрока (без темы)",
+	"SHEET.NPCSheetNoTheme": "Бланк персонажа ведущего (без темы)",
+	"SHEET.CreatureSheetNoTheme": "Бланк существа (без темы)",
+	"SHEET.VehicleSheetNoTheme": "Бланк транспорта (без темы)",
+
 	"SHEET.DupPrompt": "Вы хотите продублировать этот предмет?",
 	"SHEET.DupTitle": "Создать копию",
 	"SHEET.SplitPrompt": "Введите сумму, которую необходимо разделить",
@@ -1460,6 +1505,8 @@
 	"SHEET.Target": "Цель",
 	"SHEET.ToggleEffect": "Переключить эффект",
 	"SHEET.Additional": "Дополнительно",
+	"SHEET.OtherCost": "Other Cost",
+	"SHEET.OtherCostPlaceholder": "formula or number",
 	"SHEET.ApplyEffect": "Применить {effect}",
 	"SHEET.InvokeEffect": "Вызвать {effect}",
 	"SHEET.ExpChange": "Траты / Всего изменено",
@@ -1609,11 +1656,13 @@
 	"CHATOPT.UseFortuneReroll": "Потратить пункт Удачи для повторной проверки",
 	"CHATOPT.UseFortuneSL": "Прибавить +1 УУ к пройденной проверке",
 	"CHATOPT.DarkDeal": "Сделка с тьмой (повторная проверка, +1 Скверны)",
-	"CHATOPT.OpposeTarget": "Встречная проверка с целью",
+	"CHATOPT.StartOpposed": "Встречная проверка",
+	"CHATOPT.DefendOpposed": "Встречная защита",
 	"CHATOPT.CompleteUnopposed": "Выполнить все не встречные",
 	"CHATOPT.ApplyAllDamage": "Нанести весь урон",
 	"CHATOPT.Reroll": "Повторная проверка",
 	"CHATOPT.TotalPower": "Всплеск энергии",
+	"CHATOPT.EditTest": "Изменить проверку",
 
 	"TRAVEL.TravelMessageBase": "Из <b>{from}</b> в <b>{to}</b> : ",
 	"TRAVEL.TravelMessageRoad": "<br><b>По суше</b> : {road_distance} миль <br>&nbsp;&nbsp;Экипажем : {road_days} , опасность {road_danger_string}<br>&nbsp;&nbsp;Тяжелой лошадью : {road_horse_heavy_days} , опасность {road_danger_string}<br>&nbsp;&nbsp;Быстрой лошадью : {road_horse_fast_days} , опасность {road_danger_string}<br>&nbsp;&nbsp;Пешком : {road_feet_days} , опасность {road_danger_feet_string}",
@@ -1726,16 +1775,6 @@
 	"Confirm": "Подтвердить",
 
 	"Actor Settings": "Настройки актёра",
-	"CONFIGURE.CalcTokenSize": "Авторасчет размера токена",
-	"CONFIGURE.CalcRun": "Авторасчёт скорости бега",
-	"CONFIGURE.CalcWalk": "Авторасчет скорости шага",
-	"CONFIGURE.CalcWounds": "Авторасчёт здоровья",
-	"CONFIGURE.CalcCritWounds": "Авторасчёт травм",
-	"CONFIGURE.CalcCorruption": "Авторасчёт Скверны",
-	"CONFIGURE.CalcMaxEnc": "Автоматически рассчитывать макс. перегруженность",
-	"CONFIGURE.EquipPoints": "Количество экипировки - ограничивает экипированное оружие",
-	"CONFIGURE.AddActorEncumbrance": "Добавить перегруженность актёрам",
-	"CONFIGURE.MainHand": "Основная рука",
 
 	"BUTTON.PostBug": "Сообщить о проблеме",
 	"BUTTON.CharacterCreation": "Создание персонажа",
@@ -1798,12 +1837,16 @@
 	"WFRP4E.MountButtonNotify": "Актёр {mounter} оседлал {mountee}",
 	"MountError": "Вы можете оседлать только существо большего или равного размера. ",
 
+	"minor": "Лёгкий",
+	"moderate": "Сильный",
+	"major": "Серьезный",
 	"Minor": "Лёгкий",
 	"Moderate": "Сильный",
 	"Major": "Серьезный",
 	"CORRUPTION.Minor": "Слабое",
 	"CORRUPTION.Moderate": "Сильное",
 	"CORRUPTION.Major": "Мощное",
+	"CORRUPTION.Exposure": "Скверна",
 	"Quantity": "Количество",
 	"Infinite": "Бесконечный",
 	"Halved": "Ополовинено",
@@ -1862,7 +1905,7 @@
 
 	"Career Selector": "Выбор карьеры",
 	"SHEET.NoCareers": "Карьера не обнаружена",
-	"Exp Cost": "Стоимость (опыт)",
+	"XP Cost": "Стоимость",
 	"Select": "Выбор",
 
 	"Species Characteristics": "Характеристики народа",
@@ -1876,7 +1919,7 @@
 	"Minutes": "минут",
 	"Seconds": "секунд",
 	"Treatment": "Лечение",
-	"Rounds": "раундов",
+	"Round": "раунд",
 
 	"Morrslieb - Currently On ": "Моррслиб светит",
 	"Morrslieb - Currently Off": "Моррслиб скрылся",
@@ -1934,10 +1977,74 @@
 
 	"WH": {
 		"TransferType": {
-			"Crew": "Crew"
+			"Crew": "Экипаж"
 		},
 
 		"Models": {
+			"standard": {
+				"FIELDS": {
+					"details": {
+						"mainHand": {
+							"label": "Основная рука",
+							"hint": "Какая рука считается основной в системе."
+						},
+						"hitLocationTable.value": {
+							"label": "Таблица зон попаданий",
+							"hint": "Defines a custom hit location table for when this Actor is attacked."
+						}
+					},
+					"settings": {
+						"equipPoints": {
+							"label": "Equip Points",
+							"hint": "Limits equipped weapons, 2 points is 2 'hands'"
+						},
+
+						"autoCalc": {
+							"size": {
+								"label": "Auto-calculate Token Size",
+								"hint": "Automatically sizes tokens based on this Actor's Size"
+							},
+							"run": {
+								"label": "Auto-calculate Run Speed",
+								"hint": "Default Run speed is 4 × Movement"
+							},
+							"walk": {
+								"label": "Auto-calculate Walk Speed",
+								"hint": "Default Walk speed is 2 × Movement"
+							},
+							"wounds": {
+								"label": "Auto-calculate Wounds",
+								"hint": "Default max Wounds is SB + (2 × TB) + WPB (for Average size)"
+							},
+							"criticals": {
+								"label": "Авторасчёт травм",
+								"hint": "Default max Criticals is TB"
+							},
+							"corruption": {
+								"label": "Авторасчёт скверны",
+								"hint": "Default Corruption threshold is TB + WPB"
+							},
+							"encumbrance": {
+								"label": "Auto-calculate Encumbrance",
+								"hint": "Default Encumbrance threshold is SB + TB"
+							}
+						}
+					}
+				}
+			},
+
+			"vehicle": {
+				"FILEDS": {
+					"vehicleType": {
+						"label": "Vehicle Type"
+					},
+					"status.morale.transferEffects": {
+						"label": "Transfer Morale Effects",
+						"hint": "Apply morale effects to Actors on this vehicle."
+					}
+				}
+			},
+
 			"ammunition": {
 				"FIELDS": {
 					"ammunitionType.value": {
@@ -2044,7 +2151,7 @@
 					},
 					"countEnc.value": {
 						"label": "Count Encumbrance",
-						"hint": "Add this encumbrance to character's encumbrance (uncheck if not carried around e.g. a cart)"
+						"hint": "Добавить этот вес к перегруженности персонажа (уберите флажок, если вы не носите его на себе, например тележка)"
 					}
 				}
 			},
@@ -2147,6 +2254,9 @@
 			},
 			"mutation": {
 				"FIELDS": {
+					"modifier.value": {
+						"label": "Модификатор"
+					},
 					"mutationType.value": {
 						"label": "Тип мутации"
 					}
@@ -2213,10 +2323,10 @@
 					},
 					"damage": {
 						"value": {
-							"label": "Formula"
+							"label": "Формула"
 						},
 						"dice": {
-							"label": "Dice",
+							"label": "Кость",
 							"hint": "Добавить бросок кости к урону"
 						},
 						"addSL": {
@@ -2418,6 +2528,18 @@
 						}
 					}
 				}
+			},
+			"template": {
+				"FIELDS": {
+					"alterName": {
+						"pre": {
+							"label": "Alter Name Prefix"
+						},
+						"post": {
+							"label": "Alter Name Suffix"
+						}
+					}
+				}
 			}
 		},
 
@@ -2432,6 +2554,29 @@
 						"label": "Зона попадания"
 					}
 				}
+			}
+		},
+
+		"Theme": {
+			"Config": "Настройка темы WFRP4e",
+			"ConfigButton": "Настройка темы",
+			"ConfigHint": "Включить или выключить стили оформления системы.",
+			"FIELDS": {
+				"actor.enabled.label": "Включить тему",
+				"item.enabled.label": "Включить тему",
+				"journal.enabled.label": "Включить тему",
+				"sidebar.enabled.label": "Включить тему",
+				"apps.enabled.label": "Включить тему",
+
+				"actor.font.label": "Шрифт",
+				"item.font.label": "Шрифт",
+				"journal.font.label": "Шрифт",
+				"sidebar.font.label": "Шрифт",
+				"apps.font.label": "Шрифт"
+			},
+			"Font": {
+				"Classic": "Стилизованный",
+				"Readable": "Упрощённый"
 			}
 		}
 	}
