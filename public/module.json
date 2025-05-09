@@ -1,6 +1,5 @@
 {
 	"id": "ru-wfrp4e",
-	"name": "ru-wfrp4e",
 	"title": "❄️ WFRP4e Russian Translation | WFRP4e Русский перевод",
 	"description": "<p>Модуль добавляет поддержку русского языка в Warhammer Fantasy Roleplay 4e (WFRP4e) для Foundry VTT.</p>",
 	"authors": [
@@ -15,7 +14,7 @@
 			"discord": "mrak_x"
 		}
 	],
-	"version": "9.0.0.1",
+	"version": "9.0.3.1",
 	"compatibility": {
 		"minimum": "12",
 		"verified": "13",

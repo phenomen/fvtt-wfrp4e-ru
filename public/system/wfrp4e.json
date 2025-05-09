@@ -177,7 +177,7 @@
 	"SETTINGS.Moo": "Домашние правила от Moo Man",
 	"SETTINGS.MooHint": "Assorted mechanics change that I believe have potential to improve the game. Note that the ones listed here are not an exhaustive list of the house rules I use, but only those that can be applied in code.<br><br>For the entire list, please see the <a href='https://github.com/moo-man/WFRP4e-FoundryVTT/wiki/Homebrew-Rules'>Wiki Page.</a><br>Note that these rules are generally all meant to be used together.<br>Feedback is always appreciated. Please use the <a href='https://github.com/moo-man/WFRP4e-FoundryVTT/discussions/categories/moo-s-house-rules'>Github Discussion Board</a> for discussion of the mechanics.",
 	"SETTINGS.MooAdvantage": "Преимущества",
-	"SETTINGS.MooAdvantageHint": "Instead of +10 per Advantage, you gain +1 SL per Advantage <strong>on successful tests</strong>",
+	"SETTINGS.MooAdvantageHint": "Вместо +10 за преимущество, вы получаете +1 УУ за Преимущество <strong>при успешной проверке</strong>",
 	"SETTINGS.MooDifficulty": "Варианты сложности",
 	"SETTINGS.MooDifficultyHint": "Сделать ступени сложности симметричными",
 	"SETTINGS.MooCritsFumbles": "MooCritsFumbles",
@@ -223,7 +223,16 @@
 	"SETTINGS.useWoMInfluences": "Использовать 'Зловещее влияние' из 'Ветров магии'",
 	"SETTINGS.useWoMInfluencesHint": "Использовать правила 'Зловещего влияния', описанные на 22 странице дополнения 'Ветра магии'",
 	"SETTINGS.ChannellingIngredients": "Ингредиенты <b>концентрации</b>",
-	"SETTINGS.ChannellingIngredientsHint": "Have Ingredients apply their benefits to Channelling Tests as well as Casting Tests",
+	"SETTINGS.ChannellingIngredientsHint": "Применять преимущества ингридиентов в проверках концентрации а также при сотворении",
+	"SETTINGS.Menu": {
+		"TableSettings": "Настройки таблиц",
+		"TableSettingsLabel": "Настроить таблицы",
+		"TableSettingsHint": "Выберите какие таблицы использовать, когда несколько существует несколько одинаковых ключей",
+
+		"HouseRules": "Домашние правила",
+		"HouseRulesLabel": "Настроить домашние правила",
+		"HouseRulesHint": "Настройки неофициальных модификаций правил"
+	},
 
 	"MOO.Prone": "<br><br><b>Moo's House Rule</b>: You are considered one range band farther away when determining ranged attacks.",
 	"MOO.Broken": "Персонаж охвачен страхом, морально сломлен и искренне убеждён, что ему грозит неизбежная гибель. В свой ход он должен использовать и перемещение, и действие для того, чтобы добраться до места, где враг не сможет его увидеть. Оказавшись в таком месте, он должен использовать действие в сочетании с любым подходящим навыком, чтобы спрятаться как можно надёжнее. Персонаж получает –10 ко всем проверкам, не связанным с бегством и попытками спрятаться. Персонаж не сможет избавиться от этого состояния до тех пор, пока участвует в ближнем бою с врагом. Если персонаж тем или иным образом вышел из ближнего боя, он может пройти проверку хладнокровия: успех позволит ему избавиться от [1 + уровень успеха] состояний паники. Сложность этой проверки зависит от того, где находится персонаж: куда легче собраться с духом, когда прячешься за бочкой на другом конце переулка, в паре сотен ярдов от опасности (+20), чем когда в соседней комнате с рёвом беснуется жаждущий твоей крови демон (–30). <br><br> Если персонаж проводит целый раунд в укрытии, не видя вокруг себя ни одного врага, одно состояние паники снимается без всяких проверок. <br><br> Как только персонаж полностью избавится от паники, он получит состояние @Condition[устал].",
@@ -1990,7 +1999,7 @@
 						},
 						"hitLocationTable.value": {
 							"label": "Таблица зон попаданий",
-							"hint": "Defines a custom hit location table for when this Actor is attacked."
+							"hint": "Определяет особую таблицу зон попаданий, когда этот актёр атакован."
 						}
 					},
 					"settings": {
@@ -2558,7 +2567,7 @@
 		},
 
 		"Theme": {
-			"Config": "Настройка темы WFRP4e",
+			"Config": "Theme Configuration",
 			"ConfigButton": "Настройка темы",
 			"ConfigHint": "Включить или выключить стили оформления системы.",
 			"FIELDS": {
