@@ -11,6 +11,6 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "beta",
-		"@types/bun": "^1.2.12"
+		"@types/bun": "^1.2.13"
 	}
 }

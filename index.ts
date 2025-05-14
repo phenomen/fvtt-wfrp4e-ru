@@ -1,4 +1,4 @@
-import { cp, mkdir, readdir, rm } from "node:fs/promises";
+import { cp, mkdir, readdir } from "node:fs/promises";
 import { id } from "./public/module.json";
 import { translation } from "./scripts/translation.js";
 
@@ -48,11 +48,13 @@ async function packScripts() {
 
 	await Bun.write(
 		"./scripts/packed.js",
-		`export function loadScripts() { game.wfrp4e.config.effectScripts = ${JSON.stringify(scriptObj)}; }`,
+		`export function loadScripts() { game.wfrp4e.config.effectScripts = ${JSON.stringify(
+			scriptObj,
+		)}; }`,
 	);
 }
 
-async function translateScripts() {
+async function _translateScripts() {
 	let text = await Bun.file("./scripts/packed.js").text();
 
 	// A workaround for strings in game.i18n.localize() function that should not be replaced

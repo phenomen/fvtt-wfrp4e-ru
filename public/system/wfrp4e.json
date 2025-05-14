@@ -205,7 +205,7 @@
 	"SETTINGS.MooPenetrating": "Penetrating Values",
 	"SETTINGS.MooPenetratingHint": "Give the option for Penetrating to have a value associated with it, Penetrating X - where the weapon ignores X AP (if none specified, defaults to Penetrating 2)",
 	"SETTINGS.MooQualities": "Новые качества",
-	"SETTINGS.MooQualitiesHint": "Добавляет свойства Простое и Преимущество",
+	"SETTINGS.MooQualitiesHint": "Добавляет достоинства Простое и Преимущество",
 	"SETTINGS.MooShieldAP": "Shield AP",
 	"SETTINGS.MooShieldAPHint": "Shield AP and Critical Mitigation (see below) is only applied if you succeed your defensive test.",
 	"SETTINGS.MooCriticalMitigation": "Critical Mitigation",
@@ -262,7 +262,7 @@
 	"SHEET.CareerSkill": "Изменение карьерного навыка",
 	"SHEET.CareerSkillPrompt": "Вы изменили специализацию навыка в своей текущей карьере. Вы хотите применить это изменение ко всей карьере?",
 	"SHEET.CareerSkillNotif": "Изменение {oldName} на {newName} у {career}",
-	"SHEET.LoadingSkills": "Loading Skills",
+	"SHEET.LoadingSkills": "Загрузка навыков",
 	"SHEET.SkillSpecialization": "Специализация навыка",
 	"SHEET.SkillSpecializationText": "Выберите специализацию. Если выбор невозможен, введите её вручную.",
 	"SHEET.SkillSpecializationEnter": "Введите специализацию навыка",
@@ -340,6 +340,7 @@
 	"SHEET.Attacker": "Атакующий",
 	"SHEET.LocationAP": "Зона КБ",
 	"SHEET.AppliedTemplates": "Применяемый шаблон",
+	"SHEET.NewSkillHint": "Введите название навыка и выберите характеристику",
 
 	"ACTOR.BasicSkillsTitle": "Добавить основные навыки",
 	"ACTOR.BasicSkillsPrompt": "Добавить основные навыки?",
@@ -385,7 +386,7 @@
 	"ITEM.ModeOverrideTT": "Обычно оружие считается <em>ближним</em> или <em>дистанционным</em> в зависимости от его типа. Это можно изменить вручную здесь.",
 	"ITEM.CargoType": "Тип груза",
 	"ITEM.UnitPrice": "Стоимость единицы",
-	"ITEM.CargoQuality": "Достоинства",
+	"ITEM.CargoQuality": "Качество",
 	"ITEM.Origin": "Источник",
 	"ITEM.OptimalRange": "Оптимальная дистанция",
 	"ITEM.Ritual": "Ритуал",
@@ -830,7 +831,7 @@
 	"DIALOG.QuickcastingTooltip": "Если вы жертвуете своим <b>движением</b> и всем <b>свободным действием</b>, вы можете использовать свой ход , чтобы быстро концентрировать и <b>сотворить за действие</b>. Поскольку вы торопитесь, увеличьте серьезность любой магической отдачи на ступень ( от Слабой до Сильной, от Сильной до Катастрофической).",
 	"DIALOG.EnterQuantity": "Введите количество",
 	"DIALOG.PostQuantity": "Отправить количество",
-	"DIALOG.PostQuantityContent": "How many times can this Item be retrieved? Leave blank for unrestricted.",
+	"DIALOG.PostQuantityContent": "Сколько раз этот предмет может быть получен? Оставьте пустым, если бесконечное количество. ",
 	"Post": "Отправить",
 	"DIALOG.MemorizeSpell": "Запомнить заклинание",
 	"DIALOG.MemorizeSpellContent": "Запоминание заклинания будет стоить {xp} опыта.",
@@ -1008,7 +1009,7 @@
 	"ErrorCriticalWound": "Ошибка применения значения урона",
 	"ErrorDamageCalc": "Ошибка расчёта урона",
 	"ErrorOpposed": "Не удалось завершить встречную проверку",
-	"ErrorMacroItemMissing": "У вашего актёра нет имени объекта.",
+	"ErrorMacroItemMissing": "У вашего актёра нет объекта с этим названием.",
 	"ErrorNoAmmo": "Нет боеприпасов!",
 	"ErrorNotLoaded": "Оружие не заряжено",
 	"ErrorLimitedWeapons": "Вы не можете экипировать больше оружия.",
@@ -1532,6 +1533,7 @@
 	"SHEET.Stomp": "Затаптывание",
 	"SHEET.GenerateName": "Создать имя",
 	"SHEET.Randomize": "Случайное",
+	"SHEET.UnusedQualitiesHint": "У вас нет подходящего навыка для этого достоинства.",
 
 	"DISEASE.IncubationFinished": "Инкубационный период {disease} завершён.",
 
@@ -1570,6 +1572,7 @@
 	"ERROR.StandardTraitsOnVehicle": "Нельзя добавить обычные черты транспорту",
 	"ERROR.VehicleTraitsOnStandard": "Нельза добавить черты транспорта актёру",
 	"ERROR.NoAvailableActors": "Нет доступных актёров во владении для выбора",
+	"ERROR.SkillAlreadyExists": "Навык с таким названием уже существует на актёре.",
 
 	"Item Properties": "Свойства предмета",
 	"PROPERTY.Group": "Группа",
@@ -1653,9 +1656,9 @@
 	"OPPOSED.AttackerWins": "<b>{attacker}</b> выиграл у <b>{defender}</b> на {SL} УУ",
 	"ROLL.Misfire": "<b>Взрывная осечка:</b> ваше оружие взорвалось! Получите {damage} урона в основную руку.",
 	"OPPOSED.FailedRanged": "<b>Проверка провалена</b>: автоматический проигрыш во встречной проверке",
-	"OPPOSED.Daemonic": "<b>Демон</b>: попадание проигнорировано (выпало {roll})",
+	"OPPOSED.Daemonic": "<b>Демон</b>: попадание проигнорировано (результат {roll})",
 	"OPPOSED.DaemonicRoll": "<b>Демон</b>: {roll}",
-	"OPPOSED.Ward": "<b>Оберег</b>: попадание проигнорировано (Выпало {roll})",
+	"OPPOSED.Ward": "<b>Оберег</b>: попадание проигнорировано (результат {roll})",
 	"OPPOSED.WardRoll": "<b>Оберег</b>: {roll}",
 
 	"CHATOPT.ApplyDamage": "Нанести урон",
@@ -1686,37 +1689,37 @@
 	"TRAVEL.DangerVeryHigh": "Очень высокая",
 	"TRAVEL.Helper": "Расстояния основаны на документе <i>Travel Distances in the Empire</i> от <i>Jackdays</i>. Расстояния были пересмотрены в соответствии с  историческими средневековыми документами о путешествиях. Также были учтены направления рек. <br><b>Использование</b> : <b>/travel town</b> or <b>/travel town1 town2</b> or <b>/travel</b>",
 
-	"TRADE.ManageCargo": "Manage Trade",
+	"TRADE.ManageCargo": "Настройка",
 	"TRADE.Encumbrance": "Вес",
 	"TRADE.Modifier": "Modifier to apply (+/- X%)",
-	"TRADE.Price": "Current price",
-	"TRADE.CargoTitle": "There is a cargo of <b> {name} </b> available in {town} !",
-	"TRADE.Quality": "Quality",
-	"TRADE.MerchantData": "The cargo is sold by <b>{name}</b>, a {gender} {species} merchant (Haggle: {haggle})",
-	"TRADE.MerchantTest": "<strong>Merchant Test</strong>: {SL} SL (Rolled {roll})",
+	"TRADE.Price": "Текущая цена",
+	"TRADE.CargoTitle": "Груз <b> {name} </b> доступен в {town} !",
+	"TRADE.Quality": "Качество",
+	"TRADE.MerchantData": "Груз продаётся у торговца <b>{name}</b>, {gender} {species} (Торговля: {haggle})",
+	"TRADE.MerchantTest": "<strong>Проверка торговца</strong>: {SL} УУ (результат {roll})",
 	"TRADE.CreateCargoItem": "Создать предмет",
-	"TRADE.Cancel": "Cancel",
-	"TRADE.CargoPrefix": "Cargo of ",
-	"TRADE.CargoDescr": "Bought from <b>{name}</b> in {town}",
-	"TRADE.MerchantDataBuy": "<h2>Cargo Purchase</h2><b>{cargoName}</b><br><b>Enc:</b> {cargoSize}<br><b>Price</b>: {cargoPrice} GC",
-	"TRADE.BuyCargo": "Buy this cargo!",
+	"TRADE.Cancel": "Отмена",
+	"TRADE.CargoPrefix": "Груз с",
+	"TRADE.CargoDescr": "Куплено у <b>{name}</b> в {town}",
+	"TRADE.MerchantDataBuy": "<h2>Покупка груза</h2><b>{cargoName}</b><br><b>Вес:</b> {cargoSize}<br><b>Цена</b>: {cargoPrice} GC",
+	"TRADE.BuyCargo": "Купить этот груз!",
 	"TRADE.NotEnoughMoney": "У вас недостаточно денег, чтобы купить этот груз.",
-	"TRADE.CargoBought": "Cargo has been bought by <b>{name}</b>",
-	"TRADE.CargoItemName": "Cargo of {name}",
-	"TRADE.NoCargoFound": "There is no cargo available in <b>{town}</b> to purchase (Rolled {rolls}).",
+	"TRADE.CargoBought": "Груз куплен <b>{name}</b>",
+	"TRADE.CargoItemName": "Груз {name}",
+	"TRADE.NoCargoFound": "В <b>{town}</b> нет груза для покупки (результат {rolls}).",
 
 	"TRADE.SettlementName": "Название поселения",
 	"TRADE.SettlementDetails": "Особенности поселения",
-	"TRADE.Surplus": "Surplus",
-	"TRADE.Demand": "Demand",
-	"TRADE.Trade": "Trade",
-	"TRADE.River": "River",
-	"TRADE.Maritime": "Maritime",
-	"TRADE.Settlement": "Settlement",
-	"TRADE.Size": "Size",
-	"TRADE.Wealth": "Wealth",
-	"TRADE.Produces": "Produces",
-	"TRADE.Season": "Season",
+	"TRADE.Surplus": "Избыток",
+	"TRADE.Demand": "Спрос",
+	"TRADE.Trade": "Ремесло",
+	"TRADE.River": "Река",
+	"TRADE.Maritime": "Морское дело",
+	"TRADE.Settlement": "Поселение",
+	"TRADE.Size": "Размер",
+	"TRADE.Wealth": "Достаток",
+	"TRADE.Produces": "Производство",
+	"TRADE.Season": "Время года",
 
 	"Cargo": "Груз",
 	"Cost": "Цена",
@@ -1752,7 +1755,7 @@
 	"VEHICLE.Oars": "Oars",
 	"VEHICLE.S": "S",
 	"VEHICLE.O": "O",
-	"VEHICLE.Morale": "Morale",
+	"VEHICLE.Morale": "Мораль",
 	"VEHICLE.VehicleMorale": "Vehicle Morale",
 	"VEHICLE.MoraleEffects": "Morale Effects",
 	"VEHICLE.MoraleRolls": "Morale Rolls",
@@ -1764,9 +1767,9 @@
 	"VEHICLE.Starting": "Starting",
 	"VEHICLE.Sources": "Morale",
 	"VEHICLE.Delete": "Delete this entry?",
-	"VEHICLE.CrewTests": "Crew Tests",
-	"VEHICLE.NoSkill": "This Actor has no Skill that can be used with this Role",
-	"VEHICLE.ChooseSkill": "Choose the Skill to use",
+	"VEHICLE.CrewTests": "Проверка экипажа",
+	"VEHICLE.NoSkill": "У этого актёра нет навыков, которые можно использовать в этой роли.",
+	"VEHICLE.ChooseSkill": "Выберите навык для использования.",
 	"VEHICLE.CollisionRating": "Collision Rating",
 	"VEHICLE.WeekLabel": "Week Label",
 	"VEHICLE.LabelError": "Enter a label for the roll",
@@ -1777,7 +1780,7 @@
 	"VEHICLE.Roles": "Roles ",
 	"VEHICLE.NewRole": "New Role",
 	"VEHICLE.AssignedActors": "Assigned Actor(s)",
-	"VEHICLE.SellCargo": "Sell Cargo",
+	"VEHICLE.SellCargo": "Продать груз",
 	"NewRole": "Новая должность",
 	"Add Encumbrance for Actors": "Добавить Вес актёру",
 	"Submit": "Подтвердить",
@@ -1951,11 +1954,11 @@
 	"BugReport.ErrorName1": "Введите ваш тэг Discord или Email в поле имени.",
 	"BugReport.DiscordChange": "Напоминание: имена пользователей в Discord недавно изменились. Используйте ваше новое имя.",
 	"BUGREPORT.AlertHint": "This report either wasn't reproducible or needs some more information. Click on the title to see details.",
-	"BUGREPORT.NeedsAttention": "NEEDS ATTENTION",
+	"BUGREPORT.NeedsAttention": "ТРЕБУЕТ ВНИМАНИЯ",
 	"BUGREPORT.Settled": "SETTLED",
-	"BUGREPORT.APiLimitReached": "You have reached GitHub's API usage limit. You will need to either wait an hour before submitting or submit it manually on the Github website.",
+	"BUGREPORT.APiLimitReached": "Вы достигли лимита использования API GitHub. Вам придется либо подождать час перед отправкой, либо отправить ошибку вручную на сайте GitHub.",
 	"BUGREPORT.LoadingIssues": "Проблема загрузки",
-	"BUGREPORT.Troubleshooting": "Before submitting a report, please consult the <a href='https://moo-man.github.io/WFRP4e-FoundryVTT/pages/troubleshooting.html'>Troubleshooting</a> page.",
+	"BUGREPORT.Troubleshooting": "Перед сообщение об ошибке, посмотрите страницу <a href='https://moo-man.github.io/WFRP4e-FoundryVTT/pages/troubleshooting.html'>Решения проблем</a>.",
 
 	"UpdaterTitle": "Обновление содержимого {title}",
 	"Updater1": "Этот процесс импортирует все новые документы и перезапишет уже импортированные документы содержимым из библиотеки.",
@@ -2004,38 +2007,38 @@
 					},
 					"settings": {
 						"equipPoints": {
-							"label": "Equip Points",
-							"hint": "Limits equipped weapons, 2 points is 2 'hands'"
+							"label": "Пункты снаряжения",
+							"hint": "Ограничение надетого оружия, 2 пункта это 2 'руки'"
 						},
 
 						"autoCalc": {
 							"size": {
-								"label": "Auto-calculate Token Size",
-								"hint": "Automatically sizes tokens based on this Actor's Size"
+								"label": "Авторасчёт размера токена",
+								"hint": "Авторасчёт размера токенов основан на размере персонажей"
 							},
 							"run": {
-								"label": "Auto-calculate Run Speed",
-								"hint": "Default Run speed is 4 × Movement"
+								"label": "Авторасчёт скорости бега",
+								"hint": "Скорость бега по умолчанию равна 4 × скорость"
 							},
 							"walk": {
-								"label": "Auto-calculate Walk Speed",
-								"hint": "Default Walk speed is 2 × Movement"
+								"label": "Авторасчёт скорости шага",
+								"hint": "Скорость шага по умолчанию равна 2 × скорость"
 							},
 							"wounds": {
-								"label": "Auto-calculate Wounds",
-								"hint": "Default max Wounds is SB + (2 × TB) + WPB (for Average size)"
+								"label": "Авторасчёт здоровья",
+								"hint": "Здоровье по умолчанию равно РС + (2 × РВ) + РСВ (для среднего размера)"
 							},
 							"criticals": {
 								"label": "Авторасчёт травм",
-								"hint": "Default max Criticals is TB"
+								"hint": "Порог травм по умолчанию равен РВ"
 							},
 							"corruption": {
 								"label": "Авторасчёт скверны",
-								"hint": "Default Corruption threshold is TB + WPB"
+								"hint": "Порог скверны по умолчанию равен РВ+РСВ"
 							},
 							"encumbrance": {
-								"label": "Auto-calculate Encumbrance",
-								"hint": "Default Encumbrance threshold is SB + TB"
+								"label": "Авторасчёт носимого веса",
+								"hint": "Порог нагрузки веса по умолчанию равен РС+РВ"
 							}
 						}
 					}
@@ -2045,7 +2048,7 @@
 			"vehicle": {
 				"FILEDS": {
 					"vehicleType": {
-						"label": "Vehicle Type"
+						"label": "Тип транспорта"
 					},
 					"status.morale.transferEffects": {
 						"label": "Transfer Morale Effects",
@@ -2132,20 +2135,20 @@
 			"cargo": {
 				"FIELDS": {
 					"tradeType": {
-						"label": "Trade Type"
+						"label": "Тип ремесла"
 					},
 					"cargoType.value": {
-						"label": "Cargo Type"
+						"label": "Тип груза"
 					},
 					"unitPrice.value": {
-						"label": "Unit Price"
+						"label": "Стоимость единицы"
 					},
 					"origin.value": {
-						"label": "Origin"
+						"label": "Происхождение"
 					},
 					"quality": {
 						"value": {
-							"label": "Quality"
+							"label": "Качество"
 						}
 					}
 				}
@@ -2153,10 +2156,10 @@
 			"container": {
 				"FIELDS": {
 					"wearable.value": {
-						"label": "Wearable"
+						"label": "Можно надеть"
 					},
 					"carries.value": {
-						"label": "Carries"
+						"label": "Вместимость"
 					},
 					"countEnc.value": {
 						"label": "Count Encumbrance",
