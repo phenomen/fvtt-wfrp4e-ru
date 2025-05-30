@@ -16,7 +16,7 @@ import {
 import { loadScripts } from "./scripts.js";
 import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
-export function initTranslation() {
+export async function initTranslation() {
 	setupBabele("compendium");
 	loadScripts();
 
@@ -133,6 +133,43 @@ export function initTranslation() {
 						default:
 							return item;
 					}
+				});
+			},
+
+			convertTableResults: (results, translations) => {
+				return results.map((data) => {
+					let result = data;
+					if (translations) {
+						const translation =
+							translations[data._id] || translations[`${data.range[0]}-${data.range[1]}`];
+						if (translation) {
+							if (translation.name) {
+								result = foundry.utils.mergeObject(result, translation, {
+									translated: true,
+								});
+							} else {
+								result = foundry.utils.mergeObject(
+									result,
+									foundry.utils.mergeObject({ description: translation }, { translated: true }),
+								);
+							}
+						}
+					}
+					if (result.documentUuid) {
+						const text = game.babele.translateField(
+							"name",
+							foundry.utils.parseUuid(result.documentUuid).collection.collection,
+							{ name: result.name },
+						);
+						if (text) {
+							return foundry.utils.mergeObject(
+								result,
+								foundry.utils.mergeObject({ name: text }, { translated: true }),
+							);
+						}
+						return result;
+					}
+					return result;
 				});
 			},
 		});
