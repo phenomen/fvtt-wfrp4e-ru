@@ -1,0 +1,384 @@
+{
+	"EFFECT": {
+		"TABS": {
+			"scripts": "Scripts"
+		}
+	},
+	"UPDATER": {
+		"Notification": "Created {created} and updated {updated} documents from {name} - {version}"
+	},
+	"WH": {
+		"ActivateScript": "Активировать скрипт",
+		"AddScript": "Добавить скрипт",
+		"AdvancedConfig": "Перезапись эффектов",
+		"ApplyEffect": "Применить {name}",
+		"ApplyTooltips": {
+			"Area": "Размещает шаблон для эффекта, применяя его к токенам внутри.",
+			"Self": "Применяет эффект к исходному актёру",
+			"Target": "Применяет эффект к целям действия или к текущим целевым токенам.",
+			"Zone": "Выберите Зону для применения этого эффекта, применяя его к токенам внутри."
+		},
+		"Badge": {
+			"Discord": "DISCORD",
+			"Issues": "ПРОБЛЕМЫ",
+			"Notes": "ПРИМЕЧАНИЯ",
+			"Wiki": "WIKI"
+		},
+		"BugReporter": {
+			"AlertHint": "This report either wasn't reproducible or needs some more information. Click on the title to see details.",
+			"APIReached": "Вы достигли лимита использования API GitHub. Вам придется либо подождать час перед отправкой, либо отправить ошибку вручную на сайте GitHub.",
+			"BugReportFormError": "Пожалуйста заполните форму",
+			"BugReportNameError": "Введите ваше имя в Discord или Email.",
+			"Contact": "Контактная информация",
+			"ContactPlaceholder": "Имя в Discord или Email",
+			"DescriptionPlaceholder": "Что случилось, как воспроизвести и т.д.",
+			"GeneralBugReportError": "Что-то пошло не так",
+			"LoadingIssues": "Проблема загрузки",
+			"ManyModules": "У вас есть модули, не являющиеся официальными. Может ошибка возникает из-за них? Попробуйте отключить все модули, не являющиеся официальными модулями Warhammer. ",
+			"MatchingIssues": "О вашей ошибке уже сообщили?",
+			"NeedsAttention": "ТРЕБУЕТ ВНИМАНИЯ",
+			"NotUpdated": "<p>Эти модули Warhammer не обновлены до последних версий</p>",
+			"PostError": "Не удалось отправить отчёт об ошибке. Проверьте консоль.",
+			"PostSuccess": "Сообщение об ошибке отправлено! Ссылка в консоли.",
+			"Resolved": "РЕШЕНО",
+			"Title": "Сообщить об ошибке",
+			"Troubleshooting": "Перед сообщение об ошибке, посмотрите страницу <a href='{url}'>Решения проблем</a>.",
+			"Updated": "<p>Все модули Warhammer обновлены!</p>",
+			"Warning": "<b>Внимание</b>: Эта информация будет опубликована на странице GitHub, которая является публичной. Поэтому рекомендуется использовать имя в Discord, а не ваш Email. Иначе напишите мне (<a href='mailto:russellt@cubicle7games.com'>Moo Man</a>) лично."
+		},
+		"CannotDeleteItemEffect": "Этот эффект связан с предметом актёра. Удалите предмет или эффект у предмета.",
+		"Chat": {
+			"Commands": {
+				"DefaultArgument": "Default Argument",
+				"Examples": "Examples",
+				"HelpAlias": "Command Help",
+				"HelpDescription": "Print instructions for how to use commands",
+				"Notes": "Notes",
+				"PrintCommand": "<p>Below is the list of chat commands and available parameters. You can assign some value to a parameter by using <span style='font-family:monospaced'>=</span>. If a command has a default argument, it does not need to be assigned, but must be the first value provided.</p><p>e.g. <span style='font-family:monospaced'>{prefix}command 100 someArg=value1 anotherArg=value2</span></p>"
+			}
+		},
+		"Choice": {
+			"AND": "И",
+			"ChoiceDialog": "Choice Dialog",
+			"Choices": "Choices",
+			"Config": "Настройка выбора",
+			"CreateOption": "Создать опцию",
+			"CreateOptionDetails": "<p>Выберите тип опции.</p><p><strong>Пустышка</strong>: Предмет, не имеющий данных, кроме названия, будет создан как предмет типа Снаряжение</p><p><strong>Фильтр</strong>: Определите фильтры для предоставления выбора Предметов</p>",
+			"Filter": "Фильтр",
+			"FilterOperation": "Операция",
+			"FilterPath": "Путь",
+			"FilterValue": "Значение",
+			"OR": "ИЛИ",
+			"Option": "Опция",
+			"Options": "Опции",
+			"Placeholder": "Пустышка",
+			"Structure": "Structure",
+			"SubmitChoices": "Submit Choices"
+		},
+		"CompendiumBrowser": {
+			"Action": {
+				"Open": "Открыть навигатор библиотек"
+			},
+			"Column": {
+				"Results": "Результаты",
+				"Source": "Источник"
+			},
+			"FilterClear": "Очистить фильтры",
+			"Filters": {
+				"HasDarkvision": "Есть темновидение",
+				"HasSpellcasting": "Есть владение заклинаниями",
+				"Label": "Фильтры",
+				"SearchResults": "Результаты поиска"
+			},
+			"Selection": {
+				"Label": "Выбрано: {summary}",
+				"Select": "Выбрать",
+				"Summary": {
+					"Max": "<span class=\"value\">{value}</span> из максимум {max}",
+					"Min": "<span class=\"value\">{value}</span> из минимум {min}",
+					"Range": "<span class=\"value\">{value}</span> от {min} до {max}",
+					"Single": "<span class=\"value\">{value}</span> из {max}"
+				},
+				"Warning": {
+					"Document": {
+						"one": "документ",
+						"other": "документов"
+					},
+					"Max": "Необходимо выбрать не более {max} {document}, выбрано {value}.",
+					"Min": "Необходимо выбрать не менее {min} {document}, выбрано {value}.",
+					"Range": "Необходимо выбрать от {min} до {max} документов, выбрано {value}.",
+					"Single": "Необходимо выбрать {max} {document}, выбрано {value}."
+				}
+			},
+			"Sources": {
+				"FilterPackages": "Фильтр модулей",
+				"Hint": "Содержимое каких модулей будет доступно в навигаторе.",
+				"Label": "Настроить источники",
+				"Name": "Источники библиотек"
+			},
+			"Tabs": {
+				"Feat.other": "Особенности",
+				"Item.other": "Предметы",
+				"Monster.other": "Чудовища"
+			},
+			"Title": "Навигатор библиотек",
+			"Types": {
+				"Label": "Типы"
+			},
+			"WorldItems": "Показывать предметы мира в навигаторе"
+		},
+		"Configuration": "Configuration",
+		"ConfigureZoneTT": "Configure Zone",
+		"ConvertDrawings": "Convert Drawings to Zones",
+		"DefendingAgainst": "Защита от",
+		"DefendingAgainstTT": "Запустить этот скрипт в окне актёра, который был целью этого актёра или предмета",
+		"DeleteEffect": "Удалить эффект",
+		"DeleteEffectHint": "Удалить активный эффект после выполнения этого скрипта",
+		"DeletingEffectItems": "Удаление эффектов: {items}",
+		"DereferenceTooltip": "Fully defines the Item inside the diff, allowing for the deletion of the original Item.",
+		"Dialog": {
+			"DragDialog": "Drag Dialog",
+			"DragFilter": "Document provided is not allowed.",
+			"DragText": "Provide a Document",
+			"EnterValue": "Enter Value",
+			"Initial": "Initial",
+			"Modifiers": "Модификаторы",
+			"SelectValue": "Select Value",
+			"UserEntry": "Пользовательский",
+			"ValueDialog": "Value Dialog"
+		},
+		"DialogScript": "Скрипт диалога",
+		"DiffDescription": "'Разница' представляет собой изменения, которые необходимо внести в исходный предмет. Это можно сделать вручную или сгенерировать, перетащив предмет того же типа.",
+		"DiffEditor": "Редактор разницы",
+		"EffectFiltered": "Эффект фильтруется",
+		"EffectPrevented": "Эффект предотвращается",
+		"Effects": "Effects",
+		"EnableScript": "Enable Script for {name}",
+		"Error": {
+			"CreateZoneEffect": "Эффекты должны создаваться через активный эффект с типом передачи 'Зона'",
+			"ID": "ID для {name} уже существует в коллекции. Этот документ получил уникальный ID.",
+			"LibraryOutaded": "Библиотека Warhammer устарела. {system} определяет минимальную версию библиотеки как {minimum}.",
+			"MismatchedItemType": "Mismatched Item type",
+			"NoActorAssigned": "Актер не назначен, вы можете назначить актёров через Настройку игрока в левом нижнем углу экрана.",
+			"NoDrawingsToConvert": "No Drawings to Convert!",
+			"NoTargetedActors": "Нет целевых актёров!",
+			"NoTargets": "Нет целевых актёров!",
+			"NotValidChoiceType": "Недопустимый тип выбора",
+			"WrongChoiceOptionType": "This type of Item isn't allowed. Allowed Types: {types}"
+		},
+		"ErrorNoZones": "Нет зон для выбора. Добавьте регионы на сцену, чтобы создать зоны.",
+		"ErrorUnableToFindEffect": "Не удалось найти эффект для применения.",
+		"FollowToken": "Следовать за токеном",
+		"HideScript": "Скрыть скрипт",
+		"Initialization": {
+			"Actors": "Initializing Actors",
+			"Complete": "Initialization Complete",
+			"DeleteModuleContent": "Удалить содержимое модуля",
+			"DeleteModuleContentPrompt": "<p><strong>ВНИМАНИЕ</strong>: Это удалит все содержимое, связанное с модулем <strong>{id}</strong>, которое было импортировано в этот мир.</p><p>Вы уверены, что хотите продолжить?</p>",
+			"DeletingActors": "Deleting Actors",
+			"DeletingFolders": "Deleting Folders",
+			"DeletingItems": "Deleting Items",
+			"DeletingJournals": "Deleting Journals",
+			"DeletingScenes": "Deleting Scenes",
+			"DeletingTables": "Deleting Tables",
+			"ExistingContentMessage": "Existing Documents have been found from a previous initialization. Initializing again may prompt you to choose between keeping the current imported versions or replacing them from this initialization. Do you wish to continue?",
+			"Items": "Initializing Items",
+			"Journals": "Initializing Journals",
+			"ResolveDuplicates": "Разрешить дубликаты",
+			"Scenes": "Initializing Scenes",
+			"Skipped": "Skipped Initialization",
+			"Tables": "Initializing Tables",
+			"UpdatedExistingDocument": "Updated Existing Document: {name}"
+		},
+		"Initializer": {
+			"Action": {
+				"Delete": "Удаление",
+				"Initialize": "Инициализация",
+				"Update": "Обновление"
+			},
+			"DeleteModuleContent": "Delete {module} Content",
+			"DeleteModuleContentDesc": "<p>This process deletes all Documents from <strong>{module}</strong> that have were imported from Initialization.</p><p>Please note the following:</p><ul><li>Documents manually imported from the Compendium will not be deleted.</li><li>Any Document that is Owned by a Player will not be deleted.</li></ul><p>Remember that this process only deletes imported Documents. You can reimport anything deleted from the Compendium.</p>",
+			"DialogContent": "<p class='centered'><strong>{title}</strong></p><p>{description}",
+			"HelpText": "<p>Нужна помощь? Обратитесь к <a href=https://moo-man.github.io/WFRP4e-FoundryVTT/pages/premium.html#initializiation>Wiki</a></p>",
+			"OverwriteActors": "Перезапись актёров",
+			"OverwriteJournals": "Перезапись журналов",
+			"OverwriteMacros": "Перезапись макросов",
+			"OverwriteScenes": "Перезапись сцен",
+			"OverwriteTables": "Перезапись таблиц",
+			"SettingHint": "Настройки импорта премиальных модулей Warhammer",
+			"SettingLabel": "Управление модулями",
+			"SettingName": "Премиальные модули Warhammer",
+			"Text": "<h3>Инициализируйте, обновляйте или удаляйте содержимое официальных премиум-модулей Warhammer</h3>",
+			"Title": "Инициализация модуля Warhammer",
+			"Tooltips": {
+				"NotActive": "Модуль не активен! Перейдите в раздел <strong>Управление модулями</strong> в боковой панели, чтобы активировать этот модуль в мире.",
+				"NotInstalled": "Модуль не установлен! Если вы приобрели этот модуль, убедитесь, что он установлен в <strong>главном меню</strong> Foundry"
+			},
+			"UpdaterExclude": "Исключить изменные названия",
+			"UpdaterExcludeHint": "Если название документа была изменено, то он не будет обновлён.",
+			"UpdaterNotification": "Created {created} and updated {updated} documents from {name} - {version}",
+			"UpdaterText": "<p>В результате этого процесса будут импортированы новые документы и перезаписаны ранее импортированные документы.</p><p>ЭТО ОЗНАЧАЕТ, ЧТО ВСЕ СДЕЛАННЫЕ ВАМИ ИЗМЕНЕНИЯ БУДУТ ПЕРЕЗАПИСАНЫ. Это не относится к документам, принадлежащим игрокам.</p><p>Используйте эту функцию только в том случае, если вы уже инициализировали этот модуль ранее.</p>",
+			"UpdaterTitle": "Обновление {module}"
+		},
+		"Initialize": "Инициализация",
+		"Item": {
+			"Category": {
+				"Physical": "Предмет",
+				"Vehicle": "Транспорт"
+			}
+		},
+		"ItemDialog": "Окно предмета",
+		"ItemsNotAllowed": "Этот предмет не может быть добавлен этому типу актёра.",
+		"KeepDrawings": "Keep Drawings?",
+		"MakeZonesVisible": "Сделать зону видимой?",
+		"ManualEffectKeys": "Ключи ручных эффектов",
+		"NewEffect": "Новый эффект",
+		"NewItem": "Новый предмет",
+		"NewScript": "Новый скрипт",
+		"OriginalDocument": "Original Document",
+		"PickZone": "Выберите зону, к которой вы хотите применить активный эффект.",
+		"PlaceEffect": "Разместить {name}",
+		"PreApplyScript": "Pre-Apply Script for {name}",
+		"Resist": "Resist",
+		"RichEditor": "Rich Text Editor",
+		"RollMode": "Режим броска",
+		"Script": "Скрипт",
+		"ScriptConfig": "Настройка скриптов",
+		"ScriptEditor": "Редактор скриптов",
+		"ScriptLock": "Скрипты заблокированы",
+		"ScriptLockTT": "Скрипты нельзя редактировать, когда они являются ссылками. Если вы хотите внести изменения: скопируйте скрипт, разблокируйте, вставьте, затем внесите нужные изменения.",
+		"ScriptTrigger": "Триггер",
+		"Scripts": "Скрипты",
+		"SendingSocketRequest": "Отправка запроса по сокету",
+		"SubmissionScript": "Скрипт отправки",
+		"SubmitChoices": "Submit Choices",
+		"Target": "Target",
+		"Targeter": "Целеуказатель",
+		"TargeterTT": "Запустить этот скрипт в окне любого актёра, который целится в этого актёра.",
+		"TemplateCustomization": "Template Customization",
+		"Theme": {
+			"Config": "Theme Configuration",
+			"ConfigButton": "Configure Theme",
+			"ConfigHint": "Enable or disable the styling provided by the system.",
+			"FIELDS": {
+				"actor.enabled.label": "Включить тему",
+				"actor.font.label": "Шрифт",
+				"apps.enabled.label": "Включить тему",
+				"apps.font.label": "Шрифт",
+				"item.enabled.label": "Включить тему",
+				"item.font.label": "Шрифт",
+				"journal.enabled.label": "Включить тему",
+				"journal.font.label": "Шрифт",
+				"sidebar.enabled.label": "Включить тему",
+				"sidebar.font.label": "Шрифт"
+			},
+			"Font": {
+				"Classic": "Классический",
+				"Readable": "Читаемый"
+			}
+		},
+		"ToggleEffect": "Переключить эффект",
+		"TokensInZone": "Токены в зоне",
+		"TransferData": {
+			"AdvancedConfig": "Расширенные настройки",
+			"AreaDuration": "Длительность эффекта области",
+			"AreaDurationInstantaneous": "Мгновенный",
+			"AreaDurationSustained": "Поддерживаемый",
+			"AvoidTest": "Без проверки",
+			"AvoidTestCustom": "Пользовательский",
+			"AvoidTestHint": "Определите проверку, которая, если пройдена, предотвращает добавление эффекта. <strong>Предмет</strong> указывает, что эффект должен использовать данные проверки, определенные предметом (если доступны). <strong>Пользовательский</strong> позволяет определить свойства проверки здесь. <strong>Скрипт</strong> позволяет написать полностью пользовательский скрипт, который, если он возвращает true, предотвращает эффект.",
+			"AvoidTestItem": "Предмет",
+			"AvoidTestNone": "Нет",
+			"AvoidTestScript": "Скрипт",
+			"DocumentType": "Тип документа",
+			"DocumentTypeHint": "К какому документу применить активный эффект",
+			"EnableScript": "Скрипт включения",
+			"EnableScriptHint": "Условие для включения или отключения эффекта.",
+			"EquipTransfer": "Передача при экипировке",
+			"EquipTransferHint": "Передавать этот эффект только при экипировке.",
+			"Filter": "Фильтр",
+			"FilterHint": "Скрипт для фильтрациидокументов, к которым применяется активный эффект. Должен возвращать <strong>true</strong> для предотвращения применения.",
+			"Keep": "Сохранить",
+			"KeepHint": "Предотвращает удаление эффекта при выходе из региона",
+			"Opposed": "Встречная",
+			"PreApplyScript": "Скрипт перед применением",
+			"PreApplyScriptHint": "Выполняется перед применением эффекта - выполняется на источнике, а не на цели. Верните false, чтобы предотвратить применение (только урон, цель и регион).",
+			"Prevention": "Предотвращение",
+			"PreventionHint": "Предотвращает применение этого эффекта, если проверка пройдена.",
+			"Prompt": "Запрос",
+			"PromptHint": "Предоставьте запрос и выберите документ для активного эффекта. Может использоваться с <strong>Фильтром</strong> для сужения выбора.",
+			"Radius": "Радиус",
+			"RadiusHint": "Радиус шаблона",
+			"RenderAura": "Отображать ауру",
+			"RenderAuraHint": "Отображать ауру на сцене как измеренный шаблон",
+			"Reversed": "Обратный",
+			"ReversedHint": "Вместо этого предотвращает этот эффект, если проверка провалена.",
+			"SelfOnly": "Только себе",
+			"SelfOnlyHint": "Этот эффект должен применяться только к владеющему актёру, а не к целям.",
+			"SkipImmediatePlacement": "Пропустить Немедленные при размещении",
+			"SkipImmediatePlacementHint": "Предотвращает выполнение Немедленных скриптов при размещении эффекта.",
+			"TemplateData": "Данные шаблона",
+			"TemplateDataHint": "Настройте данные шаблона, такие как цвет или текстура",
+			"TestIndependent": "Независимый тест",
+			"TestIndependentHint": "Если отмечено, этот эффект может быть вызван непосредственно из листа владеющего актёра, а не из чата",
+			"TransferType": "Тип передачи",
+			"TransferTypeHint": "Настройте, как активный эффект передается или применяется.",
+			"TransferredAura": "Передаваемая аура",
+			"TransferredAuraHint": "Применить эту ауру к цели (или себе) вместо постоянного применения к себе",
+			"TransferredFollow": "Transfer Follow",
+			"TransferredFollowHint": "Apply this Followed Effect to a target (or self), instead of contsantly to self",
+			"ZoneType": "Тип зоны",
+			"ZoneTypeHint": "<strong>Эффект зоны</strong> означает, что эффект привязан к зоне, <strong>Токены в зоне</strong> означает, что он применяется ко всем токенам в этой зоне, <strong>Следовать за токеном</strong> означает, что он применяется к любой зоне, в которой находится целевой токен"
+		},
+		"TransferType": {
+			"Area": "Регион",
+			"Aura": "Аура",
+			"Damage": "Урон",
+			"Document": "Владеющий документ",
+			"Other": "Прочее",
+			"Target": "Цель",
+			"Zone": "Зона"
+		},
+		"Trigger": {
+			"ApplyDamage": "Нанесение урона",
+			"CreateCondition": "Создание состояния",
+			"CreateItem": "Создание предмета",
+			"CreateToken": "Создание токена",
+			"DeleteEffect": "Удаление эффекта",
+			"Dialog": "Окно",
+			"EndCombat": "Завершение боя",
+			"EndRound": "Конец раунда",
+			"EndTurn": "Конец хода",
+			"Immediate": "Немедленно",
+			"Manual": "Вручную",
+			"OnCreate": "При создании",
+			"PreApplyDamage": "Перед применением урона",
+			"PrePrepareDerivedData": "Предварительная подготовка производных данных",
+			"PreTakeDamage": "Перед получением урона",
+			"PreUpdateDocument": "Перед обновлением документа",
+			"PrepareDerivedData": "Подготовка производных данных",
+			"PrepareBaseData": "Подготовка базовых данных",
+			"PrepareOwnedData": "Подготовка принадлежащих данных",
+			"PrepareOwnedItemBaseData": "Подготовка базовых данных принадлежащего предмета",
+			"PrepareOwnedItemDerivedData": "Подготовка производных данных принадлежащего предмета",
+			"PrepareOwnedItems": "Подготовка принадлежащих предметов",
+			"PrePrepareOwnedItemDerivedData": "Предварительная подготовка производных данных принадлежащего предмета",
+			"StartCombat": "Начало боя",
+			"StartRound": "Начало раунда",
+			"StartTurn": "Начало хода",
+			"TakeDamage": "Получение урона",
+			"UpdateCombat": "Обновление боя",
+			"UpdateDocument": "Обновление документа"
+		},
+		"ValueDialog": "Окно значения",
+		"Warning": {
+			"RenderAuraChange": "Чтобы отразить изменение в отображении ауры, отключите и снова включите исходный эффект или замените токен на сцене."
+		},
+		"ZoneConfig": "Настройка зоны",
+		"ZoneEffect": "Эффект зоны",
+		"ZoneEffects": "Примененные эффекты зоны"
+	},
+	"WORLD": {
+		"GameSystem": "Игровая система"
+	}
+}

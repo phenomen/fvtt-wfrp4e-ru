@@ -89,7 +89,7 @@
 	"GMTOOLKIT.ResetFortune.Restored": "Удача была восстановлена",
 	"GMTOOLKIT.ResetFortune.NoPlayerCharacters": "Нет игровых персонажей, которым можно было-бы восстановить удачу",
 
-	"GMTOOLKIT.AddXP.Success": "<p><strong>{recipient}.</strong> Всего опыта: {XPTotal} -> {newXPTotal} | Текущий опыт: {XPCurrent} -> {newXPCurrent}.</p>",
+	"GMTOOLKIT.AddXP.Success": "<p><strong>{recipient}.</strong> Total  XP: {XPTotal} &rarr; {newXPTotal} | Current XP: {XPCurrent} &rarr; {newXPCurrent}.</p>",
 	"GMTOOLKIT.AddXP.Flavor": "Очки опыта начислены за {reason}",
 
 	"GMTOOLKIT.Advantage.Increased": "Преимущество увеличено с {startingAdvantage} до {newAdvantage} для {actorName}.",
@@ -146,7 +146,6 @@
 	"GMTOOLKIT.Dialog.AddXP.Recipients.Half": "Половина опыта будет присуждена:<br>{recipients}",
 	"GMTOOLKIT.Dialog.AddXP.Prompt": "Сколько?",
 	"GMTOOLKIT.Dialog.AddXP.Reason": "Причина",
-	"GMTOOLKIT.Dialog.AddXP.InvalidXP": "Изменения не внесены. Добавьте допустимое количество опыта. Дроби будут округлены до ближайшего целого числа. Отрицательные числа будут удалены.",
 	"GMTOOLKIT.Dialog.AddXP.Awarded": "{award} XP awarded to:",
 
 	"GMTOOLKIT.Settings.SessionManagement.menu.name": "Настройки управления сессиями. ",
@@ -271,6 +270,9 @@
 	"GMTOOLKIT.Macro.ToggleCompendiumPackVisibility": "Переключить видимость Библиотеки",
 	"GMTOOLKIT.Macro.CheckConditions": "Проверка состояний",
 	"GMTOOLKIT.Macro.LaunchDamageConsole": "Запуск консоли урона",
+	"GMTOOLKIT.Macro.CanvasToolbox": "Canvas Toolbox",
+	"GMTOOLKIT.Macro.CombatToolbox": "Combat Toolbox",
+	"GMTOOLKIT.Macro.SessionToolbox": "Session Toolbox",
 
 	"GMTOOLKIT.Table.DarkWhispers": "Тёмный шёпот",
 

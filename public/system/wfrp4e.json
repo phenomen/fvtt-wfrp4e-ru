@@ -125,8 +125,6 @@
 	"SETTINGS.FocusTurnStartHint": "В начале хода бойца камера фокусируется на нём. ",
 	"SETTINGS.HideTestData": "Скрывать результат проверки",
 	"SETTINGS.HideTestDataHint": "Карточки проверки ведущего скрывают от игроков информацию персонажей ведущего. ",
-	"SETTINGS.ManualChatCards": "Карточка проверки вручную",
-	"SETTINGS.ManualChatCardsHint": "Показывать карточку результата броска для заполнения, если используются физические кубы.",
 	"SETTINGS.PlayerBrowser": "Доступ игроков к обзору",
 	"SETTINGS.PlayerBrowserHint": "Разрешить игрокам просматривать библиотеки",
 	"SETTINGS.AdvantageBonus": "Эффект преимущества",
@@ -177,7 +175,7 @@
 	"SETTINGS.Moo": "Домашние правила от Moo Man",
 	"SETTINGS.MooHint": "Assorted mechanics change that I believe have potential to improve the game. Note that the ones listed here are not an exhaustive list of the house rules I use, but only those that can be applied in code.<br><br>For the entire list, please see the <a href='https://github.com/moo-man/WFRP4e-FoundryVTT/wiki/Homebrew-Rules'>Wiki Page.</a><br>Note that these rules are generally all meant to be used together.<br>Feedback is always appreciated. Please use the <a href='https://github.com/moo-man/WFRP4e-FoundryVTT/discussions/categories/moo-s-house-rules'>Github Discussion Board</a> for discussion of the mechanics.",
 	"SETTINGS.MooAdvantage": "Преимущества",
-	"SETTINGS.MooAdvantageHint": "Вместо +10 за преимущество, вы получаете +1 УУ за Преимущество <strong>при успешной проверке</strong>",
+	"SETTINGS.MooAdvantageHint": "Instead of +10 per Advantage, you gain +1 SL per Advantage on successful tests",
 	"SETTINGS.MooDifficulty": "Варианты сложности",
 	"SETTINGS.MooDifficultyHint": "Сделать ступени сложности симметричными",
 	"SETTINGS.MooCritsFumbles": "MooCritsFumbles",
@@ -277,7 +275,11 @@
 	"SHEET.ExperienceLog": "Журнал опыта",
 	"Sheet.RollIncome": "Заработок",
 	"SHEET.ItemSheetEditableDisabled": "Редактирование этого объекта отключено при действии эффекта '{effects}'. Отключите или удалите этот эффект у владеющего актёра.",
-	"SHEET.AlterName": "Alter Name",
+	"SHEET.AlterName": "Изменение имени",
+	"SHEET.Prepend": "Prepend",
+	"SHEET.Append": "Append",
+	"SHEET.SkillName": "Название навыка",
+	"SHEET.TalentName": "Название таланта",
 	"SHEET.SpecialisationAbbrev": "Спец.",
 	"SHEET.TemplateSpecialisationTooltip": "Количество выбираемых специализаций (например 'Рукопашный бой' и '2' соответствует 'Рукопашный бой (любые два)'",
 	"SHEET.TemplateGroupTooltip": "Указав номер группы, вы сможете выбрать любой другой объект с таким-же номером группы.",
@@ -394,7 +396,7 @@
 	"ITEM.Standard": "Обычный",
 	"ITEM.TestSkill": "Навык проверки",
 	"ITEM.Roles": "Роль",
-	"ITEM.VitalRoles": "Vital Roles",
+	"ITEM.VitalRoles": "Должности",
 	"ITEM.LearningXP": "Опыт для изучения",
 	"as weapon": "как у оружия",
 	"half weapon": "половина от оружия",
@@ -424,7 +426,9 @@
 	"Reach": "Длина",
 	"Contraction": "Заражение",
 	"Incubation": "Инкубация",
+	"IncubationPlaceholder": "Text regarding disease incubation",
 	"Duration": "Продолжительность",
+	"DurationPlaceholder": "Text regarding disease duration",
 	"Diagnosed": "Диагноз",
 	"DiagnosedTT": "Выберите, видна ли болезнь игрокам",
 	"Symptoms": "Симптомы",
@@ -776,7 +780,7 @@
 	"CHARGEN.ERROR.Create": "Ошибка создания актёра: {error}",
 	"CHARGEN.ERROR.CareerItem": "Невозможно найти имущество 1 ступени карьеры: {career}",
 	"CHARGEN.ERROR.CareerItems": "{num} предметов карьеры невозможно найти ( из {careers})",
-	"CHARGEN.ERROR.SpeciesTable": "Не удалось найти таблицу народа",
+	"CHARGEN.ERROR.SpeciesTable": "Could not find imported Species Table, check <strong>Table Settings</strong> within the system settings to ensure the registered table is correct. If no table is registered, either create one manually or import one. Using <a href='https://moo-man.github.io/WFRP4e-FoundryVTT/pages/premium.html#initializiation'>Initialization</a> will import it for you.",
 	"CHARGEN.ERROR.TalentsTableNotFound": "Не удалось найти таблицу случайных талантов '{key}' для {species} ({subspecies})",
 
 	"DIALOG.CastOrChannel": "Сотворение или Концентрация",
@@ -841,7 +845,7 @@
 	"DIALOG.GainPrayerContent": "Получение чуда будет стоить {xp} опыта.",
 	"DIALOG.ErrorMustSelectItem": "Необходимо выбрать хотя-бы 1 предмет",
 	"DIALOG.ItemDialog": "Окно предмета",
-	"DIALOG.ChoosePassenger": "Choose Passenger",
+	"DIALOG.ChoosePassenger": "Выберите пассажира",
 
 	"CHAT.Quickcasting": "Быстрое сотворение",
 	"CHAT.CareerChoose": "Выбрать вашу карьеру",
@@ -851,6 +855,7 @@
 	"CHAT.DamageApplied": "Нанесён урон",
 	"CHAT.ApplyDamageBasic": "@DAMAGE урон нанесен <b>{name}</b>",
 	"CHAT.ApplyHack": "Применить разрубающее",
+	"CHAT.CriticalDeflection": "Critical Deflection",
 	"CHAT.DamageShield": "Щит",
 	"CHAT.CriticalsNullified": "Удачное попадание аннулировано",
 	"CHAT.DamageAP": "Урон 1 КБ при",
@@ -1014,7 +1019,7 @@
 	"ErrorNotLoaded": "Оружие не заряжено",
 	"ErrorLimitedWeapons": "Вы не можете экипировать больше оружия.",
 	"ErrorDamagePermission": "У вас нет прав на нанесение урона этому актеру.",
-	"ErrorHackPermission": "У вас нет прав на применение разрубающего этому актёру.",
+	"ErrorArmourDamagePermission": "You do not have permission to apply armour damage to this actor.",
 	"ErrorNoArmourToDamage": "Нет брони для повреждения",
 	"ErrorTokenMount": "Токен скакуна требует чтобы вы видели сцену вместе с скакуном.",
 	"ErrorMountNotFound": "Ошибка при седлании скакуна. Попробуйте его убрать. ",
@@ -1726,7 +1731,7 @@
 	"Length": "Длина",
 	"VEHICLE.yd": "ярд",
 	"Motive Power": "Движущая сила",
-	"VEHICLE.Type": "Vehicle Type",
+	"VEHICLE.Type": "Тип транспорта",
 	"VEHICLE.ModEncumbranceTT": "Вес от модификаций: {amt}",
 	"VEHICLE.CarryEncumbranceTT": "Вес от груза: {amt}",
 	"VEHICLE.CrewRoles": "Должность",
@@ -2046,9 +2051,13 @@
 			},
 
 			"vehicle": {
-				"FILEDS": {
+				"FIELDS": {
 					"vehicleType": {
-						"label": "Тип транспорта"
+						"label": "Vehicle Type"
+					},
+					"details.hitLocationTable.value": {
+						"label": "Hit Location Table",
+						"hint": "Defines a custom hit location table for when this Actor is attacked."
 					},
 					"status.morale.transferEffects": {
 						"label": "Transfer Morale Effects",
@@ -2162,7 +2171,7 @@
 						"label": "Вместимость"
 					},
 					"countEnc.value": {
-						"label": "Count Encumbrance",
+						"label": "Учитывать вес",
 						"hint": "Добавить этот вес к перегруженности персонажа (уберите флажок, если вы не носите его на себе, например тележка)"
 					}
 				}
@@ -2566,29 +2575,6 @@
 						"label": "Зона попадания"
 					}
 				}
-			}
-		},
-
-		"Theme": {
-			"Config": "Theme Configuration",
-			"ConfigButton": "Настройка темы",
-			"ConfigHint": "Включить или выключить стили оформления системы.",
-			"FIELDS": {
-				"actor.enabled.label": "Включить тему",
-				"item.enabled.label": "Включить тему",
-				"journal.enabled.label": "Включить тему",
-				"sidebar.enabled.label": "Включить тему",
-				"apps.enabled.label": "Включить тему",
-
-				"actor.font.label": "Шрифт",
-				"item.font.label": "Шрифт",
-				"journal.font.label": "Шрифт",
-				"sidebar.font.label": "Шрифт",
-				"apps.font.label": "Шрифт"
-			},
-			"Font": {
-				"Classic": "Стилизованный",
-				"Readable": "Упрощённый"
 			}
 		}
 	}

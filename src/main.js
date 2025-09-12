@@ -13,12 +13,13 @@ import {
 	translatedSpellTarget,
 	translatedTalentSpec,
 } from "./data.js";
-import { loadScripts } from "./scripts.js";
+//import { loadScripts } from "./scripts.js";
 import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
 export async function initTranslation() {
 	setupBabele("compendium");
-	loadScripts();
+	/* Temporarily disabled since scripts are not yet translated */
+	//loadScripts();
 
 	if (typeof Babele !== "undefined") {
 		game.babele.registerConverters({
@@ -404,9 +405,7 @@ function translateTemplateItems(list, type, specs) {
 
 function translateEffects(effects) {
 	if (Array.isArray(effects) && effects?.length > 0) {
-		effects.map((effect) => {
-			translateEffect(effect);
-		});
+		return effects.map((effect) => translateEffect(effect));
 	}
 	return effects;
 }
