@@ -276,8 +276,8 @@
 	"Sheet.RollIncome": "Заработок",
 	"SHEET.ItemSheetEditableDisabled": "Редактирование этого объекта отключено при действии эффекта '{effects}'. Отключите или удалите этот эффект у владеющего актёра.",
 	"SHEET.AlterName": "Изменение имени",
-	"SHEET.Prepend": "Prepend",
-	"SHEET.Append": "Append",
+	"SHEET.Prepend": "Приставка",
+	"SHEET.Append": "Окончание",
 	"SHEET.SkillName": "Название навыка",
 	"SHEET.TalentName": "Название таланта",
 	"SHEET.SpecialisationAbbrev": "Спец.",
@@ -779,7 +779,7 @@
 	"CHARGEN.ERROR.ClassTrappingsNotFound": "Классовое имущество для {class} не обнаружено",
 	"CHARGEN.ERROR.Create": "Ошибка создания актёра: {error}",
 	"CHARGEN.ERROR.CareerItem": "Невозможно найти имущество 1 ступени карьеры: {career}",
-	"CHARGEN.ERROR.CareerItems": "{num} предметов карьеры невозможно найти ( из {careers})",
+	"CHARGEN.ERROR.CareerItems": "{num} предметов карьеры невозможно найти (в {careers})",
 	"CHARGEN.ERROR.SpeciesTable": "Could not find imported Species Table, check <strong>Table Settings</strong> within the system settings to ensure the registered table is correct. If no table is registered, either create one manually or import one. Using <a href='https://moo-man.github.io/WFRP4e-FoundryVTT/pages/premium.html#initializiation'>Initialization</a> will import it for you.",
 	"CHARGEN.ERROR.TalentsTableNotFound": "Не удалось найти таблицу случайных талантов '{key}' для {species} ({subspecies})",
 
@@ -855,7 +855,7 @@
 	"CHAT.DamageApplied": "Нанесён урон",
 	"CHAT.ApplyDamageBasic": "@DAMAGE урон нанесен <b>{name}</b>",
 	"CHAT.ApplyHack": "Применить разрубающее",
-	"CHAT.CriticalDeflection": "Critical Deflection",
+	"CHAT.CriticalDeflection": "Отклонение удачного попадания",
 	"CHAT.DamageShield": "Щит",
 	"CHAT.CriticalsNullified": "Удачное попадание аннулировано",
 	"CHAT.DamageAP": "Урон 1 КБ при",
@@ -915,7 +915,7 @@
 	"CHAT.ApplyTT": "GMs: Выберите токены для применения. \nPlayers: Применяется к связанному актёру",
 	"CHAT.Terror": "Ужас",
 	"CHAT.Apply": "Применить",
-	"CHAT.Place": "Place",
+	"CHAT.Place": "Место",
 	"CHAT.ApplyCondition": "Добавить {condition}",
 	"CHAT.ApplyError": "Вы не можете применить этот эффект.",
 	"CHAT.EditError": "У вас нет прав на редактирование этого сообщения в чате",
@@ -926,8 +926,8 @@
 	"CHAT.PostMoreThanHave": "Нельзя отправить больше, чем у вас есть.",
 	"CHAT.PostQuantityReduced": "Количество уменьшено на {num}",
 	"CHAT.NoMoreLeft": "Экземпляров не осталось.",
-	"CHAT.ExpReceived": "Received <b>{amount}</b> experience for <b>{reason}</b>.",
-	"CHAT.ExpReceivedNoReason": "Received <b>{amount}</b> experience.",
+	"CHAT.ExpReceived": "Получено <b>{amount}</b> опыта за <b>{reason}</b>",
+	"CHAT.ExpReceivedNoReason": "Получено <b>{amount}</b> опыта.",
 	"CHAT.DiseasesRules": "<br>Обратитесь к болезням чтобы найти правила Заражения",
 	"CHAT.CorruptionTest": "<br><b>Нажмите на скверну чтобы совершить проверку</b>",
 	"CHAT.CorruptionFail": "<b>{name}</b> получает {number} скверны.",
@@ -953,8 +953,8 @@
 	"CHAT.NoCrewWithRole": "Нет назначенного члена команды.",
 	"CHAT.RoleNotFound": "Роль <strong>{role}</strong> не обнаружена!",
 	"CHAT.TotalSL": "Общий УУ",
-	"CHAT.Vital": "Vital",
-	"CHAT.CrewTestVital": "Crew Test (Vital)",
+	"CHAT.Vital": "Ключевая",
+	"CHAT.CrewTestVital": "Проверка экипажа (ключевая)",
 	"CHAT.AttackerTooSmallDamage": "Атакующий слишком мал, чтобы нанести урон этому транспортному средству.",
 	"CHAT.VehicleTBTooltipMultiply": "{number} × РВ",
 	"CHAT.VehicleTBTooltipSubtract": "РВ - {number}",
@@ -1696,7 +1696,7 @@
 
 	"TRADE.ManageCargo": "Настройка",
 	"TRADE.Encumbrance": "Вес",
-	"TRADE.Modifier": "Modifier to apply (+/- X%)",
+	"TRADE.Modifier": "Применяемый модификатор (+/- X%)",
 	"TRADE.Price": "Текущая цена",
 	"TRADE.CargoTitle": "Груз <b> {name} </b> доступен в {town} !",
 	"TRADE.Quality": "Качество",
@@ -1735,8 +1735,8 @@
 	"VEHICLE.ModEncumbranceTT": "Вес от модификаций: {amt}",
 	"VEHICLE.CarryEncumbranceTT": "Вес от груза: {amt}",
 	"VEHICLE.CrewRoles": "Должность",
-	"VEHICLE.Crew": "Crew",
-	"VEHICLE.VehicleCrew": "Vehicle Crew",
+	"VEHICLE.Crew": "Экипаж",
+	"VEHICLE.VehicleCrew": "Экипаж транспорта",
 	"VEHICLE.Skill": "Навык",
 	"VEHICLE.Modifications": "Модификации транспорта",
 	"VEHICLE.ModType": "Тип модификации",
@@ -1748,43 +1748,43 @@
 	"VEHICLE.EnterRoleName": "Введите название должности",
 	"VEHICLE.Handling": "Управление транспортом",
 	"VEHICLE.HandlingTT": "Считать проверку роли проверкой управления транспортом",
-	"VEHICLE.HandlingNoPenalty": "Encumbrance below maximum: No Penalties.",
-	"VEHICLE.HandlingPenalty": "Handling Tests suffer a -{penalty} SL penalty.",
+	"VEHICLE.HandlingNoPenalty": "Не больше предела: никаких последствий",
+	"VEHICLE.HandlingPenalty": "При выполнении проверки применяется штраф -{penalty} УУ.",
 	"VEHICLE.CantUseActor": "У вас нет прав на проведение проверок с этим актером.",
 	"VEHICLE.NoActorOnBoard": "Назначенного персонажа нет в транспорте",
-	"VEHICLE.Enabled": "Enabled",
-	"VEHICLE.PrimaryMode": "Primary Mode",
+	"VEHICLE.Enabled": "Включить",
+	"VEHICLE.PrimaryMode": "Основной режим",
 	"Vehicle Settings": "Настройка транспорта",
-	"VEHICLE.Move": "Vehicle Move",
-	"VEHICLE.Sail": "Sail",
-	"VEHICLE.Oars": "Oars",
-	"VEHICLE.S": "S",
-	"VEHICLE.O": "O",
+	"VEHICLE.Move": "Скорость транспорта",
+	"VEHICLE.Sail": "Парус",
+	"VEHICLE.Oars": "Вёсла",
+	"VEHICLE.S": "П",
+	"VEHICLE.O": "В",
 	"VEHICLE.Morale": "Мораль",
-	"VEHICLE.VehicleMorale": "Vehicle Morale",
-	"VEHICLE.MoraleEffects": "Morale Effects",
-	"VEHICLE.MoraleRolls": "Morale Rolls",
-	"VEHICLE.NoMoraleModifiers": "No Active Morale Modifiers",
-	"VEHICLE.ManannsMood": "Manann's Mood",
-	"VEHICLE.ManannsMoodRolls": "Manann's Mood Rolls",
-	"VEHICLE.NoManannsMoodModifiers": "No Active Mood Modifiers",
-	"VEHICLE.Change": "Change",
-	"VEHICLE.Starting": "Starting",
-	"VEHICLE.Sources": "Morale",
-	"VEHICLE.Delete": "Delete this entry?",
+	"VEHICLE.VehicleMorale": "Мораль экипажа",
+	"VEHICLE.MoraleEffects": "Эффекты морали",
+	"VEHICLE.MoraleRolls": "Проверки морали",
+	"VEHICLE.NoMoraleModifiers": "Нет действующих модификаторов морали",
+	"VEHICLE.ManannsMood": "Расположение Мананна",
+	"VEHICLE.ManannsMoodRolls": "Проверка расположения Мананна",
+	"VEHICLE.NoManannsMoodModifiers": "Нет действующих модификаторов расположения",
+	"VEHICLE.Change": "Изменить",
+	"VEHICLE.Starting": "Начальное",
+	"VEHICLE.Sources": "Мораль",
+	"VEHICLE.Delete": "Удалить эту запись?",
 	"VEHICLE.CrewTests": "Проверка экипажа",
 	"VEHICLE.NoSkill": "У этого актёра нет навыков, которые можно использовать в этой роли.",
 	"VEHICLE.ChooseSkill": "Выберите навык для использования.",
-	"VEHICLE.CollisionRating": "Collision Rating",
+	"VEHICLE.CollisionRating": "Рейтинг столкновения",
 	"VEHICLE.WeekLabel": "Week Label",
 	"VEHICLE.LabelError": "Enter a label for the roll",
-	"VEHICLE.Man": "Man.",
-	"VEHICLE.Custom": "Custom",
-	"VEHICLE.SetValue": "Set Value",
-	"VEHICLE.SetValueToolTip": "Set to a particular value instead of rolling.",
-	"VEHICLE.Roles": "Roles ",
-	"VEHICLE.NewRole": "New Role",
-	"VEHICLE.AssignedActors": "Assigned Actor(s)",
+	"VEHICLE.Man": "Ман.",
+	"VEHICLE.Custom": "Особое",
+	"VEHICLE.SetValue": "Установить значение",
+	"VEHICLE.SetValueToolTip": "Устанавливается на определённое значение вместо броска.",
+	"VEHICLE.Roles": "Роли",
+	"VEHICLE.NewRole": "Новая роль",
+	"VEHICLE.AssignedActors": "Назначенный актёр(ы)",
 	"VEHICLE.SellCargo": "Продать груз",
 	"NewRole": "Новая должность",
 	"Add Encumbrance for Actors": "Добавить Вес актёру",
@@ -1958,7 +1958,7 @@
 	"BugReport.ErrorForm": "Пожалуйста заполните форму",
 	"BugReport.ErrorName1": "Введите ваш тэг Discord или Email в поле имени.",
 	"BugReport.DiscordChange": "Напоминание: имена пользователей в Discord недавно изменились. Используйте ваше новое имя.",
-	"BUGREPORT.AlertHint": "This report either wasn't reproducible or needs some more information. Click on the title to see details.",
+	"BUGREPORT.AlertHint": "Этот репорт не поддаётся воспроизведению или нуждается в дополнительной информации. Нажмите на заголовок, чтобы ознакомится с подробностями.",
 	"BUGREPORT.NeedsAttention": "ТРЕБУЕТ ВНИМАНИЯ",
 	"BUGREPORT.Settled": "SETTLED",
 	"BUGREPORT.APiLimitReached": "Вы достигли лимита использования API GitHub. Вам придется либо подождать час перед отправкой, либо отправить ошибку вручную на сайте GitHub.",
@@ -2053,15 +2053,15 @@
 			"vehicle": {
 				"FIELDS": {
 					"vehicleType": {
-						"label": "Vehicle Type"
+						"label": "Тип транспорта"
 					},
 					"details.hitLocationTable.value": {
-						"label": "Hit Location Table",
-						"hint": "Defines a custom hit location table for when this Actor is attacked."
+						"label": "Таблица зон попаданий",
+						"hint": "Определяет особую таблицу зон попаданий, когда этот актёр атакован."
 					},
 					"status.morale.transferEffects": {
-						"label": "Transfer Morale Effects",
-						"hint": "Apply morale effects to Actors on this vehicle."
+						"label": "Перенести эффекты морали",
+						"hint": "Применить эффекты морали к актёрам этого транспорта."
 					}
 				}
 			},
@@ -2074,11 +2074,11 @@
 					},
 					"range.value": {
 						"label": "Дальнобойность",
-						"hint": "Modifies the Range of the Weapon using this Ammunition. e.g. Add: +2, Subtract: -2, Multiply: *2, Divide: /2"
+						"hint": "Изменяет дальнобойность оружия, использующего этот боеприпас, например Add: +2, Subtract: -2, Multiply: *2, Divide: /2"
 					},
 					"damage.value": {
 						"label": "Урон",
-						"hint": "Modifies the Damage of the Weapon using this Ammunition. See Range examples above."
+						"hint": "Изменяет урон, наносимый оружием, использующим этот боеприпас. Смотрите примеры дальнобойности выше. "
 					},
 					"damage.dice": {
 						"label": "Кость",
@@ -2490,11 +2490,11 @@
 							"label": "Роли"
 						},
 						"vital": {
-							"label": "Vital Roles"
+							"label": "Ключевая роль"
 						}
 					},
 					"handling": {
-						"label": "Vehicle Handling"
+						"label": "Управление транспортом"
 					}
 				}
 			},
@@ -2554,10 +2554,10 @@
 				"FIELDS": {
 					"alterName": {
 						"pre": {
-							"label": "Alter Name Prefix"
+							"label": "Изменить приставку имени"
 						},
 						"post": {
-							"label": "Alter Name Suffix"
+							"label": "Изменить суффикс имени"
 						}
 					}
 				}
