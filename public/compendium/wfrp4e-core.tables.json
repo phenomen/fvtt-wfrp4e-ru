@@ -10,9 +10,8 @@
 		"Hit Location": "Зоны попадания",
 		"Moo's Homebrew": "Домашние правила Moo"
 	},
-	"entries": [
-		{
-			"id": "Dooming",
+	"entries": {
+		"Dooming": {
 			"name": "Роковые Пророчества",
 			"results": {
 				"1-1": "Ведьмовское слово несёт погибель",
@@ -118,263 +117,901 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Career - Dwarf",
+		"Career - Dwarf": {
 			"name": "Карьера - Гном",
 			"results": {
-				"1-1": { "description": "Аптекарь" },
-				"2-4": { "description": "Инженер" },
-				"5-6": { "description": "Законник" },
-				"7-7": { "description": "Врач" },
-				"8-9": { "description": "Учёный" },
-				"10-11": { "description": "Агитатор" },
-				"12-17": { "description": "Ремесленник" },
-				"18-18": { "description": "Попрошайка" },
-				"19-20": { "description": "Следователь" },
-				"21-24": { "description": "Купец" },
-				"25-25": { "description": "Крысолов" },
-				"26-31": { "description": "Горожанин" },
-				"32-34": { "description": "Городской стражник" },
-				"35-36": { "description": "Советник" },
-				"37-37": { "description": "Художник" },
-				"38-38": { "description": "Дуэлянт" },
-				"39-40": { "description": "Эмиссар" },
-				"41-41": { "description": "Дворянин" },
-				"42-42": { "description": "Слуга" },
-				"43-43": { "description": "Шпион" },
-				"44-45": { "description": "Смотритель" },
-				"46-47": { "description": "Бейлиф" },
-				"48-49": { "description": "Охотник" },
-				"50-54": { "description": "Рудокоп" },
-				"55-55": { "description": "Разведчик" },
-				"56-56": { "description": "Селянин" },
-				"57-60": { "description": "Охотник за головами" },
-				"61-61": { "description": "Кучер" },
-				"62-63": { "description": "Артист" },
-				"64-65": { "description": "Посыльный" },
-				"66-67": { "description": "Коробейник" },
-				"68-69": { "description": "Лодочник" },
-				"70-70": { "description": "Лоцман" },
-				"71-72": { "description": "Речной житель" },
-				"73-73": { "description": "Моряк" },
-				"74-75": { "description": "Контрабандист" },
-				"76-77": { "description": "Докер" },
-				"78-78": { "description": "Побережник" },
-				"79-79": { "description": "Скупщик краденого" },
-				"80-82": { "description": "Разбойник" },
-				"83-83": { "description": "Бандит" },
-				"84-84": { "description": "Вор" },
-				"85-87": { "description": "Охранник" },
-				"88-90": { "description": "Гладиатор" },
-				"91-93": { "description": "Негодяй" },
-				"94-96": { "description": "Солдат" },
-				"97-100": { "description": "Убийца чудовищ" }
+				"1-1": {
+					"name": "Аптекарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Аптекарь}"
+				},
+				"2-4": {
+					"name": "Инженер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Инженер}"
+				},
+				"5-6": {
+					"name": "Законник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Законник}"
+				},
+				"7-7": {
+					"name": "Врач",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Врач}"
+				},
+				"8-9": {
+					"name": "Учёный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Учёный}"
+				},
+				"10-11": {
+					"name": "Агитатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Агитатор}"
+				},
+				"12-17": {
+					"name": "Ремесленник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Ремесленник}"
+				},
+				"18-18": {
+					"name": "Попрошайка",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Попрошайка}"
+				},
+				"19-20": {
+					"name": "Следователь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Следователь}"
+				},
+				"21-24": {
+					"name": "Купец",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Купец}"
+				},
+				"25-25": {
+					"name": "Крысолов",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Крысолов}"
+				},
+				"26-31": {
+					"name": "Горожанин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Горожанин}"
+				},
+				"32-34": {
+					"name": "Городской стражник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Городской стражник}"
+				},
+				"35-36": {
+					"name": "Советник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Советник}"
+				},
+				"37-37": {
+					"name": "Художник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Художник}"
+				},
+				"38-38": {
+					"name": "Дуэлянт",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Дуэлянт}"
+				},
+				"39-40": {
+					"name": "Эмиссар",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Эмиссар}"
+				},
+				"41-41": {
+					"name": "Дворянин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Дворянин}"
+				},
+				"42-42": {
+					"name": "Слуга",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Слуга}"
+				},
+				"43-43": {
+					"name": "Шпион",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Шпион}"
+				},
+				"44-45": {
+					"name": "Смотритель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Смотритель}"
+				},
+				"46-47": {
+					"name": "Бейлиф",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Бейлиф}"
+				},
+				"48-49": {
+					"name": "Охотник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Охотник}"
+				},
+				"50-54": {
+					"name": "Рудокоп",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Рудокоп}"
+				},
+				"55-55": {
+					"name": "Разведчик",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Разведчик}"
+				},
+				"56-56": {
+					"name": "Селянин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Селянин}"
+				},
+				"57-60": {
+					"name": "Охотник за головами",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Охотник за головами}"
+				},
+				"61-61": {
+					"name": "Кучер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Кучер}"
+				},
+				"62-63": {
+					"name": "Артист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Артист}"
+				},
+				"64-65": {
+					"name": "Посыльный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Посыльный}"
+				},
+				"66-67": {
+					"name": "Коробейник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Коробейник}"
+				},
+				"68-69": {
+					"name": "Лодочник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Лодочник}"
+				},
+				"70-70": {
+					"name": "Лоцман",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Лоцман}"
+				},
+				"71-72": {
+					"name": "Речной житель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Речной житель}"
+				},
+				"73-73": {
+					"name": "Моряк",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Моряк}"
+				},
+				"74-75": {
+					"name": "Контрабандист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Контрабандист}"
+				},
+				"76-77": {
+					"name": "Докер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Докер}"
+				},
+				"78-78": {
+					"name": "Побережник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Побережник}"
+				},
+				"79-79": {
+					"name": "Скупщик краденого",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Скупщик краденого}"
+				},
+				"80-82": {
+					"name": "Разбойник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Разбойник}"
+				},
+				"83-83": {
+					"name": "Бандит",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Бандит}"
+				},
+				"84-84": {
+					"name": "Вор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Вор}"
+				},
+				"85-87": {
+					"name": "Охранник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Охранник}"
+				},
+				"88-90": {
+					"name": "Гладиатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Гладиатор}"
+				},
+				"91-93": {
+					"name": "Негодяй",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Негодяй}"
+				},
+				"94-96": {
+					"name": "Солдат",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Солдат}"
+				},
+				"97-100": {
+					"name": "Убийца чудовищ",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Убийца чудовищ}"
+				}
 			},
 			"description": " "
 		},
-		{
-			"id": "Career - Halfling",
+		"Career - Halfling": {
 			"name": "Карьера - Полурослик",
 			"results": {
-				"1-1": { "description": "Аптекарь" },
-				"2-2": { "description": "Инженер" },
-				"3-4": { "description": "Законник" },
-				"5-6": { "description": "Врач" },
-				"7-8": { "description": "Учёный" },
-				"9-10": { "description": "Агитатор" },
-				"11-15": { "description": "Ремесленник" },
-				"16-19": { "description": "Попрошайка" },
-				"20-21": { "description": "Следователь" },
-				"22-25": { "description": "Купец" },
-				"26-28": { "description": "Крысолов" },
-				"29-31": { "description": "Горожанин" },
-				"32-33": { "description": "Охранник" },
-				"34-34": { "description": "Советник" },
-				"35-36": { "description": "Художник" },
-				"37-37": { "description": "Эмиссар" },
-				"38-43": { "description": "Слуга" },
-				"44-44": { "description": "Шпион" },
-				"45-46": { "description": "Смотритель" },
-				"47-47": { "description": "Бейлиф" },
-				"48-50": { "description": "Травник" },
-				"51-52": { "description": "Охотник" },
-				"53-53": { "description": "Рудокоп" },
-				"54-54": { "description": "Разведчик" },
-				"55-57": { "description": "Селянин" },
-				"58-58": { "description": "Охотник за головами" },
-				"59-60": { "description": "Кучер" },
-				"61-63": { "description": "Артист" },
-				"64-65": { "description": "Посыльный" },
-				"66-67": { "description": "Коробейник" },
-				"68-68": { "description": "Дорожный стражник" },
-				"69-69": { "description": "Лодочник" },
-				"70-70": { "description": "Лоцман" },
-				"71-71": { "description": "Речной стражник" },
-				"72-74": { "description": "Речной житель" },
-				"75-75": { "description": "Моряк" },
-				"76-79": { "description": "Контрабандист" },
-				"80-82": { "description": "Докер" },
-				"83-85": { "description": "Пройдоха" },
-				"86-86": { "description": "Шарлатан" },
-				"87-87": { "description": "Скупщик краденого" },
-				"88-88": { "description": "Гробокопатель" },
-				"89-89": { "description": "Разбойник" },
-				"90-90": { "description": "Бандит" },
-				"91-94": { "description": "Вор" },
-				"95-96": { "description": "Охранник" },
-				"97-97": { "description": "Гладиатор" },
-				"98-100": { "description": "Солдат" }
+				"1-1": {
+					"name": "Аптекарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Аптекарь}"
+				},
+				"2-2": {
+					"name": "Инженер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Инженер}"
+				},
+				"3-4": {
+					"name": "Законник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Законник}"
+				},
+				"5-6": {
+					"name": "Врач",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Врач}"
+				},
+				"7-8": {
+					"name": "Учёный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Учёный}"
+				},
+				"9-10": {
+					"name": "Агитатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Агитатор}"
+				},
+				"11-15": {
+					"name": "Ремесленник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Ремесленник}"
+				},
+				"16-19": {
+					"name": "Попрошайка",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Попрошайка}"
+				},
+				"20-21": {
+					"name": "Следователь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Следователь}"
+				},
+				"22-25": {
+					"name": "Купец",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Купец}"
+				},
+				"26-28": {
+					"name": "Крысолов",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Крысолов}"
+				},
+				"29-31": {
+					"name": "Горожанин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Горожанин}"
+				},
+				"32-33": {
+					"name": "Охранник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Охранник}"
+				},
+				"34-34": {
+					"name": "Советник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Советник}"
+				},
+				"35-36": {
+					"name": "Художник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Художник}"
+				},
+				"37-37": {
+					"name": "Эмиссар",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Эмиссар}"
+				},
+				"38-43": {
+					"name": "Слуга",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Слуга}"
+				},
+				"44-44": {
+					"name": "Шпион",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Шпион}"
+				},
+				"45-46": {
+					"name": "Смотритель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Смотритель}"
+				},
+				"47-47": {
+					"name": "Бейлиф",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Бейлиф}"
+				},
+				"48-50": {
+					"name": "Травник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Травник}"
+				},
+				"51-52": {
+					"name": "Охотник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Охотник}"
+				},
+				"53-53": {
+					"name": "Рудокоп",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Рудокоп}"
+				},
+				"54-54": {
+					"name": "Разведчик",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Разведчик}"
+				},
+				"55-57": {
+					"name": "Селянин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Селянин}"
+				},
+				"58-58": {
+					"name": "Охотник за головами",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Охотник за головами}"
+				},
+				"59-60": {
+					"name": "Кучер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Кучер}"
+				},
+				"61-63": {
+					"name": "Артист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Артист}"
+				},
+				"64-65": {
+					"name": "Посыльный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Посыльный}"
+				},
+				"66-67": {
+					"name": "Коробейник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Коробейник}"
+				},
+				"68-68": {
+					"name": "Дорожный стражник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Дорожный стражник}"
+				},
+				"69-69": {
+					"name": "Лодочник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Лодочник}"
+				},
+				"70-70": {
+					"name": "Лоцман",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Лоцман}"
+				},
+				"71-71": {
+					"name": "Речной стражник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Речной стражник}"
+				},
+				"72-74": {
+					"name": "Речной житель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Речной житель}"
+				},
+				"75-75": {
+					"name": "Моряк",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Моряк}"
+				},
+				"76-79": {
+					"name": "Контрабандист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Контрабандист}"
+				},
+				"80-82": {
+					"name": "Докер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Докер}"
+				},
+				"83-85": {
+					"name": "Пройдоха",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Пройдоха}"
+				},
+				"86-86": {
+					"name": "Шарлатан",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Шарлатан}"
+				},
+				"87-87": {
+					"name": "Скупщик краденого",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Скупщик краденого}"
+				},
+				"88-88": {
+					"name": "Гробокопатель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Гробокопатель}"
+				},
+				"89-89": {
+					"name": "Разбойник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Разбойник}"
+				},
+				"90-90": {
+					"name": "Бандит",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Бандит}"
+				},
+				"91-94": {
+					"name": "Вор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Вор}"
+				},
+				"95-96": {
+					"name": "Охранник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Охранник}"
+				},
+				"97-97": {
+					"name": "Гладиатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Гладиатор}"
+				},
+				"98-100": {
+					"name": "Солдат",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Солдат}"
+				}
 			},
 			"description": " "
 		},
-		{
-			"id": "Career - High Elf",
+		"Career - High Elf": {
 			"name": "Карьера - Высший эльф",
 			"results": {
-				"1-2": { "description": "Аптекарь" },
-				"3-6": { "description": "Законник" },
-				"7-8": { "description": "Врач" },
-				"9-12": { "description": "Учёный" },
-				"13-16": { "description": "Маг" },
-				"17-19": { "description": "Ремесленник" },
-				"20-21": { "description": "Следователь" },
-				"22-26": { "description": "Купец" },
-				"27-28": { "description": "Горожанин" },
-				"29-29": { "description": "Городской стражник" },
-				"30-31": { "description": "Советник" },
-				"32-32": { "description": "Художник" },
-				"33-34": { "description": "Дуэлянт" },
-				"35-37": { "description": "Эмиссар" },
-				"38-40": { "description": "Дворянин" },
-				"41-43": { "description": "Шпион" },
-				"44-45": { "description": "Смотритель" },
-				"46-47": { "description": "Травник" },
-				"48-50": { "description": "Охотник" },
-				"51-56": { "description": "Разведчик" },
-				"57-59": { "description": "Охотник за головами" },
-				"60-62": { "description": "Артист" },
-				"63-63": { "description": "Посыльный" },
-				"64-64": { "description": "Лодочник" },
-				"65-79": { "description": "Моряк" },
-				"80-80": { "description": "Контрабандист" },
-				"81-82": { "description": "Пройдоха" },
-				"83-85": { "description": "Шарлатан" },
-				"86-88": { "description": "Разбойник" },
-				"89-92": { "description": "Кавалерист" },
-				"93-94": { "description": "Охранник" },
-				"95-95": { "description": "Рыцарь" },
-				"96-97": { "description": "Гладиатор" },
-				"98-98": { "description": "Негодяй" },
-				"99-100": { "description": "Солдат" }
+				"1-2": {
+					"name": "Аптекарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Аптекарь}"
+				},
+				"3-6": {
+					"name": "Законник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Законник}"
+				},
+				"7-8": {
+					"name": "Врач",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Врач}"
+				},
+				"9-12": {
+					"name": "Учёный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Учёный}"
+				},
+				"13-16": {
+					"name": "Маг",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Маг}"
+				},
+				"17-19": {
+					"name": "Ремесленник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Ремесленник}"
+				},
+				"20-21": {
+					"name": "Следователь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Следователь}"
+				},
+				"22-26": {
+					"name": "Купец",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Купец}"
+				},
+				"27-28": {
+					"name": "Горожанин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Горожанин}"
+				},
+				"29-29": {
+					"name": "Городской стражник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Городской стражник}"
+				},
+				"30-31": {
+					"name": "Советник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Советник}"
+				},
+				"32-32": {
+					"name": "Художник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Художник}"
+				},
+				"33-34": {
+					"name": "Дуэлянт",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Дуэлянт}"
+				},
+				"35-37": {
+					"name": "Эмиссар",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Эмиссар}"
+				},
+				"38-40": {
+					"name": "Дворянин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Дворянин}"
+				},
+				"41-43": {
+					"name": "Шпион",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Шпион}"
+				},
+				"44-45": {
+					"name": "Смотритель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Смотритель}"
+				},
+				"46-47": {
+					"name": "Травник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Травник}"
+				},
+				"48-50": {
+					"name": "Охотник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Охотник}"
+				},
+				"51-56": {
+					"name": "Разведчик",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Разведчик}"
+				},
+				"57-59": {
+					"name": "Охотник за головами",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Охотник за головами}"
+				},
+				"60-62": {
+					"name": "Артист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Артист}"
+				},
+				"63-63": {
+					"name": "Посыльный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Посыльный}"
+				},
+				"64-64": {
+					"name": "Лодочник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Лодочник}"
+				},
+				"65-79": {
+					"name": "Моряк",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Моряк}"
+				},
+				"80-80": {
+					"name": "Контрабандист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Контрабандист}"
+				},
+				"81-82": {
+					"name": "Пройдоха",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Пройдоха}"
+				},
+				"83-85": {
+					"name": "Шарлатан",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Шарлатан}"
+				},
+				"86-88": {
+					"name": "Разбойник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Разбойник}"
+				},
+				"89-92": {
+					"name": "Кавалерист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Кавалерист}"
+				},
+				"93-94": {
+					"name": "Охранник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Охранник}"
+				},
+				"95-95": {
+					"name": "Рыцарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Рыцарь}"
+				},
+				"96-97": {
+					"name": "Гладиатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Гладиатор}"
+				},
+				"98-98": {
+					"name": "Негодяй",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Негодяй}"
+				},
+				"99-100": {
+					"name": "Солдат",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Солдат}"
+				}
 			},
 			"description": " "
 		},
-		{
-			"id": "Career - Human",
+		"Career - Human": {
 			"name": "Карьера - Человек",
 			"results": {
-				"1-1": { "description": "Аптекарь" },
-				"2-2": { "description": "Инженер" },
-				"3-3": { "description": "Законник" },
-				"4-5": { "description": "Монах" },
-				"6-6": { "description": "Врач" },
-				"7-11": { "description": "Жрец" },
-				"12-13": { "description": "Учёный" },
-				"14-14": { "description": "Маг" },
-				"15-15": { "description": "Агитатор" },
-				"16-17": { "description": "Ремесленник" },
-				"18-19": { "description": "Попрошайка" },
-				"20-20": { "description": "Следователь" },
-				"21-21": { "description": "Купец" },
-				"22-23": { "description": "Крысолов" },
-				"24-26": { "description": "Горожанин" },
-				"27-27": { "description": "Городской стражник" },
-				"28-28": { "description": "Советник" },
-				"29-29": { "description": "Художник" },
-				"30-30": { "description": "Дуэлянт" },
-				"31-31": { "description": "Эмиссар" },
-				"32-32": { "description": "Дворянин" },
-				"33-35": { "description": "Слуга" },
-				"36-36": { "description": "Шпион" },
-				"37-37": { "description": "Смотритель" },
-				"38-38": { "description": "Бейлиф" },
-				"39-39": { "description": "Знахарь" },
-				"40-40": { "description": "Травник" },
-				"41-42": { "description": "Охотник" },
-				"43-43": { "description": "Рудокоп" },
-				"44-44": { "description": "Мистик" },
-				"45-45": { "description": "Разведчик" },
-				"46-50": { "description": "Селянин" },
-				"51-51": { "description": "Охотник за головами" },
-				"52-52": { "description": "Кучер" },
-				"53-54": { "description": "Артист" },
-				"55-56": { "description": "Флагеллант" },
-				"57-57": { "description": "Посыльный" },
-				"58-58": { "description": "Коробейник" },
-				"59-59": { "description": "Дорожный стражник" },
-				"60-60": { "description": "Охотник на ведьм" },
-				"61-62": { "description": "Лодочник" },
-				"63-63": { "description": "Лоцман" },
-				"64-65": { "description": "Речной стражник" },
-				"66-68": { "description": "Речной житель" },
-				"69-70": { "description": "Моряк" },
-				"71-71": { "description": "Контрабандист" },
-				"72-73": { "description": "Докер" },
-				"74-74": { "description": "Побережник" },
-				"75-76": { "description": "Пройдоха" },
-				"77-77": { "description": "Шарлатан" },
-				"78-78": { "description": "Скупщик краденого" },
-				"79-79": { "description": "Гробокопатель" },
-				"80-83": { "description": "Разбойник" },
-				"84-84": { "description": "Бандит" },
-				"85-87": { "description": "Вор" },
-				"88-88": { "description": "Ведьма" },
-				"89-90": { "description": "Кавалерист" },
-				"91-92": { "description": "Охранник" },
-				"93-93": { "description": "Рыцарь" },
-				"94-94": { "description": "Гладиатор" },
-				"95-95": { "description": "Негодяй" },
-				"96-99": { "description": "Солдат" },
-				"100-100": { "description": "Жрец-воин" }
+				"1-1": {
+					"name": "Аптекарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Аптекарь}"
+				},
+				"2-2": {
+					"name": "Инженер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Инженер}"
+				},
+				"3-3": {
+					"name": "Законник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Законник}"
+				},
+				"4-5": {
+					"name": "Монах",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Монах}"
+				},
+				"6-6": {
+					"name": "Врач",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Врач}"
+				},
+				"7-11": {
+					"name": "Жрец",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Жрец}"
+				},
+				"12-13": {
+					"name": "Учёный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Учёный}"
+				},
+				"14-14": {
+					"name": "Маг",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Маг}"
+				},
+				"15-15": {
+					"name": "Агитатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Агитатор}"
+				},
+				"16-17": {
+					"name": "Ремесленник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Ремесленник}"
+				},
+				"18-19": {
+					"name": "Попрошайка",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Попрошайка}"
+				},
+				"20-20": {
+					"name": "Следователь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Следователь}"
+				},
+				"21-21": {
+					"name": "Купец",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Купец}"
+				},
+				"22-23": {
+					"name": "Крысолов",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Крысолов}"
+				},
+				"24-26": {
+					"name": "Горожанин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Горожанин}"
+				},
+				"27-27": {
+					"name": "Городской стражник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Городской стражник}"
+				},
+				"28-28": {
+					"name": "Советник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Советник}"
+				},
+				"29-29": {
+					"name": "Художник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Художник}"
+				},
+				"30-30": {
+					"name": "Дуэлянт",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Дуэлянт}"
+				},
+				"31-31": {
+					"name": "Эмиссар",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Эмиссар}"
+				},
+				"32-32": {
+					"name": "Дворянин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Дворянин}"
+				},
+				"33-35": {
+					"name": "Слуга",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Слуга}"
+				},
+				"36-36": {
+					"name": "Шпион",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Шпион}"
+				},
+				"37-37": {
+					"name": "Смотритель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Смотритель}"
+				},
+				"38-38": {
+					"name": "Бейлиф",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Бейлиф}"
+				},
+				"39-39": {
+					"name": "Знахарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Знахарь}"
+				},
+				"40-40": {
+					"name": "Травник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Травник}"
+				},
+				"41-42": {
+					"name": "Охотник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Охотник}"
+				},
+				"43-43": {
+					"name": "Рудокоп",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Рудокоп}"
+				},
+				"44-44": {
+					"name": "Мистик",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Мистик}"
+				},
+				"45-45": {
+					"name": "Разведчик",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Разведчик}"
+				},
+				"46-50": {
+					"name": "Селянин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Селянин}"
+				},
+				"51-51": {
+					"name": "Охотник за головами",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Охотник за головами}"
+				},
+				"52-52": {
+					"name": "Кучер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Кучер}"
+				},
+				"53-54": {
+					"name": "Артист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Артист}"
+				},
+				"55-56": {
+					"name": "Флагеллант",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Флагеллант}"
+				},
+				"57-57": {
+					"name": "Посыльный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Посыльный}"
+				},
+				"58-58": {
+					"name": "Коробейник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Коробейник}"
+				},
+				"59-59": {
+					"name": "Дорожный стражник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Дорожный стражник}"
+				},
+				"60-60": {
+					"name": "Охотник на ведьм",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Охотник на ведьм}"
+				},
+				"61-62": {
+					"name": "Лодочник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Лодочник}"
+				},
+				"63-63": {
+					"name": "Лоцман",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Лоцман}"
+				},
+				"64-65": {
+					"name": "Речной стражник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Речной стражник}"
+				},
+				"66-68": {
+					"name": "Речной житель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Речной житель}"
+				},
+				"69-70": {
+					"name": "Моряк",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Моряк}"
+				},
+				"71-71": {
+					"name": "Контрабандист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Контрабандист}"
+				},
+				"72-73": {
+					"name": "Докер",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Докер}"
+				},
+				"74-74": {
+					"name": "Побережник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Побережник}"
+				},
+				"75-76": {
+					"name": "Пройдоха",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Пройдоха}"
+				},
+				"77-77": {
+					"name": "Шарлатан",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Шарлатан}"
+				},
+				"78-78": {
+					"name": "Скупщик краденого",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Скупщик краденого}"
+				},
+				"79-79": {
+					"name": "Гробокопатель",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Гробокопатель}"
+				},
+				"80-83": {
+					"name": "Разбойник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Разбойник}"
+				},
+				"84-84": {
+					"name": "Бандит",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Бандит}"
+				},
+				"85-87": {
+					"name": "Вор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Вор}"
+				},
+				"88-88": {
+					"name": "Ведьма",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Ведьма}"
+				},
+				"89-90": {
+					"name": "Кавалерист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Кавалерист}"
+				},
+				"91-92": {
+					"name": "Охранник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Охранник}"
+				},
+				"93-93": {
+					"name": "Рыцарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Рыцарь}"
+				},
+				"94-94": {
+					"name": "Гладиатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Гладиатор}"
+				},
+				"95-95": {
+					"name": "Негодяй",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Негодяй}"
+				},
+				"96-99": {
+					"name": "Солдат",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Солдат}"
+				},
+				"100-100": {
+					"name": "Жрец-воин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Жрец-воин}"
+				}
 			},
 			"description": " "
 		},
-		{
-			"id": "Career - Wood Elf",
+		"Career - Wood Elf": {
 			"name": "Карьера - Лесной эльф",
 			"results": {
-				"1-1": { "description": "Учёный" },
-				"2-5": { "description": "Маг" },
-				"6-10": { "description": "Ремесленник" },
-				"11-14": { "description": "Советник" },
-				"15-18": { "description": "Художник" },
-				"19-25": { "description": "Эмиссар" },
-				"26-31": { "description": "Дворянин" },
-				"32-35": { "description": "Шпион" },
-				"36-42": { "description": "Травник" },
-				"43-52": { "description": "Охотник" },
-				"53-57": { "description": "Мистик" },
-				"58-68": { "description": "Разведчик" },
-				"69-70": { "description": "Охотник за головами" },
-				"71-75": { "description": "Артист" },
-				"76-78": { "description": "Посыльный" },
-				"79-79": { "description": "Побережник" },
-				"80-85": { "description": "Разбойник" },
-				"86-90": { "description": "Кавалерист" },
-				"91-92": { "description": "Охранник" },
-				"93-94": { "description": "Рыцарь" },
-				"95-96": { "description": "Гладиатор" },
-				"97-100": { "description": "Солдат" }
+				"1-1": {
+					"name": "Учёный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Учёный}"
+				},
+				"2-5": {
+					"name": "Маг",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Маг}"
+				},
+				"6-10": {
+					"name": "Ремесленник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Ремесленник}"
+				},
+				"11-14": {
+					"name": "Советник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Советник}"
+				},
+				"15-18": {
+					"name": "Художник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Художник}"
+				},
+				"19-25": {
+					"name": "Эмиссар",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Эмиссар}"
+				},
+				"26-31": {
+					"name": "Дворянин",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Дворянин}"
+				},
+				"32-35": {
+					"name": "Шпион",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Шпион}"
+				},
+				"36-42": {
+					"name": "Травник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Травник}"
+				},
+				"43-52": {
+					"name": "Охотник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Охотник}"
+				},
+				"53-57": {
+					"name": "Мистик",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Мистик}"
+				},
+				"58-68": {
+					"name": "Разведчик",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Разведчик}"
+				},
+				"69-70": {
+					"name": "Охотник за головами",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Охотник за головами}"
+				},
+				"71-75": {
+					"name": "Артист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Артист}"
+				},
+				"76-78": {
+					"name": "Посыльный",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Посыльный}"
+				},
+				"79-79": {
+					"name": "Побережник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Побережник}"
+				},
+				"80-85": {
+					"name": "Разбойник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Разбойник}"
+				},
+				"86-90": {
+					"name": "Кавалерист",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Кавалерист}"
+				},
+				"91-92": {
+					"name": "Охранник",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Охранник}"
+				},
+				"93-94": {
+					"name": "Рыцарь",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Рыцарь}"
+				},
+				"95-96": {
+					"name": "Гладиатор",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Гладиатор}"
+				},
+				"97-100": {
+					"name": "Солдат",
+					"description": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Солдат}"
+				}
 			},
 			"description": " "
 		},
-		{
-			"id": "Catastrophic Miscast Table (Moo)",
+		"Catastrophic Miscast Table (Moo)": {
 			"name": "Catastrophic Miscast Table (Moo)",
 			"description": " "
 		},
-		{
-			"id": "Critical Hits - Arm",
+		"Critical Hits - Arm": {
 			"name": "Травмы рук",
 			"results": {
 				"1-10": "Онемение руки",
@@ -400,8 +1037,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Critical Hits - Body",
+		"Critical Hits - Body": {
 			"name": "Травмы торса",
 			"results": {
 				"1-10": "Просто царапина!",
@@ -427,8 +1063,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Critical Hits - Head",
+		"Critical Hits - Head": {
 			"name": "Травмы головы",
 			"results": {
 				"1-10": "Эффектная рана",
@@ -454,8 +1089,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Critical Hits - Leg",
+		"Critical Hits - Leg": {
 			"name": "Травмы ног",
 			"results": {
 				"1-10": "Ушиб пальца",
@@ -481,8 +1115,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Dissolution of Body and Mind - Dwarf",
+		"Dissolution of Body and Mind - Dwarf": {
 			"name": "Распад тела и разума - Гном",
 			"results": {
 				"1-5": "<b>Тело</b>: @Table[mutatephys]",
@@ -490,8 +1123,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Dissolution of Body and Mind - Halfling",
+		"Dissolution of Body and Mind - Halfling": {
 			"name": "Распад тела и разума - Полурослик",
 			"results": {
 				"1-10": "<b>Тело</b>: @Table[mutatephys]",
@@ -499,16 +1131,14 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Dissolution of Body and Mind - High Elf",
+		"Dissolution of Body and Mind - High Elf": {
 			"name": "Распад тела и разума - Высший эльф",
 			"results": {
 				"1-100": "<b>Разум</b>: @Table[mutatemental]"
 			},
 			"description": " "
 		},
-		{
-			"id": "Dissolution of Body and Mind - Human",
+		"Dissolution of Body and Mind - Human": {
 			"name": "Распад тела и разума - Человек",
 			"results": {
 				"1-50": "<b>Тело</b>: @Table[mutatephys]",
@@ -516,16 +1146,14 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Dissolution of Body and Mind - Wood Elf",
+		"Dissolution of Body and Mind - Wood Elf": {
 			"name": "Распад тела и разума - Лесной эльф",
 			"results": {
 				"1-100": "<b>Разум</b>: @Table[mutatemental]"
 			},
 			"description": " "
 		},
-		{
-			"id": "Events Table",
+		"Events Table": {
 			"name": "События",
 			"results": {
 				"1-3": "<b>Обвинённый союзник</b>: Один из союзников команды (по выбору ведущего) схвачен по обвинению в ужасном преступлении. Персонаж с лицензией Гильдии Законников может взять на себя его защиту в суде - это считается затеей, которая удастся, если герой успешно пройдёт заурядную (+20) проверку знания (закон). В противном случае команде сообща придётся потратить целых 3 затеи на то, чтобы подыскать (или сфабриковать) для своего союзника достаточно убедительное алиби. Если дело закончится освобождением союзника, тот останется должен крупную услугу (см. @JournalEntry[Do Me a Favor!]{Окажи мне услугу}). В противном случае союзника попросту вздёрнут на виселице!",
@@ -562,8 +1190,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Eye Colour - Dwarf",
+		"Eye Colour - Dwarf": {
 			"name": "Цвет глаз - Гном",
 			"results": {
 				"2-2": "Антрацитовый",
@@ -579,8 +1206,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Eye Colour - Halfling",
+		"Eye Colour - Halfling": {
 			"name": "Цвет глаз - Полурослик",
 			"results": {
 				"2-2": "Светло-серый",
@@ -595,8 +1221,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Eye Colour - High Elf",
+		"Eye Colour - High Elf": {
 			"name": "Цвет глаз - Высший эльф",
 			"results": {
 				"2-2": "Гагатовый",
@@ -612,8 +1237,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Eye Colour - Human",
+		"Eye Colour - Human": {
 			"name": "Цвет глаз - Человек",
 			"results": {
 				"2-2": "По выбору",
@@ -629,8 +1253,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Eye Colour - Wood Elf",
+		"Eye Colour - Wood Elf": {
 			"name": "Цвет глаз - Лесной эльф",
 			"results": {
 				"2-2": "Бежевый",
@@ -645,13 +1268,11 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Gunpowder Fumble Table (Moo)",
+		"Gunpowder Fumble Table (Moo)": {
 			"name": "Gunpowder Fumble Table (Moo)",
 			"description": " "
 		},
-		{
-			"id": "Hair Colour - Dwarf",
+		"Hair Colour - Dwarf": {
 			"name": "Цвет волос - Гном",
 			"results": {
 				"2-2": "Белый",
@@ -667,8 +1288,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Hair Colour - Halfling",
+		"Hair Colour - Halfling": {
 			"name": "Цвет волос - Полурослик",
 			"results": {
 				"2-2": "Серый",
@@ -684,8 +1304,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Hair Colour - High Elf",
+		"Hair Colour - High Elf": {
 			"name": "Цвет волос - Высший эльф",
 			"results": {
 				"2-2": "Серебристый",
@@ -701,8 +1320,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Hair Colour - Human",
+		"Hair Colour - Human": {
 			"name": "Цвет волос - Человек",
 			"results": {
 				"2-2": "Белый блонд",
@@ -717,8 +1335,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Hair Colour - Wood Elf",
+		"Hair Colour - Wood Elf": {
 			"name": "Цвет волос - Лесной эльф",
 			"results": {
 				"2-2": "Серебристо-белый",
@@ -734,8 +1351,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Hit Location",
+		"Hit Location": {
 			"name": "Зоны попадания",
 			"results": {
 				"1-9": "Голова",
@@ -747,8 +1363,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Hit Location - Snake",
+		"Hit Location - Snake": {
 			"name": "Зоны попадания - Змееподобное",
 			"results": {
 				"1-19": "Голова",
@@ -756,8 +1371,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Hit Location - Spider",
+		"Hit Location - Spider": {
 			"name": "Зоны попадания - Паукоподобное",
 			"results": {
 				"1-9": "Туловище",
@@ -767,8 +1381,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "How Do I Know You Again?",
+		"How Do I Know You Again?": {
 			"name": "Откуда я тебя знаю?",
 			"results": {
 				"1-2": "Мы коротали дни в одной из славных тюрем Империи",
@@ -824,8 +1437,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "I Need A Job! - What",
+		"I Need A Job! - What": {
 			"name": "Мне нужна работа! - Что",
 			"results": {
 				"1-1": "…просит героев проникнуть в ряды враждебной организации…",
@@ -931,8 +1543,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "I Need A Job! - Who",
+		"I Need A Job! - Who": {
 			"name": "Мне нужна работа! - Кто",
 			"results": {
 				"1-1": "Беглец…",
@@ -1038,8 +1649,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "I Need A Job! - Why",
+		"I Need A Job! - Why": {
 			"name": "Мне нужна работа! - Почему",
 			"results": {
 				"1-1": "……чтобы сохранить в тайне свои зловещие изыскания",
@@ -1145,8 +1755,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Major Miscast Table",
+		"Major Miscast Table": {
 			"name": "Сильная магическая отдача",
 			"results": {
 				"1-5": "<b>Призрачные голоса</b>: Разумные существа в радиусе [сила воли] ярдов от персонажа слышат искусительный шёпот, доносящийся из Царства Хаоса, — теперь им всем предстоит успешно пройти <b>проверку хладнокровия (+20)</b>, чтобы не получить 1 пункт скверны.",
@@ -1172,13 +1781,11 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Major Miscast Table (Moo)",
+		"Major Miscast Table (Moo)": {
 			"name": "Major Miscast Table (Moo)",
 			"description": " "
 		},
-		{
-			"id": "Mental Corruption",
+		"Mental Corruption": {
 			"name": "Ментальные мутации",
 			"results": {
 				"1-5": "Ужасные пристрастия",
@@ -1204,8 +1811,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Minor Miscast Table",
+		"Minor Miscast Table": {
 			"name": "Слабая магическая отдача",
 			"results": {
 				"1-5": "<b>Ведьмовская метка</b>: Следующее живое существо, родившееся в радиусе 1 мили, окажется мутантом.",
@@ -1231,13 +1837,11 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Minor Miscast Table (Moo)",
+		"Minor Miscast Table (Moo)": {
 			"name": "Minor Miscast Table (Moo)",
 			"description": " "
 		},
-		{
-			"id": "Oops! Table",
+		"Oops! Table": {
 			"name": "Таблица несчастий",
 			"results": {
 				"1-20": "Персонаж получает ушиб очень чувствительной части своего тела (ради забавы мы рекомендуем это изобразить) и теряет 1 пункт здоровья. Рейтинг выносливости и класс брони не учитываются.",
@@ -1250,8 +1854,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Physical Mutation",
+		"Physical Mutation": {
 			"name": "Физические мутации",
 			"results": {
 				"1-5": "Длинные пальцы",
@@ -1277,20 +1880,28 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Species",
+		"Species": {
 			"name": "Народы",
 			"results": {
-				"1-90": { "name": "Человек" },
-				"91-94": { "name": "Полурослик" },
-				"95-98": { "name": "Гном" },
-				"99-99": { "name": "Высший эльф" },
-				"100-100": { "name": "Лесной эльф" }
+				"1-90": {
+					"name": "Человек"
+				},
+				"91-94": {
+					"name": "Полурослик"
+				},
+				"95-98": {
+					"name": "Гном"
+				},
+				"99-99": {
+					"name": "Высший эльф"
+				},
+				"100-100": {
+					"name": "Лесной эльф"
+				}
 			},
 			"description": " "
 		},
-		{
-			"id": "Stinking Drunk",
+		"Stinking Drunk": {
 			"name": "Безобразие",
 			"results": {
 				"1-2": "<b>‘Мариенбуржская отвага!’</b>: +20 к Хладнокровию.",
@@ -1301,8 +1912,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Talents - Character Creation",
+		"Talents - Character Creation": {
 			"name": "Случайные таланты",
 			"results": {
 				"1-1": "Обострённое восприятие",
@@ -1340,13 +1950,11 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "The Swirling Winds",
+		"The Swirling Winds": {
 			"name": "Неспокойные ветра",
 			"description": " "
 		},
-		{
-			"id": "Character Ambition",
+		"Character Ambition": {
 			"name": "Устремления персонажа",
 			"results": {
 				"1-4": "Вернуть отнятое",
@@ -1377,8 +1985,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Character Motivation",
+		"Character Motivation": {
 			"name": "Мотивация",
 			"results": {
 				"1-4": "Богатство",
@@ -1409,8 +2016,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Character Trait",
+		"Character Trait": {
 			"name": "Характер",
 			"results": {
 				"1-4": "Беспокойный",
@@ -1441,8 +2047,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Character Quirk",
+		"Character Quirk": {
 			"name": "Особенность персонажа",
 			"results": {
 				"1-4": "Безупречная репутация",
@@ -1473,8 +2078,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Beyond the Social Norm",
+		"Beyond the Social Norm": {
 			"name": "За рамками социальных норм",
 			"results": {
 				"1-2": "<b>Отрицание.</b> Персонаж отрицает общепринятое отношение к статусу и игнорирует его эффекты",
@@ -1483,8 +2087,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Drive Failure",
+		"Drive Failure": {
 			"name": "Проблемы при вождении",
 			"results": {
 				"1-2": "<b>Обрыв упряжи.</b> Одна из лошадей (или иное тягловое животное) обрывает упряжь и сбегает; скорость транспортного средства пропорционально снижается",
@@ -1494,8 +2097,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Travel Table",
+		"Travel Table": {
 			"name": "Таблица путешествий",
 			"results": {
 				"1-1": "<b>Беззаботное путешествие</b>: Путешествие проходит тихо и без особых происшествий. Персонажам удаётся на славу отдохнуть, насладиться видами и, возможно, даже встретить бродячего целителя или сведущего в лекарском деле жреца. Персонажи восстанавливают все пункты <strong>здоровья</strong> и избавляются от всех имеющихся у них состояний <strong>усталости</strong>.",
@@ -1511,8 +2113,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "Wrath of the Gods Table",
+		"Wrath of the Gods Table": {
 			"name": "Божественный гнев",
 			"results": {
 				"1-5": "<b>Узри же</b>: Ниспосланные богом видения обескураживают героя. Персонаж должен успешно пройти <b>проверку стойкости (+20)</b> — в противном случае он будет @Condition[ошеломлён]. Содержание этих видений остаётся на откуп ведущему.",
@@ -1549,8 +2150,7 @@
 			},
 			"description": " "
 		},
-		{
-			"id": "You Find Yourself In A Tavern - What Happens Next?",
+		"You Find Yourself In A Tavern - What Happens Next?": {
 			"name": "Вы сидите в таверне - что происходит?",
 			"results": {
 				"1-2": "Проливной дождь выгоняет полчища крыс из канализации прямо в пивную. Народ начинает вопить, прыгать на столы, и в таверне начинается форменный бардак",
@@ -1606,5 +2206,5 @@
 			},
 			"description": " "
 		}
-	]
+	}
 }

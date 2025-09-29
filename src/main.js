@@ -18,6 +18,7 @@ import { parseParentheses, setupBabele, translateList, translateValue } from "./
 
 export async function initTranslation() {
 	setupBabele("compendium");
+	/* TODO */
 	/* Temporarily disabled since scripts are not yet translated */
 	//loadScripts();
 
