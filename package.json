@@ -8,7 +8,7 @@
 		"lint": "oxlint --fix --fix-suggestions"
 	},
 	"peerDependencies": {
-		"typescript": "^5.8.3"
+		"typescript": "^5.9.3"
 	},
 	"devDependencies": {
 		"@types/bun": "^1.3.1",

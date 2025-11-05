@@ -79,17 +79,22 @@ export async function initTranslation() {
 				return list;
 			},
 
-			convertCareerTalents: (list) => {
-				if (!list) return;
-				if (Array.isArray(list)) {
-					return translateCareerItems(list, "talent", translatedTalentSpec);
-				}
-				if (list.list) {
-					console.log("TALENTS: ", list);
-					return translateTemplateItems(list, "talent", translatedTalentSpec);
-				}
-				return list;
-			},
+		convertCareerTalents: (list) => {
+			if (!list) return;
+			if (Array.isArray(list)) {
+				console.log("[BABELE] Converting career talents (array):", list);
+				const result = translateCareerItems(list, "talent", translatedTalentSpec);
+				console.log("[BABELE] Converted career talents result:", result);
+				return result;
+			}
+			if (list.list) {
+				console.log("[BABELE] Converting career talents (template):", list);
+				const result = translateTemplateItems(list, "talent", translatedTalentSpec);
+				console.log("[BABELE] Converted career talents result:", result);
+				return result;
+			}
+			return list;
+		},
 
 			convertActorGender: (gender) => {
 				if (!gender) return;
@@ -180,18 +185,29 @@ function translateDocument(name, type, pack, specs) {
 	let translation = game.babele.translate(pack, { name: name, type: type }, true);
 
 	if (translation?.name) {
+		console.log(`[BABELE] Direct translation found for "${name}" in ${pack}`);
 		return translation;
 	}
 
 	const words = parseParentheses(name);
 
+	if (words.sub) {
+		console.log(`[BABELE] Parsing "${name}" -> main: "${words.main}", sub: "${words.sub}"`);
+	}
+
 	translation = game.babele.translate(pack, { name: words.main, type: type }, true);
 
 	if (translation?.name) {
+		const originalName = translation.name;
 		translation.name =
 			words.sub && specs
 				? `${translation.name} (${translateValue(words.sub, specs)})`
 				: translation.name;
+		
+		if (words.sub) {
+			console.log(`[BABELE] Translated with spec: "${name}" -> "${translation.name}" (main: "${originalName}", spec: "${translateValue(words.sub, specs)}")`);
+		}
+		
 		return translation;
 	}
 
@@ -264,6 +280,8 @@ function translateCareer(item) {
 	}
 
 	if (translation) {
+		foundry.utils.mergeObject(item, translation);
+
 		const { class: careerClass, skills, talents } = item.system || {};
 
 		if (careerClass?.value) {
@@ -277,8 +295,6 @@ function translateCareer(item) {
 		if (talents) {
 			item.system.talents = translateCareerItems(talents, "talent", translatedTalentSpec);
 		}
-
-		foundry.utils.mergeObject(item, translation);
 	}
 
 	return item;
@@ -358,6 +374,7 @@ function translateCareerItems(list, type, specs) {
 		const item = element.trim();
 
 		if (translatedExceptions[item]) {
+			console.log(`[BABELE] Found ${type} in exceptions: "${item}" -> "${translatedExceptions[item]}"`);
 			return translatedExceptions[item];
 		}
 
@@ -366,7 +383,14 @@ function translateCareerItems(list, type, specs) {
 		for (const pack of packs) {
 			translation = translateDocument(item, type, pack.metadata.id, specs);
 
-			if (translation?.system) break;
+			if (translation?.name) {
+				console.log(`[BABELE] Found ${type} translation in ${pack.metadata.id}: "${item}" -> "${translation.name}"`);
+				break;
+			}
+		}
+
+		if (!translation?.name) {
+			console.warn(`[BABELE] No translation found for ${type}: "${item}"`);
 		}
 
 		return translation?.name || item;
@@ -383,6 +407,7 @@ function translateTemplateItems(list, type, specs) {
 			if (!element.name) return element;
 
 			if (translatedExceptions[element.name]) {
+				console.log(`[BABELE] Found ${type} in exceptions (template): "${element.name}" -> "${translatedExceptions[element.name]}"`);
 				element.name = translatedExceptions[element.name];
 				return element;
 			}
@@ -390,11 +415,16 @@ function translateTemplateItems(list, type, specs) {
 			let translation;
 			for (const pack of packs) {
 				translation = translateDocument(element.name, type, pack.metadata.id, specs);
-				if (translation?.name) break;
+				if (translation?.name) {
+					console.log(`[BABELE] Found ${type} translation in ${pack.metadata.id} (template): "${element.name}" -> "${translation.name}"`);
+					break;
+				}
 			}
 
 			if (translation?.name) {
 				element.name = translation.name;
+			} else {
+				console.warn(`[BABELE] No translation found for ${type} (template): "${element.name}"`);
 			}
 
 			return element;
