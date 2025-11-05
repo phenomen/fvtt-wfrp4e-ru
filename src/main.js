@@ -13,14 +13,12 @@ import {
 	translatedSpellTarget,
 	translatedTalentSpec,
 } from "./data.js";
-//import { loadScripts } from "./scripts.js";
+import { loadScripts } from "./scripts.js";
 import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
 export async function initTranslation() {
 	setupBabele("compendium");
-	/* TODO */
-	/* Temporarily disabled since scripts are not yet translated */
-	//loadScripts();
+	loadScripts();
 
 	if (typeof Babele !== "undefined") {
 		game.babele.registerConverters({
@@ -152,7 +150,7 @@ export async function initTranslation() {
 							} else {
 								result = foundry.utils.mergeObject(
 									result,
-									foundry.utils.mergeObject({ description: translation }, { translated: true }),
+									foundry.utils.mergeObject({ description: translation }, { translated: true })
 								);
 							}
 						}
@@ -161,12 +159,12 @@ export async function initTranslation() {
 						const text = game.babele.translateField(
 							"name",
 							foundry.utils.parseUuid(result.documentUuid).collection.collection,
-							{ name: result.name },
+							{ name: result.name }
 						);
 						if (text) {
 							return foundry.utils.mergeObject(
 								result,
-								foundry.utils.mergeObject({ name: text }, { translated: true }),
+								foundry.utils.mergeObject({ name: text }, { translated: true })
 							);
 						}
 						return result;
@@ -333,7 +331,7 @@ function translateSpell(item) {
 function translateTrapping(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag(
 		["trapping"],
-		["weapon", "armour", "container", "money"],
+		["weapon", "armour", "container", "money"]
 	);
 
 	let translation;

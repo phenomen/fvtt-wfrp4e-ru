@@ -14,13 +14,13 @@
 			"discord": "mrak_x"
 		}
 	],
-	"version": "9.2.1.2",
+	"version": "9.3.1.1",
 	"compatibility": {
 		"minimum": "12",
 		"verified": "13",
 		"maximum": "13"
 	},
-	"esmodules": ["index.js"],
+	"esmodules": ["esm/index.js"],
 	"coreTranslation": false,
 	"relationships": {
 		"requires": [

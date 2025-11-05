@@ -48,8 +48,8 @@ async function packScripts() {
 	await Bun.write(
 		"./scripts/packed.js",
 		`export function loadScripts() { game.wfrp4e.config.effectScripts = ${JSON.stringify(
-			scriptObj,
-		)}; }`,
+			scriptObj
+		)}; }`
 	);
 }
 
@@ -71,7 +71,7 @@ async function _translateScripts() {
 	const keys = Object.keys(translation).sort((a, b) => b.length - a.length);
 	const pattern = new RegExp(
 		keys.map((key) => key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"),
-		"g",
+		"g"
 	);
 	text = text.replace(pattern, (match) => translation[match as keyof typeof translation]);
 

@@ -1,0 +1,10 @@
+{
+	"ignorePatterns": [
+		"node_modules",
+		"build",
+		"ru-wfrp4e",
+		"scripts",
+		"src/scripts.js",
+		"scripts/packed.js"
+	]
+}

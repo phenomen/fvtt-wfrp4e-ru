@@ -215,7 +215,7 @@ export async function patchConfig() {
 					},
 				},
 				halfling: {
-					ashfield: {
+					"ashfield": {
 						name: "Эшфилд",
 						skills: [
 							"Обаяние",
@@ -239,7 +239,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					brambledown: {
+					"brambledown": {
 						name: "Бремблдаун",
 						skills: [
 							"Обаяние",
@@ -263,7 +263,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					brandysnap: {
+					"brandysnap": {
 						name: "Брендиснап",
 						skills: [
 							"Обаяние",
@@ -287,7 +287,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					hayfoot: {
+					"hayfoot": {
 						name: "Хайфут",
 						skills: [
 							"Обаяние",
@@ -311,7 +311,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					hollyfoot: {
+					"hollyfoot": {
 						name: "Холлифут",
 						skills: [
 							"Обаяние",
@@ -359,7 +359,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					lostpockets: {
+					"lostpockets": {
 						name: "Лостпокетс",
 						skills: [
 							"Обаяние",
@@ -383,7 +383,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					lowhaven: {
+					"lowhaven": {
 						name: "Лоухевен",
 						skills: [
 							"Обаяние",
@@ -407,7 +407,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					rumster: {
+					"rumster": {
 						name: "Румстер",
 						skills: [
 							"Обаяние",
@@ -431,7 +431,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					skelfsider: {
+					"skelfsider": {
 						name: "Скелфсайдер",
 						skills: [
 							"Обаяние",
@@ -455,7 +455,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					thorncobble: {
+					"thorncobble": {
 						name: "Торнкоббл",
 						skills: [
 							"Обаяние",
@@ -479,7 +479,7 @@ export async function patchConfig() {
 							1,
 						],
 					},
-					tumbleberry: {
+					"tumbleberry": {
 						name: "Тамблберри",
 						skills: [
 							"Обаяние",
@@ -513,7 +513,7 @@ export async function patchConfig() {
 			},
 			halfling: {
 				"Дорожный стражник": ["Интендант"],
-				Солдат: ["Барсучий наездник"],
+				"Солдат": ["Барсучий наездник"],
 			},
 			dwarf: {
 				Посыльный: ["Рейнджер карака"],
@@ -699,7 +699,7 @@ export async function patchConfig() {
 			],
 			subspecies: {
 				human: {
-					tilean: {
+					"tilean": {
 						name: "Тилиец",
 						skills: [
 							"Знание (Тилия)",
@@ -740,18 +740,18 @@ export async function patchConfig() {
 		};
 
 		game.wfrp4e.utility.mergeCareerReplacements({
-			human: {
-				Инженер: ["Артиллерист"],
-				Учёный: ["Картограф"],
-				Коробейник: ["Маркитант"],
-				Кавалерист: ["Лёгкий всадник"],
-				Рыцарь: [
+			"human": {
+				"Инженер": ["Артиллерист"],
+				"Учёный": ["Картограф"],
+				"Коробейник": ["Маркитант"],
+				"Кавалерист": ["Лёгкий всадник"],
+				"Рыцарь": [
 					"Вольный рыцарь",
 					"Рыцарь Сияющего Солнца",
 					"Рыцарь Белого волка",
 					"Рыцарь пантеры",
 				],
-				Солдат: [
+				"Солдат": [
 					"Лучник",
 					"Алебардист",
 					"Стрелец",
@@ -761,24 +761,24 @@ export async function patchConfig() {
 				],
 				"Жрец-воин": ["Священник Мирмидии"],
 			},
-			dwarf: {
+			"dwarf": {
 				Инженер: ["Артиллерист"],
 				Учёный: ["Картограф"],
 				Коробейник: ["Маркитант"],
 				Солдат: ["Алебардист", "Стрелец", "Специалист по осадам"],
 			},
-			helf: {
+			"helf": {
 				Учёный: ["Картограф"],
 				Коробейник: ["Маркитант"],
 				Кавалерист: ["Лёгкий всадник"],
 				Солдат: ["Лучник", "Специалист по осадам"],
 			},
-			welf: {
+			"welf": {
 				Учёный: ["Картограф"],
 				Коробейник: ["Маркитант"],
 				Солдат: ["Лучник"],
 			},
-			halfling: {
+			"halfling": {
 				Инженер: ["Артиллерист"],
 				Учёный: ["Картограф"],
 				Коробейник: ["Маркитант"],
