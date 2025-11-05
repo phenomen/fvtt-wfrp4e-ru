@@ -384,7 +384,7 @@
 			"name": "Картограф",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.6xKxqvKM5exJhiAA]{Картограф}</p>",
 			"careerGroup": "Картограф",
-			"trappings": ["Лошадь с седлом и сбруей", " теодолит"]
+			"trappings": ["Лошадь с седлом и сбруей", "Теодолит"]
 		},
 		"Knuckledusters": {
 			"name": "Кастет",
@@ -439,14 +439,14 @@
 			"careerGroup": "Рыцарь Пантеры",
 			"trappings": [
 				"Оруженосец",
-				" большой отряд рыцарей Пантеры или несколько небольших рыцарских отрядов"
+				"Большой отряд рыцарей Пантеры или несколько небольших рыцарских отрядов"
 			]
 		},
 		"Isir3duZW3XqMtyU": {
 			"name": "Командир отряда (Внутренний круг)",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
 			"careerGroup": "Рыцарь Белого волка",
-			"trappings": ["Послушник", " рота рыцарей Белого волка"]
+			"trappings": ["Послушник", "Рота рыцарей Белого волка"]
 		},
 		"Command the Legion": {
 			"name": "Командование легионом",
@@ -460,7 +460,7 @@
 			"name": "Командир копья",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.1i3Y6jOqCTmlbVeo]{Лёгкий всадник}</p>",
 			"careerGroup": "Лёгкий всадник",
-			"trappings": ["Кавалерийское копьё", " кольчужные шоссы", " оруженосец", " прислуга"]
+			"trappings": ["Кавалерийское копьё", "Кольчужные шоссы", "Оруженосец", "Прислуга"]
 		},
 		"Spear": {
 			"name": "Копье",
@@ -484,25 +484,25 @@
 			"name": "Лицензированный картограф",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.6xKxqvKM5exJhiAA]{Картограф}</p>",
 			"careerGroup": "Картограф",
-			"trappings": ["Лицензия картографа", " отличная дорожная одежда"]
+			"trappings": ["Лицензия картографа", "Отличная дорожная одежда"]
 		},
 		"Archer": {
 			"name": "Лучник",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.tczPk698eLFpVOsm]{Лучник}</p>",
 			"careerGroup": "Лучник",
-			"trappings": ["Защита головы", " меч", " отличный лук"]
+			"trappings": ["Защита головы", "Меч", "Отличный лук"]
 		},
 		"Archer Sergeant": {
 			"name": "Сержант лучников",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.tczPk698eLFpVOsm]{Лучник}</p>",
 			"careerGroup": "Лучник",
-			"trappings": ["Знак служебного положения", " отличная форменная одежда"]
+			"trappings": ["Знак служебного положения", "Отличная форменная одежда"]
 		},
 		"Camp Follower": {
 			"name": "Маркитант",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.PyuVaepgBmUkbfrz]{Маркитант}</p>",
 			"careerGroup": "Маркитант",
-			"trappings": ["Палатка", " отличная шляпа"]
+			"trappings": ["Палатка", "Отличная шляпа"]
 		},
 		"Master Artillerist": {
 			"name": "Мастер артиллерии",
@@ -568,7 +568,7 @@
 		},
 		"Blunderbuss": {
 			"name": "Мушкетон",
-			"description": "<p>Будучи ранним вариантом огнестрельного оружия, мушкетон имеет широкий раструб ствол, обеспечивающий точность при несложном обращении. Обычно он заряжается порохом, пыжом и мелкими рублеными зарядами, увеличивающими вероятность попадания. Он может быть заряжен либо @UUID[Compendium.wfrp4e-up-in-arms.items.AcL9KS6PCEl3NRyV]{свинцовой дробью и порохом} либо @UUID[Compendium.wfrp4e-up-in-arms.items.8Zyc8e60wzrC0AAi]{импровизированной дробью и порохом}. </p>"
+			"description": "<p>Будучи ранним вариантом огнестрельного оружия, мушкетон имеет широкий раструб ствол, обеспечивающий точность при несложном обращении. Обычно он заряжается порохом, пыжом и мелкими рублеными зарядами, увеличивающими вероятность попадания. Он может быть заряжен либо @UUID[Compendium.wfrp4e-up-in-arms.items.AcL9KS6PCEl3NRyV]{свинцовой дробью и порохом} либо @UUID[Compendium.wfrp4e-up-in-arms.items.8Zyc8e60wzrC0AAi]{импровизированной дробью и порохом}.</p>"
 		},
 		"Mancatcher": {
 			"name": "Боевой ухват",
@@ -628,7 +628,7 @@
 			"name": "Мастер осад",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mcdsHRtcQToDaN82]{Специалист по осадам}</p>",
 			"careerGroup": "Специалист по осадам",
-			"trappings": ["Отличная одежда", " боевой конь", " шатёр с личными слугами"]
+			"trappings": ["Отличная одежда", "Боевой конь", "Шатёр с личными слугами"]
 		},
 		"Sharp Stick": {
 			"name": "Заострённая палка",
