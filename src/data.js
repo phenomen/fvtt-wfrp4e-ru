@@ -287,6 +287,7 @@ export const translatedTalentSpec = {
 	"Gas": "ядовитое",
 	"Greenskins": "зеленокожие",
 	"Guard": "сторожевой",
+	"Guilder": "гильдейцы",
 	"Guilders": "гильдейцы",
 	"Hard": "Тяжёлая",
 	"Heavens": "Школа Небес",

@@ -73,28 +73,25 @@ export async function initTranslation() {
 					return translateCareerItems(list, "skill", translatedSkillSpec);
 				}
 				if (list.list) {
-					console.log("SKILLS: ", list);
 					return translateTemplateItems(list, "skill", translatedSkillSpec);
 				}
 				return list;
 			},
 
-		convertCareerTalents: (list) => {
-			if (!list) return;
-			if (Array.isArray(list)) {
-				console.log("[BABELE] Converting career talents (array):", list);
-				const result = translateCareerItems(list, "talent", translatedTalentSpec);
-				console.log("[BABELE] Converted career talents result:", result);
-				return result;
-			}
-			if (list.list) {
-				console.log("[BABELE] Converting career talents (template):", list);
-				const result = translateTemplateItems(list, "talent", translatedTalentSpec);
-				console.log("[BABELE] Converted career talents result:", result);
-				return result;
-			}
-			return list;
-		},
+			convertCareerTalents: (list) => {
+				if (!list) return;
+				if (Array.isArray(list)) {
+					const result = translateCareerItems(list, "talent", translatedTalentSpec);
+
+					return result;
+				}
+				if (list.list) {
+					const result = translateTemplateItems(list, "talent", translatedTalentSpec);
+
+					return result;
+				}
+				return list;
+			},
 
 			convertActorGender: (gender) => {
 				if (!gender) return;
@@ -185,29 +182,19 @@ function translateDocument(name, type, pack, specs) {
 	let translation = game.babele.translate(pack, { name: name, type: type }, true);
 
 	if (translation?.name) {
-		console.log(`[BABELE] Direct translation found for "${name}" in ${pack}`);
 		return translation;
 	}
 
 	const words = parseParentheses(name);
 
-	if (words.sub) {
-		console.log(`[BABELE] Parsing "${name}" -> main: "${words.main}", sub: "${words.sub}"`);
-	}
-
 	translation = game.babele.translate(pack, { name: words.main, type: type }, true);
 
 	if (translation?.name) {
-		const originalName = translation.name;
 		translation.name =
 			words.sub && specs
 				? `${translation.name} (${translateValue(words.sub, specs)})`
 				: translation.name;
-		
-		if (words.sub) {
-			console.log(`[BABELE] Translated with spec: "${name}" -> "${translation.name}" (main: "${originalName}", spec: "${translateValue(words.sub, specs)}")`);
-		}
-		
+
 		return translation;
 	}
 
@@ -222,7 +209,7 @@ function translateSkill(item) {
 	for (const pack of packs) {
 		translation = translateDocument(item.name, "skill", pack.metadata.id, translatedSkillSpec);
 
-		if (translation?.system) break;
+		if (translation?.name) break;
 	}
 
 	if (translation) {
@@ -244,7 +231,7 @@ function translateTrait(item) {
 	for (const pack of packs) {
 		translation = translateDocument(item.name, item.type, pack.metadata.id, translatedTalentSpec);
 
-		if (translation?.system) break;
+		if (translation?.name) break;
 	}
 
 	if (translation) {
@@ -276,7 +263,7 @@ function translateCareer(item) {
 	for (const pack of packs) {
 		translation = translateDocument(item.name, "career", pack.metadata.id, undefined);
 
-		if (translation?.system) break;
+		if (translation?.name) break;
 	}
 
 	if (translation) {
@@ -308,7 +295,7 @@ function translateSpell(item) {
 	for (const pack of packs) {
 		translation = translateDocument(item.name, item.type, pack.metadata.id, undefined);
 
-		if (translation?.system) break;
+		if (translation?.name) break;
 	}
 
 	if (translation) {
@@ -355,7 +342,7 @@ function translateTrapping(item) {
 	for (const pack of packs) {
 		translation = translateDocument(item.name, item.type, pack.metadata.id, undefined);
 
-		if (translation?.system) break;
+		if (translation?.name) break;
 	}
 
 	if (translation) {
@@ -374,7 +361,6 @@ function translateCareerItems(list, type, specs) {
 		const item = element.trim();
 
 		if (translatedExceptions[item]) {
-			console.log(`[BABELE] Found ${type} in exceptions: "${item}" -> "${translatedExceptions[item]}"`);
 			return translatedExceptions[item];
 		}
 
@@ -383,14 +369,7 @@ function translateCareerItems(list, type, specs) {
 		for (const pack of packs) {
 			translation = translateDocument(item, type, pack.metadata.id, specs);
 
-			if (translation?.name) {
-				console.log(`[BABELE] Found ${type} translation in ${pack.metadata.id}: "${item}" -> "${translation.name}"`);
-				break;
-			}
-		}
-
-		if (!translation?.name) {
-			console.warn(`[BABELE] No translation found for ${type}: "${item}"`);
+			if (translation?.name) break;
 		}
 
 		return translation?.name || item;
@@ -407,7 +386,6 @@ function translateTemplateItems(list, type, specs) {
 			if (!element.name) return element;
 
 			if (translatedExceptions[element.name]) {
-				console.log(`[BABELE] Found ${type} in exceptions (template): "${element.name}" -> "${translatedExceptions[element.name]}"`);
 				element.name = translatedExceptions[element.name];
 				return element;
 			}
@@ -416,15 +394,12 @@ function translateTemplateItems(list, type, specs) {
 			for (const pack of packs) {
 				translation = translateDocument(element.name, type, pack.metadata.id, specs);
 				if (translation?.name) {
-					console.log(`[BABELE] Found ${type} translation in ${pack.metadata.id} (template): "${element.name}" -> "${translation.name}"`);
 					break;
 				}
 			}
 
 			if (translation?.name) {
 				element.name = translation.name;
-			} else {
-				console.warn(`[BABELE] No translation found for ${type} (template): "${element.name}"`);
 			}
 
 			return element;
