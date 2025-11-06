@@ -1547,7 +1547,7 @@
 			"name": "Дуэлянт",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Дуэлянт}</p>",
 			"careerGroup": "Дуэлянт",
-			"trappings": ["Дага или мечелом", "Пистолет и 10 зарядов"]
+			"trappings": ["Дага", "Мечелом", "Пистолет", "10 зарядов"]
 		},
 		"Drop": {
 			"name": "Дырявые руки",
@@ -1714,7 +1714,7 @@
 			"name": "Задира",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Задира}</p>",
 			"careerGroup": "Негодяй",
-			"trappings": ["Капюшон или маска", "Кастет", "Кожаная куртка"]
+			"trappings": ["Капюшон", "Маска", "Кастет", "Кожаная куртка"]
 		},
 		"Incendiary": {
 			"name": "Зажигательная бомба",
@@ -2056,7 +2056,7 @@
 			"name": "Искусный вор",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Искусный вор}</p>",
 			"careerGroup": "Вор",
-			"trappings": ["Одноручный арбалет и 10 болтов"]
+			"trappings": ["Одноручный арбалет", "10 болтов"]
 		},
 		"False Leg": {
 			"name": "Искусственная нога",

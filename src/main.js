@@ -13,12 +13,12 @@ import {
 	translatedSpellTarget,
 	translatedTalentSpec,
 } from "./data.js";
-import { loadScripts } from "./scripts.js";
+// import { loadScripts } from "./scripts.js";
 import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
 export async function initTranslation() {
 	setupBabele("compendium");
-	loadScripts();
+	// loadScripts();
 
 	if (typeof Babele !== "undefined") {
 		game.babele.registerConverters({
