@@ -3,31 +3,31 @@
 	"entries": {
 		"Demigryph Mount": {
 			"name": "Скакун-демигриф",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Doktor": {
 			"name": "Доктор",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Lawyer": {
 			"name": "Адвокат",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Local Scout": {
 			"name": "Местный проводник",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Porter": {
 			"name": "Портье",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Scribe": {
 			"name": "Писец",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Seasoned Mercenary": {
 			"name": "Опытный наёмник",
-			"description": "<p></p>"
+			"description": " "
 		}
 	}
 }

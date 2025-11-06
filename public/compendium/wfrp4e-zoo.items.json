@@ -10,23 +10,23 @@
 	"entries": {
 		"Antler Hilted Blade": {
 			"name": "Лезвие с рукоятью оленьего рога",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Ball and Chain": {
 			"name": "Шар с цепью",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Bezoar Solvent": {
 			"name": "Безоаровый раствор",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Bloodblind": {
 			"name": "Кровослеп",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Bone Smasher": {
 			"name": "Костедробилка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Burrow": {
 			"name": "Землерой",
@@ -34,35 +34,35 @@
 		},
 		"Carroburg Fire": {
 			"name": "Карробургский огонь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Clearmind": {
 			"name": "Чистый разум",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Dragonblood Quench": {
 			"name": "Закаливающая жидкость из драконьей крови",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Eagle Shank": {
 			"name": "Орлиный коготь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Fell Dagger": {
 			"name": "Сочащийся кинжал",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Flesh Blister": {
 			"name": "Волдырная плоть",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Forge Shield": {
 			"name": "Щит горна",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Griffon Fletchling": {
 			"name": "Оперение грифона",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Grim": {
 			"name": "Мрачный",
@@ -70,147 +70,147 @@
 		},
 		"Hooked Net": {
 			"name": "Цепкая сеть",
-			"description": "<p>Сети это одно из ловчих видов оружия.</p><ul><li><p>Если соперник успешно атакован сетью, он оказывается @Condition[обездвижен] и должен пройти Сложную (+0) проверку силы. Чтобы освободится, он должен набрать УУ в количестве равном рейтингу сети.</p></li><li><p>Уровни успеха не суммируются; если захваченному не удаётся освободится, он получает еще состояние  @Condition[обездвижен].</p></li><li><p>@UUID[Compendium.wfrp4e-zoo.items.zvTJjD2I9uOcFbAH]{Цепкие сети} автоматически наносят урон, обычно игнорирующий броню, каждый раз, когда из нее пытается вырваться пойманный, неважно, успешно или нет.</p></li></ul><p>Ходят слухи о зачарованных сетях, использующихся злобными эльфами Нагаррота, которые сражаются с своей жертвой или даже цепляют плоть жертвы магическими шипами, чтобы та не могла сбежать.</p>"
+			"description": "<p>Сети это одно из ловчих видов оружия.</p><ul><li><p>Если соперник успешно атакован сетью, он оказывается @Condition[обездвижен] и должен пройти Сложную (+0) проверку силы. Чтобы освободится, он должен набрать УУ в количестве равном рейтингу сети.</p></li><li><p>Уровни успеха не суммируются; если захваченному не удаётся освободится, он получает еще состояние @Condition[обездвижен].</p></li><li><p>@UUID[Compendium.wfrp4e-zoo.items.zvTJjD2I9uOcFbAH]{Цепкие сети} автоматически наносят урон, обычно игнорирующий броню, каждый раз, когда из нее пытается вырваться пойманный, неважно, успешно или нет.</p></li></ul><p>Ходят слухи о зачарованных сетях, использующихся злобными эльфами Нагаррота, которые сражаются с своей жертвой или даже цепляют плоть жертвы магическими шипами, чтобы та не могла сбежать.</p>"
 		},
 		"Kiss of da Black Pit": {
 			"name": "Поцелуй Чёрной ямы",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Last Gasp": {
 			"name": "Последний вздох",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Leviathan Plate": {
 			"name": "Броня левиафана",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Liquid Fire": {
 			"name": "Жидкий огонь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Longsleep": {
 			"name": "Долгий сон",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Lurek's Curse": {
 			"name": "Проклятие Лурека",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Net": {
 			"name": "Сеть",
-			"description": "<p>Сети это одно из ловчих видов оружия.</p><ul><li><p>Если соперник успешно атакован сетью, он оказывается @Condition[обездвижен] и должен пройти Сложную (+0) проверку силы. Чтобы освободится, он должен набрать УУ в количестве равном рейтингу сети.</p></li><li><p>Уровни успеха не суммируются; если захваченному не удаётся освободится, он получает еще состояние  @Condition[обездвижен].</p></li><li><p>@UUID[Compendium.wfrp4e-zoo.items.zvTJjD2I9uOcFbAH]{Цепкие сети} автоматически наносят урон, обычно игнорирующий броню, каждый раз, когда из нее пытается вырваться пойманный, неважно, успешно или нет.</p></li></ul><p>Ходят слухи о зачарованных сетях, использующихся злобными эльфами Нагаррота, которые сражаются с своей жертвой или даже цепляют плоть жертвы магическими шипами, чтобы та не могла сбежать.</p>"
+			"description": "<p>Сети это одно из ловчих видов оружия.</p><ul><li><p>Если соперник успешно атакован сетью, он оказывается @Condition[обездвижен] и должен пройти Сложную (+0) проверку силы. Чтобы освободится, он должен набрать УУ в количестве равном рейтингу сети.</p></li><li><p>Уровни успеха не суммируются; если захваченному не удаётся освободится, он получает еще состояние @Condition[обездвижен].</p></li><li><p>@UUID[Compendium.wfrp4e-zoo.items.zvTJjD2I9uOcFbAH]{Цепкие сети} автоматически наносят урон, обычно игнорирующий броню, каждый раз, когда из нее пытается вырваться пойманный, неважно, успешно или нет.</p></li></ul><p>Ходят слухи о зачарованных сетях, использующихся злобными эльфами Нагаррота, которые сражаются с своей жертвой или даже цепляют плоть жертвы магическими шипами, чтобы та не могла сбежать.</p>"
 		},
 		"Plague of Scuttlin’": {
 			"name": "Чума Скуттлин",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Preyton's Fury": {
 			"name": "Ярость Прейтона",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Ratling Cannon": {
 			"name": "Ратлинг-пушка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Razorburn": {
 			"name": "Бритвожог",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Seer Snake Liquor": {
 			"name": "Настойка змеиного предвиденья",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Shard Tips": {
 			"name": "Осколочные наконечники",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Silence": {
 			"name": "Тишина",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Snare 'Em Good": {
 			"name": "Годнозападня",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Spite": {
 			"name": "Озлобитель",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Stag's Ward": {
 			"name": "Олений оберег",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"The Last Toast": {
 			"name": "Последний тост",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"The Thirsty Stone": {
 			"name": "Алчущий камень",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Throttler's Gloves": {
 			"name": "Перчатки Троттлера",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tide Blood": {
 			"name": "Кровавый прилив",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Treemeld": {
 			"name": "Древесное слияние",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tregara Sap": {
 			"name": "Сок Трегары",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Troll Acid": {
 			"name": "Кислота тролля",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Two-Headed Tincture": {
 			"name": "Двуглавая настойка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Veinpowder": {
 			"name": "Венозный порошок",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Warp Blade": {
 			"name": "Клинок искажения",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Warpfire Thrower": {
 			"name": "Варп-огнемёт",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Warplock Jezzail": {
 			"name": "Варп-джезайла",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Warplock Pistol": {
 			"name": "Варп-пистолет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Wheeze": {
 			"name": "Хрип",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Whiteseer": {
 			"name": "Белый провидец",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Witchbane": {
 			"name": "Бич ведьм",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Wulfshawl": {
 			"name": "Вульфплащ",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Wyvern's Kiss": {
 			"name": "Поцелуй виверны",
-			"description": "<p></p>"
+			"description": " "
 		}
 	}
 }

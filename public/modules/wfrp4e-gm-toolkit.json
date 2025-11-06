@@ -78,7 +78,7 @@
 	"GMTOOLKIT.Settings.Vision.menu.hint": "Установить параметры по умолчанию, которые будут использоваться с макросом Установить токену зрение и свет.",
 	"GMTOOLKIT.Settings.Vision.menu.title": "Параметры зрения токена",
 	"GMTOOLKIT.Settings.Vision.NormalSight.name": "Дальность обычного зрения",
-	"GMTOOLKIT.Settings.Vision.NormalSight.hint": "Максимальное расстояние (в ярдах), которое токен без улучшенного  зрения может видеть без внешнего источника освещения или в условиях слабой освещённости.",
+	"GMTOOLKIT.Settings.Vision.NormalSight.hint": "Максимальное расстояние (в ярдах), которое токен без улучшенного зрения может видеть без внешнего источника освещения или в условиях слабой освещённости.",
 	"GMTOOLKIT.Settings.Vision.DarkVision.name": "Дальность Ночного зрения",
 	"GMTOOLKIT.Settings.Vision.DarkVision.hint": "Максимальное расстояние (в ярдах), которое токен без черты 'Ночное зрение' может видеть без внешних источников света или в условиях слабой освещённости. Применяется к параметру 'Тусклое зрение' токена(и половина к Яркому зрению)",
 	"GMTOOLKIT.Settings.Vision.OverrideNightVision.name": "Всегда применять Сумеречное зрение",
@@ -89,7 +89,7 @@
 	"GMTOOLKIT.ResetFortune.Restored": "Удача была восстановлена",
 	"GMTOOLKIT.ResetFortune.NoPlayerCharacters": "Нет игровых персонажей, которым можно было-бы восстановить удачу",
 
-	"GMTOOLKIT.AddXP.Success": "<p><strong>{recipient}.</strong> Total  XP: {XPTotal} &rarr; {newXPTotal} | Current XP: {XPCurrent} &rarr; {newXPCurrent}.</p>",
+	"GMTOOLKIT.AddXP.Success": "<p><strong>{recipient}.</strong> Total XP: {XPTotal} &rarr; {newXPTotal} | Current XP: {XPCurrent} &rarr; {newXPCurrent}.</p>",
 	"GMTOOLKIT.AddXP.Flavor": "Очки опыта начислены за {reason}",
 
 	"GMTOOLKIT.Advantage.Increased": "Преимущество увеличено с {startingAdvantage} до {newAdvantage} для {actorName}.",
@@ -98,7 +98,7 @@
 	"GMTOOLKIT.Advantage.None": "{actorName} уже имеет {startingAdvantage} Преимущество. Изменений не внесено.",
 	"GMTOOLKIT.Advantage.Reset": "Преимущество сброшено с {startingAdvantage} до 0 для {actorName}.",
 	"GMTOOLKIT.Advantage.Automation.Outmanoeuvre": "{attackerName} перехитрил {actorName}, нанеся {totalWoundLoss} ран. Будьте готовы к обновлению преимуществ.",
-	"GMTOOLKIT.Advantage.Automation.OpposedTest": "{winner} выиграл проверку у  {loser}. Будьте готовы к обновлению преимуществ.",
+	"GMTOOLKIT.Advantage.Automation.OpposedTest": "{winner} выиграл проверку у {loser}. Будьте готовы к обновлению преимуществ.",
 	"GMTOOLKIT.Advantage.Automation.Condition": "{character} получает состояние{condition}. Будьте готовы к обновлению преимуществ.",
 	"GMTOOLKIT.Advantage.NotInCombat": "{actorName} не находится в бою в сцене {sceneName}. Изменения преимуществ не применяются. ",
 	"GMTOOLKIT.Advantage.Context.AddedToCombat": "{actorName} добавлен в бой.",

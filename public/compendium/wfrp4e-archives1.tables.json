@@ -3,7 +3,7 @@
 	"entries": {
 		"Career - Wood Elf (Toriour)": {
 			"name": "Карьера - Лесной эльф (ториур)",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Random Euphemisms - Noun": {
 			"name": "Случайные эвфемизы - Существительное",
@@ -19,7 +19,7 @@
 				"9-9": "...снотлинг",
 				"10-10": "...магова башня"
 			},
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Random Euphemisms - Participle": {
 			"name": "Случайные эвфемизы - Причастия",
@@ -35,7 +35,7 @@
 				"9-9": "Стреляющий",
 				"10-10": "Грабящий"
 			},
-			"description": "<p></p>"
+			"description": " "
 		}
 	}
 }

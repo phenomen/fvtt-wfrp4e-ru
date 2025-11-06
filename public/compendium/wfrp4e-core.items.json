@@ -70,7 +70,7 @@
 		},
 		"Abacus": {
 			"name": "Абак",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Abbess": {
 			"name": "Аббат",
@@ -112,7 +112,7 @@
 		},
 		"Halberd": {
 			"name": "Алебарда",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Secret Identity": {
 			"name": "Альтер эго",
@@ -181,7 +181,7 @@
 		},
 		"Amulet": {
 			"name": "Амулет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Amphibious": {
 			"name": "Амфибия",
@@ -195,7 +195,7 @@
 		},
 		"Crossbow": {
 			"name": "Арбалет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Noble Lord": {
 			"name": "Аристократ",
@@ -326,7 +326,7 @@
 		},
 		"Shoes": {
 			"name": "Башмаки",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tower of Memories": {
 			"name": "Башня памяти",
@@ -358,7 +358,7 @@
 		},
 		"Unarmed": {
 			"name": "Безоружная атака",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Instinctive Diction": {
 			"name": "Безупречная дикция",
@@ -523,7 +523,7 @@
 		},
 		"Light Warhorse": {
 			"name": "Боевой конь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"War Wizard": {
 			"name": "Боевой маг",
@@ -532,11 +532,11 @@
 		},
 		"Warhammer": {
 			"name": "Боевой молот",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Military Flail": {
 			"name": "Боевой цеп",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Stay Lucky": {
 			"name": "Божественное везение",
@@ -549,7 +549,7 @@
 		},
 		"Bolas": {
 			"name": "Болас",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Bitter Catharsis": {
 			"name": "Болезненное очищение",
@@ -570,7 +570,7 @@
 		},
 		"Bomb": {
 			"name": "Бомба",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Boatswain": {
 			"name": "Боцман",
@@ -622,7 +622,7 @@
 		},
 		"Pins": {
 			"name": "Булавки/шпильки",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Burgomeister": {
 			"name": "Бургомистр",
@@ -694,7 +694,7 @@
 		},
 		"Bucket": {
 			"name": "Ведро",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Wyrd": {
 			"name": "Ведунья",
@@ -725,11 +725,11 @@
 		},
 		"Broom": {
 			"name": "Веник",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Rope, 10 yards": {
 			"name": "Верёвка (10 ярдов)",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Brute": {
 			"name": "Верзила",
@@ -778,7 +778,7 @@
 		},
 		"Riding Horse": {
 			"name": "Верховая лошадь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"High Priest": {
 			"name": "Верховный жрец",
@@ -802,7 +802,7 @@
 		},
 		"Rags": {
 			"name": "Ветошь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Fate’s Fickle Fingers": {
 			"name": "Ветреная удача",
@@ -883,11 +883,11 @@
 		},
 		"Wine, bottle": {
 			"name": "Вино, бутылка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Wine & Spirits, drink": {
 			"name": "Вино/крепкая выпивка, порция",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Cat-tongued": {
 			"name": "Витийство",
@@ -1060,7 +1060,7 @@
 		},
 		"Nails": {
 			"name": "Гвозди",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Prioress General": {
 			"name": "Генеральный настоятель",
@@ -1128,7 +1128,7 @@
 		},
 		"Plate Helm": {
 			"name": "Глухой шлем",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": "-20 Наблюдательность"
 		},
 		"Rot": {
@@ -1179,7 +1179,7 @@
 		},
 		"Rake": {
 			"name": "Грабли",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Read/Write": {
 			"name": "Грамотность",
@@ -1253,7 +1253,7 @@
 		},
 		"Main Gauche": {
 			"name": "Дага",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Dual Wielder": {
 			"name": "Двойная атака",
@@ -1291,11 +1291,11 @@
 		},
 		"Zweihander": {
 			"name": "Двуручный меч",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Great Axe": {
 			"name": "Двуручный топор",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Twin-tailed Comet": {
 			"name": "Двухвостая комета",
@@ -1303,7 +1303,7 @@
 		},
 		"MVI0lXcg6vvtooAF": {
 			"name": "Дезориентация",
-			"description": "<p>Существо сбивает своих противников с толку и повергает их в смятение. Причиной тому может быть дурманящий аромат, одуряющая вонь или на редкость отвратительная внешность. Как бы то ни было, все живые цели в радиусе, равном <strong>рейтингу выносливости</strong> существа в ярдах, получают модификатор –20 ко всем своим проверкам. Обрати внимание, что  одновременно на  цель может действовать только один модификатор дезориентации вне зависимости от того, сколько существ с этой чертой находится поблизости.</p>"
+			"description": "<p>Существо сбивает своих противников с толку и повергает их в смятение. Причиной тому может быть дурманящий аромат, одуряющая вонь или на редкость отвратительная внешность. Как бы то ни было, все живые цели в радиусе, равном <strong>рейтингу выносливости</strong> существа в ярдах, получают модификатор –20 ко всем своим проверкам. Обрати внимание, что одновременно на цель может действовать только один модификатор дезориентации вне зависимости от того, сколько существ с этой чертой находится поблизости.</p>"
 		},
 		"Distracting": {
 			"name": "Дезориентация",
@@ -1405,7 +1405,7 @@
 		},
 		"Baton": {
 			"name": "Дирижёрская палочка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Distended Digits": {
 			"name": "Длинные пальцы",
@@ -1413,7 +1413,7 @@
 		},
 		"Longbow": {
 			"name": "Длинный лук",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Lolling Tongue": {
 			"name": "Длинный язык",
@@ -1528,7 +1528,7 @@
 		},
 		"Perfume": {
 			"name": "Духи",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pure Soul": {
 			"name": "Духовная чистота",
@@ -1718,7 +1718,7 @@
 		},
 		"Incendiary": {
 			"name": "Зажигательная бомба",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tough": {
 			"name": "Закалённый",
@@ -1864,7 +1864,7 @@
 		},
 		"Hand Mirror": {
 			"name": "Зеркальце",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Gaping Chest Wound": {
 			"name": "Зияющая рана груди",
@@ -1960,7 +1960,7 @@
 		},
 		"Gold Crown": {
 			"name": "Золотая крона",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Fool’s Gold": {
 			"name": "Золото дурака",
@@ -1972,11 +1972,11 @@
 		},
 		"Telescope": {
 			"name": "Зрительная труба",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Dice": {
 			"name": "Игральные кости",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Diceman": {
 			"name": "Игрок в кости",
@@ -2016,11 +2016,11 @@
 		},
 		"Improvised Shot and Powder": {
 			"name": "Импровизированная дробь и порох",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Improvised Weapon": {
 			"name": "Импровизированное оружие",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Engineer": {
 			"name": "Инженер",
@@ -2132,11 +2132,11 @@
 		},
 		"Cavalry Hammer": {
 			"name": "Кавалерийский молот",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Lance": {
 			"name": "Кавалерийское копьё",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Cavalryman": {
 			"name": "Кавалерист",
@@ -2146,7 +2146,7 @@
 		},
 		"Stone Bullet": {
 			"name": "Каменные пули",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Stone Soup": {
 			"name": "Каменный суп",
@@ -2155,7 +2155,7 @@
 		},
 		"Rock": {
 			"name": "Камень",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Attendant": {
 			"name": "Камердинер",
@@ -2228,11 +2228,11 @@
 		},
 		"Hood": {
 			"name": "Капюшон",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Map": {
 			"name": "Карта",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Cardsharp": {
 			"name": "Картёжник",
@@ -2241,7 +2241,7 @@
 		},
 		"Knuckledusters": {
 			"name": "Кастет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Penitent": {
 			"name": "Кающийся грешник",
@@ -2251,15 +2251,15 @@
 		},
 		"Dagger": {
 			"name": "Кинжал",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pick": {
 			"name": "Кирка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Paint Brush": {
 			"name": "Кисть",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Savant": {
 			"name": "Кладезь знаний",
@@ -2272,7 +2272,7 @@
 		},
 		"Key": {
 			"name": "Ключ",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Book, Apothecary": {
 			"name": "Книга (аптекарское дело)",
@@ -2317,31 +2317,31 @@
 		},
 		"Whip": {
 			"name": "Кнут",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Leather Jerkin": {
 			"name": "Кожаная жилетка",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Boiled Leather Breastplate": {
 			"name": "Кожаная кираса",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Leather Jack": {
 			"name": "Кожаная куртка",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Leather Skullcap": {
 			"name": "Кожаная шапочка",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Leather Leggings": {
 			"name": "Кожаные штаны",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Fleshy Tentacle": {
@@ -2356,26 +2356,26 @@
 		},
 		"Deck of Cards": {
 			"name": "Колода карт",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Mail Coat": {
 			"name": "Кольчуга",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Mail Shirt": {
 			"name": "Кольчужная рубаха",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Mail Chausses": {
 			"name": "Кольчужные чулки",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Mail Coif": {
 			"name": "Кольчужный капюшон",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": "-10 Наблюдательность"
 		},
 		"War Leader": {
@@ -2466,15 +2466,15 @@
 		},
 		"Stables/night": {
 			"name": "Конюшня, 1 ночь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Ear Pick": {
 			"name": "Копоушка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Spear": {
 			"name": "Копьё",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Spear of Myrmidia": {
 			"name": "Копьё Мирмидии",
@@ -2552,7 +2552,7 @@
 		},
 		"Shortbow": {
 			"name": "Короткий лук",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Scythe of Shyish": {
 			"name": "Коса Шаиша",
@@ -2560,15 +2560,15 @@
 		},
 		"Crutch": {
 			"name": "Костыль",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Costume": {
 			"name": "Костюм",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Cooking Pot": {
 			"name": "Котелок",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Cat's Eyes": {
 			"name": "Кошачий глаз",
@@ -2581,7 +2581,7 @@
 		},
 		"Pouch": {
 			"name": "Кошель",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tortured Visions": {
 			"name": "Кошмарные видения",
@@ -2589,7 +2589,7 @@
 		},
 		"Spirits, pint": {
 			"name": "Крепкая выпивка, пинта",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Die Hard": {
 			"name": "Крепкий орешек",
@@ -2669,7 +2669,7 @@
 		},
 		"Doll": {
 			"name": "Кукла",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pugilist": {
 			"name": "Кулачный боец",
@@ -2729,7 +2729,7 @@
 		},
 		"Chicken": {
 			"name": "Курица",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Courier": {
 			"name": "Курьер",
@@ -2739,7 +2739,7 @@
 		},
 		"Chalk": {
 			"name": "Кусок мела",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Consume Alcohol": {
 			"name": "Кутёж",
@@ -2773,17 +2773,17 @@
 		},
 		"Plate Breastplate": {
 			"name": "Латная кираса",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Plate Bracers": {
 			"name": "Латные наручи",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": ""
 		},
 		"Plate Leggings": {
 			"name": "Латные поножи",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": "-10 Stealth"
 		},
 		"Pit Legend": {
@@ -2870,7 +2870,7 @@
 		},
 		"Uniform": {
 			"name": "Ливрея/мундир/форменная одежда",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Leader": {
 			"name": "Лидер",
@@ -2886,11 +2886,11 @@
 		},
 		"Parchment/sheet": {
 			"name": "Лист бумаги/пергамента",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Leaflet": {
 			"name": "Листовка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Master Smuggler": {
 			"name": "Лихой контрабандист",
@@ -2959,7 +2959,7 @@
 		},
 		"Boat Hook": {
 			"name": "Лодочный гарпун",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Master Fence": {
 			"name": "Ломбардщик",
@@ -2969,15 +2969,15 @@
 		},
 		"Crowbar": {
 			"name": "Ломик",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Spade": {
 			"name": "Лопата",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pan": {
 			"name": "Лоток/сковорода",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Vagabond": {
 			"name": "Лоточник",
@@ -2993,7 +2993,7 @@
 		},
 		"Bow": {
 			"name": "Лук",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Moonflower": {
 			"name": "Луноцвет",
@@ -3133,7 +3133,7 @@
 		},
 		"Mask": {
 			"name": "Маска",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Death Mask": {
 			"name": "Маска смерти",
@@ -3215,7 +3215,7 @@
 		},
 		"Brass Penny": {
 			"name": "Медный пенни",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Clerk": {
 			"name": "Мелкая сошка",
@@ -3229,15 +3229,15 @@
 		},
 		"Javelin": {
 			"name": "Метательное копьё",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Throwing Knife": {
 			"name": "Метательный нож",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Throwing Axe": {
 			"name": "Метательный топорик",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Deadeye Shot": {
 			"name": "Меткий выстрел",
@@ -3251,7 +3251,7 @@
 		},
 		"Floor Brush": {
 			"name": "Метла",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Sword of Justice": {
 			"name": "Меч правосудия",
@@ -3259,11 +3259,11 @@
 		},
 		"Bastard Sword": {
 			"name": "Меч-бастард",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Swordbreaker": {
 			"name": "Мечелом",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Sack": {
 			"name": "Мешок",
@@ -3285,11 +3285,11 @@
 		},
 		"Repeater Handgun": {
 			"name": "Многозарядное ружьё",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Repeater Pistol": {
 			"name": "Многозарядный пистолет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Extra Leg Joints": {
 			"name": "Многосуставчатые ноги",
@@ -3315,11 +3315,11 @@
 		},
 		"Grain Flail": {
 			"name": "Молотило",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Hammer": {
 			"name": "Молоток",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Nun": {
 			"name": "Монах",
@@ -3393,7 +3393,7 @@
 		},
 		"Hoe": {
 			"name": "Мотыга",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Swindler": {
 			"name": "Мошенник",
@@ -3439,7 +3439,7 @@
 		},
 		"Mule": {
 			"name": "Мул",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Crawling Skin": {
 			"name": "Мурашки",
@@ -3455,7 +3455,7 @@
 		},
 		"Blunderbuss": {
 			"name": "Мушкетон",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tax Collector": {
 			"name": "Мытарь",
@@ -3471,7 +3471,7 @@
 		},
 		"Ball": {
 			"name": "Мяч",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Perception": {
 			"name": "Наблюдательность",
@@ -3643,7 +3643,7 @@
 		},
 		"Knife": {
 			"name": "Нож",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"JQa5DLnTs2SEzRrc": {
 			"name": "Ночное зрение",
@@ -3704,7 +3704,7 @@
 		},
 		"Meal, inn": {
 			"name": "Обед в трактире",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Decapitated": {
 			"name": "Обезглавливание",
@@ -3756,7 +3756,7 @@
 		},
 		"Monkey": {
 			"name": "Обезьяна",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Bvd2aZ0gQUXHfCTh": {
 			"name": "Оберег (порог)",
@@ -3903,7 +3903,7 @@
 		},
 		"Tinderbox": {
 			"name": "Огниво",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Enormous Eye": {
 			"name": "Огромный глаз",
@@ -3911,7 +3911,7 @@
 		},
 		"Clothing": {
 			"name": "Одежда",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Blanket": {
 			"name": "Одеяло",
@@ -3919,7 +3919,7 @@
 		},
 		"Crossbow Pistol": {
 			"name": "Одноручный арбалет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Reanimate": {
 			"name": "Оживление мёртвых",
@@ -4009,7 +4009,7 @@
 		},
 		"Plate Open Helm": {
 			"name": "Открытый шлем",
-			"description": "<p></p>",
+			"description": " ",
 			"penalty": "-10 Наблюдательность"
 		},
 		"Strong Swimmer": {
@@ -4114,7 +4114,7 @@
 		},
 		"Hunting Dog": {
 			"name": "Охотничья собака",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Guard": {
 			"name": "Охранник",
@@ -4136,7 +4136,7 @@
 		},
 		"Dog collar and lead": {
 			"name": "Ошейник и поводок",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Shock": {
 			"name": "Ошеломление",
@@ -4149,11 +4149,11 @@
 		},
 		"Rations, 1 day": {
 			"name": "Паёк, 1 день",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tent": {
 			"name": "Палатка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pamphleteer": {
 			"name": "Памфлетист",
@@ -4171,7 +4171,7 @@
 		},
 		"Canvas Tarp": {
 			"name": "Парусина",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Winter's Bite": {
 			"name": "Пасть зимы",
@@ -4242,7 +4242,7 @@
 		},
 		"Saddlebags": {
 			"name": "Перемётные сумки",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Signet Ring": {
 			"name": "Перстень-печатка",
@@ -4250,27 +4250,27 @@
 		},
 		"Gloves": {
 			"name": "Перчатки",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pike": {
 			"name": "Пика",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Saw": {
 			"name": "Пила",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tweezers": {
 			"name": "Пинцет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pistol": {
 			"name": "Пистолет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Quill Pen": {
 			"name": "Писчее перо",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Writing Kit": {
 			"name": "Писчий набор",
@@ -4440,7 +4440,7 @@
 		},
 		"Pony": {
 			"name": "Пони",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Beggar": {
 			"name": "Попрошайка",
@@ -4482,11 +4482,11 @@
 		},
 		"Quarterstaff": {
 			"name": "Посох",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Staff Sling": {
 			"name": "Посох-праща",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Flee!": {
 			"name": "Поспешное бегство",
@@ -4538,7 +4538,7 @@
 		},
 		"Homing Pigeon": {
 			"name": "Почтовый голубь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Produce Small Animal": {
 			"name": "Появление зверушки",
@@ -4555,7 +4555,7 @@
 		},
 		"Sling": {
 			"name": "Праща",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Warning": {
 			"name": "Предостережение",
@@ -4674,7 +4674,7 @@
 		},
 		"Food, groceries/day": {
 			"name": "Продукты, 1 день",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Bawd": {
 			"name": "Пройдоха",
@@ -4769,11 +4769,11 @@
 		},
 		"Face Powder": {
 			"name": "Пудра",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Bullet and Powder": {
 			"name": "Пуля и порох",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Purple Pall of Shyish": {
 			"name": "Пурпурный саван Шаиша",
@@ -4867,7 +4867,7 @@
 		},
 		"Foil": {
 			"name": "Рапира",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Detect Artefact": {
 			"name": "Распознание артефакта",
@@ -4980,7 +4980,7 @@
 		},
 		"Comb": {
 			"name": "Расчёска",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Ragged Wound": {
 			"name": "Рваная рана",
@@ -4996,11 +4996,11 @@
 		},
 		"Chisel": {
 			"name": "Резец",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Religious Symbol": {
 			"name": "Религиозный символ",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Artisan": {
 			"name": "Ремесленник",
@@ -5149,7 +5149,7 @@
 		},
 		"Handgun": {
 			"name": "Ружьё",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Melee": {
 			"name": "Рукопашный бой",
@@ -5197,7 +5197,7 @@
 		},
 		"Hand Weapon": {
 			"name": "Ручное оружие",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Fisherman": {
 			"name": "Рыбак",
@@ -5237,7 +5237,7 @@
 		},
 		"Robes": {
 			"name": "Ряса/мантия",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Salwort": {
 			"name": "Сальворт",
@@ -5256,7 +5256,7 @@
 		},
 		"Boots": {
 			"name": "Сапоги",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Winded": {
 			"name": "Сбитое дыхание",
@@ -5292,7 +5292,7 @@
 		},
 		"Small shot and Powder": {
 			"name": "Свинцовая дробь и порох",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Feather of Lead": {
 			"name": "Свинцовое перо",
@@ -5300,7 +5300,7 @@
 		},
 		"Lead Bullet": {
 			"name": "Свинцовые пули",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Fury": {
 			"name": "Свирепость",
@@ -5321,7 +5321,7 @@
 		},
 		"Saddle and Harness": {
 			"name": "Седло и сбруя",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Aide": {
 			"name": "Секретарь",
@@ -5347,7 +5347,7 @@
 		},
 		"Silver Shilling": {
 			"name": "Серебряный шиллинг",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Sergeant": {
 			"name": "Сержант",
@@ -5380,7 +5380,7 @@
 		},
 		"Sickle": {
 			"name": "Серп",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Major Eye Wound": {
 			"name": "Серьёзная травма глаза",
@@ -5444,7 +5444,7 @@
 		},
 		"Lasso": {
 			"name": "Сеть/лассо",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Very Strong": {
 			"name": "Силач",
@@ -5533,7 +5533,7 @@
 		},
 		"ClOlztW6hH8rslbp": {
 			"name": "Следопыт",
-			"description": "<p>Существу нет равных в  том, что  касается выслеживания добычи (обычно по запаху или на слух). Оно прибавляет рейтинг инициативы к уровню успеха всех своих проверок выслеживания.</p>"
+			"description": "<p>Существу нет равных в том, что касается выслеживания добычи (обычно по запаху или на слух). Оно прибавляет рейтинг инициативы к уровню успеха всех своих проверок выслеживания.</p>"
 		},
 		"Tracker": {
 			"name": "Следопыт",
@@ -5682,7 +5682,7 @@
 		},
 		"Match": {
 			"name": "Спичка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Gossip": {
 			"name": "Сплетничество",
@@ -5749,7 +5749,7 @@
 		},
 		"Cutlery": {
 			"name": "Столовые приборы",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Custodian": {
 			"name": "Сторож",
@@ -5780,11 +5780,11 @@
 		"6GNNpWIGxO9CkTCR": {
 			"id": "Arrow",
 			"name": "Стрела",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"kFROfGFdExfyJTg9": {
 			"name": "Болт",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"QmjYLCaEn3YKHxdv": {
 			"name": "Стрела (заклинание)",
@@ -5917,7 +5917,7 @@
 		},
 		"Pestle & Mortar": {
 			"name": "Ступка и пестик",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Judicial Champion": {
 			"name": "Судебный поединщик",
@@ -5927,7 +5927,7 @@
 		},
 		"Gavel": {
 			"name": "Судейский молоток",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Judge": {
 			"name": "Судья",
@@ -6018,7 +6018,7 @@
 		},
 		"Placard": {
 			"name": "Табличка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Truth Will Out": {
 			"name": "Тайное станет явным",
@@ -6058,11 +6058,11 @@
 		},
 		"Plate": {
 			"name": "Тарелка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tattoo": {
 			"name": "Татуировка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Strong-minded": {
 			"name": "Твёрдость духа",
@@ -6248,7 +6248,7 @@
 		},
 		"Pipe and Tobacco": {
 			"name": "Трубка и табак",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Corpulent": {
 			"name": "Тучность",
@@ -6260,7 +6260,7 @@
 		},
 		"Twitch": {
 			"name": "Тычок",
-			"description": "<p>Персонаж слегка толкает небольшой предмет. Это заклинание позволяет сбросить что-нибудь с полки, закрыть открытую книгу и т. п. Если персонаж толкает предмет, который кто-нибудь держит, этот  кто-то должен успешно пройти <strong>проверку ловкости (+20)</strong>, чтобы не выронить предмет из рук.</p>\n\n<p><b>Школа:</b> нет.</p>"
+			"description": "<p>Персонаж слегка толкает небольшой предмет. Это заклинание позволяет сбросить что-нибудь с полки, закрыть открытую книгу и т. п. Если персонаж толкает предмет, который кто-нибудь держит, этот кто-то должен успешно пройти <strong>проверку ловкости (+20)</strong>, чтобы не выронить предмет из рук.</p>\n\n<p><b>Школа:</b> нет.</p>"
 		},
 		"Poked Eye": {
 			"name": "Тычок в глаз",
@@ -6268,7 +6268,7 @@
 		},
 		"Heavy Crossbow": {
 			"name": "Тяжёлый арбалет",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Rhya's Shelter": {
 			"name": "Убежище Райи",
@@ -6309,7 +6309,7 @@
 		},
 		"Charcoal stick": {
 			"name": "Угольный карандаш",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Thigh Strike": {
 			"name": "Удар в бедро",
@@ -6425,7 +6425,7 @@
 		},
 		"Draught Horse": {
 			"name": "Упряжная лошадь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Tenacious": {
 			"name": "Упрямство",
@@ -6688,7 +6688,7 @@
 		},
 		"Hochland Long Rifle": {
 			"name": "Хохландская длинноствольная винтовка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Artist": {
 			"name": "Художник",
@@ -6723,7 +6723,7 @@
 		},
 		"Flail": {
 			"name": "Цеп/плеть",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Scale Sheer Surface": {
 			"name": "Цепкость",
@@ -6782,11 +6782,11 @@
 		},
 		"Bowl": {
 			"name": "Чаша",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Cup": {
 			"name": "Чашка",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Pit Champion": {
 			"name": "Чемпион арены",
@@ -6796,7 +6796,7 @@
 		},
 		"Worms": {
 			"name": "Черви",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"The Black Plague": {
 			"name": "Чёрная чума",
@@ -6862,7 +6862,7 @@
 		},
 		"Mop": {
 			"name": "Швабра",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Reeve": {
 			"name": "Шериф",
@@ -6906,7 +6906,7 @@
 		},
 		"Rapier": {
 			"name": "Шпага",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Spy": {
 			"name": "Шпион",
@@ -6916,7 +6916,7 @@
 		},
 		"Stamp, engraved": {
 			"name": "Штамп",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Becalm": {
 			"name": "Штиль",
@@ -6924,7 +6924,7 @@
 		},
 		"Spike": {
 			"name": "Штырь",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Manann's Bounty": {
 			"name": "Щедрость Мананна",
@@ -6937,19 +6937,19 @@
 		},
 		"Tongs, steel": {
 			"name": "Щипцы/Клещи",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Shield": {
 			"name": "Щит",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Shield (Buckler)": {
 			"name": "Щит (баклер)",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Shield (Large)": {
 			"name": "Щит (большой)",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Shield of Myrmidia": {
 			"name": "Щит Мирмидии",
@@ -6974,15 +6974,15 @@
 		},
 		"Ale, pint": {
 			"name": "Эль, пинта",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Elf Arrow": {
 			"name": "Эльфийская стрела",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Elf Bow": {
 			"name": "Эльфийский лук",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Envoy": {
 			"name": "Эмиссар",
@@ -7327,7 +7327,7 @@
 		},
 		"Flask of Spirits": {
 			"name": "Фляжка с крепкой выпивкой",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Flight (Hedgecraft)": {
 			"name": "Полёт (знахарство)",
@@ -7404,19 +7404,19 @@
 		},
 		"Sword": {
 			"name": "Меч",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Axe": {
 			"name": "Топор",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Hand Axe": {
 			"name": "Топорик",
-			"description": "<p></p>"
+			"description": " "
 		},
 		"Club": {
 			"name": "Дубина",
-			"description": "<p></p>"
+			"description": " "
 		}
 	}
 }

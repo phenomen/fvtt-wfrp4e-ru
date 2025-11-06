@@ -282,7 +282,7 @@
 				"Grimoire": "Гримуар",
 				"Spells": "Заклинания",
 				"DropHere": "Перетащите заклинания сюда для добавления в гримуар",
-				"RemoveSpells": "Убрать все заклинания из гримуара  ",
+				"RemoveSpells": "Убрать все заклинания из гримуара ",
 				"GenerateDescription": "Сгенерировать описание гримуара",
 				"WrittenIn": "написано на {language}",
 				"ReadWriteTalent": "Грамотность",
@@ -437,7 +437,7 @@
 				},
 				"Wasting": {
 					"Name": "Wasting",
-					"Description": "This disease has attacked and atrophied your muscles and ligaments. As the disease progresses you are gradually wasting away and suffer from a <b>-10</b> penalty to your <b>Strength</b>, <b>Agility</b>, <b>Toughness</b> and <b>Dexterity</b>, as well as all <b>Weapon Tests</b>. This penalty grows to <b>-20</b> for Moderate and  <b>-30</b> for Severe. Any victim whose <b>Toughness</b> is reduced to 0 eventually dies from the disease as it runs its course.",
+					"Description": "This disease has attacked and atrophied your muscles and ligaments. As the disease progresses you are gradually wasting away and suffer from a <b>-10</b> penalty to your <b>Strength</b>, <b>Agility</b>, <b>Toughness</b> and <b>Dexterity</b>, as well as all <b>Weapon Tests</b>. This penalty grows to <b>-20</b> for Moderate and <b>-30</b> for Severe. Any victim whose <b>Toughness</b> is reduced to 0 eventually dies from the disease as it runs its course.",
 					"Treatment": "Wasting can only be cured by addressing the underlying disease. A subject who is being cared for and well fed above their normal intake (Requiring a status expenditure of <b>2 Standing levels</b> higher than your career) can make a weekly <b>Difficult (-10) Endurance Test</b> to temporarily reduce the effect by <b>10</b> for a week."
 				},
 				"Dementia": {
