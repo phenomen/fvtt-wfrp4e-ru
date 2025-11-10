@@ -224,7 +224,10 @@ function translateSkill(item) {
 }
 
 function translateTrait(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent"]);
+	const packs = game.wfrp4e.tags.getPacksWithTag([
+		"trait",
+		"talent",
+	]);
 
 	let translation;
 
@@ -288,7 +291,10 @@ function translateCareer(item) {
 }
 
 function translateSpell(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag(["spell", "prayer"]);
+	const packs = game.wfrp4e.tags.getPacksWithTag([
+		"spell",
+		"prayer",
+	]);
 
 	let translation;
 
@@ -334,7 +340,12 @@ function translateSpell(item) {
 function translateTrapping(item) {
 	const packs = game.wfrp4e.tags.getPacksWithTag(
 		["trapping"],
-		["weapon", "armour", "container", "money"]
+		[
+			"weapon",
+			"armour",
+			"container",
+			"money",
+		]
 	);
 
 	let translation;
@@ -415,7 +426,11 @@ function translateEffects(effects) {
 }
 
 function translateEffect(item) {
-	const packs = game.wfrp4e.tags.getPacksWithTag(["trait", "talent", "spell"]);
+	const packs = game.wfrp4e.tags.getPacksWithTag([
+		"trait",
+		"talent",
+		"spell",
+	]);
 
 	let translation;
 

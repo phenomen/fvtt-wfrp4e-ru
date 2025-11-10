@@ -74,7 +74,12 @@
 		},
 		"Butcher": {
 			"name": "Мясник",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>",
+			"careerGroup": "Огр-мясник",
+			"trappings": [
+				"Предмет (гримуар: покрытые резьбой кости животных",
+				"Рабочие инструменты (мясник)"
+			]
 		},
 		"Cacklefax the Cockerel": {
 			"name": "Петушок Какельфакс",
@@ -126,7 +131,13 @@
 		},
 		"Fresh Meat": {
 			"name": "Свежее мясо",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>",
+			"careerGroup": "Людоед",
+			"trappings": [
+				"Ломоть мяса",
+				"Ручное оружие",
+				"Убеждения (жажда странствий)"
+			]
 		},
 		"Gnuthus the Ox": {
 			"name": "Бык Гнатус",
@@ -194,15 +205,31 @@
 		},
 		"Maneater": {
 			"name": "Людоед",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>",
+			"careerGroup": "Людоед",
+			"trappings": [
+				"Огровский набрюшник",
+				"Одежда",
+				"Огрский пистолет или Двуручное оружие"
+			]
 		},
 		"Maneater Captain": {
 			"name": "Вожак людоедов",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>",
+			"careerGroup": "Людоед",
+			"trappings": [
+				"Огровский набрюшник (опробованный в бою)",
+				"Официальный документ"
+			]
 		},
 		"Maneater Crusher": {
 			"name": "Крушитель-людоед",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.kxcmiebXRV7PPs8Y]{Людоед}</p>",
+			"careerGroup": "Людоед",
+			"trappings": [
+				"Заслуги (уважение)",
+				"Подчинённые (отряд наемников)"
+			]
 		},
 		"Mangonel Catapult": {
 			"name": "Мангонель (катапульта)",
@@ -210,7 +237,14 @@
 		},
 		"Mawsage": {
 			"name": "Мудрец Пасти",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>",
+			"careerGroup": "Огр-мясник",
+			"trappings": [
+				"Мешок (окровавленный)",
+				"Подчинённые (мясник-ученик",
+				"Предмет (коллекция черепов)",
+				"Предмет (эзотерические игредиенты) 10 шт."
+			]
 		},
 		"Mortar": {
 			"name": "Мортира",
@@ -274,19 +308,42 @@
 		},
 		"Rhinox Breaker": {
 			"name": "Объездчик носорогов",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>",
+			"careerGroup": "Заводчик носорогов",
+			"trappings": [
+				"Набрюшник (из черепа носорожца)",
+				"Перемётные сумки",
+				"Носорог"
+			]
 		},
 		"Rhinox Herder": {
 			"name": "Заводчик носорогов",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>",
+			"careerGroup": "Заводчик носорогов",
+			"trappings": [
+				"Большое метательное копье или Гарпун",
+				"Предмет (шуба из меха носорога"
+			]
 		},
 		"Rhinox Master": {
 			"name": "Повелитель носорогов",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>",
+			"careerGroup": "Заводчик носорогов",
+			"trappings": [
+				"Помещение (ферма) или Привелегия (право на выпас скота на обширном участке)",
+				"Стадо носорогов или других крупных животных"
+			]
 		},
 		"Rhinox Rustler": {
 			"name": "Носорогокрад",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.VG6hzml2D3Oe7PYX]{Заводчик носорогов}</p>",
+			"careerGroup": "Заводчик носорогов",
+			"trappings": [
+				"Кожаная куртка",
+				"Ручное оружие",
+				"Рюкзак",
+				"Сеть/лассо"
+			]
 		},
 		"Rhya's Cauldron": {
 			"name": "Котёл Райи",
@@ -322,11 +379,22 @@
 		},
 		"Slaughtermaster": {
 			"name": "Забойщик",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>",
+			"careerGroup": "Огр-мясник",
+			"trappings": [
+				"Подчинённые (почитатели Великой Пасти)",
+				"Помещение (пещера) или Помещение (логово)",
+				"Убеждения (бездонный голод)"
+			]
 		},
 		"Slopscooper": {
 			"name": "Бурдовар",
-			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>"
+			"description": "<p>@UUID[Compendium.wfrp4e-archives2.journals.S7vMviNshIrqOuRq.JournalEntryPage.oHnxmjA1CtIhumiz]{Огр-мясник}</p>",
+			"careerGroup": "Огр-мясник",
+			"trappings": [
+				"Мясницкий фартук",
+				"Ручное оружие (тесак) или Ручное оружие (колотушка)"
+			]
 		},
 		"Spell Ring": {
 			"name": "Заклинательное кольцо",

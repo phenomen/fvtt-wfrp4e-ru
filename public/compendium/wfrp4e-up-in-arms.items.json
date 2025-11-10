@@ -23,19 +23,31 @@
 			"name": "Алебардист",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.aG6quE0EZ0tLE6Vl]{Алебардист}</p>",
 			"careerGroup": "Алебардист",
-			"trappings": ["Латная кираса", " шлем", " отличная алебарда"]
+			"trappings": [
+				"Латная кираса",
+				" шлем",
+				" отличная алебарда"
+			]
 		},
 		"Halberdier Recruit": {
 			"name": "Новобранец алебардистов",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.aG6quE0EZ0tLE6Vl]{Алебардист}</p>",
 			"careerGroup": "Алебардист",
-			"trappings": ["Кинжал", "алебарда", "кожаная кираса", "форменная одежда"]
+			"trappings": [
+				"Кинжал",
+				"алебарда",
+				"кожаная кираса",
+				"форменная одежда"
+			]
 		},
 		"Halberdier Sergeant": {
 			"name": "Сержант алебардистов",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.aG6quE0EZ0tLE6Vl]{Алебардист}</p>",
 			"careerGroup": "Алебардист",
-			"trappings": ["Знак служебного положения", " отличная форменная одежда"]
+			"trappings": [
+				"Знак служебного положения",
+				" отличная форменная одежда"
+			]
 		},
 		"Ahlspiess": {
 			"name": "Альшпис",
@@ -61,7 +73,12 @@
 			"name": "Артиллерист",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.KID8Xu7W7Jvygl9K]{Артиллерист}</p>",
 			"careerGroup": "Артиллерист",
-			"trappings": ["Оружие (любое)", "Подзорная труба", "Инструменты", "Форменная одежда"]
+			"trappings": [
+				"Оружие (любое)",
+				"Подзорная труба",
+				"Инструменты",
+				"Форменная одежда"
+			]
 		},
 		"Boat Hook": {
 			"name": "Багор",
@@ -162,7 +179,10 @@
 			"name": "Глава колонны",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mGMZSWoJnbnRze1h]{Пикенёр}</p>",
 			"careerGroup": "Пикенёр",
-			"trappings": ["Латная кираса", "Перевязь командира"]
+			"trappings": [
+				"Латная кираса",
+				"Перевязь командира"
+			]
 		},
 		"Bodkin Arrow": {
 			"name": "Бронебойная стрела",
@@ -196,13 +216,21 @@
 			"name": "Доппельзольднер",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.B2GyhjJbcXpXPQQ5]{Доппельзольднер}</p>",
 			"careerGroup": "Доппельзольднер",
-			"trappings": ["Полный латный доспех", "Большая шляпа с пером"]
+			"trappings": [
+				"Полный латный доспех",
+				"Большая шляпа с пером"
+			]
 		},
 		"Greatsword Cadet": {
 			"name": "Кадет доппельзольднеров",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.B2GyhjJbcXpXPQQ5]{Доппельзольднер}</p>",
 			"careerGroup": "Доппельзольднер",
-			"trappings": ["Кинжал", "Латная кираса", "Форменная одежда", "Двуручный меч"]
+			"trappings": [
+				"Кинжал",
+				"Латная кираса",
+				"Форменная одежда",
+				"Двуручный меч"
+			]
 		},
 		"Greatsword Sergeant": {
 			"name": "Сержант доппельзольднеров",
@@ -226,7 +254,10 @@
 			"name": "Жрец-воин",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Xm25vHdfMlXME9Uz.JournalEntryPage.lKjbkmp0AGMYYPp0]{Священник Мирмидии}</p>",
 			"careerGroup": "Священник Мирмидии",
-			"trappings": ["Кираса и шлем", " щит"]
+			"trappings": [
+				"Кираса и шлем",
+				" щит"
+			]
 		},
 		"Priest Captain": {
 			"name": "Жрец-капитан",
@@ -272,7 +303,13 @@
 			"name": "Застрельщик",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.tczPk698eLFpVOsm]{Лучник}</p>",
 			"careerGroup": "Лучник",
-			"trappings": ["Колчан и 10 стрел", "Лук", "Кинжал", "Вьюк", "Форменная одежда"]
+			"trappings": [
+				"Колчан и 10 стрел",
+				"Лук",
+				"Кинжал",
+				"Вьюк",
+				"Форменная одежда"
+			]
 		},
 		"Grapple": {
 			"name": "Крюк и трос",
@@ -282,7 +319,10 @@
 			"name": "Землемер",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.6xKxqvKM5exJhiAA]{Картограф}</p>",
 			"careerGroup": "Картограф",
-			"trappings": ["Тонкий пергамент", "Писчий набор"]
+			"trappings": [
+				"Тонкий пергамент",
+				"Писчий набор"
+			]
 		},
 		"Know Your Enemy": {
 			"name": "Знай своего врага",
@@ -312,7 +352,12 @@
 			"name": "Капитан",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.1i3Y6jOqCTmlbVeo]{Лёгкий всадник}</p>",
 			"careerGroup": "Лёгкий всадник",
-			"trappings": ["Пара пистолетом с боеприпасами", " боевой конь", " броская одежда", " кираса"]
+			"trappings": [
+				"Пара пистолетом с боеприпасами",
+				" боевой конь",
+				" броская одежда",
+				" кираса"
+			]
 		},
 		"Halberdier Captain": {
 			"name": "Капитан алебардистов",
@@ -360,7 +405,10 @@
 			"name": "Капитан артиллерии",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.KID8Xu7W7Jvygl9K]{Артиллерист}</p>",
 			"careerGroup": "Артиллерист",
-			"trappings": ["Знак служебного положения", " отличная форменная одежда"]
+			"trappings": [
+				"Знак служебного положения",
+				" отличная форменная одежда"
+			]
 		},
 		"Banner Captain": {
 			"name": "Капитан-знаменосец",
@@ -384,7 +432,10 @@
 			"name": "Картограф",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.6xKxqvKM5exJhiAA]{Картограф}</p>",
 			"careerGroup": "Картограф",
-			"trappings": ["Лошадь с седлом и сбруей", "Теодолит"]
+			"trappings": [
+				"Лошадь с седлом и сбруей",
+				"Теодолит"
+			]
 		},
 		"Knuckledusters": {
 			"name": "Кастет",
@@ -410,7 +461,10 @@
 			"name": "Глава лагеря",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.PyuVaepgBmUkbfrz]{Маркитант}</p>",
 			"careerGroup": "Маркитант",
-			"trappings": ["Верховая лошадь с седлом и сбруей", " группа маркитантов"]
+			"trappings": [
+				"Верховая лошадь с седлом и сбруей",
+				" группа маркитантов"
+			]
 		},
 		"Dagger": {
 			"name": "Кинжал",
@@ -446,7 +500,10 @@
 			"name": "Командир отряда (Внутренний круг)",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
 			"careerGroup": "Рыцарь Белого волка",
-			"trappings": ["Послушник", "Рота рыцарей Белого волка"]
+			"trappings": [
+				"Послушник",
+				"Рота рыцарей Белого волка"
+			]
 		},
 		"Command the Legion": {
 			"name": "Командование легионом",
@@ -460,7 +517,12 @@
 			"name": "Командир копья",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.1i3Y6jOqCTmlbVeo]{Лёгкий всадник}</p>",
 			"careerGroup": "Лёгкий всадник",
-			"trappings": ["Кавалерийское копьё", "Кольчужные шоссы", "Оруженосец", "Прислуга"]
+			"trappings": [
+				"Кавалерийское копьё",
+				"Кольчужные шоссы",
+				"Оруженосец",
+				"Прислуга"
+			]
 		},
 		"Spear": {
 			"name": "Копье",
@@ -478,31 +540,48 @@
 			"name": "Лёгкий всадник",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.1i3Y6jOqCTmlbVeo]{Лёгкий всадник}</p>",
 			"careerGroup": "Лёгкий всадник",
-			"trappings": ["Боевой конь", "Кольчуга", "Открытый шлем"]
+			"trappings": [
+				"Боевой конь",
+				"Кольчуга",
+				"Открытый шлем"
+			]
 		},
 		"Chartered Cartographer": {
 			"name": "Лицензированный картограф",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.6xKxqvKM5exJhiAA]{Картограф}</p>",
 			"careerGroup": "Картограф",
-			"trappings": ["Лицензия картографа", "Отличная дорожная одежда"]
+			"trappings": [
+				"Лицензия картографа",
+				"Отличная дорожная одежда"
+			]
 		},
 		"Archer": {
 			"name": "Лучник",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.tczPk698eLFpVOsm]{Лучник}</p>",
 			"careerGroup": "Лучник",
-			"trappings": ["Защита головы", "Меч", "Отличный лук"]
+			"trappings": [
+				"Защита головы",
+				"Меч",
+				"Отличный лук"
+			]
 		},
 		"Archer Sergeant": {
 			"name": "Сержант лучников",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.tczPk698eLFpVOsm]{Лучник}</p>",
 			"careerGroup": "Лучник",
-			"trappings": ["Знак служебного положения", "Отличная форменная одежда"]
+			"trappings": [
+				"Знак служебного положения",
+				"Отличная форменная одежда"
+			]
 		},
 		"Camp Follower": {
 			"name": "Маркитант",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.PyuVaepgBmUkbfrz]{Маркитант}</p>",
 			"careerGroup": "Маркитант",
-			"trappings": ["Палатка", "Отличная шляпа"]
+			"trappings": [
+				"Палатка",
+				"Отличная шляпа"
+			]
 		},
 		"Master Artillerist": {
 			"name": "Мастер артиллерии",
@@ -628,7 +707,11 @@
 			"name": "Мастер осад",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mcdsHRtcQToDaN82]{Специалист по осадам}</p>",
 			"careerGroup": "Специалист по осадам",
-			"trappings": ["Отличная одежда", "Боевой конь", "Шатёр с личными слугами"]
+			"trappings": [
+				"Отличная одежда",
+				"Боевой конь",
+				"Шатёр с личными слугами"
+			]
 		},
 		"Sharp Stick": {
 			"name": "Заострённая палка",
@@ -659,7 +742,10 @@
 			"name": "Первый рыцарь",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.FmalmVn3AhtabhMN]{Рыцарь Пантеры}</p>",
 			"careerGroup": "Рыцарь Пантеры",
-			"trappings": ["Бардинг", "Небольшой отряд рыцарей Пантеры"]
+			"trappings": [
+				"Бардинг",
+				"Небольшой отряд рыцарей Пантеры"
+			]
 		},
 		"Pepperbox": {
 			"name": "Многоствольный пистолет 'Перечница'",
@@ -673,7 +759,11 @@
 			"name": "Пикенёр",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mGMZSWoJnbnRze1h]{Пикенёр}</p>",
 			"careerGroup": "Пикенёр",
-			"trappings": ["Игральные кости", "Кольчуга", "Открытый шлем"]
+			"trappings": [
+				"Игральные кости",
+				"Кольчуга",
+				"Открытый шлем"
+			]
 		},
 		"Pistol": {
 			"name": "Пистолет",
@@ -847,7 +937,11 @@
 			"name": "Рыцарь",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
 			"careerGroup": "Рыцарь Белого волка",
-			"trappings": ["Плащ из волчьих шкур", "Дестриэ c седлом и сбруей", "Латный доспех"]
+			"trappings": [
+				"Плащ из волчьих шкур",
+				"Дестриэ c седлом и сбруей",
+				"Латный доспех"
+			]
 		},
 		"Knight of the Inner Circle": {
 			"name": "Рыцарь внутреннего круга",
@@ -863,13 +957,19 @@
 			"name": "Рыцарь-баннерет",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.TpwhRuvLbZT8gpQr]{Вольный рыцарь}</p>",
 			"careerGroup": "Вольный рыцарь",
-			"trappings": ["Бардинг", "Небольшая свита"]
+			"trappings": [
+				"Бардинг",
+				"Небольшая свита"
+			]
 		},
 		"Knight Commander": {
 			"name": "Рыцарь-командор",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.TpwhRuvLbZT8gpQr]{Вольный рыцарь}</p>",
 			"careerGroup": "Вольный рыцарь",
-			"trappings": ["Отряд рыцарей", "Оруженосец"]
+			"trappings": [
+				"Отряд рыцарей",
+				"Оруженосец"
+			]
 		},
 		"Sabre": {
 			"name": "Сабля",
@@ -915,7 +1015,10 @@
 			"name": "Сержант-храмовник",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.pVLlBMBG95DVUGGj]{Рыцарь Белого волка}</p>",
 			"careerGroup": "Рыцарь Белого волка",
-			"trappings": ["Бардинг", "Небольшой отряд рыцарей Белого волка"]
+			"trappings": [
+				"Бардинг",
+				"Небольшой отряд рыцарей Белого волка"
+			]
 		},
 		"Scimitar": {
 			"name": "Скимитар",
@@ -929,7 +1032,10 @@
 			"name": "Специалист по осадам",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.1BTD0otB4pln0o8j.JournalEntryPage.mcdsHRtcQToDaN82]{Специалист по осадам}</p>",
 			"careerGroup": "Специалист по осадам",
-			"trappings": ["Двуручная кирка", "Лопата"]
+			"trappings": [
+				"Двуручная кирка",
+				"Лопата"
+			]
 		},
 		"Hireling": {
 			"name": "Спутник",
@@ -947,19 +1053,29 @@
 			"name": "Аркебузир",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.hCtfLrI7R6mJg6YV]{Аркебузир}</p>",
 			"careerGroup": "Аркебузир",
-			"trappings": ["Большая шляпа с пером", "Отличное ружье"]
+			"trappings": [
+				"Большая шляпа с пером",
+				"Отличное ружье"
+			]
 		},
 		"Handgunner Recruit": {
 			"name": "Новобранец аркебузиров",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.hCtfLrI7R6mJg6YV]{Аркебузир}</p>",
 			"careerGroup": "Аркебузир",
-			"trappings": ["Кинжал", "Ружье", "Форменная одежда"]
+			"trappings": [
+				"Кинжал",
+				"Ружье",
+				"Форменная одежда"
+			]
 		},
 		"Handgunner Sergeant": {
 			"name": "Сержант аркебузиров",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.hCtfLrI7R6mJg6YV]{Аркебузир}</p>",
 			"careerGroup": "Аркебузир",
-			"trappings": ["Знак служебного положения", "Отличная форменная одежда"]
+			"trappings": [
+				"Знак служебного положения",
+				"Отличная форменная одежда"
+			]
 		},
 		"Gunner": {
 			"name": "Стрелковая подготовка",
@@ -1011,7 +1127,10 @@
 			"name": "Ученик артиллериста",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.KID8Xu7W7Jvygl9K]{Артиллерист}</p>",
 			"careerGroup": "Артиллерист",
-			"trappings": ["Кинжал", "Кожаный фартук"]
+			"trappings": [
+				"Кинжал",
+				"Кожаный фартук"
+			]
 		},
 		"Slow Match": {
 			"name": "Фитиль",
@@ -1029,7 +1148,10 @@
 			"name": "Хокмейстер",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.Ub8PlkaAIWPxX2AH.JournalEntryPage.azFTHnCxn5nb4c7m]{Рыцарь Сияющего солнца}</p>",
 			"careerGroup": "Рыцарь Сияющего солнца",
-			"trappings": ["Бардинг", "Небольшой отряд рыцарей Сияющего Солнца"]
+			"trappings": [
+				"Бардинг",
+				"Небольшой отряд рыцарей Сияющего Солнца"
+			]
 		},
 		"Hochland Long Rifle": {
 			"name": "Хохландская длинноствольная винтовка",
@@ -1043,7 +1165,11 @@
 			"name": "Шваль",
 			"description": "<p>@UUID[Compendium.wfrp4e-up-in-arms.journals.PgIAJWjuYUxR8NRc.JournalEntryPage.PyuVaepgBmUkbfrz]{Маркитант}</p>",
 			"careerGroup": "Маркитант",
-			"trappings": ["Спальный мешок", "Кинжал", "Вьюк"]
+			"trappings": [
+				"Спальный мешок",
+				"Кинжал",
+				"Вьюк"
+			]
 		},
 		"Silk Underwear": {
 			"name": "Шелковое исподнее",
