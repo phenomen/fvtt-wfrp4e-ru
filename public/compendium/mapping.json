@@ -1,88 +1,88 @@
 {
-	"Item": {
-		"description": "system.description.value",
-		"gmdescription": "system.gmdescription.value",
-		"tests": "system.tests.value",
-		"contraction": "system.contraction.value",
-		"symptoms": "system.symptoms.value",
-		"permanent": "system.permanent.value",
-		"incubationValue": "system.incubation.value",
-		"incubationUnit": {
-			"path": "system.incubation.unit",
-			"converter": "convertDuration"
-		},
-		"durationUnit": {
-			"path": "system.duration.unit",
-			"converter": "convertDuration"
-		},
-		"hitLocation": {
-			"path": "system.location.value",
-			"converter": "convertHitLocation"
-		},
-		"penalty": "system.penalty.value",
-		"careerGroup": "system.careergroup.value",
-		"careerClass": {
-			"path": "system.class.value",
-			"converter": "convertCareerClass"
-		},
-		"trappings": "system.trappings",
-		"careerSkills": {
-			"path": "system.skills",
-			"converter": "convertCareerSkills"
-		},
-		"careerTalents": {
-			"path": "system.talents",
-			"converter": "convertCareerTalents"
-		},
-		"spellRange": {
-			"path": "system.range.value",
-			"converter": "convertSpellRange"
-		},
-		"spellDuration": {
-			"path": "system.duration.value",
-			"converter": "convertSpellDuration"
-		},
-		"spellTarget": {
-			"path": "system.target.value",
-			"converter": "convertSpellTarget"
-		},
-		"spellDamage": {
-			"path": "system.damage.value",
-			"converter": "convertSpellDamage"
-		},
-		"prayerGods": {
-			"path": "system.god.value",
-			"converter": "convertGods"
-		},
-		"effects": {
-			"path": "effects",
-			"converter": "convertEffects"
-		}
-	},
-	"Actor": {
-		"description": "system.details.biography.value",
-		"gmnotes": "system.details.gmnotes.value",
-		"species": {
-			"path": "system.details.species.value",
-			"converter": "convertActorSpecies"
-		},
-		"gender": {
-			"path": "system.details.gender.value",
-			"converter": "convertActorGender"
-		},
-		"careerclass": {
-			"path": "system.details.class.value",
-			"converter": "convertActorCareerClass"
-		},
-		"items": {
-			"path": "items",
-			"converter": "convertActorItems"
-		}
-	},
-	"RollTable": {
-		"results": {
-			"path": "results",
-			"converter": "convertTableResults"
-		}
-	}
+  "Item": {
+    "description": "system.description.value",
+    "gmdescription": "system.gmdescription.value",
+    "tests": "system.tests.value",
+    "contraction": "system.contraction.value",
+    "symptoms": "system.symptoms.value",
+    "permanent": "system.permanent.value",
+    "incubationValue": "system.incubation.value",
+    "incubationUnit": {
+      "path": "system.incubation.unit",
+      "converter": "convertDuration"
+    },
+    "durationUnit": {
+      "path": "system.duration.unit",
+      "converter": "convertDuration"
+    },
+    "hitLocation": {
+      "path": "system.location.value",
+      "converter": "convertHitLocation"
+    },
+    "penalty": "system.penalty.value",
+    "careerGroup": "system.careergroup.value",
+    "careerClass": {
+      "path": "system.class.value",
+      "converter": "convertCareerClass"
+    },
+    "trappings": "system.trappings",
+    "careerSkills": {
+      "path": "system.skills",
+      "converter": "convertCareerSkills"
+    },
+    "careerTalents": {
+      "path": "system.talents",
+      "converter": "convertCareerTalents"
+    },
+    "spellRange": {
+      "path": "system.range.value",
+      "converter": "convertSpellRange"
+    },
+    "spellDuration": {
+      "path": "system.duration.value",
+      "converter": "convertSpellDuration"
+    },
+    "spellTarget": {
+      "path": "system.target.value",
+      "converter": "convertSpellTarget"
+    },
+    "spellDamage": {
+      "path": "system.damage.value",
+      "converter": "convertSpellDamage"
+    },
+    "prayerGods": {
+      "path": "system.god.value",
+      "converter": "convertGods"
+    },
+    "effects": {
+      "path": "effects",
+      "converter": "convertEffects"
+    }
+  },
+  "Actor": {
+    "description": "system.details.biography.value",
+    "gmnotes": "system.details.gmnotes.value",
+    "species": {
+      "path": "system.details.species.value",
+      "converter": "convertActorSpecies"
+    },
+    "gender": {
+      "path": "system.details.gender.value",
+      "converter": "convertActorGender"
+    },
+    "careerclass": {
+      "path": "system.details.class.value",
+      "converter": "convertActorCareerClass"
+    },
+    "items": {
+      "path": "items",
+      "converter": "convertActorItems"
+    }
+  },
+  "RollTable": {
+    "results": {
+      "path": "results",
+      "converter": "convertTableResults"
+    }
+  }
 }

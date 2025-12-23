@@ -1,9 +1,9 @@
 {
-	"label": "Предметы (Сборник Старого Света II)",
-	"folders": {
-		"Traits": "Черты",
-		"Trappings": "Имущество",
-		"Ammunition": "Боеприпасы",
-		"Templates": "Шаблоны"
-	}
+  "label": "Предметы (Сборник Старого Света II)",
+  "folders": {
+    "Traits": "Черты",
+    "Trappings": "Имущество",
+    "Ammunition": "Боеприпасы",
+    "Templates": "Шаблоны"
+  }
 }

@@ -1,10 +1,23 @@
 {
-	"ignorePatterns": [
-		"node_modules",
-		"build",
-		"ru-wfrp4e",
-		"scripts",
-		"src/scripts.js",
-		"scripts/packed.js"
-	]
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["unicorn", "typescript", "oxc"],
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "pedantic": "off",
+    "style": "off",
+    "perf": "warn",
+    "restriction": "warn"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-process-exit": "off",
+    "oxc/no-async-await": "off",
+    "oxc/no-rest-spread-properties": "off",
+    "oxc/no-optional-chaining": "off"
+  }
 }
