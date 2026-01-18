@@ -14,9 +14,9 @@
       "discord": "mrak_x"
     }
   ],
-  "version": "9.3.1.13",
+  "version": "9.3.1.14",
   "compatibility": {
-    "minimum": "12",
+    "minimum": "13",
     "verified": "13",
     "maximum": "13"
   },
