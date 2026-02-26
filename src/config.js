@@ -179,11 +179,6 @@ export async function patchConfig() {
   if (game.modules.get("wfrp4e-rnhd")?.active) {
     const config = {
       species: {
-        human: "Человек",
-        dwarf: "Гном",
-        halfling: "Полурослик",
-        helf: "Высший эльф",
-        welf: "Лесной эльф",
         gnome: "Карлик",
       },
       speciesSkills: {
@@ -200,6 +195,17 @@ export async function patchConfig() {
           "Язык (вестерландский)",
           "Язык (гасалли)",
           "Язык (магический)",
+        ],
+      },
+      speciesTalents: {
+        gnome: [
+          "Простолюдин, Единение с Улгу",
+          "Фортуна, Имитатор",
+          "Сумеречное зрение",
+          "Рыбак, Грамотность",
+          "Второе зрение, Шестое чувство",
+          "Небольшой",
+          0,
         ],
       },
     };

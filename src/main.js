@@ -17,6 +17,23 @@ import {
 import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
 export async function initTranslation() {
+  const isForienArmouryActive = game.modules.get("forien-armoury")?.active;
+
+  if (isForienArmouryActive) {
+    new Dialog({
+      title: "Внимание!",
+      content:
+        "<p>Модуль <b>Forien's Armoury</b> не поддерживается и вызывает ошибки в переводе.</p>",
+      buttons: {
+        ok: {
+          label: "ОК",
+        },
+      },
+    }).render(true);
+
+    return;
+  }
+
   setupBabele("compendium");
   // loadScripts();
 
