@@ -208,7 +208,7 @@ function translateDocument(name, type, pack, specs) {
     return translation;
   }
 
-  return undefined;
+  return;
 }
 
 function translateSkill(item) {
@@ -271,7 +271,7 @@ function translateCareer(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, "career", pack.metadata.id, undefined);
+    translation = translateDocument(item.name, "career", pack.metadata.id);
 
     if (translation?.name) break;
   }
@@ -303,7 +303,7 @@ function translateSpell(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, item.type, pack.metadata.id, undefined);
+    translation = translateDocument(item.name, item.type, pack.metadata.id);
 
     if (translation?.name) break;
   }
@@ -350,7 +350,7 @@ function translateTrapping(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, item.type, pack.metadata.id, undefined);
+    translation = translateDocument(item.name, item.type, pack.metadata.id);
 
     if (translation?.name) break;
   }

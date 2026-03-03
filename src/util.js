@@ -37,8 +37,8 @@ export function parseParentheses(str) {
   if (match) {
     const main = match[1];
     const sub = match[2];
-    return { main: main.trim(), sub: sub.trim() || undefined };
+    return { main: main.trim(), sub: sub.trim() || null };
   }
 
-  return { main: str.trim(), sub: undefined };
+  return { main: str.trim(), sub: null };
 }
