@@ -188,16 +188,18 @@ export async function initTranslation() {
   }
 }
 
-function translateDocument(name, type, pack, specs) {
-  let translation = game.babele.translate(pack, { name: name, type: type }, true);
+function translateDocument(name, type, pack, specs, itemData) {
+  const lookupData = itemData || { name, type };
+  let translation = game.babele.translate(pack, lookupData, true);
 
   if (translation?.name) {
     return translation;
   }
 
   const words = parseParentheses(name);
+  const fallbackData = itemData ? { ...itemData, name: words.main } : { name: words.main, type };
 
-  translation = game.babele.translate(pack, { name: words.main, type: type }, true);
+  translation = game.babele.translate(pack, fallbackData, true);
 
   if (translation?.name) {
     translation.name =
@@ -217,7 +219,13 @@ function translateSkill(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, "skill", pack.metadata.id, translatedSkillSpec);
+    translation = translateDocument(
+      item.name,
+      "skill",
+      pack.metadata.id,
+      translatedSkillSpec,
+      item,
+    );
 
     if (translation?.name) break;
   }
@@ -239,7 +247,13 @@ function translateTrait(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, item.type, pack.metadata.id, translatedTalentSpec);
+    translation = translateDocument(
+      item.name,
+      item.type,
+      pack.metadata.id,
+      translatedTalentSpec,
+      item,
+    );
 
     if (translation?.name) break;
   }
@@ -271,7 +285,7 @@ function translateCareer(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, "career", pack.metadata.id);
+    translation = translateDocument(item.name, "career", pack.metadata.id, undefined, item);
 
     if (translation?.name) break;
   }
@@ -303,7 +317,7 @@ function translateSpell(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, item.type, pack.metadata.id);
+    translation = translateDocument(item.name, item.type, pack.metadata.id, undefined, item);
 
     if (translation?.name) break;
   }
@@ -350,7 +364,7 @@ function translateTrapping(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, item.type, pack.metadata.id);
+    translation = translateDocument(item.name, item.type, pack.metadata.id, undefined, item);
 
     if (translation?.name) break;
   }
@@ -430,7 +444,13 @@ function translateEffect(item) {
   let translation;
 
   for (const pack of packs) {
-    translation = translateDocument(item.name, "effect", pack.metadata.id, translatedTalentSpec);
+    translation = translateDocument(
+      item.name,
+      "effect",
+      pack.metadata.id,
+      translatedTalentSpec,
+      item,
+    );
 
     if (translation?.name) break;
   }
