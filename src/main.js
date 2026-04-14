@@ -13,7 +13,7 @@ import {
   translatedSpellTarget,
   translatedTalentSpec,
 } from "./data.js";
-// import { loadScripts } from "./scripts.js";
+
 import { parseParentheses, setupBabele, translateList, translateValue } from "./util.js";
 
 export async function initTranslation() {
@@ -35,57 +35,76 @@ export async function initTranslation() {
   }
 
   setupBabele("compendium");
-  // loadScripts();
 
   if (typeof Babele !== "undefined") {
     game.babele.registerConverters({
       convertEffects: (effects) => {
-        if (!effects) return;
+        if (!effects) {
+          return;
+        }
         return translateEffects(effects);
       },
 
       convertDuration: (duration) => {
-        if (!duration) return;
+        if (!duration) {
+          return;
+        }
         return translateValue(duration, translatedDuration);
       },
 
       convertHitLocation: (hitLocation) => {
-        if (!hitLocation) return;
+        if (!hitLocation) {
+          return;
+        }
         return translateValue(hitLocation, translatedHitLocation);
       },
 
       convertSpellRange: (range) => {
-        if (!range) return;
+        if (!range) {
+          return;
+        }
         return translateValue(range, translatedSpellRange);
       },
 
       convertSpellDuration: (duration) => {
-        if (!duration) return;
+        if (!duration) {
+          return;
+        }
         return translateValue(duration, translatedSpellDuration);
       },
 
       convertSpellTarget: (target) => {
-        if (!target) return;
+        if (!target) {
+          return;
+        }
         return translateValue(target, translatedSpellTarget);
       },
 
       convertSpellDamage: (damage) => {
-        if (!damage) return;
+        if (!damage) {
+          return;
+        }
         return translateValue(damage, translatedSpellDamage);
       },
 
       convertGods: (gods) => {
-        if (!gods) return;
+        if (!gods) {
+          return;
+        }
         return translateList(gods, translatedGods);
       },
 
       convertCareerClass: (careerClass) => {
-        if (!careerClass) return;
+        if (!careerClass) {
+          return;
+        }
         return translateValue(careerClass, translatedCareerClass);
       },
 
       convertCareerSkills: (list) => {
-        if (!list) return;
+        if (!list) {
+          return;
+        }
         if (Array.isArray(list)) {
           return translateCareerItems(list, "skill", translatedSkillSpec);
         }
@@ -96,7 +115,9 @@ export async function initTranslation() {
       },
 
       convertCareerTalents: (list) => {
-        if (!list) return;
+        if (!list) {
+          return;
+        }
         if (Array.isArray(list)) {
           const result = translateCareerItems(list, "talent", translatedTalentSpec);
 
@@ -111,26 +132,36 @@ export async function initTranslation() {
       },
 
       convertActorGender: (gender) => {
-        if (!gender) return;
+        if (!gender) {
+          return;
+        }
         return translateValue(gender, translatedGender);
       },
 
       convertActorSpecies: (species) => {
-        if (!species) return;
+        if (!species) {
+          return;
+        }
         return translateValue(species, translatedSpecies);
       },
 
       convertActorCareerClass: (careerClass) => {
-        if (!careerClass) return;
+        if (!careerClass) {
+          return;
+        }
         return translateValue(careerClass, translatedCareerClass);
       },
 
       convertActorItems: (items) => {
-        if (!items) return;
+        if (!items) {
+          return;
+        }
 
         return items.map((item) => {
           const { name, type } = item;
-          if (!name) return item;
+          if (!name) {
+            return item;
+          }
 
           switch (type) {
             case "skill":
@@ -155,8 +186,8 @@ export async function initTranslation() {
         });
       },
 
-      convertTableResults: (results, translations) => {
-        return results.map((data) => {
+      convertTableResults: (results, translations) =>
+        results.map((data) => {
           if (!translations) {
             return data;
           }
@@ -182,8 +213,7 @@ export async function initTranslation() {
             description: translation.description ?? data.description,
             translated: true,
           });
-        });
-      },
+        }),
     });
   }
 }
@@ -227,7 +257,9 @@ function translateSkill(item) {
       item,
     );
 
-    if (translation?.name) break;
+    if (translation?.name) {
+      break;
+    }
   }
 
   if (translation) {
@@ -255,7 +287,9 @@ function translateTrait(item) {
       item,
     );
 
-    if (translation?.name) break;
+    if (translation?.name) {
+      break;
+    }
   }
 
   if (translation) {
@@ -287,7 +321,9 @@ function translateCareer(item) {
   for (const pack of packs) {
     translation = translateDocument(item.name, "career", pack.metadata.id, undefined, item);
 
-    if (translation?.name) break;
+    if (translation?.name) {
+      break;
+    }
   }
 
   if (translation) {
@@ -319,7 +355,9 @@ function translateSpell(item) {
   for (const pack of packs) {
     translation = translateDocument(item.name, item.type, pack.metadata.id, undefined, item);
 
-    if (translation?.name) break;
+    if (translation?.name) {
+      break;
+    }
   }
 
   if (translation) {
@@ -366,7 +404,9 @@ function translateTrapping(item) {
   for (const pack of packs) {
     translation = translateDocument(item.name, item.type, pack.metadata.id, undefined, item);
 
-    if (translation?.name) break;
+    if (translation?.name) {
+      break;
+    }
   }
 
   if (translation) {
@@ -377,7 +417,9 @@ function translateTrapping(item) {
 }
 
 function translateCareerItems(list, type, specs) {
-  if (!list) return;
+  if (!list) {
+    return;
+  }
 
   const packs = game.wfrp4e.tags.getPacksWithTag(type);
 
@@ -393,7 +435,9 @@ function translateCareerItems(list, type, specs) {
     for (const pack of packs) {
       translation = translateDocument(item, type, pack.metadata.id, specs);
 
-      if (translation?.name) break;
+      if (translation?.name) {
+        break;
+      }
     }
 
     return translation?.name || item;
@@ -401,13 +445,17 @@ function translateCareerItems(list, type, specs) {
 }
 
 function translateTemplateItems(list, type, specs) {
-  if (!list.list) return;
+  if (!list.list) {
+    return;
+  }
 
   const packs = game.wfrp4e.tags.getPacksWithTag(type);
 
   return {
     list: list.list.map((element) => {
-      if (!element.name) return element;
+      if (!element.name) {
+        return element;
+      }
 
       if (translatedExceptions[element.name]) {
         element.name = translatedExceptions[element.name];
@@ -452,7 +500,9 @@ function translateEffect(item) {
       item,
     );
 
-    if (translation?.name) break;
+    if (translation?.name) {
+      break;
+    }
   }
 
   if (translation) {

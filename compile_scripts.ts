@@ -79,7 +79,7 @@ async function main(): Promise<void> {
   await packScripts();
 
   /*
-	console.log("-- TRANSLATING SCRIPTS...");
+	Console.log("-- TRANSLATING SCRIPTS...");
 	await translateScripts();
 	*/
 

@@ -3,13 +3,18 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "format": "oxfmt",
-    "lint": "oxlint"
+    "build": "vp build",
+    "format": "vp fmt",
+    "lint": "vp lint",
+    "prepare": "vp config"
   },
   "devDependencies": {
-    "oxfmt": "^0.42.0",
-    "oxlint": "^1.57.0",
-    "vite": "8.0.2"
-  }
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vite-plus": "latest"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+  },
+  "packageManager": "bun@1.3.12"
 }
